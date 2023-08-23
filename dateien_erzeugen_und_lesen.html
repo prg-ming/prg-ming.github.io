@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Dateien erzeugen und lesen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-57"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li id="active"><a href="dateien_erzeugen_und_lesen.html" class="active no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="strings_formatieren.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="trycatch.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Dateien erzeugen und lesen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id83">
+<div class="iDevice emphasis0" >
+<div id="ta83_127_2" class="block iDevice_content">
+<div class="exe-text"><p>Eine Datei ist zunächst mal für unsere Zwecke ein Text, der auf der Festplatte unter einem Namen wie z.B. "foo.txt" gespeichert wird. Die Datei können wir dann nicht nur mit Processing, sondern auch mit handelsüblichen Text-Editoren wie Notepad, Word etc. lesen und ändern.</p>
+<h1>Daten schreiben</h1>
+<p>Das Schreiben von Daten nennt man auch save (engl. für Retten). Wir können mit der Funktion <code>saveStrings()</code> einen beliebig großen Array von Strings abspeichern. Dazu übergeben wir der Funktion den Namen der Datei und den Array. Die Datei wird im Verzeichnis unseres Processing-Programms gespeichert. Sie enthält auf jeder Zeile einen String. Im folgenden Beispiel wird eine Textdatei mit Namen "meineDaten.txt" mit drei Zeilen erzeugt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// drei Zeilen speichern
+ 
+String[] zeilen = new String[3];
+ 
+zeilen[0] = "Das ist";
+zeilen[1] = "ein Text";
+zeilen[2] = "auf drei Zeilen";
+ 
+saveStrings("meineDaten.txt", zeilen);</code></pre>
+</div>
+</div>
+<p>Wenn wir "meineDaten.txt" mit einem Texteditor öffnen, sehen wir:</p>
+<p><span style="font-family: andale mono, monospace;">Das ist</span><br /><span style="font-family: andale mono, monospace;">ein Text</span><br /><span style="font-family: andale mono, monospace;">auf drei Zeilen</span></p>
+<h1>Daten lesen</h1>
+<p>Das Lesen von Daten nennt man auch load (engl. für Laden). Die Funktion <code>loadStrings()</code> erwartet einen Dateinamen und liefert ein <code>String-Array</code> zurück, welches den Text in der Datei <em>zeilenweise</em> enthält.</p>
+<p>Das Beispielprogramm liest eine Datei mit Namen "meineDaten.txt", die sich im "data"-Ordner des Verzeichnis des Processing-Programms befinden muss, und schreibt den Inhalt zeilenweise auf die Konsole:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Textdatei lesen
+ 
+String[] lines = loadStrings("meineDaten.txt");
+ 
+for (int i = 0; i &lt; lines.length; i++) {
+  println("&gt; " + lines[i]);
+}</code></pre>
+</div>
+</div>
+<p>Wir müssen nicht unbedingt die gleichen Daten einlesen wie die, die wir oben erzeugt haben. Probiere folgendes: Schreibe einen Text mit einem Editor und lade ihn mit obigen Programm (Dateiname anpassen!).</p>
+<h1>Objekt speichern</h1>
+<p>Inwiefern helfen mir Dateien, wenn ich in einem Spiel den Punktestand und die Position der Spielerfigur und der gegnerischen Figuren etc. abspeichern will?</p>
+<p>Wir sehen uns dazu Beispiele an. Da wir in Dateien mit Texten arbeiten, müssen wir dafür sorgen, dass z.B. numerische Daten beim Schreiben in Text umgewandelt werden. Umgekehrt, wenn wir den Text wieder lesen, muss der Text wieder in eine Zahl umgewandelt werden.</p>
+<p>Als Beispiel nehmen wir uns einen Ball, der umherfliegt und von den Wänden abprallt. Als Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x;
+int y;
+int xspeed;
+int yspeed;
+ 
+void setup() {
+  size(200, 200);
+  x = width/2;
+  y = height/2;
+  xspeed = (int)random(1, 2);
+  yspeed = (int)random(2, 4);
+}
+ 
+void draw() {
+  background(100);
+  noStroke();
+  fill(255);
+ 
+  ellipse(x, y, 20, 20);
+  x += xspeed;
+  y += yspeed;
+ 
+  if (x &lt; 0 || x &gt; width) {
+    xspeed = -xspeed;
+  }
+  if (y &lt; 0 || y &gt; height) {
+    yspeed = -yspeed;
+  }
+}</code></pre>
+</div>
+</div>
+<p>Die Frage, die man sich stellen muss, wenn man ein Objekt speichern und später wieder laden will, lautet: <strong>Welches sind die Eigenschaften, die das Objekt beschreiben?</strong> Unser Ball wird beschrieben durch vier Integer-Werte: x-Position, y-Position, x-Geschwindigkeit, y-Geschwindigkeit. Diese Werte wollen wir speichern. Das machen wir ganz einfach, indem wir jeden Wert auf eine Zeile schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void saveConf() {
+  String[] data = new String[4];
+ 
+  // Zahlen werden hier in Strings umgewandelt ...
+  data[0] = "" + x;        // einmal mithilfe von "" +
+  data[1] = "" + y;        // Wichtig: Kein Leerzeichen einbauen!
+  data[2] = nf(xspeed);    // Alternativ geht auch nf()
+  data[3] = nf(yspeed);
+ 
+  saveStrings("conf.txt", data);
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<p>Beachte, dass wir die <strong>Zahlen in Strings umwandeln</strong>, indem wir die <strong>doppelten Quotes voranstellen</strong>. Das ist aber keine richtig schöne Lösung, eher ein Trick. Alternativ kannst du die Zahl auch mithilfe von <code>nf()</code> in einen String umwandeln. Hier hast du auch die Möglichkeit den String nochmal etwas zu formatieren, z.B. mit vorangestellten Nullen (siehe <a href="strings_verarbeiten.html">Strings verarbeiten</a>). Dann wird der String-Array mit saveStrings() gespeichert.</p>
+<p>Vorsicht: Setze kein Leerzeichen zwischen die Quotes, sonst gibt es Probleme beim Einlesen, da Processing eine Zahl mit führendem Leerzeichen nicht als Zahl erkennt.</p>
+<p></p>
+<p>Jetzt brauchen wir eine Funktion, welche die Daten aus der Datei wieder ausliest. Hier verwenden wir die Processing-Funktion <code>int(),</code> um aus einem String (z.B. in <code>data[0],</code> wo die erste Zeile steht) eine Integer-Zahl zu machen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void loadConf() {
+  String[] data = loadStrings("conf.txt");
+ 
+  // Strings jeweils in Zahlen umwandeln
+  x = int(data[0]);
+  y = int(data[1]);
+  xspeed = int(data[2]);
+  yspeed = int(data[3]);
+}</code></pre>
+</div>
+</div>
+<p>Um das Ganze auszuprobieren, bauen wir eine Tastatursteuerung ein, die die aktuelle Ball-Konfiguration mit "s" speichert und mit "l" wieder lädt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void keyPressed() {
+  if (key == 's') {
+    saveConf();
+  }
+  if (key == 'l') {
+    loadConf();
+  }
+}</code></pre>
+</div>
+</div>
+<p>Wir können jetzt jederzeit die aktuelle Position mit "s" speichern. Sobald wir "l" drücken, springt der Ball an die gespeicherte Position zurück. Sieh dir auch die Datei "conf.txt" auf deiner Festplatte an.</p>
+<h1>Zusammenfassung</h1>
+<p>Eine wichtige Möglichkeit zum lesen und und speichern von Daten in der Programmierung ist das Erzeugen und Lesen von Dateien. Mithilfe von Processing ist dies sehr leicht möglich in Verbindung mit den Funktionen saveStrings() und loadString().</p>
+<ul>
+<li><strong>Mithilfe von <code>saveStrings()</code> kann eine Datei erzeugt werden.</strong> Die Funktion benötigt 2 Parameter: Den Text, der gespeichert werden soll und den Namen der Text-Datei, die angelegt werden soll. Der Text liegt in Form eines einfachen String-Arrays vor. Dabei ist jedes Element im Array später eine neue Zeile im Text-Dokument.</li>
+<li><strong>Mithilfe von <code>loadStrings()</code> kann eine Datei gelesen werden.</strong> Die Funktion benötigt als Parameter den Namen der Text-Datei, die gelesen werden soll. Außerdem liefert die Funktion als Rückgabewert einen einfachen String-Array. Jedes Element im Array enthält genau eine Zeile der Text-Datei.<br />Die Text-Datei, die Gelesen bzw. erzeugt wird, befindet sich im "data"-Ordner deines Procesing Projektordners.</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="strings_formatieren.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="trycatch.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

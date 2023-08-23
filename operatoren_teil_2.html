@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Operatoren Teil 2 | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-65"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li id="active"><a href="operatoren_teil_2.html" class="active no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="assertions.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="anwendungsentwicklung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Operatoren Teil 2</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id89">
+<div class="iDevice emphasis0" >
+<div id="ta89_123_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="OperatorenII-BitweiseOperatoren">Bitweise Operatoren</h1>
+<h2 id="OperatorenII-Zweierkomplementdarstellung">Zweierkomplementdarstellung</h2>
+<p>Bitweise Operatoren können in Java ausschleißlich auf <em>numerische</em> Operanden, sprich alle numerischen Datentypen, angewendet werden. Um die bitweisen Operatoren zu erklären verwenden wir hier den Datentyp byte.</p>
+<p>Numerische Datentypen werden in Java <strong>binär</strong> und als <strong>Zweierkomplement</strong> interpretiert. Das <strong>Zweierkomplement </strong>ist eine Möglichkeit, negative Zahlen im Binärsystem darzustellen, ohne zusätzliche Zeichen wie <strong>+</strong> und <strong>−</strong> zu benötigen.</p>
+<p><strong>Ist das höchstwertige Bit gesetzt (= 1), liegt eine negative Zahl vor.</strong></p>
+<p>Die <strong>Zweierkomplementdarstellung</strong> ist am einfachsten wie folgt zu erklären:</p>
+<p>Alle Bits haben denselben Wert wie bei der positiven Darstellung. Das höchstwertige Bit hingegen ist negativ.  Daher muss der Wert dieses Bits von dem Wert restlichen Bits abgezogen werden.</p>
+<p>Schauen wir uns folgendes Beispiel an:</p>
+<p><code><strong>1</strong>0000010</code></p>
+<p>Das höchstwertige Bit ist eine 1, sprich es ist negativ. Statt für 128 steht es für -128. <br />Die restlichen Bits haben zusammen einen Wert von 2. Es ergibt sich folgende Rechnung: 2 - 128 = -126 <br />In der Zweierkomplementdarstellung hat die oben abgebildete Bitfolge also den Wert -126.</p>
+<p>Schau dir die Tabelle an. Dort findest du ein paar wichtige Zahlenwerte zur Veranschaulichung des eben erklärten:</p>
+<table class="exe-table" role="grid" style="width: 100%; padding: 0px;" resolved="">
+<tbody aria-live="polite" aria-relevant="all">
+<tr>
+<th style="text-align: right;">Binärwert <strong><br /></strong></th>
+<th style="text-align: left;">
+<p>Interpretation als <br />Zweierkomplement</p>
+</th>
+<th style="text-align: right;"> Binärwert</th>
+<th style="text-align: left;">Interpretation als <br />Zweierkomplement</th>
+<th style="text-align: right;"> Binärwert</th>
+<th style="text-align: left;">Interpretation als <br />Zweierkomplement</th>
+<th style="text-align: right;"> Binärwert</th>
+<th style="text-align: left;">Interpretation als <br />Zweierkomplement</th>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>0</strong>0000000</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: right;"><strong>0</strong>1111110</td>
+<td style="text-align: left;">126</td>
+<td style="text-align: right;"><strong>1</strong>0000000</td>
+<td style="text-align: left;">-128</td>
+<td style="text-align: right;"><strong>1</strong>1111110</td>
+<td style="text-align: left;">-2</td>
+</tr>
+<tr>
+<td style="text-align: right;"><strong>0</strong>0000001</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: right;"><strong>0</strong>1111111</td>
+<td style="text-align: left;">127</td>
+<td style="text-align: right;"><strong>1</strong>0000001</td>
+<td style="text-align: left;">-127</td>
+<td style="text-align: right;"><strong>1</strong>1111111</td>
+<td style="text-align: left;">-1</td>
+</tr>
+<tr>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: right;"><strong>1</strong>0000010</td>
+<td style="text-align: left;">-126</td>
+<td style="text-align: right;"></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Operatoren</h2>
+<p><strong>Bitweise</strong> Operatoren werden in Java verwendet, um <strong>Binärwerte</strong> <strong>bitweise</strong> zu manipulieren. Die folgenden bitweisen Operatoren gibt es in Java:</p>
+<ul>
+<li><em>Einerkomplement</em>-Operator</li>
+<li><em>Bitweise Logische Verknüpfungs</em>-Operatoren</li>
+<li><em>Schiebe</em>-Operator</li>
+</ul>
+<p>Die folgende Tabelle stellt die bitweisen Operatoren von Java einzeln vor:</p>
+<p></p>
+<table class="exe-table" role="grid" style="padding: 0px;" resolved="">
+<tbody aria-live="polite" aria-relevant="all">
+<tr>
+<th>Operator</th>
+<th>Bezeichnung</th>
+<th>Beispiel</th>
+<th><em>Beschreibung<br /></em></th>
+</tr>
+<tr>
+<td>~</td>
+<td>Einerkomplement</td>
+<td>~a</td>
+<td><em>Es werden alle Bits von a invertiert, das heißt aus 0 wird 1 und umgekehrt.</em></td>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>Bitweises Und</td>
+<td>a &amp; b</td>
+<td><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Und-verknüpft.</em></td>
+</tr>
+<tr>
+<td>|</td>
+<td>Bitweises Oder</td>
+<td>a | b</td>
+<td><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Oder-verknüpft.</em></td>
+</tr>
+<tr>
+<td>^</td>
+<td>Bitweises Exklusiv-Oder</td>
+<td>a ^ b</td>
+<td><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Exklusiv-Oder-verknüpft. <br /></em></td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>Linksschieben</td>
+<td>a &lt;&lt; b</td>
+<td><em>Es werden die Bits von a um b Positionen nach links geschoben. Auch das höchstwertige Bit wird nach links geschoben und erfährt keine besondere Behandlung.</em></td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>Rechtsschieben <br />mit Vorzeichen <br />(arithmetisch)</td>
+<td>a &gt;&gt; b</td>
+<td>
+<p><em>Es werden die Bits von a um b Positionen nach rechts geschoben. Das höchstwertige Bit wird nach dem Schieben gesetzt, falls es auch vor dem Schieben gesetzt war. <br />Somit bleibt eine negative Zahl auch nach dem Rechtsschieben negativ.</em></p>
+<p></p>
+</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;</td>
+<td>Rechtsschieben <br />ohne Vorzeichen <br />(logisch)</td>
+<td>a &gt;&gt;&gt; b</td>
+<td>
+<p><em>Es werden die Bits von a um b Positionen nach rechts geschoben. Das höchstwertige Bit wird nach dem Schieben immer auf 0 gesetzt. </em></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>In Processing kannst du dir eine Variable in binär anzeigen lassen mithilfe der<code> binary()</code> Funktion.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int wert = 3;
+println(wert); 
+println(binary(wert)); </code></pre>
+</div>
+</div>
+<div class="confluence-information-macro confluence-information-macro-information conf-macro output-block" data-hasbody="true" data-macro-name="info"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"> </span>
+<div class="confluence-information-macro-body">
+<div class="pre-code">
+<div>
+<pre><code>3
+00000000000000000000000000000011</code></pre>
+</div>
+</div>
+<strong>WICHTIG:</strong> Die Funktion <code>binary()</code> liefert dir einen String zurück! Du kannst sie also nicht verwenden, um eine Zahl in einer Binärzahl umzuwandeln. Es gibt auch das Gegenstück zu dieser Funktion: unbinary(). Diese Funktion nimmt einen Binär-String als Parameter und liefert einen Integer-Wert zurück.</div>
+</div>
+<h1 id="OperatorenII-TernärerOperator">Ternärer Operator</h1>
+<p class="ugyxxo">Ein Operator mit <em>drei</em> Operandenstellen ist ein <strong>ternärer Operator</strong>.  In Java gibt es <em>genau einen</em> ternären Operator, welcher deswegen auch <strong><em>der</em> </strong>ternäre Operator genannt wird. Er ist der einzige Operator, der mit drei Operanden arbeitet und wird oft auch <strong>Bedingungsoperator </strong>genannt.</p>
+<p class="ugyxxo">Der Bedingungsoperator hat folgenden allgemeinen Aufbau:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>bedingung ? wert1 : wert2</code></pre>
+</div>
+</div>
+<div class="code panel pdl conf-macro output-block" style="border-width: 1px;" data-hasbody="true" data-macro-name="code">
+<div class="codeContent panelContent pdl">
+<div>
+<div id="highlighter_280466"></div>
+</div>
+</div>
+</div>
+<p class="quelltextfeld">→ <code>bedingung</code> muss immer ein boolescher Ausdruck sein. Er entscheidet über die Wertzuweisung. Ist er <code>true</code> , so wird der Wert nach dem Fragezeichen zugewiesen, ansonsten der Wert nach dem Doppelpunkt.</p>
+<p>Die Variablenzuweisung erfolgt dann in der Form</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>variable = bedingung ? wert1 : wert2</code></pre>
+</div>
+</div>
+<p>Stell dir vor du schreibst ein Programm, das auswerten soll, ob Studierende eine Klausur bestanden haben. Bestanden haben sie, wenn sie mehr als 50 Punkte haben. Das sieht wiefolge aus:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 76;
+            String msg = punkte &gt;= 50 ? "Bestanden" : "Nicht bestanden";
+            println(msg);</code></pre>
+</div>
+</div>
+<p>Je nachdem, welchen Wert <code>punkte</code> hat, nimmt <code>msg</code> den Wert "Bestanden" oder "Nicht bestanden" an.</p>
+<h1>Rangfolge der Operatoren</h1>
+<p>Operatoren werden in Java nach einer festen Reihenfolge ausgewertet. Operatoren mit einem höheren Rang haben Vorrang vor Operatoren mit einem niedrigeren Rang. Dies wird auch als Vorrangregel oder Bindungsregel bezeichnet.</p>
+<p>In Java hat jeder Operator eine gewisse <strong>Bindungskraft</strong>. Der <em>Multiplikations</em>-Operator hat z.B. eine höhere Bindungskraft als der <em>Additions</em>-Operator und wird somit zuerst ausgewertet. Ähnlich wie die Regel in Mathe: Punkt vor Strich.</p>
+<p>Manchmal besitzen Operatoren die selbe Bindungskraft. In so einem Fall entscheidet die <strong>Assoziativität</strong> über die Reihenfolge der Auswertung. Der <em>Additions</em>– und <em>Subtraktions</em>-Operator haben z.B. die gleiche Bindungskraft. Werden sie aber in einer Kette von Additionen und Subtraktionen verwendet, bestimmt ihre Assoziativität über die Auswertungsreihenfolge. In diesem Fall sind beide Operatoren <strong>linksassoziativ</strong>, daher wird der Ausdruck von links nach rechts ausgewertet.</p>
+<p>Daher wird <code>a+b-c</code> wie <code>(a+b)-c</code> ausgewertet und nicht wie <code>a+(b-c)</code>.</p>
+<p>In der folgenden Tabelle sind alle Java-Operatoren in Gruppen zusammengefasst.</p>
+<p>Die Gruppenummer entspricht dem Rang des jeweiligen Operators. Gruppe eins enthält die Java-Operatoren mit dem höchsten Rang. Die Assoziativität gibt an, ob ein Operator von links nach rechts oder von rechts nach links ausgewertet wird.</p>
+<table class="exe-table" style="height: 1560px;">
+<tbody>
+<tr style="height: 23px;">
+<th style="height: 23px; width: 52.95px;">Gruppe</th>
+<th style="height: 23px; width: 64.4167px;">Operator</th>
+<th style="height: 23px; width: 56.7833px;">Beispiel</th>
+<th style="height: 23px; width: 203.5px;">Bezeichnung</th>
+<th style="height: 23px; width: 97.45px;">Assoziativität</th>
+<th style="height: 23px; width: 777.3px;">Beschreibung</th>
+</tr>
+<tr style="height: 95px;">
+<td style="background-color: #ffffff; height: 95px; width: 52.95px;">1</td>
+<td style="background-color: #ffffff; height: 95px; width: 64.4167px;">++ <br />--</td>
+<td style="background-color: #ffffff; height: 95px; width: 56.7833px;">a++ <br />a--</td>
+<td style="background-color: #ffffff; height: 95px; width: 203.5px;">Postinkrement <br />Postdekrement</td>
+<td style="background-color: #ffffff; height: 95px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 95px; width: 777.3px;"><em>Beim Postinkrement wird dem übergeordneten Ausdruck der ursprüngliche Wert von a übergeben. Anschließend wird a um 1 erhöht.<br />Beim Postdekrement wird dem übergeordneten Ausdruck der ursprüngliche Wert von a übergeben. Anschließend wird a um 1 verringert.<br /></em></td>
+</tr>
+<tr style="height: 79px;">
+<td style="background-color: #ffffff; height: 79px; width: 52.95px;"></td>
+<td style="background-color: #ffffff; height: 79px; width: 64.4167px;">
+<p>++ <br />--</p>
+</td>
+<td style="background-color: #ffffff; height: 79px; width: 56.7833px;">++a <br />--a</td>
+<td style="background-color: #ffffff; height: 79px; width: 203.5px;">Präinkrement <br />Prädekrement</td>
+<td style="background-color: #ffffff; height: 79px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 79px; width: 777.3px;"><em>Beim Präinkrement wird dem übergeordneten Ausdruck der um 1 erhöhte Wert von a übergeben.<br />Beim Prädekrement wird dem übergeordneten Ausdruck der um 1 verringerte Wert von a übergeben.<br /></em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="background-color: #ffffff; height: 47px; width: 52.95px;"></td>
+<td style="background-color: #ffffff; height: 47px; width: 64.4167px;">+ <br />-</td>
+<td style="background-color: #ffffff; height: 47px; width: 56.7833px;">+a <br />-a</td>
+<td style="background-color: #ffffff; height: 47px; width: 203.5px;">Positives/negatives Vorzeichen</td>
+<td style="background-color: #ffffff; height: 47px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 47px; width: 777.3px;"><em>Nicht zwingend, da +a dem gleichen Wert wie a entspricht.  <br />Entspricht dem negativem Wert von a.<br /></em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="background-color: #ffffff; height: 23px; width: 52.95px;"></td>
+<td style="background-color: #ffffff; height: 23px; width: 64.4167px;">~</td>
+<td style="background-color: #ffffff; height: 23px; width: 56.7833px;">~a</td>
+<td style="background-color: #ffffff; height: 23px; width: 203.5px;">Einerkomplement</td>
+<td style="background-color: #ffffff; height: 23px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 23px; width: 777.3px;"><em>Es werden alle Bits von a invertiert, das heißt aus 0 wird 1 und umgekehrt.</em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="background-color: #ffffff; height: 23px; width: 52.95px;"></td>
+<td style="background-color: #ffffff; height: 23px; width: 64.4167px;">!</td>
+<td style="background-color: #ffffff; height: 23px; width: 56.7833px;">!a</td>
+<td style="background-color: #ffffff; height: 23px; width: 203.5px;">Logisches Nicht</td>
+<td style="background-color: #ffffff; height: 23px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 23px; width: 777.3px;"><em>Es wird a negiert. Ist a wahr, wird false zurückgegeben, andernfalls true.</em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="background-color: #ffffff; height: 23px; width: 52.95px;"></td>
+<td style="background-color: #ffffff; height: 23px; width: 64.4167px;">(type)</td>
+<td style="background-color: #ffffff; height: 23px; width: 56.7833px;">(int) a</td>
+<td style="background-color: #ffffff; height: 23px; width: 203.5px;">Type-Cast</td>
+<td style="background-color: #ffffff; height: 23px; width: 97.45px;">Rechts</td>
+<td style="background-color: #ffffff; height: 23px; width: 777.3px;"><em>Der Datentyp von a wird in den in Klammern angegebenen Datentyp umgwandelt.</em></td>
+</tr>
+<tr style="height: 71px;">
+<td style="height: 71px; width: 52.95px; background-color: #eeeeee;">2</td>
+<td style="height: 71px; width: 64.4167px; background-color: #eeeeee;">* <br />/ <br />%</td>
+<td style="height: 71px; width: 56.7833px; background-color: #eeeeee;">a*b <br />a/b <br />a%b</td>
+<td style="height: 71px; width: 203.5px; background-color: #eeeeee;">Multiplikation <br />Division <br />Modulo</td>
+<td style="height: 71px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 71px; width: 777.3px; background-color: #eeeeee;"><em>Aus der Multiplikation von a mal b ergibt sich das Produkt.<br />Aus der Division von a durch b ergibt sich der Quotient.<br />Aus Modulo von a durch b ergibt sich der Rest.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;">3</td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">+ <br />-</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a + b <br />a – b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Addition <br />Subtraktion</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Aus der Addition von a plus b ergibt sich die Summe.<br />Aus der Subtraktion von a minus b ergibt sich die Differenz.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">+</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">„A“ + b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">String-Verkettung</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> Ein String wird mit einem anderen String angefügt. Wenn nötig wird dabei der Wert in einen String umgewandelt.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;">4</td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">&lt;&lt;</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a &lt;&lt; b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Linksschieben</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em> </em><em>Es werden die Bits von a um b Positionen nach links geschoben. Auch das höchstwertige Bit wird nach links geschoben und erfährt keine besondere Behandlung.</em></td>
+</tr>
+<tr style="height: 71px;">
+<td style="height: 71px; width: 52.95px; background-color: #eeeeee;"></td>
+<td style="height: 71px; width: 64.4167px; background-color: #eeeeee;">&gt;&gt;</td>
+<td style="height: 71px; width: 56.7833px; background-color: #eeeeee;">a &gt;&gt; b</td>
+<td style="height: 71px; width: 203.5px; background-color: #eeeeee;">Rechtsschieben <br />mit Vorzeichen (arithmetisch)</td>
+<td style="height: 71px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 71px; width: 777.3px; background-color: #eeeeee;"><em> </em><em>Es werden die Bits von a um b Positionen nach rechts geschoben. Das höchstwertige Bit wird nach dem Schieben gesetzt, falls es auch vor dem Schieben gesetzt war. Somit bleibt eine negative Zahl auch nach dem Rechtsschieben negativ.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">&gt;&gt;&gt;</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a &gt;&gt;&gt; b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Rechtsschieben <br />ohne Vorzeichen (logisch)</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em> </em><em>Es werden die Bits von a um b Positionen nach rechts geschoben. Das höchstwertige Bit wird nach dem Schieben immer auf 0 gesetzt.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;">5</td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&lt; <br />&gt;</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &lt; b <br />a &gt; b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Kleiner als <br />Größer als</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a mit b verglichen. Ist a kleiner als b wird true zurückgegeben, andernfalls false.<br />Es wird a mit b verglichen. Ist a größer als b wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&lt;= <br />&gt;=</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &lt;= b <br />a &gt;= b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Kleiner gleich <br />Größer gleich</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a mit b verglichen. Ist a kleiner als oder gleich b wird true zurückgegeben, andernfalls false.<br />Es wird a mit b verglichen. Ist a größer als oder gleich b wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;">6</td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">==</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a == b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Gleich</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em> </em><em>Es wird a mit b verglichen. Ist a gleich b wird true zurückgegeben, andernfalls false. Wenn a und b Referenztypen sind, wird verglichen ob beide Variablen auf das gleiche Objekt referenzieren. Falls ja, wird true zurückgegeben.</em></td>
+</tr>
+<tr style="height: 71px;">
+<td style="height: 71px; width: 52.95px; background-color: #eeeeee;"></td>
+<td style="height: 71px; width: 64.4167px; background-color: #eeeeee;">!=</td>
+<td style="height: 71px; width: 56.7833px; background-color: #eeeeee;">a != b</td>
+<td style="height: 71px; width: 203.5px; background-color: #eeeeee;">Ungleich</td>
+<td style="height: 71px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 71px; width: 777.3px; background-color: #eeeeee;"><em> </em><em>Es wird a mit b verglichen. Ist a ungleich b wird true zurückgegeben, andernfalls false. Wenn a und b Referenztypen sind, wird verglichen ob beide Variablen auf verschiedene Objekte referenzieren. Falls ja, wird true zurückgegeben.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;">7</td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&amp;</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &amp; b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Und (bitweise)</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Und-verknüpft.</em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 23px; width: 64.4167px; background-color: #ffffff;">&amp;</td>
+<td style="height: 23px; width: 56.7833px; background-color: #ffffff;">a &amp; b</td>
+<td style="height: 23px; width: 203.5px; background-color: #ffffff;">Und (logisch)</td>
+<td style="height: 23px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 23px; width: 777.3px; background-color: #ffffff;"><em>Es wird a und b ausgewertet. Sind beide wahr, wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;">8</td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">^</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a ^ b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Exklusiv-Oder (bitweise)</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Exklusiv-Oder-verknüpft.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">^</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a ^ b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Exklusiv-Oder (logisch)</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em>Es wird a und b ausgewertet. Besitzt a einen anderen Wahrheitswert als b wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;">9</td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">|</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a | b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Oder (bitweise)</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em>Es wird a und b bitweise ausgewertet. Dabei wird jedes korrespondierende Bit von a und b miteinander Oder-verknüpft.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">|</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a | b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Oder (logisch)</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em>Es wird a und b ausgewertet. Ist mindestens einer der beiden Ausdrücke wahr, wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;">10</td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">&amp;&amp;</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">a &amp;&amp; b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Und (S-C-E)</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em>Es wird a und b ausgewertet. Die Auswertung wird abgebrochen wenn a bereits falsch ist. Dann wird sofort false zurückgegeben. Sind beide wahr, wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;">11</td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">||</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a || b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Oder (S-C-E)</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;">Links</td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em>Es wird a und b ausgewertet. Die Auswertung wird abgebrochen wenn a bereits wahr ist. Dann wird sofort true zurückgegeben. Ist mindestens einer der beiden Ausdrücke wahr, wird true zurückgegeben, andernfalls false.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #eeeeee;">12</td>
+<td style="height: 47px; width: 64.4167px; background-color: #eeeeee;">?:</td>
+<td style="height: 47px; width: 56.7833px; background-color: #eeeeee;">c ? a:b</td>
+<td style="height: 47px; width: 203.5px; background-color: #eeeeee;">Bedingte Auswertung</td>
+<td style="height: 47px; width: 97.45px; background-color: #eeeeee;">Rechts</td>
+<td style="height: 47px; width: 777.3px; background-color: #eeeeee;"><em>Falls die Bedingung c wahr ist, wird der Wert von a zurückgegeben. Andernfalls, wird der Wert von b zurückgegeben.</em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 52.95px; background-color: #ffffff;">13</td>
+<td style="height: 23px; width: 64.4167px; background-color: #ffffff;">=</td>
+<td style="height: 23px; width: 56.7833px; background-color: #ffffff;">a = b</td>
+<td style="height: 23px; width: 203.5px; background-color: #ffffff;">Einfache Zuweisung</td>
+<td style="height: 23px; width: 97.45px; background-color: #ffffff;">Rechts</td>
+<td style="height: 23px; width: 777.3px; background-color: #ffffff;"><em>Es wird a der Wert von b zugewiesen und b als Rückgabewert geliefert.</em></td>
+</tr>
+<tr style="height: 119px;">
+<td style="height: 119px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 119px; width: 64.4167px; background-color: #ffffff;">+= <br />-= <br />*= <br />/= <br />%=</td>
+<td style="height: 119px; width: 56.7833px; background-color: #ffffff;">a += b <br />a -= b <br />a *= b <br />a /= b <br />a %= b</td>
+<td style="height: 119px; width: 203.5px; background-color: #ffffff;">Additions-zuweisung <br />Subtraktions-zuweisung <br />Multiplikations-zuweisung <br />Divisions-zuweisung <br />Modulo-zuweisung</td>
+<td style="height: 119px; width: 97.45px; background-color: #ffffff;">Rechts</td>
+<td style="height: 119px; width: 777.3px; background-color: #ffffff;"><em> Es wird a das Ergebnis aus a + b zugewiesen und a + b als Rückgabewert geliefert.<br />Es wird a das Ergebnis aus a – b zugewiesen und a – b als Rückgabewert geliefert.<br />Es wird a das Ergebnis aus a * b zugewiesen und a * b als Rückgabewert geliefert.<br />Es wird a das Ergebnis aus a / b zugewiesen und a / b als Rückgabewert geliefert.<br />Es wird a das Ergebnis aus a % b zugewiesen und a % b als Rückgabewert geliefert.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&amp;= <br />|=</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &amp;=b <br />a |= b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Und-Zuweisung <br />Oder-Zuweisung</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a das Ergebnis aus a &amp; b zugewiesen und a &amp; b als Rückgabewert geliefert.<br />Es wird a das Ergebnis aus a | b zugewiesen und a | b als Rückgabewert geliefert.</em></td>
+</tr>
+<tr style="height: 23px;">
+<td style="height: 23px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 23px; width: 64.4167px; background-color: #ffffff;">&lt;&lt;=</td>
+<td style="height: 23px; width: 56.7833px; background-color: #ffffff;">a &lt;&lt;= b</td>
+<td style="height: 23px; width: 203.5px; background-color: #ffffff;">Linksschiebe-Zuweisung</td>
+<td style="height: 23px; width: 97.45px; background-color: #ffffff;"></td>
+<td style="height: 23px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a das Ergebnis aus a &lt;&lt; b zugewiesen und a &lt;&lt; b als Rückgabewert geliefert.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&gt;&gt;=</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &gt;&gt;= b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Rechtsschiebe-Zuweisung mit  Vorzeichen</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a das Ergebnis aus a &gt;&gt; b zugewiesen und a &gt;&gt; b als Rückgabewert geliefert.</em></td>
+</tr>
+<tr style="height: 47px;">
+<td style="height: 47px; width: 52.95px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 64.4167px; background-color: #ffffff;">&gt;&gt;&gt;=</td>
+<td style="height: 47px; width: 56.7833px; background-color: #ffffff;">a &gt;&gt;&gt;= b</td>
+<td style="height: 47px; width: 203.5px; background-color: #ffffff;">Rechtsschiebe-Zuweisung ohne Vorzeichen</td>
+<td style="height: 47px; width: 97.45px; background-color: #ffffff;"></td>
+<td style="height: 47px; width: 777.3px; background-color: #ffffff;"><em> </em><em>Es wird a das Ergebnis aus a &gt;&gt;&gt; b zugewiesen und a &gt;&gt;&gt; b als Rückgabewert geliefert.</em></td>
+</tr>
+</tbody>
+</table>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Binäre Zahlen werden in Java als <strong>Zweierkomplement </strong>interpretiert. Dies ist eine Schreibweise, bei der das höchstwertige Bit genutzt wird, um darzustellen, ob es sich um eine negative oder eine positive Zahl handelt.</li>
+<li><strong>Bitweise Operatoren </strong>rechnen mit und verarbeiten Binärzählen. Es gibt in Java 7 bitweise Operatoren:
+<ul>
+<li>Einerkomplement: ~</li>
+<li>Bitweises Und: &amp;</li>
+<li>Bitweises Oder: |</li>
+<li>Bitweises Exklusiv-Oder: ^</li>
+<li>Linksschiebung (arithmetisch): &lt;&lt;</li>
+<li>Rechtschiebung (ohne Vorzeichen): &gt;&gt;</li>
+</ul>
+</li>
+<li>Der <strong>Ternäre Operator</strong> ist der sogenannte Bedinungsoperator. Mit ihm kann man eine Bedinung prüfen und je nach Ergebnis einer Variablen einen Wert zuweisen.</li>
+</ul>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>variable = bedingung ? wert1 : wert2</code></pre>
+</div>
+</div>
+<ul>
+<li>Operatoren haben in Java eine Rangfolge, die entscheidet, welcher Operator zuerst angewendet wird.
+<ul>
+<li>Es gibt zwei wichtige Faktoren, welche über die Rangfolge entscheiden: Zuerst die <strong>Bindungskraft </strong>und danach die <strong>Assoziativität </strong>(Richtung).</li>
+</ul>
+</li>
+</ul>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="assertions.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="anwendungsentwicklung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

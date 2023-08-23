@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>For-Schleife | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-20"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="while_schleife.html" class="current-page-parent daddy">While Schleife</a>
+         <ul>
+            <li id="active"><a href="forschleife.html" class="active no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="while_schleife.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="schleifen_im_aktiven_modus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">For-Schleife</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_116_2" class="block iDevice_content">
+<div class="exe-text"><p>In der Programmierung kommt es immer wieder vor, dass man eine gewisse Sache mehrmals machen möchte. Zum Beispiel möchtest du, dass in der Konsole 3mal "Ha" gedruckt wird. Oder du möchtest, dass auf einem Bildschirm 10mal ein Kreis gezeichnet wird. Da Informatiker von Natur aus Faul sind und keine Lust haben 10mal den Code für einen Kreis zu schreiben, haben sie die For-Schleife entwickelt. Eine for-Schleife ist ein Konstrukt, das dir ermöglicht einen Codeblock so oft auszuführen, wie du es möchtest.</p>
+<p>Der Aufbau einer for-Schleife erinnert an den, einer if-Anweisung. Schau es dir mal an. Die For-Schleife sieht allgemein so aus:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>for (INTIALISIERUNG; BEDINGUNG; AKTION) 
+   ANWEISUNG</code></pre>
+</div>
+</div>
+<p><br />Am Anfang haben wir das Schlüsselwort for, dann kommt etwas innerhalb der runden Klammern und dann kommt der Code, der ausgeführt werden soll. Allerdings kommt bei der for-Schleife etwas anderes in die runden Klammern, als bei der if-Anweisung.</p>
+<p>Schauen wir uns das Ganze aber erstmal anhand eines Beispiels an. Nehmen wir an, du  möchtest drei Mal "wow" drucken. Dann machst du das mit einer For-Schleife wie folgt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int zaehler = 0; zaehler &lt; 3; zaehler = zaehler + 1) {
+   println("wow");
+}</code></pre>
+</div>
+</div>
+<p>Hier siehst du, wie die drei Aspekte von oben - Initialisierung, Bedingung und Aktion - aussehen. Was passiert hier aber?</p>
+<ul>
+<li><strong>Initialisierung: </strong>Als erstes müssen wir der for-Schleife eine Variable geben, die sie zum Zählen verwenden soll. Das ist die sogenannte <strong>Laufvariable</strong>. In unserem Beispiel ist das int zaehler. Diese haben wir auf 0 gesetzt, weil wir bei 0 anfangen wollen zu zählen. Wir hätten aber auch eine andere Zahl eintragen können. In den meisten Fällen steht hier aber eine 0 oder eine 1. <strong>Mithilfe der Initialisierung kannst du festlegen von wo deine Schleife anfängt zu zählen.</strong></li>
+<li><strong>Bedingung: </strong>Hier legen wir fest, wie lange bzw. wie oft unsere Schleife ausgeführt werden soll. Die Schleife wird nur durchlaufen, wenn die Bedinung true ist. Hier wird kontrolliert, ob unser zaehler &lt; 3 ist. Da wir bei 0 angefangen haben zu zählen, ergeben sich hier ingesamt 3 Durchläufe, bevor die Schleife endet und zwar für zaehler = 0, für zaehler = 1 und für zaehler = 2. Danach ist die Bedingung false und die Schleife wird nicht mehr durchgeführt. <strong>Mithilfe der Bedingung kannst du festlegen bis wohin deine Schleife zählt.</strong></li>
+<li><strong>Aktion: </strong>Die Aktion wird immer am Ende eines Schleifen-Durchlaufs durchgeführt - also nachdem der Code im Codeblock ausgeführt wurde. In unserem Fall wird der zaehler um 1 erhöht. Auf diese Weise zählt die Schleife von 0 auf 1 auf 2 und auf 3 hoch. Hier kann aber auch etwas anderes stehen. Zum Beispiel könnte der zaehler auch um 1 verringert werden oder auch um 2 erhöht werden. <strong>Mithilfe der Aktion kannst du steuern in welche Richtung und in welchen Schritten deine Schleife zählt.</strong></li>
+</ul>
+<p>Du kannst im Code-Block auf die Laufvariable zugreifen (z.B. um sie auszugeben). Häufig wird die Laufvariable i genannt (wahrscheinlich für engl. increment), aber man kann natürlich beliebige Namen verwenden.</p>
+<p>In der Schleifenaktion wird meist der Inkrementoperator ++ verwendet. Dieser erhöht die Variable um 1. Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+println(x);
+x++; // macht das gleiche wie x = x + 1;
+println(x);</code></pre>
+</div>
+</div>
+<p>Analog gibt es den Dekrementoperator -- :</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+println(x);
+x--; // macht das gleiche wie x = x - 1;
+println(x);</code></pre>
+</div>
+</div>
+<p><br />Die For-Schleife, die du also am häufigsten in irgendwelchem Code sehen wirst, ist folgende:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 3; i++) {
+   println(i);
+}</code></pre>
+</div>
+</div>
+<h1>Programmablaufplan</h1>
+<p>Falls du dich fragst, wie das Programmablaufplan einer For-Schleife aussieht:</p>
+<p><img src="pap_for.png" alt="PAP for Schleife" width="233" height="200" /></p>
+<p>Der Syntax einer For-Schleife wirkt am Anfang etwas sperrig. Schreibe viele davon und lass dir wie oben immmer die Laufvariable ausgeben, dann bekommest du schnell ein Gespür dafür. Beim Programmieren verwendet man für Wiederholungen fast immer die For-Schleife, es lohnt sich also...</p>
+<h1>Laufvariable ist lokal</h1>
+<p>Die Laufvariable einer For-Schleife ist eine<strong> lokale Variable</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 5; i++) {
+   // Laufvariable i ist lokal innerhalb der Schleife
+   println(i);
+}</code></pre>
+</div>
+</div>
+<p>Die Variable i wird im Kopf der Schleife (erste Zeile) deklariert und existiert für die Dauer der Schleife, also bis zur schließenden geschweiften Klammer. Das heißt, dass man nach der Schleife nicht mehr auf i zugreifen kann:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 5; i++) {
+   println(i);
+}
+println(i); // FEHLER!</code></pre>
+</div>
+</div>
+<p>Du kannst natürlich mehrere Schleifen hintereinander definieren, die alle eine Variable namens i verwenden. Es wird jedesmal eine neue Variable erzeugt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Variable i ist lokal
+for (int i = 0; i &lt; 5; i++) {
+   println(i);
+}
+
+// Hier wird ein neue Variable i eingeführt
+for (int i = 10; i &gt; 0; i--) {
+   println(i);
+}</code> </pre>
+</div>
+</div>
+<h1>Beispiele für For-Schleifen</h1>
+<h2>Rückwärts zählen</h2>
+<p>Du kannst natürlich auch rückwärts durch die Zahlen gehen, wenn du die Initialisierung, Bedingung und Aktion entsprechend anpasst.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 10; i &gt; 0; i--) {
+   println(i);
+}</code> </pre>
+</div>
+</div>
+<p>Ein häufiger <strong>Anfängerfehler</strong> ist hier, dass die Bedinung "falsch herum" gedacht wird, also i &lt; 0. In diesem Fall wird die Schleife gar nicht ausgeführt, da i zu Beginn 10 ist, also nicht kleiner 0.</p>
+<h2>Jede zweite Zahl</h2>
+<p>Du kannst auch in 2er-Schritten durch die Zahlen schreiten. Beachte die Aktion.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt;= 10; i = i + 2) {
+   println(i);
+}</code></pre>
+</div>
+</div>
+<h2>Summe</h2>
+<p>Eine typische Anwendung der For-Schleife ist die Berechnung der Summe 1 + 2 + 3 + ... + N, wobei N eine beliebige Zahl ist. Eine wichtige Erkenntnis ist, dass dazu eine zusätzliche Variable zum Speichern der Zwischenergebnisse nötig ist.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int n = 5; // bis wohin gehen?
+
+int summe = 0; // zum Aufsammeln
+
+for (int i = 1; i &lt;= n; i++) {
+   summe = summe + i;
+}
+
+println(summe); // Ausgeben</code></pre>
+</div>
+</div>
+<p>Hier lohnt sich vielleicht der Blick auf eine Tabelle:</p>
+<table style="width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 25%;"><strong>Durchlauf</strong></td>
+<td style="width: 25%;"><strong>i</strong></td>
+<td style="width: 25%;"><strong>i &lt;= 5</strong></td>
+<td style="width: 25%;"><strong>summe</strong></td>
+</tr>
+<tr>
+<td style="width: 25%;">1</td>
+<td style="width: 25%;">1</td>
+<td style="width: 25%;">true</td>
+<td style="width: 25%;">1</td>
+</tr>
+<tr>
+<td style="width: 25%;">2</td>
+<td style="width: 25%;">2</td>
+<td style="width: 25%;">true</td>
+<td style="width: 25%;">3</td>
+</tr>
+<tr>
+<td style="width: 25%;">3</td>
+<td style="width: 25%;">3</td>
+<td style="width: 25%;">true</td>
+<td style="width: 25%;">6</td>
+</tr>
+<tr>
+<td style="width: 25%;">4</td>
+<td style="width: 25%;">4</td>
+<td style="width: 25%;">true</td>
+<td style="width: 25%;">10</td>
+</tr>
+<tr>
+<td style="width: 25%;">5</td>
+<td style="width: 25%;">5</td>
+<td style="width: 25%;">true</td>
+<td style="width: 25%;">15</td>
+</tr>
+<tr>
+<td style="width: 25%;">6</td>
+<td style="width: 25%;">6</td>
+<td style="width: 25%;">false</td>
+<td style="width: 25%;">---</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Funktionsgraphen zeichnen</h2>
+<h3>Lineare Funktionen</h3>
+<p>Mit einer Schleife kann man natürlich auch super zeichnen, z.B. die einfache lineare Funktion f(x) = x. Als Laufvariable nehmen wir direkt das x, das von 0 bis 90 in Zehnerschritten läuft. Nur zur Verständlichkeit führen wir eine lokale Variable y ein.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int x = 0; x &lt; 100; x = x + 10) {
+   int y = x;
+   ellipse(x, y, 5, 5);
+}</code></pre>
+</div>
+</div>
+<p>Die Funktion "steht Kopf", weil die y-Achse ja nach unten zeigt. Wenn wir das richten wollen, müssen wir y invertieren.</p>
+<p><img src="for_graph1.png" alt="For Graph 1" width="99" height="100" /></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int x = 0; x &lt; 100; x = x + 10) {
+   int y = 100 - x;
+   ellipse(x, y, 5, 5);
+}</code></pre>
+</div>
+</div>
+<p><img src="for_graph2.png" alt="For Graph 2" width="115" height="113" /></p>
+<p>Jetzt können wir auch andere Funktionen zeichnen, zum Beispiel die Funktion f(x) = x / 2 + 50, also eine Gerade mit y-Schnittstelle 50 und Steigung 1/2. Dazu sollten wir x und y als float wählen, um ganzzahlige Division zu vermeiden. Beachte auch, dass der komplette Term (x/2 + 50) invertiert werden muss.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (float x = 0; x &lt; 100; x = x + 10) {
+   float y = 100 - (x/2 + 50);
+   ellipse(x, y, 5, 5);
+}</code></pre>
+</div>
+</div>
+<p><img src="for_graph3.png" alt="For Graph 3" width="117" height="117" /></p>
+<h3>Sinuskurve</h3>
+<p>Wenn du eine Sinuskurve zeichnen möchtest, musst du Folgendes bedenken:</p>
+<ol>
+<li>Die x-Werte für eine Phase der Sinuskurve laufen von 0 bis 2*PI, also ungefähr von 0 bis 6. Du möchtest deine Kurve aber über die x-Pixel 0 bis 100 darstellen.</li>
+<li>Der y-Werte der Sinusfunktion liegen im Bereich von -1 bis +1. Du möchtest aber Punkte auf einem y-Bereich von 0 bis 100 darstellen. Man beachte außerdem, dass die y-Achse des Grafikfensters nach unten zeigt.</li>
+</ol>
+<p>Daher muss unser erster (naiver) Versuch scheitern:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200,100);
+   for (float x = 0; x &lt;= width; x += 5) {
+   ellipse(x, sin(x), 8, 8);
+}</code></pre>
+</div>
+</div>
+<p>Warum? Erstens werden alle 6 Pixel (x-Wert) eine volle Sinusphase durchlaufen. Zweitens schwanken die Werte von sin(x) zwischen -1 und 1.</p>
+<p><img src="sinus1.png" alt="Sinus 2" width="175" height="100" /></p>
+<p>Also müssen wir zunächst unseren x-Wert in den Bereich von 0 bis 2*PI bringen. Das machen wir mit der Processing-Funktion map(). Schau in der Dokumentation nach, wie map() funktioniert.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (float x = 0; x &lt;= width; x += 5) {
+   float x2 = map(x, 0, width, 0, 2*PI);
+   // ...
+}</code></pre>
+</div>
+</div>
+<p>Der Wert x2 ist jetzt im Bereich 0 bis 2*PI. Wenn wir jetzt sin(x2) anwenden, müssen wir noch das Ergebnis von [-1, 1] auf [0, 100] abbilden. Um nebenbei noch die Achse umzudrehen, bilden wir von [-1, 1] auf [100, 0] ab.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200,100);
+for (float x = 0; x &lt;= width; x += 5) {
+   float x2 = map(x, 0, width, 0, 2*PI);
+   float y2 = sin(x2);
+   float y = map(y2, -1, 1, height, 0);
+   ellipse(x, y, 8, 8);
+}</code></pre>
+</div>
+</div>
+<p>Man kann sich das so vorstellen, dass sich (x2, y2) im Raum der Sinuskurve befindet (x2 in [0, 2*PI] und y2 in [-1,1]) und (x, y) sich im Raum des Grafikfensters (je in [0,100]). Die zweimalige Anwendung von map() transformiert die Werte jeweils von einem in den anderen Raum.</p>
+<p><img src="sinus2.png" alt="Sinus 2" width="174" height="100" /></p>
+<h1>Coding Style</h1>
+<p>Bitte achte darauf, wo Leerzeichen und Zeilenumbrüche gemacht werden, und wo nicht.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 3; i++) {
+   println(i);
+}</code></pre>
+</div>
+</div>
+<p>Alternativ:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 3; i++)
+{
+   println(i);
+}</code></pre>
+</div>
+</div>
+<p>Denke auch daran, deinen Code mit<strong> Bearbeiten &gt; Autoformatierung</strong> von Processing korrekt einrücken zu lassen (Tastenkürzel STRG+T bzw. CMD+T).</p>
+<h1>Zusammenfassung</h1>
+<p>Eine For-Schleife erlaubt es, eine Zahl von Codezeilen (Code-Block) wiederholt auszuführen. Die allgemeine Form der For-Schleife lautet:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>for (INTIALISIERUNG; BEDINGUNG; AKTION)
+   ANWEISUNG</code></pre>
+</div>
+</div>
+<p>Dabei ist die ANWEISUNG i.d.R. ein Code-Block.</p>
+<p>Man kann die For-Schleife als Kurzschreibweise für eine bestimmte Form der While-Schleife auffassen.</p>
+<p>In der For-Schleife wird in der INITIALISIERUNG zunächst eine Laufvariable erschaffen und gesetzt. Diese Variable ist eine lokale Variable innerhalb des Code-Blocks der Schleife.</p>
+<p>Die BEDINGUNG ist die Schleifenbedingung. Nur wenn diese wahr ist, wird die ANWEISUNG (i.d.R. ein Code-Block) durchgeführt.</p>
+<p>Die AKTION wird am Ende eines Schleifendurchlaufs durchgeführt. Hier sollte die Laufvariable verändert werden (z.B. hoch- oder runtergezählt), da sonst die Gefahr besteht, dass die Schleife endlos läuft.</p>
+<p>Ein Beispiel für eine typische For-Schleife:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 3; i = i + 1) {
+   println("Runde " + i);
+}</code></pre>
+</div>
+</div>
+<pre><br /><br /></pre></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="while_schleife.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="schleifen_im_aktiven_modus.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

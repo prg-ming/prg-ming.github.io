@@ -1,0 +1,1160 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Zahlensysteme | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-58"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li id="active"><a href="zahlensysteme.html" class="active no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="gleitkommazahlenformat.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="typumwandlung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Zahlensysteme</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id80">
+<div class="iDevice emphasis0" >
+<div id="ta80_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Zahlensysteme werden zur Darstellung von Zahlen verwendet. Die Zahlen werden dabei nach bestimmten Regeln als Folge von Ziffern bzw. Zeichen dargestellt. Die uns bekanntesten Zahlensysteme sind das Dezimalsystem (Zehnersystem), das Dualsystem (Zweiersystem) und das Hexadezimalsystem (Sechzehnersystem). Es gibt noch weitere Zahlensysteme, die aber in der Digitaltechnik und Computertechnik keine große Rolle spielen.</p>
+<p>Jedes Zahlensystem besteht aus Nennwerten. Die Anzahl der Nennwerte ergibt sich aus der Basis. Der größte Nennwert entspricht der Basis minus (-) 1. Wird der größte Nennwert überschritten, entsteht aus dem Übertrag der nächst höhere Stellenwert.</p>
+<table style="width: 100%;" class="exe-table">
+<tbody>
+<tr>
+<th style="width: 25%;"></th>
+<th style="width: 25%;">Duales Zahlensystem</th>
+<th style="width: 25%;">Dezimales Zahlensystem</th>
+<th style="width: 25%;">Hexadezimales Zahlensystem</th>
+</tr>
+<tr>
+<th style="width: 25%;">Nennwerte</th>
+<td style="width: 25%;">0 1</td>
+<td style="width: 25%;">0 1 2 3 4 5 6 7 8 9</td>
+<td style="width: 25%;">0 1 2 3 4 5 6 7 8 9 A B C D E F</td>
+</tr>
+<tr>
+<th style="width: 25%;">Basis</th>
+<td style="width: 25%;">2</td>
+<td style="width: 25%;">10</td>
+<td style="width: 25%;">16</td>
+</tr>
+<tr>
+<th style="width: 25%;">Größter Nennwert</th>
+<td style="width: 25%;">1</td>
+<td style="width: 25%;">9</td>
+<td style="width: 25%;">F</td>
+</tr>
+<tr>
+<th style="width: 25%;">Stellenwerte</th>
+<td style="width: 25%;">
+<p>2 <sup>0</sup> = 1, <br />2 <sup>1</sup> = 2, <br />2 <sup>2</sup> = 4, <br />usw.</p>
+</td>
+<td style="width: 25%;">10 <sup>0</sup> = 1, <br />10 <sup>1</sup> = 10, <br />10 <sup>2</sup> = 100, <br />usw.</td>
+<td style="width: 25%;">16 <sup>0</sup> = 1, <br />16 <sup>1</sup> = 16, <br />16 <sup>2</sup> = 256, <br />usw.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1>Zahlensysteme im Vergleich</h1>
+<table class="exe-table">
+<tbody>
+<tr>
+<th colspan="5" class="" style="text-align: center;"><span style="color: #339966;">Binär/Dual</span></th>
+<th colspan="2" class=" " style="text-align: center;"><span style="color: #3366ff;">Dezimal</span></th>
+<th colspan="2" class=" " style="text-align: center;"><span style="color: #ff6600;">Hexadezimal</span></th>
+<th colspan="5" class=" " style="text-align: center;"><span style="color: #339966;">Binär/Dual</span></th>
+<th colspan="2" class=" " style="text-align: center;"><span style="color: #3366ff;">Dezimal</span></th>
+<th colspan="2" class=" " style="text-align: center;"><span style="color: #ff6600;">Hexadezimal</span></th>
+</tr>
+<tr>
+<th style="text-align: right;" class=" "><span style="color: #339966;">16</span></th>
+<th style="text-align: center;" class=" "><span style="color: #339966;">8</span></th>
+<th style="text-align: center;" class=" "><span style="color: #339966;">4</span></th>
+<th style="text-align: center;" class=" "><span style="color: #339966;">2</span></th>
+<th style="text-align: left;" class=" "><span style="color: #339966;">1</span></th>
+<th class=" "><span style="color: #3366ff;">10</span></th>
+<th class=" "><span style="color: #3366ff;">1</span></th>
+<th class=" "><span style="color: #ff6600;">16</span></th>
+<th class=" "><span style="color: #ff6600;">1</span></th>
+<th class=" "><span style="color: #339966;">16</span></th>
+<th class=" "><span style="color: #339966;">8</span></th>
+<th class=" "><span style="color: #339966;">4</span></th>
+<th class=" "><span style="color: #339966;">2</span></th>
+<th class=" "><span style="color: #339966;">1</span></th>
+<th class=" "><span style="color: #3366ff;">10</span></th>
+<th class=" "><span style="color: #3366ff;">1</span></th>
+<th class=" "><span style="color: #ff6600;">16</span></th>
+<th class=" "><span style="color: #ff6600;">1</span></th>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">3</span></td>
+<td></td>
+<td><span style="color: #ff6600;">D</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">4</span></td>
+<td></td>
+<td><span style="color: #ff6600;">E</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">2</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">5</span></td>
+<td></td>
+<td><span style="color: #ff6600;">F</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">3</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">3</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">6</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">0</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">4</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">4</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">7</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">5</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">5</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">8</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">2</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">6</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">6</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">9</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">3</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">7</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">7</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #3366ff;">0</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">4</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">8</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">8</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">5</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #3366ff;">9</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">9</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">6</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">0</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">A</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #3366ff;">3</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">7</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: left;"><span style="color: #339966;">1</span></td>
+<td style="text-align: right;"><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">1</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">B</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">1</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #339966;">0</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td><span style="color: #3366ff;">4</span></td>
+<td><span style="color: #ff6600;">1</span></td>
+<td><span style="color: #ff6600;">8</span></td>
+</tr>
+<tr>
+<td style="text-align: right;"><span style="color: #339966;">0</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">1</span></td>
+<td style="text-align: center;"><span style="color: #339966;">0</span></td>
+<td style="text-align: left;"><span style="color: #339966;">0</span></td>
+<td style="text-align: right;"><span style="color: #3366ff;">1</span></td>
+<td><span style="color: #3366ff;">2</span></td>
+<td style="text-align: right;"></td>
+<td><span style="color: #ff6600;">C</span></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h1><br />Dezimales Zahlensystem</h1>
+<p>Das dezimale Zahlensystem kennzeichnet die Verwendung von zehn verschiedenen Ziffern innerhalb eines Stellenwertsystems. Eine Stelle kann jeweils einen Wert von 0 bis 9 annehmen. Damit war erstmals ein einfaches und schnelles Rechnen möglich.</p>
+<p>Die Grundlagen des Dezimalsystems sind aus der Tatsache hervorgegangen, dass wir Menschen jeweils 10 Finger und 10 Zehen haben. Da ist es naheliegend, dass wir auf der Basis von 10 rechnen. So beruhen viele Zahlensysteme auf einer natürlichen Gliederung, die sich durch die fünf Finger einer Hand, die 10 Finger beider Hände oder die sogar insgesamt 20 aus Finger und Zehen ergeben.</p>
+<p>Bei den von uns verwendeten Zahlen für das dezimale Zahlensystem handelt es sich um arabische Ziffern indischen Ursprungs. Sie sind im Laufe der Jahrhunderte über Südostasien und das unter arabischem Einfluss stehende Spanien nach Europa gekommen.</p>
+<p>Bekannt wurde das Dezimalsystem in Deutschland durch den Rechenmeister Adam Riese (1492-1559), der ursprünglich Adam Ries, ohne e am Ende, heißt. Aus der Übergangszeit vom römischen ins dezimale Zahlensystem stammt der Spruch "Das macht nach Adam Riese...". Hiermit wollte man ausdrücken, dass man mit dem dezimalen Zahlensystem gerechnet hat. Heute wird der Spruch immer dann verwendet, wenn man die Richtigkeit eines Rechenergebnisses unterstreichen möchte.</p>
+<p><strong>Nennwerte:</strong> 0 1 2 3 4 5 6 7 8 9 <br /><strong>Basis:</strong> 10 <br /><strong>Größter Nennwert:</strong> 9 <br /><strong>Stellenwerte:</strong> 10 <sup>0</sup> = 1, 10<sup>1</sup> = 10, 10<sup>2</sup> = 100, usw.</p>
+<h1>Duales Zahlensystem</h1>
+<blockquote>
+<p><em>Es gibt 10 Arten von Menschen: Diejenigen, die das binäre System verstehen, und die, die es nicht verstehen.</em></p>
+</blockquote>
+<p>Die dezimale Zählweise (10er) mag uns logisch erscheinen. Doch die Natur hat keine 10 Finger und 10 Zehen. Sie operiert auf einem einfacheren Zahlensystem. Dem dualen Zahlensystem mit der Basis 2. Dabei handelt es sich um zwei Zustände. Ja oder Nein, Ein oder Aus.</p>
+<p>Das Duale Zahlensystem ist entstanden, weil man in der elektronischen Datenverarbeitung nur 2 Zustände unterscheiden kann. Diese sogenannten binären Zustände werden üblicherweise mit H und L abgekürzt. Die logischen Zustände sind 1 und 0.</p>
+<h2>Binär (Binärsystem)</h2>
+<p>Der Begriff Binär bezeichnet nach DIN 44300 etwas, das zwei Zeichen annehmen kann. Unter Dual versteht man ein Zahlensystem, das nur aus zwei Zeichen besteht. Beispiele:</p>
+<ul>
+<li><strong>Seiten</strong>: links/rechts</li>
+<li><strong>Frage</strong>: Ja/Nein</li>
+<li><strong>Wert</strong>: wahr/falsch</li>
+<li><strong>Farbe</strong>: weiß/schwarz</li>
+<li><strong>Spannung</strong>: 0V/5V</li>
+<li><strong>Licht</strong>: An/Aus</li>
+</ul>
+<p><strong>Nennwerte:</strong> 0 und 1 <br /><strong>Basis:</strong> 2 <br /><strong>Größter Nennwert:</strong> 1 <br /><strong>Stellenwerte:</strong> 2 <sup>0</sup> = 1, 2<sup>1</sup> = 2, 2<sup>2</sup> = 4, usw.</p>
+<p>Zum besseren Verständnis der Zählweise im Dualen Zahlensystem dient diese Tabelle. In der ersten Stelle wird ständig zwischen 0 und 1 gewechselt. In der 2. Stelle wird zwischen 00 und 11 gewechselt. In der 3. Stelle wird zwischen 0000 und 1111 gewechselt.</p>
+<table class="exe-table">
+<thead>
+<tr style="height: 19px;">
+<th style="height: 19px; width: 30.2333px;">8 (2<sup>3</sup>)</th>
+<th style="height: 19px; width: 30.2333px;">4 (2<sup>2</sup>)</th>
+<th style="height: 19px; width: 30.2333px;">2 (2<sup>1</sup>)</th>
+<th style="height: 19px; width: 30.2333px;">1 (2<sup>0</sup>)</th>
+<th style="height: 19px; width: 68.6667px;">Dezimalzahl</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">0</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">1</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">2</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">3</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">4</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">5</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">6</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">7</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">8</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">9</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">10</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">11</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">12</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">13</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">0</td>
+<th style="height: 18px; width: 68.6667px;">14</th>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<td style="height: 18px; width: 30.2333px;">1</td>
+<th style="height: 18px; width: 68.6667px;">15</th>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>In dieser Tabelle siehst du, welche Werte sich aus 2<sup>n</sup> ergeben. Die jeweiligen Datentypen in dieser Größe sind dazu geschrieben. <code>byte</code> hat zum Beispiel 8 Bit. 28 ergibt 256. Der Wertebereich von <code>byte</code> ist allerings -128 bis 127, da auch negative Werte dazugehören.</p>
+<table class="exe-table" style="width: 100%;">
+<thead>
+<tr style="height: 19px;">
+<th style="height: 19px; width: 65.3333px;">Exponent n</th>
+<th style="height: 19px; width: 20px;">2<sup>n</sup></th>
+<th style="height: 19px; width: 65.3333px;">Exponent n</th>
+<th style="height: 19px; width: 36.6667px;">2<sup>n</sup></th>
+<th style="height: 19px; width: 65.3333px;">Exponent n</th>
+<th style="height: 19px; width: 60px;">2<sup>n</sup></th>
+<th style="height: 19px; width: 65.3333px;">Exponent n</th>
+<th style="height: 19px; width: 76.6667px;">2<sup>n</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">1</td>
+<td style="height: 18px; width: 20px;">2</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">9</td>
+<td style="height: 18px; width: 36.6667px;">512</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">17</td>
+<td style="height: 18px; width: 60px;">131.972</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">25</td>
+<td style="height: 18px; width: 76.6667px;">33.554.432</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">2</td>
+<td style="height: 18px; width: 20px;">4</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">10</td>
+<td style="height: 18px; width: 36.6667px;">1.024</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">18</td>
+<td style="height: 18px; width: 60px;">262.144</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">26</td>
+<td style="height: 18px; width: 76.6667px;">67.108.864</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">3</td>
+<td style="height: 18px; width: 20px;">8</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">11</td>
+<td style="height: 18px; width: 36.6667px;">2.048</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">19</td>
+<td style="height: 18px; width: 60px;">524.288</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">27</td>
+<td style="height: 18px; width: 76.6667px;">134.217.728</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">4</td>
+<td style="height: 18px; width: 20px;">16</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">12</td>
+<td style="height: 18px; width: 36.6667px;">4.096</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">20</td>
+<td style="height: 18px; width: 60px;">1.048.576</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">28</td>
+<td style="height: 18px; width: 76.6667px;">268.435.456</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">5</td>
+<td style="height: 18px; width: 20px;">32</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">13</td>
+<td style="height: 18px; width: 36.6667px;">8.192</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">21</td>
+<td style="height: 18px; width: 60px;">2.097.152</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">29</td>
+<td style="height: 18px; width: 76.6667px;">536.870.912</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">6</td>
+<td style="height: 18px; width: 20px;">64</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">14</td>
+<td style="height: 18px; width: 36.6667px;">16.384</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">22</td>
+<td style="height: 18px; width: 60px;">4.194.304</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">30</td>
+<td style="height: 18px; width: 76.6667px;">1.073.741.824</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;">7</td>
+<td style="height: 18px; width: 20px;">128</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">15</td>
+<td style="height: 18px; width: 36.6667px;">32.768</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">23</td>
+<td style="height: 18px; width: 60px;">8.388.608</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">31</td>
+<td style="height: 18px; width: 76.6667px;">2.147.483.648</td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 65.3333px; text-align: right;"><strong>8 (byte)</strong></td>
+<td style="height: 18px; width: 20px;"><strong>256</strong></td>
+<td style="height: 18px; width: 65.3333px; text-align: right;"><strong>16 (short)</strong></td>
+<td style="height: 18px; width: 36.6667px;"><strong>65</strong>.<strong>536</strong></td>
+<td style="height: 18px; width: 65.3333px; text-align: right;">24</td>
+<td style="height: 18px; width: 60px;">16.777<strong>.</strong>216</td>
+<td style="height: 18px; width: 65.3333px; text-align: right;"><strong>32 (int)</strong></td>
+<td style="height: 18px; width: 76.6667px;"><strong>4.294.967.296</strong></td>
+</tr>
+</tbody>
+</table>
+<h1>Hexadezimales Zahlensystem</h1>
+<p>Große Binärzahlen haben den Nachteil, dass sie sehr unübersichtlich sind. Um dem Abhilfe zu schaffen hat man das Hexadezimalsystem eingeführt. Dabei werden 4 Bit einer Dualzahl durch ein hexadezimales Zeichen ersetzt. <br />Da eine 4-Bit Dualzahl 16 Zustände annehmen kann, wir aber nur 10 dezimale Zahlen kennen, hat man dem hexadezimalen Zahlensystem 6 Buchstaben hinzugefügt.</p>
+<p><strong>Nennwerte:</strong> 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F <br /><strong>Basis:</strong> 16 <br /><strong>Größter Nennwert:</strong> F <br /><strong>Stellenwerte:</strong> 16 <sup>0</sup> = 1, 16<sup>1</sup> = 16, 16<sup>2</sup> = 256, usw.</p>
+<p>Zum besseren Verständnis der Zählweise im hexadezimalen Zahlensystem dient diese Tabelle. Jeweils 4 Dualstellen bilden eine Hexadezimalstelle.</p>
+<table class="exe-table"><colgroup> <col /> <col /> <col /> <col /> <col /> <col /> </colgroup>
+<tbody>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">Dezimal</th>
+<th colspan="4" style="height: 18px; width: 60px; text-align: center;">Binär/Dual</th>
+<th style="height: 18px; width: 72.6667px; text-align: center;">Hexadezimal</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">0</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">0</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">1</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">1</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">2</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">2</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">3</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">3</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">4</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">4</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">5</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">5</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">6</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">6</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">7</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">7</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">8</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">8</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">9</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">9</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">10</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">A</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">11</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">B</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">12</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">C</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">13</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">D</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">14</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">0</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">E</th>
+</tr>
+<tr style="height: 18px;">
+<th style="height: 18px; width: 45.3333px; text-align: center;">15</th>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<td style="height: 18px; width: 10.65px; text-align: center;">1</td>
+<th style="height: 18px; width: 72.6667px; text-align: center;">F</th>
+</tr>
+</tbody>
+</table>
+<h2>Hexadezimale Zahlen in der Computertechnik</h2>
+<p>In der Computertechnik ist das duale Zahlensystem maßgeblich. Manchmal wird aber auch das Hexadezimalsystem verwendet. In der Regel zur übersichtlicheren Darstellung von großen dualen Zahlen. So werden lange Bitfolgen zu je 4 Bit gruppiert und in eine hexadezimale Zahl umgerechnet. Auf diese Weise entsteht aus einer langen Folge von 1 und 0 eine kürzere hexadezimale Zahl. Zur leichteren Lesbarkeit gruppiert man hexadezimale Zahlen dann nochmal in 2er oder 4er Gruppen.  Hexadezimale Zahlen oder die hexadezimale Darstellung ist also eine andere Form der Darstellung von Bitfolgen.</p>
+<p>Das Hexadezimalsystem oder Sechzehnersystem dient zur übersichtlicheren und kompakteren Darstellung von langen Bitfolgen. Außerdem wird es bei der Assembler-Programmierung für die Adressierung von I/O- und Speicher-Bausteinen verwendet.</p>
+<table class="exe-table"><colgroup> <col /> <col /> <col /> <col /> <col /> <col /> <col /> </colgroup>
+<tbody>
+<tr>
+<th colspan="6">010100001010110000111111</th>
+<td>Bitfolge</td>
+</tr>
+<tr>
+<th>0101</th>
+<th>0000</th>
+<th>1010</th>
+<th>1100</th>
+<th>0011</th>
+<th>1111</th>
+<td>gruppierte Bitfolge</td>
+</tr>
+<tr>
+<th>5</th>
+<th>0</th>
+<th>A</th>
+<th>C</th>
+<th>3</th>
+<th>F</th>
+<td>Umwandlung in Hexzahlen</td>
+</tr>
+<tr>
+<th colspan="2">50</th>
+<th colspan="2">AC</th>
+<th colspan="2">3F</th>
+<td>gruppierte Hexzahlen</td>
+</tr>
+</tbody>
+</table>
+<h2>Hexadezimale Zahlen in der Gestaltung</h2>
+<p>Ein weiterer Bereich, in dem dir das Hexadezimale Zahlensystem begegnen wird, ist die Gestaltung. Hier wird das System verwendet, um RGB-Farbwerte anzugeben. Der Wert #FFFFFF steht zum Beipspiel für weiß und #000000 für schwarz. Das liegt daran, dass der hexadezimale Wert FF genau 255 ergibt und somit die Zahlenwerte von 0 bis 255 damit dargestellt werden können, die das RGB-System verwendet. Hier siehst du eine kleine Tabelle zur Veranschaulichung einiger Farbwerte:</p>
+<table class="exe-table" style="height: 144px;"><colgroup> <col /> <col /> <col /> </colgroup>
+<tbody>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 48.6667px;"><span style="color: #000000;"><strong>Weiß</strong></span></td>
+<td style="height: 18px; width: 46.6667px;"><strong>#ffffff</strong></td>
+<td style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:255 </span><span style="color: #339966;">G:255 </span><span style="color: #0000ff;">B:255</span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 48.6667px;"><strong>Schwarz</strong></td>
+<td style="height: 18px; width: 46.6667px;"><strong>#000000</strong></td>
+<td style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:000 </span><span style="color: #339966;">G:000  </span><span style="color: #0000ff;">B:000</span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td colspan="1" style="height: 18px; width: 48.6667px;"><span style="color: #c1c7d0;"><strong>Grau</strong></span></td>
+<td colspan="1" style="height: 18px; width: 46.6667px;"><strong>#e1e1e1</strong></td>
+<td colspan="1" style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:225</span> <span style="color: #339966;">G:225</span> <span style="color: #0000ff;">B:225</span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 48.6667px;"><span style="color: #ff0000;"><strong>Rot</strong></span></td>
+<td style="height: 18px; width: 46.6667px;"><strong>#ff0000</strong></td>
+<td style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:255 <span style="color: #339966;">G:000  </span><span style="color: #0000ff;">B:000</span></span><span style="color: #0000ff;"><br /></span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 48.6667px;"><span style="color: #0000ff;"><strong>Blau</strong></span></td>
+<td style="height: 18px; width: 46.6667px;"><strong>#0000ff</strong></td>
+<td style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:000 </span><span style="color: #339966;">G:000 </span><span style="color: #0000ff;">B:255</span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td style="height: 18px; width: 48.6667px;"><span style="color: #339966;"><strong>Grün</strong></span></td>
+<td style="height: 18px; width: 46.6667px;"><strong>#00ff00</strong></td>
+<td style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:000 </span><span style="color: #339966;">G:255 </span><span style="color: #0000ff;">B:000</span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td colspan="1" style="height: 18px; width: 48.6667px;"><span style="color: #ff9900;"><strong>Gelb</strong></span></td>
+<td colspan="1" style="height: 18px; width: 46.6667px;"><strong>#ffff00</strong></td>
+<td colspan="1" style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:225</span> <span style="color: #339966;">G:225</span> <span style="color: #0000ff;">B:000 </span></strong></td>
+</tr>
+<tr style="height: 18px;">
+<td colspan="1" style="height: 18px; width: 48.6667px;"><span style="color: #cc99ff;"><strong>Lila</strong></span></td>
+<td colspan="1" style="height: 18px; width: 46.6667px;"><strong>#8c00ff</strong></td>
+<td colspan="1" style="height: 18px; width: 108.683px;"><strong><span style="color: #ff0000;">R:140 </span><span style="color: #339966;">G:000 </span><span style="color: #0000ff;">B:255</span></strong></td>
+</tr>
+</tbody>
+</table>
+<h1><br /><br />Zahlensysteme umrechnen</h1>
+<h2>Dezimalzahl in eine andere Zahl umwandeln</h2>
+<h3>Hexadezimal</h3>
+<p>Um eine Dezimalzahl in eine Hexadezimalzahl umzuwandeln, muss die Dezimalzahl nur durch die Zahl 16 dividiert und der Rest notiert werden.</p>
+<p>Da eine Zahl dividiert durch 16 immer nur einen Rest von 0 bis 15 ergeben kann (da beim Rest 16 der Quotient um 1 erhöht werden müsste), entsteht daraus die äquivalente Hexadezimalzahl. Folgende Schritte müssen immer wieder durchgeführt werden:</p>
+<ol>
+<li>Die Zahl durch 16 dividieren</li>
+<li>Den Rest der Division notieren</li>
+<li>Falls das Ergebnis nicht 0 ist, Schritt 1 und 2 wiederholen</li>
+<li>Nun müssen alle Rest-Zahlen, die größer 9 sind durch die entsprechenden hexadezimalen Zahlen (A, B, C, D, E, F) ersetzt werden.</li>
+<li>Die umgewandelten Rest-Zahlen in umgekehrter Reihenfolge ergeben die hexadezimale Zahl</li>
+</ol>
+<p>Beispiel:</p>
+<table border="1" class="exe-table">
+<thead>
+<tr style="height: 18px;">
+<td style="width: 33.3333%; height: 18px;"><strong>Rechnung</strong></td>
+<td style="width: 33.3333%; height: 18px;"><strong>Ergebnis</strong></td>
+<td style="width: 33.3333%; height: 18px;"><strong>Rest</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 18px;">
+<td style="width: 33.3333%; height: 18px; text-align: right;">45791:16 =</td>
+<td style="width: 33.3333%; height: 18px;">2861</td>
+<td style="width: 33.3333%; height: 18px;">15 = F</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 33.3333%; height: 18px; text-align: right;">2861:16 =</td>
+<td style="width: 33.3333%; height: 18px;">178</td>
+<td style="width: 33.3333%; height: 18px;">13 = D</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 33.3333%; height: 18px; text-align: right;">178:16 =</td>
+<td style="width: 33.3333%; height: 18px;">11</td>
+<td style="width: 33.3333%; height: 18px;">2</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 33.3333%; height: 18px; text-align: right;">11:16 =</td>
+<td style="width: 33.3333%; height: 18px;">0</td>
+<td style="width: 33.3333%; height: 18px;">11 = B</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Die Dezimalzahl 45791 ergibt daher die Hexadezimalzahl:</p>
+<p>45791<sub>10</sub> = B2DF<sub>16</sub></p>
+<h3>Binär</h3>
+<p>Um eine Dezimalzahl in eine Binärzahl umzuwandeln, muss die Dezimalzahl nur durch die Zahl 2 dividiert und der Rest notiert werden. Da eine Zahl dividiert durch 2 immer nur den Rest 0 oder 1 ergeben kann, entsteht daraus die äquivalente Binärzahl.</p>
+<p>Folgende Schritte müssen immer wieder durchgeführt werden:</p>
+<ol>
+<li>Die Zahl durch 2 dividieren</li>
+<li>Den Rest der Division notieren</li>
+<li>Falls das Ergebnis nicht 0 ist, Schritt 1 und 2 wiederholen</li>
+<li>Die Rest-Zahlen in umgekehrter Reihenfolge ergeben die binäre Zahl</li>
+</ol>
+<p>Beispiel:</p>
+<p></p>
+<table border="1" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 33.3333%;"><strong>Rechnung </strong></td>
+<td style="width: 33.3333%;"><strong>Ergebnis </strong></td>
+<td style="width: 33.3333%;"><strong>Rest </strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">190:2 =</td>
+<td style="width: 33.3333%;">95</td>
+<td style="width: 33.3333%;">0</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">95:2 =</td>
+<td style="width: 33.3333%;">47</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">47:2 =</td>
+<td style="width: 33.3333%;">23</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">23:2 =</td>
+<td style="width: 33.3333%;">11</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">11:2 =</td>
+<td style="width: 33.3333%;">5</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">5:2 =</td>
+<td style="width: 33.3333%;">2</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">2:2 =</td>
+<td style="width: 33.3333%;">1</td>
+<td style="width: 33.3333%;">0</td>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: right;">1:2 =</td>
+<td style="width: 33.3333%;">0</td>
+<td style="width: 33.3333%;">1</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br />Die Dezimalzahl 190 ergibt daher die Binärzahl:</p>
+<p>190<sub>10</sub> = 10111110<sub>2</sub></p>
+<h2>Eine andere Zahl in Dezimalzahl umwandeln</h2>
+<p>Jede Stelle einer Dezimalzahl entspricht einem bestimmten Stellenwert:</p>
+<table class="exe-table" style="height: 72px; width: 100%;">
+<tbody>
+<tr style="height: 18px;">
+<th style="width: 177.083px; height: 18px;">Zahl</th>
+<td style="width: 177.1px; height: 18px;">7</td>
+<td style="width: 177.083px; height: 18px;">2</td>
+<td style="width: 177.1px; height: 18px;">0</td>
+<td style="width: 177.083px; height: 18px;">9</td>
+</tr>
+<tr style="height: 18px;">
+<th style="width: 177.083px; height: 18px;">Stellenwert</th>
+<td style="width: 177.1px; height: 18px;">1000</td>
+<td style="width: 177.083px; height: 18px;">100</td>
+<td style="width: 177.1px; height: 18px;">10</td>
+<td style="width: 177.083px; height: 18px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<th style="width: 177.083px; height: 36px;">Stellenwert in Potenzschreibweise</th>
+<td style="width: 177.1px; height: 36px;">10<sup>3</sup></td>
+<td style="width: 177.083px; height: 36px;">10<sup>2</sup></td>
+<td style="width: 177.1px; height: 36px;">10<sup>1</sup></td>
+<td style="width: 177.083px; height: 36px;">10<sup>0</sup></td>
+</tr>
+</tbody>
+</table>
+<p><br />Somit hat die Ziffer 8 an der 3. Stelle einen anderen Wert (800) als an der 2. Stelle (80). In unserem Beispiel könnten wir den Zahlenwert ermitteln durch:</p>
+<p><span style="font-family: andale mono, monospace;">7*10³ + 2*10² + 0*10<sup>1</sup> + 9*10<sup>0</sup> = 7000 + 200 + 9</span></p>
+<h3>Hexadezimal</h3>
+<p>Genauso kann der Stellenwert bei Hexadezimalzahlen ermittelt werden. Betrachten wir dazu die hexadezimale Zahl EF02C16:</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<tbody>
+<tr style="height: 18px;">
+<th style="width: 16.6667%; height: 18px;">Stellenwert</th>
+<td style="width: 16.6667%; height: 18px;">65536</td>
+<td style="width: 16.6667%; height: 18px;">4096</td>
+<td style="width: 16.6667%; height: 18px;">256</td>
+<td style="width: 16.6667%; height: 18px;">16</td>
+<td style="width: 16.6667%; height: 18px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<th style="width: 16.6667%; height: 36px;">Stellenwert in Potenzschreibweise</th>
+<td style="width: 16.6667%; height: 36px;">16<sup>4</sup></td>
+<td style="width: 16.6667%; height: 36px;">16<sup>3</sup></td>
+<td style="width: 16.6667%; height: 36px;">16<sup>2</sup></td>
+<td style="width: 16.6667%; height: 36px;">16<sup>1</sup></td>
+<td style="width: 16.6667%; height: 36px;">16<sup>0</sup></td>
+</tr>
+</tbody>
+</table>
+<p>Wie bei der Dezimalzahl kann der Zahlenwert der Hexadezimalzahl ermittelt werden, indem die Ziffern mit dem zugehörigen Stellenwert multipliziert und anschließend summiert werden.</p>
+<p>Man muss zuerst noch - falls in der Zahl vorhanden - die Buchstaben A-F durch die Zahlen 10-15 ersetzen (A=10, B=11, C=12, ...)</p>
+<p><span style="font-family: andale mono, monospace;"> E*164 +  F*16³ + 0*16² + 2*16<sup>1</sup> + C*16<sup>0</sup> = </span> <br /><span style="font-family: andale mono, monospace;">14*164 + 15*16³ + 0*16² + 2*16<sup>1</sup> + C*16<sup>0</sup> = </span> <br /><span style="font-family: andale mono, monospace;">917504 + 61440  + 0     + 32    + 12    = 978988 </span> <br /><span style="font-family: andale mono, monospace;">EF02C16 = 97898810</span></p>
+<h3>Binär</h3>
+<p>Genauso kann der Stellenwert bei Binärzahlen ermittelt werden. Betrachten wir dazu die binäre Zahl 101101112:</p>
+<table border="1" class="exe-table">
+<tbody>
+<tr style="height: 18px;">
+<th style="width: 11.1111%; height: 18px;">Stellenwert</th>
+<td style="width: 11.1111%; height: 18px;">128</td>
+<td style="width: 11.1111%; height: 18px;">64</td>
+<td style="width: 11.1111%; height: 18px;">32</td>
+<td style="width: 11.1111%; height: 18px;">16</td>
+<td style="width: 11.1111%; height: 18px;">8</td>
+<td style="width: 11.1111%; height: 18px;">4</td>
+<td style="width: 11.1111%; height: 18px;">2</td>
+<td style="width: 11.1111%; height: 18px;">1</td>
+</tr>
+<tr style="height: 36px;">
+<th style="width: 11.1111%; height: 36px;">Stellenwert in Potenzschreibweise</th>
+<td style="width: 11.1111%; height: 36px;">2<sup>7</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>6</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>5</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>4</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>3</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>2</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>1</sup></td>
+<td style="width: 11.1111%; height: 36px;">2<sup>0</sup></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Somit kann wie bei der Dezimalzahl der Zahlenwert dieser binären Zahl ermittelt werden, indem die Ziffern mit dem zugehörigen Stellenwert multipliziert und anschließend summiert werden.</p>
+<p><span style="font-family: andale mono, monospace;">1*2<sup>7</sup> + 0*2<sup>6</sup> + 1*2<sup>5</sup> + 1*2<sup>4</sup> + 0*2³ + 1*2² + 1*2<sup>1</sup> + 1*2<sup>0</sup> = </span> <br /><span style="font-family: andale mono, monospace;">128  + 32   + 16 + 4 + 2 + 1 = 183 </span> <br /><span style="font-family: andale mono, monospace;">101101112 = 18310</span></p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>in der Mathematik gibt es viele verschiedenen Zahlensysteme. 3 für ie Computertechnik wichtige Zahlensysteme sind das <br />
+<ul>
+<li>binäre Zahlensystem</li>
+<li>dezimale Zahlensystem</li>
+<li>hexadezimale Zahlensystem</li>
+</ul>
+</li>
+<li>Für Zahlensysteme gibt es ein paar wichtige Fachbegriffe:
+<ul>
+<li><strong>Nennwerte:</strong> Das sind die einzelnen Ziffern, die innerhalb des Zahlensystem verwendet werden können</li>
+<li><strong>Basis:</strong> Die Basis besagt, wieviele Ziffern das Zahlensystem verwendet beginnend bei 0</li>
+<li><strong>Stellenwerte:</strong> Die Stellenwerte sind die Werte, die sich aus der Multiplikation der Basis mit sich selbst ergeben, also b0, b1, b2, b3, ...</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="gleitkommazahlenformat.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="typumwandlung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

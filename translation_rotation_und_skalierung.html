@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Translation, Rotation und Skalierung | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-50"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="transformation.html" class="current-page-parent daddy">Transformation</a>
+         <ul>
+            <li id="active"><a href="translation_rotation_und_skalierung.html" class="active no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="transformation.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="transformationen_speichern.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Translation, Rotation und Skalierung</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id72">
+<div class="iDevice emphasis0" >
+<div id="ta72_120_2" class="block iDevice_content">
+<div class="exe-text"><p>In Processing verwendest hauptsächlich drei sogenannte affine Transformationen:</p>
+<ol>
+<li>Translation (Verschiebung)</li>
+<li>Rotation (Drehung)</li>
+<li>Skalierung (Vergrößerung/Verkleinerung)</li>
+</ol>
+<p>Diese Transformationen heißen affin (= verwandt, übereinstimmend), weil sie die prinzipielle Form eines Objekts nicht verändern.</p>
+<p>Dank eines Tricks, den homogenen Koordinaten, lässt sich jede dieser Transformationen als eine <strong>Matrix</strong> ausdrücken. Und noch besser: Wenn man zwei Transformationen A und B hintereinander ausführen möchte, muss man lediglich die zugehörigen Matrizen MA und MB miteinander multiplizieren. Die resultierende Matrix repräsentiert dann die Kombination dieser zwei Transformationen. Das bedeutet, dass selbst tausende von Transformationen nach Multiplikation sich auf eine einzige Matrix verdichten.</p>
+<h1>Translation</h1>
+<p>Mit einer Translation verschiebt man das aktuelle Koordinatensystem um einen <strong>Vektor</strong>: <code>translate(x, y); </code>Das bedeutet, dass <strong>alle nachfolgenden Befehle sich auf dieses neue, verschobene Koordinatensystem beziehen</strong>, d.h. man kann komplexe Zeichnungen leicht verschieben, indem man die Befehle gemeinsam der Translation nachstellt. Wie hier das Gesicht, das der Maus folgt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+  background(255);
+  translate(mouseX, mouseY);
+ 
+  // Gesicht
+  ellipse(0,0,50,50);
+  ellipse(-10,-10,8,8);
+  ellipse(10,-10,8,8);
+}</code></pre>
+</div>
+</div>
+<p><img src="translate_1.png" alt="" width="116" height="117" /></p>
+<p>Natürlich kannst du <code>translate()</code> auch zur Animation verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+ 
+void draw() {
+  background(255);
+  translate(x, height/2);
+ 
+  // Gesicht
+  ellipse(0,0,50,50);
+  ellipse(-10,-10,8,8);
+  ellipse(10,-10,8,8);
+ 
+  x++;
+  if (x &gt; width) {
+    x = 0;
+  }
+}</code></pre>
+</div>
+</div>
+<h1>Rotation</h1>
+<p>Rotation bedeutet, dass das gesamte Koordinatensystem <strong>um den Ursprung</strong> gedreht wird. Der Winkel wird im <strong>Bogenmaß</strong> angegeben, d.h. der Wert sollte zwischen 0 und 2*PI liegen: <code>rotate(angle);</code></p>
+<p>Wem das Bogenmaß nicht geheuer ist, der kann mit Grad rechnen (also 0° bis 360°) und die Funktion <code>radians()</code> benutzen, um von Grad zu Bogenmaß (engl. radian) umzurechnen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Rechteck ohne Rotation
+rect(width/2, 0, 40, 20);
+ 
+// Rotation um 45°
+rotate(radians(45));
+ 
+// Rechteck mit Rotation (schwarz)
+fill(0);
+rect(width/2, 0, 40, 20);</code></pre>
+</div>
+</div>
+<p>Hier sieht man deutlich, dass nicht etwa um eine Ecke des Objekts gedreht wird, sondern eben um den Ursprung (oben-links) des Koordinatensystems.</p>
+<p><img src="rotate_1.png" alt="" width="118" height="116" /></p>
+<p>Wie dreht man dann z.B. um die linke obere Ecke des Rechtecks? Dazu verschiebt man das Koordinatensystem zunächst zum gewünschten Rotationspunkt und dreht erst dann:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Rechteck ohne Rotation (weiß)
+rect(width/2, 0, 40, 20);
+ 
+// Translation zum linken, oberen Rechteckpunkt
+translate(width/2, 0);
+ 
+// Rotation um 45°
+rotate(radians(45));
+ 
+// Rechteck mit Rotation (schwarz)
+// Jetzt bei (0, 0), da Koord.system verschoben
+fill(0);
+rect(0, 0, 40, 20);</code></pre>
+</div>
+</div>
+<p><br />Jetzt hat man die gewünschte Rotation:</p>
+<p><img src="rotate_2.png" alt="" width="117" height="118" /></p>
+<p>Du willst um den Mittelpunkt rotieren? Dann bewege das Koordinatensystem in die Mitte des Rechtecks:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Rechteck ohne Rotation (weiß)
+rect(width/2, 0, 40, 20);
+ 
+// Translation zur Mitte des Rechtecks
+translate(width/2 + 20, 10);
+ 
+// Rotation um 45°
+rotate(radians(45));
+ 
+// Rechteck mit Rotation (schwarz)
+// Jetzt mit (0, 0) als Mitte
+fill(0);
+rect(-20, -10, 40, 20);</code></pre>
+</div>
+</div>
+<p><img src="rotate_2b.png" alt="" width="117" height="116" /></p>
+<p>Auch Rotation kann man gut zur Animation verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float angle = 0;
+ 
+void draw() {
+  background(0);
+ 
+  translate(50, 50); // geh zur Mitte
+  rotate(angle); // drehe
+  rect(0, -3, 50, 6); // zeichne Zeiger
+ 
+  angle += radians(5); // in 5° Schritten
+}</code></pre>
+</div>
+</div>
+<h1>Skalierung</h1>
+<p>Skalierung wird auch vom Ursprung des Koordinatensystems aus gerechnet. Der Skalierungsfaktor liegt zwischen 0 und 1 (verkleinern) oder über 1 (vergrößern): <code>scale(factor);</code></p>
+<p>Da die Skalierung vom Ursprung ausgeht, verschiebt sich das Objekt auch, wenn es nicht direkt auf dem Ursprung liegt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(10, 10, 30, 20); // vorher
+ 
+scale(2); // alles verdoppeln
+fill(0); // schwarz
+ 
+rect(10, 10, 30, 20); // nachher</code></pre>
+</div>
+</div>
+<p>Hier wird z.B. auch der Abstand der linken, oberen Ecke zum Ursprung verdoppelt:</p>
+<p><img src="scale_1.png" alt="" width="118" height="117" /></p>
+<p>Auch hier wieder der Trick mit dem vorherigen Verschieben. Die Endposition ist jetzt durch ein halbtransparentes Rechteck dargestellt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(10, 10, 30, 20); // vorher
+ 
+translate(10, 10);
+scale(2); // alles verdoppeln
+fill(0, 100); // schwarz, transparent
+rect(0, 0, 30, 20); // nachher (jetzt auf 0, 0)</code></pre>
+</div>
+</div>
+<p>Jetzt wird das Rechteck vom linken, oberen Punkt aus skaliert, was intuitiver ist. Beachte, dass auch der Rand (stroke) sich verdoppelt hat.</p>
+<p><img src="scale_2.png" alt="" width="117" height="115" /></p>
+<p>Auch hier ein Beispiel für eine Animation:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float factor = 1;
+ 
+void draw() {
+  background(0);
+  rectMode(CENTER);
+ 
+  translate(50, 50); // geh zur Mitte
+  scale(factor);
+  rect(0, 0, 10, 10);
+ 
+  factor += .1;
+  if (factor &gt; 12) {
+    factor = 1;
+  }
+}</code></pre>
+</div>
+</div>
+<h2>Skalierung in zwei Dimensionen</h2>
+<p>Du kannst die Skalierung für die x- und y-Dimension getrennt angeben. Dann bekommt <code>scale()</code> zwei Parameter, jeweils für x- und y-Achse.</p>
+<p>Hier wird nur in x-Richtung um Faktor 2 skaliert:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(10, 10, 30, 20);
+ 
+scale(2, 1); // nur x verdoppeln
+fill(0);
+ 
+rect(10, 10, 30, 20);</code></pre>
+</div>
+</div>
+<p><img src="trans-scale-x.png" alt="" width="115" height="118" /></p>
+<p>Hier wird nur in y-Richtung um Faktor 2 skaliert:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(10, 10, 30, 20);
+ 
+scale(1, 2); // nur y verdoppeln
+fill(0);
+ 
+rect(10, 10, 30, 20);</code></pre>
+</div>
+</div>
+<p><img src="trans-scale-y.png" alt="" width="118" height="115" /></p>
+<h1>Koordinatensystem sichtbar gemacht</h1>
+<p>Der Befehl  <code>translate()</code> <span style="font-family: arial, helvetica, sans-serif;">v<strong>erschiebt</strong></span><strong> das aktuelle Koordinatensystem, nicht die Objekte</strong>. Das ist etwas ungewohnt, da du bisher gewohnt bist, Objekte zu verschieben. Es ist aber wichtig, dies so zu denken, damit die Reihenfolge deiner Operationen stimmt.</p>
+<p>Folgendes Programm zeichnet das "aktuelle" Koordinatensystem aus Grid, um das Verständnis zu erleichtern:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code> void draw() {
+  background(255);
+  drawGrid(200); // normales Koord.sys.
+ 
+  translate(50,50);
+  drawGrid(150); // um (50,50) verschoben
+ 
+  rotate(PI/8);
+  drawGrid(0); // um 22,5° gedreht
+ 
+  fill(255,0,0);
+  rect(0,0,20,10); // Rechteck im Koord.sys
+}
+ 
+// Zeichnet das Koordinatensystem als Grid
+void drawGrid(int greyscale) {
+  stroke(greyscale);
+  for (int x = 0; x &lt; width; x += 10) {
+    line(x, 0, x, height);
+  }
+    for (int y = 0; y &lt; height; y += 10) {
+    line(0, y, width, y);
+  }
+}</code></pre>
+</div>
+</div>
+<p>Man sieht, dass das rote Rechteck als Teil des verschobenen Koordinatensystems gezeichnet wird.</p>
+<p><img src="coord_system_1.png" alt="" width="121" height="117" /></p>
+<p>Verändert man die Reihenfolge der Operationen, <strong>ergibt sich ein ganz anderes Bild</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+  background(255);
+  drawGrid(200);
+ 
+  rotate(PI/8);
+  drawGrid(150); // um 22,5° gedreht
+ 
+  translate(50, 50);
+  drawGrid(0); // um (50,50) verschoben
+ 
+  fill(255, 0, 0);
+  rect(0, 0, 20, 10);
+}</code></pre>
+</div>
+</div>
+<p><img src="coord_system_2.png" alt="" width="119" height="117" /></p>
+<h1><br />Zusammenfassung</h1>
+<p>Es gibt 3 Arten der Transformation:</p>
+<ul>
+<li>Translation (Verschieben):
+<ul>
+<li><code>translate(x, y);</code> → Verschiebt in die Richtung des Vektors</li>
+</ul>
+</li>
+<li>Rotation (Drehen):
+<ul>
+<li><code>rotate(angle);</code>  → Dreht um den Ursprung des (jeweiligen) Koordinatensystems</li>
+</ul>
+</li>
+<li>Skalierung (Vergrößern/-kleinern):
+<ul>
+<li><code>scale(factor);</code>  → Skaliert um den Faktor (0-1 bzw. &gt;1)</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="transformation.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="transformationen_speichern.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

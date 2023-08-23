@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Mathematische Funktionen und Konstanten | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-52"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li id="active"><a href="mathematische_funktionen_und_konstanten.html" class="active no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="exkurs_vektoren_abprallen__beschleunigung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arten_von_datentypen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Mathematische Funktionen und Konstanten</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id75">
+<div class="iDevice emphasis0" >
+<div id="ta75_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Mathematische Berechnung machen einen großen Teil der Programmierung aus. Processing liefert dir einige Funktionen &amp; Konstanten mit, die gewisse Berechnungen für dich übernehmen. Hier findest du eine Auswahl der wichtigsten:</p>
+<h1>Konstanten</h1>
+<div class="exe-fx exe-tabs">
+<h2>Pi</h2>
+<p><code>PI</code> ist eine mathem. Konstante mit dem Wert 3.1415927.</p>
+<h2>Zwei Pi</h2>
+<p><code>TWO_PI</code> ist eine mathem. Konstante mit dem Wert 6.2831855.</p>
+<h2>Halbes Pi</h2>
+<p><code>HALF_PI</code> ist eine mathem. Konstante mit dem Wert 1.5707964.</p>
+<h2>Viertel Pi</h2>
+<p><code>QUARTER_PI</code> ist eine mathem. Konstante mit dem Wert 0.7853982.</p>
+</div>
+<p><strong>Beispiel:</strong></p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>float x = width/2;
+float y = height/2;
+float d = width * 0.8;
+arc(x, y, d, d, 0, QUARTER_PI); // achtel Kreis
+arc(x, y, d-20, d-20, 0, HALF_PI); // viertel Kreis
+arc(x, y, d-40, d-40, 0, PI); // halber Kreis
+arc(x, y, d-60, d-60, 0, TWO_PI); // ganzer Kreis</code></pre>
+</div>
+</div>
+<h1>Exponentialrechnung</h1>
+<div class="exe-fx exe-tabs">
+<h2>exp()</h2>
+<p>Liefert das Ergebnis der Eulerischen Zahl e hoch den Exponenten, der angegeben wird.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float v1 = exp(1.0);
+println(v1); // Prints "2.7182817"</code></pre>
+</div>
+</div>
+<p><strong>Syntax<br /></strong> exp(n);</p>
+<p><strong>Parameter<br /></strong> n: float Exponent</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>pow()</h2>
+<p>Berechnet n (Zahl) hoch e (Exponent)</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float a = pow( 1, 3); // a = 1*1*1 = 1
+float b = pow( 3, 5); // b = 3*3*3*3*3 = 243
+float c = pow( 3,-5); // c = 1 / 3*3*3*3*3 = .0041
+float d = pow(-3, 5); // d = -3*-3*-3*-3*-3 = -243</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />pow( n, e);<br /><strong></strong></p>
+<p><strong>Parameter</strong> <br />n: float Basiszahl, e: float Exponent<br /><strong></strong></p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>sqrt()</h2>
+<p>Berechnet die Quadratwurzel einer Zahl</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float a = sqrt(6561); // a = 81
+float b = sqrt(625); // b = 25
+float c = sqrt(1); // c = 1
+rect(0, 25, a, 10);
+rect(0, 45, b, 10);
+rect(0, 65, c, 10);</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />sqrt(n);</p>
+<p><strong>Parameter</strong> <br />n: float Zahl, nicht negativ!</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+</div>
+<h1>Zahlen runden</h1>
+<div class="exe-fx exe-tabs">
+<h2>round()</h2>
+<p>Berechnet die Ganzzahl, die am nächsten liegt</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int rx = round(9.2); // rx = 9
+int ry = round(9.5); // ry = 10
+int rz = round(9.9); // rz = 10  </code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />round(n)</p>
+<p><strong>Parameter</strong> <br />n: float Zahl, die gerundet werden soll</p>
+<p><strong>Rückgabetyp </strong><br />int</p>
+<h2>ceil()</h2>
+<p>Berechnet die nächst größere Ganzzahl</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 8.22;
+int a = ceil(x); // a = 9</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />ceil(n)<br /><strong></strong></p>
+<p><strong>Parameter</strong> <br />n: float Zahl, die gerundet werden soll</p>
+<p><strong>Rückgabetyp </strong><br />int</p>
+<h2>floor()</h2>
+<p>Berechnet die nächst kleinere Ganzzahl</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 2.88;
+int a = floor(x); // a = 2</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />floor(n)</p>
+<p><strong>Parameter</strong> <br />n: float Zahl, die gerundet werden soll werden soll <br /><strong></strong></p>
+<p><strong>Rückgabetyp </strong><br />int</p>
+<h2>abs()</h2>
+<p>Berechnet den absoluten Wert einer Zahl.  Dieser Wert ist immer positiv.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int a = abs(153); // a = 153
+int b = abs(-15); // b = 15
+float c = abs(12.234); // c = 12.234
+float d = abs(-9.23); // d = 9.23 </code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />abs(n)</p>
+<p><strong>Parameter</strong> <br />n: float Zahl, die gerundet werden soll</p>
+<p><strong>Rückgabetyp </strong><br />int</p>
+</div>
+<h1>Trigonometrie</h1>
+<div class="exe-fx exe-tabs">
+<h2>sin()</h2>
+<p>Berechnet den Sinus-Wert eines Winkels. Nimmt Werte im Bogenmaß (0 bis 2*PI).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float a = 0.0;
+float inc = TWO_PI/25.0;
+for (int i = 0; i &lt; 100; i=i+4) {
+   line(i, 50, i, 50 + sin(a) * 40.0);
+   a = a + inc;
+}</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />sin(angle)<br /><strong></strong></p>
+<p><strong>Parameter</strong> <br />angle: float im Bogenmaß</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>cos()</h2>
+<p>Berechnet den Cosinus-Wert eines Winkels. Nimmt Werte im Bogenmaß (0 bis 2*PI).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float a = 0.0;
+float inc = TWO_PI/25.0;
+for (int i = 0; i &lt; 25; i++) {
+   line(i*4, 50, i*4, 50 + cos(a) * 40.0);
+   a = a + inc;
+}</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />cos(angle)</p>
+<p><strong>Parameter</strong> <br />angle: float im Bogenmaß</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>tan()</h2>
+<p>Berechnet das Verhältnis des Sinus und des Cosinnus eines Winkels. Nimmt Werte im Bogenmaß (0 bis 2*PI).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float a = 0.0;
+float inc = TWO_PI/50.0;
+for (int i = 0; i &lt; 100; i = i+2) {
+   line(i, 50, i, 50 + tan(a) * 2.0);
+   a = a + inc;
+}</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />tan(angle)</p>
+<p><strong>Parameter</strong> <br />angle: float im Bogenmaß</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+</div>
+<h1>Winkel</h1>
+<div class="exe-fx exe-tabs">
+<h2>radians()</h2>
+<p>Konvertiert eine Gradzahl ins Bogenmaß. Gradzahl und Bogenmaß sind 2 verschiedene Arten dasselbe zu messen. Ein Kreis besteht 360° oder 2*PI im Bogenmaß.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float deg = 45.0;
+float rad = radians(deg);
+println(deg + " Grad sind " + rad + " im Bogenmaß");</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />radians(degrees)</p>
+<p><strong>Parameter</strong> <br />degrees: float Gradzahl die in Bogenmaß konvertiert werden soll</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>degrees()</h2>
+<p>Konvertiert eine Zahl im Bogenmaß in eine Gradzahl.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float rad = PI/4;
+float deg = degrees(rad);
+println(rad + " im Bogenmaß sind " + deg + " Grad");</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />degrees(radians)</p>
+<p><strong>Parameter</strong> <br />radians: float Zahl im Bogenmaß die in Grad konvertiert werden soll</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+</div>
+<h1>Weitere hilfreiche Funktionen</h1>
+<div class="exe-fx exe-tabs">
+<h2>random()</h2>
+<p>Generiert Zufallszahlen. Kann einen oder zwei Parameter annehmen. Wird nur high angegeben, werden Zahlen &gt;= 0 und &lt; high. Werden high und low angegeben, werden Zahlen &gt;= low und &lt; high generiert.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float grayscale = random(255);
+background(grayscale);
+
+float r = random(255);
+float g = random(255);
+float b = random(255);
+background(r, g, b);</code></pre>
+</div>
+</div>
+<strong>Syntax</strong> <br />random(high); <br />random(low, high)
+<p><strong>Parameter</strong> <br />high: float obere Grenze <br />low: float untere Grenze</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>dist()</h2>
+<p>Berechnet den Abstand zwischen zwei Punkten</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+   background(255);
+   line(0, 0, mouseX, mouseY);
+   float d = dist(0, 0, mouseX, mouseY);
+   fill(0);
+   text(d, mouseX, mouseY);
+}</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong> <br />dist(x1, y1, x2, y2)<br /><strong></strong></p>
+<p><strong>Parameter</strong> <br />x1, y1, x2, y2: float Werte der Positionen</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>atan2()</h2>
+<p>Berechnet den Winkel (im Bogenmaß) von einem Punkt zum Koordinatenursprung, gemessen von der positiven x-Achse. Werte werden als float von PI bis -PI zurückgegeben. Die Funktion atan2() wird oft verwendet, um die Geometrie an der Position des Cursors auszurichten.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+   background(204);
+   translate(width/2, height/2);
+   float a = atan2(mouseY-height/2, mouseX-width/2);
+   rotate(a);
+   rect(-30, -5, 60, 10);
+}</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong><br />Hinweis: Die y-Koordinate des Punkts ist der erste Parameter, da die Berechnung der Tangente so strukturiert ist.<br />atan2(y, x)<br /><strong></strong></p>
+<p><strong>Parameter</strong> <br />y,x: float Werte<br /><strong></strong></p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+<h2>map()</h2>
+<p>Bildet eine Zahl von einem Bereich auf einen anderen ab.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200, 200);
+float value = 25;
+float m = map(value, 0, 100, 0, width);
+ellipse(m, 200, 10, 10);</code></pre>
+</div>
+</div>
+<p><strong>Syntax</strong><br />map(value, start1, stop1, start2, stop2)</p>
+<p><strong>Parameter</strong><br />value: aktueller Wert (float)<br />start1: untere Grenze des aktuellen Werts (float)<br />stop1: obere Grenze des aktuellen Werts (float)<br />start2: untere Grenze des Ziel-Werts (float)<br />stop2: obere Grenze des Ziel-Werts (float)</p>
+<p><strong>Rückgabetyp </strong><br />float</p>
+</div>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Es gibt in Processing viele verschiedene vordefinierte mathematische Funktionen, die wir einfach verwenden können. <br />
+<ul>
+<li>Eine Übersicht übe alle mathematischen Funktionen von Processing findet ihr unter <a href="https://processing.org/reference/#math">https://processing.org/reference/#math</a></li>
+</ul>
+</li>
+<li>Ebenso gibt es vier mathematische Konstanten in Bezug auf PI.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="exkurs_vektoren_abprallen__beschleunigung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arten_von_datentypen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

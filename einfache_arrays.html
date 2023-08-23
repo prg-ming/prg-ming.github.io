@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Einfache Arrays | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-24"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="einfache_arrays.html" class="active daddy">Einfache Arrays</a>
+         <ul>
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="verschachtelte_schleifen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arrays_mit_schleifen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Einfache Arrays</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id26">
+<div class="iDevice emphasis0" >
+<div id="ta26_125_2" class="block iDevice_content">
+<div class="exe-text"><p>In diesem Kapitel lernen wir, wie man viele Informationen in einem Konstrukt abspeichert. Zum Beispiel wollen wir in einem Spiel 10 Bälle fliegen lassen und wollen für alle Bälle die x-Koordinate speichern. Wir wollen aber nicht 10 verschiedene Variablen anlegen, sondern lieber eine Variable, in der alle Daten drin sind.</p>
+<h1>Becherhalter</h1>
+<p>Jeder von uns war bestimmt schonmal bei McDonalds und Co. und hat sich dort ein Getränk zum mitnehmen geholt. Das zu transportieren ist kein Problem - immerhin hast du ja zwei Hände und ein Getränk. Also immer noch eine Hand frei. Aber was ist, wenn du deinem Kumpel ein Getränk mitbringen möchtest? 2 Hände, 2 Getränke - geht schon noch. Aber was ist, wenn du 3, 4, 5, etc. Getränke mitnehmen möchtest? Dann bekommst du einen schönen Becherhalter mit. Der macht es dir um einiges leichter viele Getränke zu transportieren.</p>
+<p>Mit Arrays ist das ganz ähnlich. Wir haben schon gelernt, dass Variablen Container sind - also in unserem Beispiel sowas wie Becher. Das was in der Variable drin ist, ist ihr Wert. Bei uns wäre das Cola, Fanta, Kaffee, etc. Ein Array ist dann sowas wie ein Becherhalter - es hält mehrere Variablen der selben Art in einer Konstruktion - und ist dabei selber eine Variable (also eine Art Container).</p>
+<p><img src="becherhalter.png" alt="Becherhalter" width="100" height="100" /></p>
+<h1>Array erzeugen</h1>
+<p>So ein Array lässt sich ganz leicht erzeugen. Das geschieht - wie immer - in zwei Schritten, der Deklaration und der Initialisierung.</p>
+<p>Ein Array wird ähnlich, wie auch andere Variablen deklariert - wir verwenden nur einen anderen Datentyp. Wenn wir z.B. ein Array für Integer Werte erstellen möchten, dann brauchen wir den Datentyp int[]. Also den "normalen" Datentypen plus 2 eckige Klammern - das "Zeichen für den Becherhalter."</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray; // Arrayvariable deklarieren</code></pre>
+</div>
+</div>
+<p>Man beachte, dass der Becherhalter an sich noch nicht existiert! Wir haben bisher nur die Variable deklariert, aber den Becherhalter noch nicht gebaut. Die Variable xarray hat momentan den Wert null. Dieser steht in der Programmierung nicht für die Zahl 0, sondern für "nichts".</p>
+<p>Jetzt müssen wir noch den Becherhalter erzeugen. Hier müssen wir uns festlegen, wie viele Becher genau das Array halten kann. Stell dir das Array wie ein Muffin-Backblech vor, da musst du dich bei der Herstellung auch entscheiden, wieviele Muffin-Löcher du reinstanzen willst. Wir nehmen mal 5 Becher:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>xarray = new int[5]; // Array mit 5 Elementen erzeugen</code></pre>
+</div>
+</div>
+<p>Häufig macht man beides in einem Schritt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[5];</code></pre>
+</div>
+</div>
+<p>Unseren Becherhalter kann man sich wie ein Gitter vorstellen, eine Batterie von Behältern. Die Variable xarray zeigt jetzt auf dieses Gebilde:</p>
+<p><img src="array3.png" alt="Array 1" width="164" height="150" /></p>
+<p>Beachte, dass der Datentyp dieser Variable int[] ist, also ein Integer-Array, angedeutet durch die eckigen Klammern. Die Variable xarray kann also nicht etwa eine einzelne Zahl speichern, sondern eben nur diesen kuriosen Becherhalter.</p>
+<h1>Elemente zugreifen</h1>
+<p>Jetzt haben wir plötzlich 5 Becher statt nur einen. Wir nennen die Becher auch Array-Elemente. Wie kommen wir an so ein Element ran? Ganz einfach: die Elemente sind durchnummeriert, und zwar von 0 bis 4. Diese Zahlen nennt man auch Indizes.</p>
+<p><img src="array4.png" alt="Array 2" width="254" height="150" /></p>
+<p></p>
+<p>Diese fünf Elemente können wir mit folgender Syntax abrufen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(xarray[0]); // Element 0 ausgeben
+println(xarray[1]); // Element 1 ausgeben
+println(xarray[2]);
+println(xarray[3]);
+println(xarray[4]); // letztes Element ausgeben</code></pre>
+</div>
+</div>
+<p>Zu Beginn haben wir da überall Nullen drin, weil jeder einzelne Becher vom Typ Integer ist und 0 der Standardwert von Integer Variablen ist. Wenn wir das ändern wollen, schreiben wir zum Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>xarray[3] = 42; // Zuweisung</code></pre>
+</div>
+</div>
+<p>Intern sieht das Array jetzt so aus:</p>
+<p><img src="array5.png" alt="Array 3" width="160" height="150" /></p>
+<p>Wenn du genau hinschaust, wirst du feststellen, dass sich ein einzelnes Element wie xarray[0] ganz genau so verhält wie eine handelsübliche Integer-Variable. Man muss sich nur an diese eckigen Klammern gewöhnen. Du kannst z.B. auch mit Array-Elementen rechnen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int result = xarray[0] + xarray[3] - 10;
+println(result); // 32</code></pre>
+</div>
+</div>
+<h1>Größe des Array</h1>
+<p>Wir haben oben ein Array mit 5 Elementen geschaffen. Diese Zahl ist eine Eigenschaft des Array-Objekts, die wir per Punktnotation abrufen können und zwar mit <br />xarray.length .</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[555];
+println(xarray.length);</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>555</code></pre>
+</div>
+</div>
+<h2>Beliebter Fehler (Exception)</h2>
+<p>Der beliebteste Anfängerfehler bei Arrays ist es, nicht zu beachten, dass Informatiker immer bei Null anfangen zu zählen. Ist ja auch merkwürdig. Versuche mal:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[10];
+xarray[10] = 23; // Index 10 existiert nicht!</code></pre>
+</div>
+</div>
+<p>Processing sagt zu recht: <strong>ArrayIndexOutOfBoundsException</strong>. Eine 'Exception' (engl. Ausnahme) bedeutet beim Programmieren 'Fehler'. In diesem Fall ist der Fehler, dass das Element 10 nicht existiert. Es existieren nur Elemente mit Namen 0 bis 9.</p>
+<h1>Kurzschreibweise: Array erzeugen und befüllen</h1>
+<p>Wenn du schnell ein Array erzeugen und gleich mit konkreten Werten befüllen möchtest, schreibst du:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] zahlen = {8, 42, -3, 200};</code></pre>
+</div>
+</div>
+<p>Dieses Konstrukt erzeugt eine neue Array-Variable zahlen der Länge 4 mit den entsprechenden Werten. Die ausführliche Variante wäre:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] zahlen = new int[4];
+zahlen[0] = 8;
+zahlen[1] = 42;
+zahlen[2] = -3;
+zahlen[3] = 200;</code></pre>
+</div>
+</div>
+<p><strong>Vorsicht</strong>: Die Kurzschreibweise darfst du nur dann verwenden, wenn die Variable deklariert wird, also ganz am Anfang der Lebensdauer einer Array-Variablen. Die Kurzschreibweise ist später nicht mehr erlaubt. Das hier geht nicht:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] zahlen = new int[3];
+zahlen = { 5, 20, 8 }; // FEHLER! Nur bei Deklaration erlaubt.</code></pre>
+</div>
+</div>
+<h1>Array ausgeben</h1>
+<p>In Processing können wir übrigens mit...</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(zahlen); </code></pre>
+</div>
+</div>
+<p>... sehr bequem die Inhalte eines Arrays betrachten, die jeweilige Indexzahl wird in Klammern mit ausgegeben:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>[0] 8
+[1] 42
+[2] -3
+[3] 200</code></pre>
+</div>
+</div>
+<p>Diese besondere Art der Ausgabe gibt es nur in Processing, nicht in Java.</p>
+<p>Es gibt noch 2 weitere Möglichkeiten Arrays auszugeben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>printArray(zahlen);  // Alternative zu println - funktioniert zuverlässig
+print(zahlen);          // zeigt Daten (ohne Indizies) an - manchmal</code></pre>
+</div>
+</div>
+<h1>Coding Style</h1>
+<p>Bitte achte darauf, wo Leerzeichen und Zeilenumbrüche gemacht werden, und wo nicht.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] zahlen;
+zahlen = new int[10];
+zahlen[2] = zahlen[0] + zahlen[1];</code></pre>
+</div>
+</div>
+<p>Denk auch daran, deinen Code mit Bearbeiten &gt; Autoformatierung von Processing korrekt einrücken zu lassen (Tastenkürzel STRG+T bzw. CMD+T).</p>
+<h1>Zusammenfassung</h1>
+<p><br />Ein Array kann mehrere Dinge vom gleichen Typ speichern. Man kann sich einen Array als Schrank mit durchnummerierten Fächern vorstellen.</p>
+<ul>
+<li>Der Datentyp eines Array ist der Typ der enthaltenen Element und dahinter eckige Klammern, z.B. int[] für einen Integer-Array oder String[] für einen String-Array</li>
+<li>Array mit 5 Fächern erzeugen: new int[5]</li>
+<li>Elemente sind durchnummeriert, beginnend bei Null. Diese Nummer nennt man Index eines Elements.</li>
+<li>Zugriff auf ein Element über den Index: foo[3] greift auf das 4. Element zu</li>
+<li>Länge des Array foo mit foo.length.</li>
+<li>Schnelles Erzeugen und Befüllen eines Array: int[] foo = { 3, 42, -50 };</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="verschachtelte_schleifen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arrays_mit_schleifen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

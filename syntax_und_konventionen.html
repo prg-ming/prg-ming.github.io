@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Syntax und Konventionen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-18"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="syntax_und_konventionen.html" class="active no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="lokale_variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arithmetische_operatoren.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Syntax und Konventionen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id15">
+<div class="iDevice emphasis0" >
+<div id="ta15_114_2" class="block iDevice_content">
+<div class="exe-text"><h1>Syntax</h1>
+<p>Mit einfachen Worten erklärt beschreibt der Syntax einer Sprache, wie diese aufgebaut ist, welche Konstruktionen oder Verbindungen es gibt, wie (Satz-)Zeichen gesetzt werden, usw. Damit der Compiler deinen Code (richtig) übersetzen kann, musst du dich an die Syntaxvorgaben der jeweiligen Sprache halten. In diesem Fall ist das Java &amp; Processing (welches auf Java aufbaut).</p>
+<h2>Grundlegendes</h2>
+<h3>Groß- und Kleinschreibung</h3>
+<p>Die Groß- und Kleinschreibung muss beachtet werden.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>Background(150); // FALSCH
+background(150); // RICHTIG</code></pre>
+</div>
+</div>
+<p>Die beiden oberen Zeilen sind nicht identisch. Die Obere Zeile wirft einen Fehler aus!</p>
+<h3>Kommentare</h3>
+<p>Du kannst - und solltest auch - deinen Code mit Kommentaren versehen. Das ist Text, der vom Compiler und dem Computer ignoriert wird. Du kannst Kommentare verwenden, um zu erklären, was du an welcher Stelle im Code machst. Das hilft anderen und dir selber deinen Code zu verstehen. </p>
+<p>background(0); // Hintergrund auf schwarz setzen</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>/* Du kannst auch Kommentare über
+mehrere Zeilen machen, wenn du
+mehr zu erklären hast. */
+background(255); // Hintergrund auf weiß setzen</code></pre>
+</div>
+</div>
+<h3>Bezeichner</h3>
+<p>Bezeichner sind die "Namen" von Funktionen, Befehlen, Variablen, etc. Sie sind im besten Fall so gewählt, dass sie klar ausdrücken, was der Befehl macht bzw. wozu die Variable da ist. Bei der Wahl des Bezeichners gibt es Regeln zu beachten.</p>
+<p>Bezeichner ...</p>
+<ul>
+<li>dürfen nicht mit einem Schlüsselwort der Sprache Java identisch sein, z.B. dürfen Sie nicht int oder float als Variablenname verwenden</li>
+<li>bestehen aus Ziffern (0-9), Buchstaben (a-z, A-Z) und zwei weiteren Zeichen (Unterstrich und $)</li>
+<li>dürfen nicht mit einer Ziffer beginnen</li>
+<li>dürfen keine Leerzeichen enthalten und auch keinen Bindestrich (würde als Minus interpretiert werden)</li>
+</ul>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>// Syntaktisch falsch: 
+007 
+meine variable 
+float 
+meine-variable
+
+// Syntaktisch korrekt: 
+take5 
+this_is_for_you 
+iam007 
+MEINEVARIABLE</code></pre>
+</div>
+</div>
+<h2>Befehle, Funktionen und Variablen</h2>
+<h3>Befehle</h3>
+<p>Programmieren besteht zu einem großen Teil aus dem Schreiben von Befehlen. Befehle bestehen immer aus dem Bezeichner für den jeweilgen Befehl, gefolgt von 2 Klammern, gefolgt von einem Semikolon am Ende der Zeile. In den Klammern können je nach Befehl einer oder mehrere Werte mit Kommata getrennt stehen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(400, 400);
+background(192, 64, 0);
+stroke(255);
+line(150, 25, 270, 350);</code></pre>
+</div>
+</div>
+<p>Befehle können auch verschiedene Werte aufnehmen, zum Beispiel der Befehl stroke:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>stroke(255); // setzt die Linienfarbe auf weiß
+stroke(255, 255, 255); // dasselbe, wie die obere Zeile
+stroke(255, 128, 0); // hell orange (rot 255, grün 128, blau 0)
+stroke(255, 128, 0, 128); // hell orange mit 50% Transparenz</code></pre>
+</div>
+</div>
+<h3>Funktionen</h3>
+<p>Funktionen sind sozusagen die Blaupause von Befehlen. Jeder Befehl ist irgendwo als Funktion einmal festgelegt worden. Funktionen bestehen aus dem Datentyp oder dem Schlüsselwort void, wenn die Funktion keinen Datentyp zurückgibt, gefolgt von dem Bezeichner, gefolgt von 2 Klammern (welche eine oder mehrere Variablennamen mit Datentyp enthalten können), gefolgt von 2 geschweiften Klammern. Innerhalb dieser geschweiften Klammern können Codezeilen geschrieben werden, welche die Funktion ausführen soll. WICHTIG: Am Ende von einer Funktion steht kein Semikolon!</p>
+<p>Zu Beginn dieses Projekts werdert ihr zunächst nur bereits vorhandene Funktionen bzw. Befehle verwenden. Später werdet ihr auch eure eigenen Funktionen erstellen. 2 Funktionen, die euch direkt am Anfange immer wieder begegnen werden sind setup und draw.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+   // Hier wird der Code geschrieben
+   size(400, 400);
+   stroke(255);
+}
+
+void draw() {
+   line(150, 25, mouseX, mouseY);
+}</code></pre>
+</div>
+</div>
+<h3><br />Variablen</h3>
+<p>Variablen (dazu gehören auch Konstanten) sind Objekte, in den Daten gespeichert werden können, ähnlich wie Register. Die Deklaration einer Variable besteht aus dem Datentyp gefolgt von dem Bezeichner gefolgt von einem Semikolon. Deklaration bedeutet, dass die Variable zunächst nur "angelegt" wird, ihr aber noch keine Wert zugewiesen wird. Das Zuweisen des ersten Wertes für eine Variable wird als Initialisierung bezeichnet. Variablen können innerhalb einer Zeile deklariert und initialisiert werden. In disem Fall besteht die Zeile aus dem Datentyp, gefolgt von dem Bezeichner, gefolgt von dem Zuweisungsoperator "=", gefolgt von dem Wert für die Variable, gefolgt von einem Semikolon.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int myAge; // Diese Variable ist nur deklariert
+int yourAge = 21; // Diese Variable ist deklariert und initialisiert</code></pre>
+</div>
+</div>
+<h1>Konventionen</h1>
+<p>Wie bereits erwähnt, hat jede Programmiersprache ihre eigene Syntax-Vorgaben, an die sich jeder Programmierer halten muss, damit der Compiler bzw. der Interpreter den Code lesen und übersetzen kann. Darüber hinaus gibt es noch sowas wie Programmierstil. Das ist die Art und Weise wie jeder Programmierer - oder auch jedes Team aus Programmierern - seinen Code schreibt. Hier gibt es natürlich guten Stil und schlechten Stil. Natürlich kann jeder selberentscheiden, wie er seinen Code schreibt, allerdings haben sich in den letzten Jahren sogenannte Konventionen gebildet, wie Programmcode zu schreiben ist, damit ihn möglichst jeder versteht und der Code immer ähnlich aussieht.</p>
+<p>Konvetionen beschreiben einen guten Programmierstil, der sich in der Regel seit Jahren etabliert hat und somit als eine Art "Standard" gilt. Anders als beim Syntax, müssen Konventionen nicht eingehalten werden, da sie nicht dazu beitragen, dass der Compiler oder Interpreter den Code lesen kann, sondern die EntwicklerInnen. Also du selber und auch andere Personen, die deinen Code lesen und verstehen möchten.</p>
+<p>Konventionen für Programmcode sind häufig universell - sprich unabhängig von der Programmiersprache. Allerdings gibt es auch einige Konventionen, die nur auf bestimmte Programmiersprachen zutreffen. Hier findest du zum Beispiel den <a href="https://google.github.io/styleguide/javaguide.html" target="_blank" rel="noopener">Java Styleguide von Google</a>. Das ist ein ziemlich langes Dokument mit sehr vielen Vorgaben. Die muss man aber nicht alle kennen. Für den Anfang reichen ein paar wenige:</p>
+<h2>Einrückungen</h2>
+<p>Ein wichtige Konvention, die dafür sorgt, dass dein Code übersichtlicher wird, ist es Code in geschweiften Klammern einzurücken.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+   size(200, 200); // schlechter Stil
+}
+void draw() {
+   background(100); // guter Stil
+}</code></pre>
+</div>
+</div>
+<p><br /><strong>Tip:</strong> Processing liefert hierfür eine Funktion, die es dir einfacher macht deine Code einzurücken: Die <strong>Autoformatierung</strong>. Du findest sie in Processing unter Bearbeiten → Autoformatierung oder unter dem Tastaturkürzel STR + T.</p>
+<h2>Sprechende Namen</h2>
+<p>Namensgebung ist ein wichtiges Thema in der Programmierung. Wichtig ist, das die Namen von Variablen, Konstanten, etc. möglichs klar vermitteln, was das jeweilige Element macht. Funktionen sind dabei häufig in Verbform</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int a = 21; // SCHLECHT
+int b = 170; // SCHLECHT
+
+int myAge = 21; // GUT
+int heightInCentimeters = 170; // GUT
+
+void draw() { // diese Funktion Zeichnet etwas
+}</code></pre>
+</div>
+</div>
+<h2>Schreibweise</h2>
+<p>Ebenfalls wichtig ist, dass dein Code gut lesbar ist. Gerade, wenn Variablennamen etwas länger werden, kann das schwierig sein. Hierfür gibt es auch ein paar Vorgaben:</p>
+<p><strong>Variablen </strong>werden am Anfang klein geschrieben und jedes neue Wort innerhalb des Variablennamens beginnt mit einem Großbuchstaben. Das wird auch als CamelCase bezeichnet.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int thisIsMyAge= 34;</code></pre>
+</div>
+</div>
+<p><strong>Konstanten</strong> werden nur in Großbuchstaben geschrieben und neue Wörter werden durch einen Unterstrich markiert.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>final int THIS_IS_MY_SCHOESIZE = 41;</code></pre>
+</div>
+</div>
+<p><strong>Funktionen</strong>, werden genauso geschrieben, wie Variablen, sind aber meistens in Verbform. Manchmal werden Funktionen am Anfang auch groß geschrieben.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void sayHello () { // richtig
+}
+
+
+void SayHi () { // auch richtig
+}</code></pre>
+</div>
+</div>
+<h2><br />Kommentare</h2>
+<p>Kommentare sind ein wichtiges Element in der Programmierung. Spare nicht mit Kommenaren. Was für dich zum aktuellen Zeitpunkt sonnenklar ist, kannst du vielleicht zu einem späteren Zeitpunkt nicht mehr nachvollziehen. Also schreibe in deinen Code ruhig rein, was du warum machst. Einzeilige Kommentare können entweder oberhalb der Codezeile stehen oder hinter der Codezeile. Hier ist beides richtig:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// change background color - RICHTIG
+background(255);
+stroke(0); //change stroke color - AUCH RICHTIG</code></pre>
+</div>
+</div>
+<h1>Code Qualität</h1>
+<p>Wenn du bzw. ihr als Team einen guten Programmierstil habt, dann sorgt das dafür, dass euer Code eine gute Qualität hat. Eine gute Code Qualität zeichnet sich folgendermaßen aus:</p>
+<ul>
+<li>Der Code ist übersichtlich und gut strukturiert.</li>
+<li>Auch andere - fremde - ProgrammiererInnen können deinen Code (schnell) verstehen.</li>
+<li>Du selber kannst deinen Code auch noch verstehen, wenn du mal länger nicht draufgeschaut hast.</li>
+<li>Fehler können leicht gefunden werden.</li>
+</ul>
+<p>Welchen Programmierstil du oder ihr euch als Team aussucht, ist relativ egal. Wichtig ist nur, dass die Regeln, für die ihr euch entscheidet sinnvoll sind und, dass sich jeder konsistent daran hält.</p>
+<h1><br />Zusammenfassung</h1>
+<h2>Syntax</h2>
+<p>Der Syntax einer Programmiersprache legt fest, wie diese geschrieben werden muss und <strong>welche Regeln beachtet werden müssen</strong>. Die wichtigsten Syntax-Regel für Java sind:</p>
+<ul>
+<li><strong>Groß- &amp; Kleinschreibung</strong> beachten</li>
+<li><strong>Kommentare</strong>: Einzeilige Kommentare werden mit // begonnen, mehrzeilige r von /* ... */ eingeschlossen</li>
+<li><strong>Bezeichner</strong>:
+<ul>
+<li>Dürfen <strong>nicht</strong> mit einem <strong>Schlüsselwort</strong> der Sprache Java identisch sein</li>
+<li>bestehen aus <strong>Ziffern</strong> (0-9), <strong>Buchstaben</strong> (a-z, A-Z) und zwei weiteren Zeichen (Unterstrich und $)</li>
+<li>dürfen <strong>nicht</strong> mit einer <strong>Ziffer</strong> <strong>beginnen</strong></li>
+<li>dürfen <strong>keine</strong> <strong>Leerzeichen</strong> enthalten und auch <strong>keinen</strong> <strong>Bindestrich</strong></li>
+</ul>
+</li>
+<li><strong>Befehle</strong> bestehen aus einem Bezeichner, zwei runden Klammern () und einem Semikolon am Ende der Zeile: z.B. noStroke();</li>
+<li><strong>Funktionen</strong> bestehen aus dem Datentyp oder dem Schlüsselwort void, dem Bezeichner, 2 runden Klammern (ggf. inkl. Parameter), 2 geschweiften Klammern.</li>
+<li><strong>Variablen</strong> können entweder nur zunächst nur deklariert oder auch direkt auch initialisiert werden.
+<ul>
+<li><strong>Nur Deklaration</strong>: Besteht aus dem Datentyp, dem Bezeichner und einem Semikolon (z.B. int myAge;).</li>
+<li><strong>Deklaration &amp; Initialisierung</strong>: Besteht aus dem Datentyp, dem Bezeichner, dem Zuweisungsoperator, einem Wert und einem Semikolon (z.B. int myAge = 21;).</li>
+</ul>
+</li>
+</ul>
+<h2>Konventionen</h2>
+<p>Konventionen sind <strong>weiche Regeln,</strong> wie Programmcode zu schreiben ist. Es ist nicht zwingend notwendig sich an Konventionen zu halten, damit der Prgrammcode funktioniert. Allerdings steigert das Einhalten der Konventionen die Qualität des Codes, da</p>
+<ul>
+<li>er <strong>leichter zu lesen</strong> und zu verstehen ist - auch nach langer Zeit.</li>
+<li><strong>Fehler</strong> im Code <strong>schneller zu finden</strong> sind</li>
+<li>auch <strong>andere</strong> <strong>ProgrammiererInnen</strong> den Code lesen und verstehen können</li>
+</ul>
+<p>Wichtige Konventionen sind:</p>
+<ul>
+<li><strong>Einrücken</strong> von Codeblöcken</li>
+<li><strong>Sprechende</strong> <strong>Namen</strong> wählen</li>
+<li>Einhalten von <strong>Schreibweisen</strong>
+<ul>
+<li><strong>Variablen</strong>: Am Anfang klein und in CamelCase</li>
+<li><strong>Konstanten</strong>: in Großbuchstaben und mit Unterstrichen</li>
+<li><strong>Funktionen</strong>: Am Anfang groß, in CamelCase und in Verbform</li>
+</ul>
+</li>
+<li><strong>Kommentare</strong> verwenden</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="lokale_variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arithmetische_operatoren.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

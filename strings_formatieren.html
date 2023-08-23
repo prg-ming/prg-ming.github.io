@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Strings formatieren | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-55"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li id="active"><a href="strings_formatieren.html" class="active no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="strings_verarbeiten.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="dateien_erzeugen_und_lesen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Strings formatieren</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id78">
+<div class="iDevice emphasis0" >
+<div id="ta78_122_2" class="block iDevice_content">
+<div class="exe-text"><h1>Formatieren mit format()</h1>
+<p>Immer wieder müssen Zahlen, Datumsangaben und Text auf verschiedenste Art und Weise formatiert werden. Die Klasse String stellt mit der Methode <code>format()</code> eine Möglichkeit bereit, Zeichenketten nach einer Vorgabe zu formatieren. Die grundlegende Schreibweise ist wie folgt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Deklaration &amp; Initialisierung
+String s = String.format(TEXT, ARGUMENTE);
+ 
+// Ausgabe
+println(String.format(TEXT, ARGUMENTE));</code></pre>
+</div>
+</div>
+<p>Dabei ist TEXT, der Text, der formatiert werden soll, auch Format-String genannt. Die ARGUMENTE sind Werte, die in den TEXT eingefügt werden können.</p>
+<p>Schau dir einmal folgendes Beispiel an:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String s = String.format( "Hallo %s. Es gab einen Anruf von %s.", "Chris", "Joy" );
+println( s );    </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>Hallo Chris. Es gab einen Anruf von Joy.</code></pre>
+</div>
+</div>
+<p><strong>Erläuterung:</strong></p>
+<ul>
+<li>Der erste übergebene String ist der <strong>Format-String.</strong>
+<ul>
+<li>Er enthält neben den auszugebenden Zeichen weitere sogenannte <strong>Format-Spezifizierer,</strong> die dem Formatierer darüber Auskunft geben, wie er das Argument formatieren soll. %s steht für eine unformatierte Ausgabe eines Strings.</li>
+</ul>
+</li>
+<li>Nach dem Format-String folgen <strong>Argumente</strong> mit den Werten, auf die sich die Format-Spezifizierer beziehen.
+<ul>
+<li>In diesem Fall sind dies Arguemente zwei Strings ("Chris" und "Joy"), die an die Stellen der Format-Spezifierer eingefügt werden.</li>
+</ul>
+</li>
+</ul>
+<h2>Format-Spezifierer</h2>
+<p>Schauen wir uns den <strong>Format-String</strong> mal genauer an. Er besteht aus Literalen (im Beispiel oben ist das "Hallo" und "Es gab einen Anruf") und <strong>Format-Spezifizieren.</strong>  <br />Format-Spezifizierer bestehen aus <strong>Flags, Breite, Genauigkeit und Konvertierungszeichen</strong> - in dieser Reihenfolge:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>%[flags][breite][.genauigkeit]konvertierungszeichen</code></pre>
+</div>
+</div>
+<p>Die Formatspezifizierer in den eckigen Klammern sind optional.</p>
+<h3>Konvertierungszeichen</h3>
+<p><strong>Das Konvertierungszeichen ist zwingend erforderlich und legt fest, wie das Argument formatiert ist.</strong> Konvertierungszeichen sind nur für bestimmte Datentypen gültig. Ein paar wichtige sind folgende:</p>
+<ul>
+<li>s – formatiert Strings</li>
+<li>d – formatiert Ganz- bzw. Dezimalzahlen</li>
+<li>f – formatiert Gleitkommakommazahlen</li>
+<li>t – formatiert Datum und Zeit</li>
+<li>b – formatiert Wahrheitswerte</li>
+</ul>
+<p>Wir schauen uns diese später noch genauer an.</p>
+<h3>Optionale Modifikatoren</h3>
+<p>Die anderen Modifikatoren sind optional:</p>
+<ul>
+<li><strong><code>[flags]</code> definieren standardisierte Wege die Ausgabe zu formatieren</strong> und werden am häufigsten für Integers und Gleitkommazahlen verwendet.</li>
+<li><strong><code>[breite]</code> legt die Breite für das Argument fest.</strong> Die Zahl legt das Minimum an Zeichen fest, die in der Ausgabe vorkommen müssen.</li>
+<li><strong><code>[.genauigkeit]</code> legt die Nummer an Zeichen für die Genauigkeit  bei Gleitkommazahlen fest. </strong>Außerdem können wir damit die Länge eines Substrings festlegen.</li>
+</ul>
+<h3>Zeilenumbruch</h3>
+<p>Für einen Zeilenumbruch haben wir den <code>%n</code> Spezifierer:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(String.format("Java%nZeilen%numbruch"));</code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>Java
+Zeilen
+umbruch</code></pre>
+</div>
+</div>
+<h2>Boolean Formatierung</h2>
+<p>Um Booleans zu formatieren verwenden wir %b. Das funktioniert wie folgt: Wenn der Wert <code>true</code> ist, wird <code>true</code> ausgegeben. Ansonsten wir <code>false</code> ausgegeben.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("%b%n", null));           // Ausgabe false
+print(String.format("%B%n", false));          // Ausgabe FALSE
+print(String.format("%B%n", 5.3));            // Ausgabe TRUE
+print(String.format("%b%n", "random text"));  // Ausgabe true</code></pre>
+</div>
+</div>
+<p><strong>Hinweis:</strong> Wir können %B verwenden, um die Ausgabe in Großbuchstaben zu konvertieren. </p>
+<h2>String Formatierung</h2>
+<p>Um einen einfachen String zu formatieren, verwenden wir s%.  Auch hier können wir %S verwenden, um Großbuchstaben zu erhalten:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("'%s' %n", "Processing")); // Ausgabe 'Processing'
+print(String.format("'%S' %n", "Processing")); // Ausgabe 'PROCESSING'</code></pre>
+</div>
+</div>
+<p>Wir können auch eine minimale Breite festlegen, also wie lang der String mindestens sein soll. Der String wird dann mit Leerzeichen "aufgefüllt":</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("Ich lerne '%15s' %n", "Processing")); // Ausgabe: Ich lerne '     Processing'!</code></pre>
+</div>
+</div>
+<p>Wenn wir unseren String linksbündig haben wollen, können wir das '-' Flag verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("Ich lerne '%-15s'! %n", "Processing")); // Ausgabe: Ich lerne 'Processing     '!</code></pre>
+</div>
+</div>
+<p>Wir können auch ein Limit an Zeichen festlegen indem wir Genauigkeit verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("Ich lerne '%6.4s'! %n", "Processing")); // Ausgabe: Ich lerne '  Proc'!</code></pre>
+</div>
+</div>
+<p>Die 4 gibt an, wieviele Zeichen wir von dem String haben wollen. 4 Zeichen bedeutet bei uns die ersten 4 Buchstaben von Processing, sprich Proc. <br />Die 6 ist optional und gibt an, wieviele Zeichen der String haben soll, den wir als Ausgabe zurückbekommen. Ist diese Zahl höher, als die Zahl nach dem Punkt, werden Leerzeichen eingefügt. In diesem Fall werden 2 Leerzeichen vor Proc eingefügt.</p>
+<h2>Ganzzahl Formatierung</h2>
+<p>Die format Funktion akzeptiert alle Ganzahlen, die in Java vorkommen (byte, short, int, long). Für diese verwenden wir %d:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("eine Ganzzahl: %d%n", 10000)); // Ausgabe: eine Ganzzahl: 10000</code></pre>
+</div>
+</div>
+<p>Wenn wir ein Tausender-Trennzeichen in unserer Zahl möchten, können wir die "," flag verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("eine Ganzzahl: %,d%n", 10000)); // Ausgabe: eine Ganzzahl: 10.000</code></pre>
+</div>
+</div>
+<p>Eine weitere mögliche flag ist die Klammer. Die Klammer sorgt dafür, das <strong>negative Zahlen</strong> in Klammern angezeigt werden. Wir können problemlos flags kombienieren, wenn wir mehrere verwenden möchten. Die Reihenfolge der flags ist egal:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("eine Ganzzahl: %(,d%n", -10000)); // Ausgabe: eine Ganzzahl: (10.000)
+print(String.format("eine Ganzzahl: %,(d%n", -10000)); // Ausgabe: eine Ganzzahl: (10.000)</code></pre>
+</div>
+</div>
+<h2>Float und Double Formatierung</h2>
+<p>Um eine Fließkommazahl zu formatieren benötigen wir %f:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("%f%n", 125.1473f)); // Ausgabe: 5,147301</code></pre>
+</div>
+</div>
+<p>Wir sehen, dass der %f Spezifierer standardmäßig 6 Nachkommastellen darstellt. Um das zu vermeiden müssen wir die Genauigkeit anpassen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("%7.2f%n", 125.1473f)); // Ausgabe: 125,15</code></pre>
+</div>
+</div>
+<p>Hier legen wir mit 7 die Breite der Zahl fest und mit 2 die Nachkommastellen. Die Breite von 7 hat hier die Folge, dass vor der Zahl 1 Leerzeichen ist. Dieses können wir auch mit Nullen füllen, indem wir vor die 7 eine 0 setzen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("%07.2f%n", 125.1473f)); // Ausgabe: 0125,15</code></pre>
+</div>
+</div>
+<p><strong>Hinweis:</strong> Das Komma wird hier auch als Zeichen für die Breite gewertet.</p>
+<p>Auf diese Weise können wir Zahlen aufgeben, die alle dieselbe Breite haben unabhängig davon wieviele Zeichen sie tatsächlich haben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>print(String.format("%07.1f%n", 1.1d));     // Ausgabe: 00001,1
+print(String.format("%07.1f%n", 10.1d));    // Ausgabe: 00010,1
+print(String.format("%07.1f%n", 100.1d));   // Ausgabe: 00100,1
+print(String.format("%07.1f%n", 1000.1d));  // Ausgabe: 01000,1
+print(String.format("%07.1f%n", 10000.1d)); // Ausgabe: 10000,1</code></pre>
+</div>
+</div>
+<p><strong>Hinweis:</strong> Ist die hinter den Gleitkommazahlen das f bzw. das d aufgefallen? Bei einer Gleitkommazahl kann es sich ja entweder um einen float oder einen double handeln. Damit dein Progamm funktioniert musst du der format Funktion genau sagen, was du meinst. Das kannst du mithilfe der Buchstaben. Hängst du an die Kommazahl ein f, dann behandelt und speichert dein Programm die Zahl als float, mit einem d hingegen wird sie als double interpretiert.</p>
+<h2>Variablen in Format-Spezifieren</h2>
+<p>In manchen Fällen kann es vorkommen, dass ein String, der mithilfe von format formatiert wird z.B. ein variable Breite haben soll. Auch das ist möglich. Da es sich beim ersten Parameter in der format Funktion um einen "ganz normalen" String handelt, kannst du in diesen String auch genau so wie du es bisher kennst, Variablen einbinden mithilfe der Stringverkettung.</p>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int kommastellen = 1;
+ 
+while (kommastellen &lt; 4) {
+   print(String.format("%."+kommastellen+"f%n", 1f)); 
+   kommastellen++;
+}</code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>1,0
+1,00
+1,000</code></pre>
+</div>
+</div>
+<h1>Zusammenfassung</h1>
+<p>In diesem Abschnitt haben wir gelernt, wie wir Strings formatieren können.  format() formatiert einen Format-String mithilfe von Format-Spezifizieren und Argumenten:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String s = String.format(TEXT, ARGUMENTE);</code></pre>
+</div>
+</div>
+<p>Format-Spezifizierer bestehen aus Flags, Breite, Genauigkeit und Konvertierungszeichen:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>%[flags][breite][.genauigkeit]konvertierungszeichen</code></pre>
+</div>
+</div>
+<ul>
+<li><strong>Flags:</strong> Typische flags sind z.B. das Minus-Zeichen (-),  das Komma (,) als Tausender-Trennzeichen, das Leerzeichen (' ') bzw. die Null (0) und die Klammer (</li>
+<li><strong>Breite:</strong> Gibt an wie breit (wieviele Zeichen) der String sein soll. Hier werden auch Kommas und Nachkommastellen miteinberechnet</li>
+<li><strong>Genaugikeit:</strong> Gibt die Nachkommastellen an</li>
+<li><strong>Konvertierungszeichen:</strong> Legt fest von welchem Typ der vorliegende Wert ist, z.B. float, int oder boolean. Wird das Konvertierungszeichen groß geschrieben, wird auch der String groß geschrieben.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="strings_verarbeiten.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="dateien_erzeugen_und_lesen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

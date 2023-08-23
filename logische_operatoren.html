@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Logische Operatoren | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-14"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li class="current-page-parent"><a href="ifanweisungen.html" class="current-page-parent daddy">If-Anweisungen</a>
+         <ul>
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li id="active"><a href="logische_operatoren.html" class="active no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="programmablaufplan.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="boolesche_variablen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Logische Operatoren</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id11">
+<div class="iDevice emphasis0" >
+<div id="ta11_118_2" class="block iDevice_content">
+<div class="exe-text"><p>Um komplexere Sachverhalte auszudrücken, reichen of "einfache" if-Abfragen nicht aus, da mehrere Dinge abgefragt und miteinander verglichen werden müssen. Solche Kombinationen sind wieder boolesche Ausdrücke und können also als Bedingung für das If verwendet werden. Die genannten Kombinationen werden über sogenannte <strong>logische</strong> <strong>Operatoren</strong> hergestellt.</p>
+<h1>Logisches UND</h1>
+<p>Nehmen wir an, du möchtest prüfen, ob die Variable x zwischen 10 und 20 liegt. In der Schule schreibt man einfach 10 &lt; x &lt; 20. In Processing muss dies in zwei Vergleiche zerlegt werden, nämlich in 10 &lt; x <strong>und</strong> x &lt; 20. Damit "10 &lt; x &lt; 20" wirklich gilt, müssen <strong>beide</strong> Vergleiche wahr sein. Diese Kombination nennt man das <strong>logische</strong> <strong>UND</strong> (engl. AND). Das logische UND nennt man auch einen logischen <strong>Operator</strong>. Im Code schreibt man für den UND-Operator ein doppeltes "käufmännisches Und", also &amp;&amp;.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 5;
+
+if (10 &lt; x &amp;&amp; x &lt; 20) {
+   println("Yes!");
+}</code></pre>
+</div>
+</div>
+<h1>Logisches ODER</h1>
+<p>Der zweite wichtige Operator ist das logische ODER (engl. OR). Nehmen wir an, du willst testen, ob die x-Koordinate eines Objekts den Bildschirmbereich verlässt, der 1024 Pixel breit ist. Dann testest du, ob x &lt; 0 ist <strong>oder</strong> x &gt;= 1024.</p>
+<p>Das logische ODER schreibt man im Code mit zwei senkrechten Strichen ||</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 5;
+
+if (x &lt; 0 || x &gt;= 1024) {
+   println("Oops!");
+}</code></pre>
+</div>
+</div>
+<p><br /><strong>Und wo ist dieses Zeichen | auf meiner Tastatur...?</strong> Auf dem Mac mit ALT+7, unter Windows mit Alt Gr + &lt;.</p>
+<p><strong>Hinweis:</strong> Das logische ODER ist ein UND/ODER. Das bedeutet, wenn beide Seiten true sind, dann ist der gesamte Ausdruck true. </p>
+<h1>Negation</h1>
+<p>Mit dem Ausrufezeichen negiert man einen Ausdruck, d.h. du kehrst den Wert um (true statt false bzw. false statt true). Das Ausrufezeichen nennt man auch den logischen Negationsoperator oder das logische NICHT (engl. NOT). Im Unterschied zu UND/ODER steht dieser Operator nicht zwischen zwei Ausdrücken, sondern vor einem einzigen Ausdruck.</p>
+<p>Wenn du z.B. den Vergleich x &lt; 10 negieren wilst, schreibst du  !(x &lt; 10). Das entspricht dann offensichtlich x &gt;= 10, d.h. das könnte man eigentlich auch direkt so (ohne Negation) hinschreiben, aber für komplexere Ausdrücke ist die Negation manchmal bequemer oder lesbarer.</p>
+<p>Nehmen wir an, du willst das Beispiel oben "Objekt verlässt Bildschirm" einfach negieren. Das heißt, du willst Code ausführen für den Fall, dass das Objekt noch auf dem Bildschirm ist, dann schreibst du:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 5;
+
+if (! (x &lt; 0 || x &gt;= 1024)) {
+   println("Bin auf dem Schirm!");
+}</code><br /><br /></pre>
+</div>
+</div>
+<p>Solltest du dich fragen, wie man die obige Bedingung ohne Negation schreibt, kommst du auf diesen Ausdruck: x &gt;= 0 &amp;&amp; x &lt; 1024. Das heißt, wenn man einen Ausdruck mit logischem ODER negiert, dann negiert man beide Einzelteile und man "dreht den Operator um", d.h. aus ODER wird UND und umgekehrt.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>! (x &lt; 0 || x &gt;= 1024)</code><br /><br /></pre>
+</div>
+</div>
+<p>entspricht</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>! (x &lt; 0) &amp;&amp; ! (x &gt;= 1024)</code></pre>
+</div>
+</div>
+<p>entspricht</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>x &gt;=0 &amp;&amp; x &lt;1024</code></pre>
+</div>
+</div>
+<h1>Komplexe Ausdrücke und Auswertereihenfolge</h1>
+<p>Du kannst beliebig viele logische Ausdrücke mit UND/ODER kombinieren und mit NICHT negieren. Wie wird ein solcher Ausdruck ausgewertet? Nehmen wir ein Beispiel mit zwei logischen Operatoren:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int k = 5;
+float f = 2.5;
+int t = 30;
+
+if (k &gt; 0 &amp;&amp; f &lt; 10.0 || t &gt; 100) {
+   println("hurra");
+}</code></pre>
+</div>
+</div>
+<p>Processing nimmt sich die Bedingung:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>k &gt; 0 &amp;&amp; f &lt; 10.0 || t &gt; 100</code></pre>
+</div>
+</div>
+<p>Und setzt zunächst die Variablenwerte ein:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>5 &gt; 0 &amp;&amp; 2.5 &lt; 10.0 || 30 &gt; 100</code></pre>
+</div>
+</div>
+<p>Dann werden die einzelnen Vergleiche aufgelöst:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true &amp;&amp; true || false</code></pre>
+</div>
+</div>
+<p>Jetzt gehen wir von links nach rechts vor und lösen einen Operator nach dem nächsten, also zunächst das true &amp;&amp; true, das wird zu true. Anschließend haben wir noch:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true || false</code></pre>
+</div>
+</div>
+<p>Dies wird wiederum aufgelöst zum Ergebnis:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true</code></pre>
+</div>
+</div>
+<p></p>
+<p>In unserem Beispiel konnten wir von links nach rechts rechnen, aber das gilt nicht immer, <strong>denn der UND-Operator hat Priorität vor ODER. </strong>Sehen wir uns das obige Beispiel leicht modifiziert an: das UND steht jetzt hinten, das ODER vorn:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>k &gt; 0 || f &lt; 10.0 &amp;&amp; t &gt; 100</code></pre>
+</div>
+</div>
+<p>Wir setzen die Variablenwerte ein:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>5 &gt; 0 || 2.5 &lt; 10.0 &amp;&amp; 30 &gt; 100</code></pre>
+</div>
+</div>
+<p>Und lösen die Vergleiche auf:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true || true &amp;&amp; false</code></pre>
+</div>
+</div>
+<p>Jetzt kommt der entscheidende Unterschied: Statt von links nach rechts zu rechnen, müssen wir das UND vorziehen (das wird Präzedenz genannt):</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true || true &amp;&amp; false</code></pre>
+</div>
+</div>
+<p>Wir lösen als zunächst true &amp;&amp; false auf zu false:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true || false</code></pre>
+</div>
+</div>
+<p>Dies wird wiederum aufgelöst zum Ergebnis:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>true</code></pre>
+</div>
+</div>
+<p>Allgemein gesprochen verwendet Java bei booleschen (logischen) Ausdrücken ähnliche Regeln wie bei arithmetischen Ausdrücken (also Rechnungen mit +, -, *, /). Dabei gelten folgende Regeln:</p>
+<table style="height: 64px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;"><strong>Operator</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Priorität</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>entspricht</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">!</td>
+<td style="width: 33.3333%; height: 16px;">3</td>
+<td style="width: 33.3333%; height: 16px;">unäres - (wie bei -3)</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">&amp;&amp;</td>
+<td style="width: 33.3333%; height: 16px;">2</td>
+<td style="width: 33.3333%; height: 16px;">*, /</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">||</td>
+<td style="width: 33.3333%; height: 16px;">1</td>
+<td style="width: 33.3333%; height: 16px;">+, -</td>
+</tr>
+</tbody>
+</table>
+<p>In der Tabelle bedeutet eine höhere Priorität, dass der Operator als erstes ausgewertet wird. Das bedeutet: der Negationsoperator wird immer zuerst ausgewertet. Ferner gilt: ein UND wird immer vor ODER ausgewertet.</p>
+<p>Wenn du folgenden Ausdruck hast:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>a || b &amp;&amp; !c || d</code></pre>
+</div>
+</div>
+<p>Wird dieser so ausgewertet, als gäbe es folgende Klammern:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>(a || (b &amp;&amp; (!c))) || d</code></pre>
+</div>
+</div>
+<h1>Anwendungsbeispiel: Ping-Pong</h1>
+<p>Stelle dir ein Programm vor, bei dem ein Ball von links nach rechts fliegt, an der rechten Seite abprallt, zur linken Seite zurück fliegt, dort abprallt, usw. Der speed ist dabei immer 1 bzw. -1, wenn der Ball die Richtung ändert.</p>
+<p>Das Basisprogramm sieht zunächst mal so aus:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+
+void draw() {
+   background(0);
+   ellipse(x, 50, 20, 20);
+   x++;
+}</code></pre>
+</div>
+</div>
+<p>In dieser Version fliegt der Ball genau einmal über den Bildschirm und verschwindet dann auf Nimmerwiedersehen ...</p>
+<p>Die Logik, die hinter dem Abprallen steht, könnte man so formulieren:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>Wenn der Ball den rechten Rand erreicht,
+   soll er nach links weiterfliegen.</code></pre>
+</div>
+</div>
+<p>Der erste Teilsatz übersetzt sich zu der Bedingung x &gt; width. Der zweite Satz "nach links weiterfliegen" lässt sich realisieren, indem man die Geschwindigkeit auf -1 setzt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (x &gt; width) {
+   speed = -1;
+}</code></pre>
+</div>
+</div>
+<p>Analog für den linken Rand:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>Wenn der Ball den linken Rand erreicht,
+   soll er nach rechts weiterfliegen.</code></pre>
+</div>
+</div>
+<p>Im Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (x &lt; 0) {
+   speed = 1
+}</code></pre>
+</div>
+</div>
+<p><br /><strong>Verallgemeinerung</strong></p>
+<p>Wenn wir die Lösung allgemeiner betrachten, sehen wir, dass in beiden Fällen einfach das Vorzeichen der Geschwindigket umgedreht wird. Aus 1 wird -1 und aus -1 wird 1. Im Code lässt sich das Umdrehen des Vorzeichens ganz elegant formulieren:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>speed = -speed;</code></pre>
+</div>
+</div>
+<p>Das schöne an dieser Formulierung ist, dass es egal ist, welcher Wert in speed steht, egal ob 1 oder 3000. Wenn der Wert negativ ist, wird er positiv. Ist er positiv, wird er negativ.</p>
+<p>Der Code würde also wie folgt aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+int speed = 1;
+
+void draw() {
+   background(255);
+   ellipse(x, 50, 20, 20);
+   x = x + speed;
+
+   if (x &gt; width) {
+      speed = -speed;
+   }
+
+   if (x &lt; 0) {
+      speed = -speed;
+   }
+}</code></pre>
+</div>
+</div>
+<p><br />Es fällt auf, dass in beiden If-Fällen der exakt gleiche Code ausgeführt wird, also man könnte auch sagen: wenn x &gt; width <strong>oder</strong> x &lt; 0 der Fall ist, dann drehe das Vorzeichen um. Klarer Fall für eine boolesche Verknüpfung:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+int speed = 3;
+
+void draw() {
+   background(255);
+   ellipse(x, 50, 20, 20);
+   x = x + speed;
+
+   if (x &lt; 0 || x &gt; width) {
+      speed = -speed;
+   }
+}</code></pre>
+</div>
+</div>
+<h1><br />Zusammenfassung</h1>
+<ul>
+<li>Zwei boolesche Ausdrücke (wie z.B. die Vergleiche x &gt; 5 und x &lt; 10) lassen sich mit den logischen Operatoren UND bzw. ODER kombinieren. Das Gesamte ist wieder ein boolescher Ausdruck.</li>
+<li>Wir haben drei logische Operatoren kennen gelernt:
+<ul>
+<li><strong>UND</strong>: Der Ausdruck A &amp;&amp; B (A und B) ist genau dann wahr, wenn sowohl A als auch B wahr sind.</li>
+<li><strong>ODER</strong>: Der Ausdruck A || B (A oder B) ist genau dann wahr, wenn entweder A oder B (oder beide) wahr sind.</li>
+<li><strong>NICHT</strong>: Der Ausdruck !A ist genau dann wahr, wenn A falsch ist.</li>
+</ul>
+</li>
+<li>Ein <strong>boolescher Ausdruck</strong> ist also entweder
+<ul>
+<li>das <strong>Schlüsselwort true</strong> oder <strong>false</strong></li>
+<li>ein <strong>Vergleich</strong> von Werten (z.B. == oder &lt;=)</li>
+<li>die<strong> logische Verknüpfung</strong> von zwei booleschen Ausdrücken mit &amp;&amp; oder ||</li>
+<li>die <strong>Negation</strong> eines booleschen Ausdrucks mit !</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="programmablaufplan.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="boolesche_variablen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

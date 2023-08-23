@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Debugging | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-27"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="debugging.html" class="active no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="kontrollanweisungen_in_schleifen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungsaufgaben_und_fragen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Debugging</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id32">
+<div class="iDevice emphasis0" >
+<div id="ta32_117_2" class="block iDevice_content">
+<div class="exe-text"><p>Beim Schreiben von Code treten zwangsläufig Fehler auf. Das kann frustrierend sein, aber es ist ein großer Teil davon, Programmierer zu sein. Jeder Programmierer stößt jedes Mal, wenn er sich hinsetzt, um Code zu schreiben, auf Fehler. Fehler können aus verschiedenen Gründen auftreten. Diese werden auch als Bug (= engl. für Käfer, Wanze) bezeichnet. Das beheben von diesen Fehler wird als Debugging bezeichnet. In dieser Lektion erfahrst du, wie du deinen Code debuggen kannst.</p>
+<h1>Fehlerarten</h1>
+<p>Es gibt 3 verschiedene Fehlerarten: Compilerfehler, Laufzeitfehler und Logikfehler. Die ersten beiden sind noch harmlos, da Processing uns in der Regel darauf aufmerksam macht, wo genau der Fehler ist. Anders ist das bei den Logikfehlern - hier muss man genauer suchen.</p>
+<h2>Compilerfehler</h2>
+<p>Die erste Art von Fehler, die du wahrscheinlich sehen wirst, sind Compilerfehler. Grundsätzlich tritt ein Compilerfehler auf, wenn du Code schreibst, den der Computer nicht versteht. In diesem Fall kann Processing deinen Code nicht einmal ausführen, da es nicht weiß, was es tun soll.</p>
+<p>Die Regeln einer Sprache werden als ihre <strong>Syntax &amp; Konventionen</strong> bezeichnet. <strong>Compilerfehler</strong> werden auch als <strong>Syntaxfehler</strong> bezeichnet, da sie bedeuten, dass dein Code die Regeln der Sprache verletzt hat. Compilerfehler können sich auf vergessene Semikolons oder falsch geschriebene Variablen beziehen, aber auch auf Verstöße gegen die Verarbeitungsregeln, z. B. auf den Versuch, einen String-Wert in einer int-Variablen zu speichern.</p>
+<p>Hier ist ein Beispiel, das einen Syntaxfehler enthält. Kannst du es erkennen?</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200, 200);
+background(black);
+ellipse(width/2, height/2, 100, 100);</code></pre>
+</div>
+</div>
+<p>Siehst du den Syntaxfehler? Kopiere diesen Code in deinen Processing Editor und du wirst eine Reihe von Dingen feststellen:</p>
+<ul>
+<li>Der Processing Editor zeigt eine rote Linie unter black.</li>
+<li>Wenn du mit der Maus über die rote Linie fährst, erscheint ein Tooltip in dem steht  The variable "black" does not exist.</li>
+<li>Wenn du versuchst den Code auszuführen, indem du auf Play drückst, dann zeigt dir der Editor eine rote Meldung in der steht black cannot be resolved to a variable...</li>
+</ul>
+<p><img src="debugging-1.gif" alt="Syntaxfehler" width="301" height="400" /></p>
+<p>In diesem Fall wird der Fehler dadurch verursacht, dass wir das Wort black verwenden, das Processing nicht versteht. Wir müssen entweder eine Variable mit dem Namen black erstellen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200, 200);
+float black = 0;
+background(black);
+ellipse(width/2, height/2, 100, 100);</code></pre>
+</div>
+</div>
+<p>Oder wir überwegen den Farbwert direkt in die  background() Funktion:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>size(200, 200);
+background(0);
+ellipse(width/2, height/2, 100, 100);</code></pre>
+</div>
+</div>
+<p>In beiden Fällen wird der Fehler dadurch beseitigt, sodass der Code jetzt ausgeführt werden kann. Wenn du also einen Compilerfehler siehst, solltest du Folgendes tun:</p>
+<ul>
+<li>Schau dir sich die<strong> unterstrichene Linie</strong> an.</li>
+<li>Schau dir die <strong>Informationen</strong> im <strong>Tooltip</strong> an.</li>
+<li>Schau dir die <strong>Meldung</strong> an, wenn du versucht den <strong>Code auszuführen</strong>.</li>
+</ul>
+<p>Wenn du das Problem nicht herausfinden kannst, schau in<strong> die Referenz von Processing</strong>, um zu erfahren, was dein Code in dieser Zeile bewirkt. Vergleichen deinen Code mit den Informationen in den Beispiel in den Referenz und suche nach Unterschieden.</p>
+<h2>Laufzeitfehler</h2>
+<p>Du kannst Code schreiben, von dem der Computer weiß, wie er ausgeführt wird, der jedoch einen Fehler verursacht, während der Computer versucht, ihn auszuführen. Diese Art von Fehler wird als Laufzeitfehler bezeichnet und führt normalerweise dazu, dass dein Programm mit einer Fehlermeldung abstürzt. Hier ist ein Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message;
+
+void setup() {
+   size(300, 100);
+   textSize(36);
+}
+
+void draw() {
+   background(64);
+   text(message, 20, 50);
+}</code></pre>
+</div>
+</div>
+<p>Dieses Programm deklariert eine Variable message und nutzt die text() Funktion, um diese auf dem Bildschirm anzuzeigen. Kopiere diesen Code in Prodessing und du wirst feststellen, dass du keine Compilerfehler hast. Wenn du das Programm ausführst, öffnet sich zwar ein Fenster, aber es wird kein Text angezeigt. Und du bekommst einen Fehler:</p>
+<p><img src="debugging-2.png" alt="Debugging 2" width="328" height="400" /></p>
+<p>Processing hebt die Zeile text(message, 20, 50); farblich hervor und zeigt unten in der Fehlerleiste NullPointerException an. Die NullPointerException ist einer der häufigsten Laufzeitfehler und wird dadruch ausgelöst, dass du versucht eine Variable zu verwenden, die noch keinen Wert hat. Wir erinnern uns: Variablen sind Referenzen, die auf eine gewisse Stelle im Speicher verweisen (sie "zeigen" drauf → to point → Pointer), wo ein Wert gespeichert ist. Eine Variable, der noch kein Wert zugewiesen wurde zeigt somit "ins Leere" → NullPointerException ( = die "Kein-Verweis-Ausnahme").</p>
+<p>In diesem Fall haben wir vergessen der Variable message einen Wert zu geben, was aber ziemlich einfach zu reparieren ist:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message;
+
+void setup() {
+   size(300, 100);
+   textSize(36);
+   message = "Happy Coding";
+}
+
+void draw() {
+   background(64);
+   text(message, 20, 60);<br />}</code></pre>
+</div>
+</div>
+<p>Jetzt wird der Variable in setup() ein Wert zugewiesen. Dieser Code läuft problemlos!</p>
+<p><img src="debugging-3.png" alt="Debugging 3" width="195" height="100" /></p>
+<h2>Logikfehler</h2>
+<p>Manchmal schreibst du Code, der keine Fehler generiert, aber dennoch nicht so funktioniert, wie du es erwartest. Dies wird fast immer durch einen logischen Fehler verursacht und ist normalerweise darauf zurückzuführen, dass der oder die ProgrammiererIn (das bist du!) eine ungültige Annahme oder einen Tippfehler macht. Nehmen wir an, wir wollten ein Programm erstellen, das die Drehrichtung anzeigt: Es beginnt oben, dann rechts, dann unten, dann links und schließlich wieder oben. Wir könnten diesen Code schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String direction = "UP";
+
+void setup(){
+   frameRate(2);
+   textSize(24);
+   textAlign(CENTER);
+}
+
+void draw(){
+   background(32);
+   text(direction, 50, 60);
+   rotateDirection();
+}
+
+void rotateDirection() {
+   if (direction.equals("UP")) {
+      direction = "RIGHT";
+   }
+   if (direction.equals("RIGHT")) {
+      direction = "DOWN";
+   }
+   if (direction.equals("DOWN")) {
+      direction = "LEFT";
+   }
+   if (direction.equals("LEFT")) {
+      direction = "UP";
+   }
+}</code></pre>
+</div>
+</div>
+<p>Dieses Programm definiert eine Variable direction, welche auf dem Bildschirm angezeigt wird. Am Ende eines jeden Frames ruft es die Funktion rotateDirection() auf. Die rotateDirection() Funktion verwendet if Anweisungen, um den Wert von  direction in die nächste Richtung in der Folge zu verändern. Aber wenn du das Programm ausführst, dann wirst du feststellen, dass nur UP auf dem Bildschirm angezeigt wird.<strong> Es werden keine Fehler angezeigt, aber der Code macht dennoch nicht, was er soll.</strong></p>
+<p><strong>Hinweis</strong>: .equals() ist eine besondere Methode, um Strings zu vergleichen. Wir werden diese Methode noch in später kennenlernen</p>
+<h1>Debugging-Methoden (bei Logikfehlern)</h1>
+<h2>Debugging mit deinem Gehirn</h2>
+<p>Wenn du einen Compiler- oder Logikfehler erhaltst, müssst du zuerst deinen Code<strong> im Kopf durchgehen</strong>. Lies den Code Zeile für Zeile durch und vergewissere sich, dass es sich bei dem von dir geschriebenen Code um den Code handelt, den du schreiben wolltest - genau wie beim Korrekturlesen von allem, was du geschrieben haben.</p>
+<p>Verwende<strong> Papier und Bleistift,</strong> um Variablenwerte aufzuschreiben oder Dinge auf den „Bildschirm“ zu zeichnen, während du deinen Code liest. Versuche, deinen Code durchzulesen und dir vorzustellen, wie er funktioniert, wenn er andere Werte erhält. Durchlaufe einzelne Funktionen mit imaginären Parametern, um sicherzustellen, dass sie in jedem Fall funktionieren.</p>
+<p>Eine weitere Möglichkeit ist das Zeichnen eines <strong>Programmablaufplans</strong>. Er visualisiert den Ablauf deines Programmes und hilft dir zu verstehen, was nacheinander passiert. Man kann den Programmablaufplan entweder zur <strong>Vorbereitung und Konzeption</strong> (also vor dem Coden) verwenden oder später zum <strong>Debugging</strong>.</p>
+<p>Lies im obigen Beispiel die Funktion rotateDirection() durch und überlege dir sich genau, was die einzelnen Zeilen bewirken. Stelle sicher, dass du den Code richtig gelesen hast! Versuche nicht anzunehmen, dass du weißt, was der Code tut, und nimm dir einfach eine Zeile nach der anderen vor. Lautes Vorlesen kann helfen. Es kann auch helfen mit einem Partner zusammenzuarbeiten. Erkläre jemand anderes den Code. Dabei wirst entweder du - während du erklärst - feststellen, was der Fehler ist oder deinem Partner fällt der Fehler auf.</p>
+<h2>Print-Debugging</h2>
+<p>Wenn du den Fehler beim Durchlesen deines Codes nicht erkennen kannst, musst du herausfinden, was der Code tut und wo genau dies von dem abweicht, was du erwartet hast. Eine einfache Möglichkeit ist das Verwenden von  println() an entscheidenden Stellen im Code. Du kannst println() Befehle verwenden, um die Werte deiner Variablen zu erfahren oder um herauszufinden in welcher Reihenfolge Funktionen aufgerufen werden, etc. Diese Vorgehensweise wird als Print-Debugging bezeichnet.</p>
+<p>Vielleicht können wir mithilfe von  println() Befehlen heraufinden, was unser Code macht:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String direction = "UP";
+
+void setup() {
+   frameRate(2);
+   textSize(24);
+   textAlign(CENTER);
+   println("in setup, direction: " + direction);
+}
+
+void draw() {
+   println("in draw, direction: " + direction);
+   background(32);
+   text(direction, 50, 60);
+   rotateDirection();
+   println("nach rotateDirection, direction: " + direction);
+}
+
+void rotateDirection() {
+   println("in rotateDirection, direction: " + direction);
+   if (direction.equals("UP")) {
+      println("Erste if Anweisung.");
+      direction = "RIGHT";
+      println("Direction ist jetzt: " + direction);
+   }
+   if (direction.equals("RIGHT")) {
+      println("Zweite if Anweisung.");
+      direction = "DOWN";
+      println("Direction ist jetzt: " + direction);
+   }
+   if (direction.equals("DOWN")) {
+      println("Dritte if Anweisung.");
+      direction = "LEFT";
+      println("Direction ist jetzt: " + direction);
+   }
+   if (direction.equals("LEFT")) {
+      println("Vierte if Anweisung.");
+      direction = "UP";
+      println("Direction ist jetzt: " + direction);
+   }
+}</code></pre>
+</div>
+</div>
+<p>Wenn wir das Programm durchführen, lesen wir in der Konsole:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>in setup, direction: UP
+in draw, direction: UP
+in rotateDirection, direction: UP
+Erste if Anweisung.
+Direction ist jetzt: RIGHT
+Zweite if Anweisung.
+Direction ist jetzt: DOWN
+Dritte if Anweisung.
+Direction ist jetzt: LEFT
+Vierte if Anweisung.
+Direction ist jetzt: UP
+nach rotateDirection, direction: UP</code></pre>
+</div>
+</div>
+<p>Wir können diese Ausgabe verwenden, um unseren Code erneut zu lesen und diesmal zu vergleichen, was von uns erwartet wird und was tatsächlich gedruckt wird. Siehst du, wo der Unterschied liegt?</p>
+<h2>Logging</h2>
+<p>Eine andere, aber ähnliche Version des Print-Debuggings ist das Logging. Beim Loggin werden - wie beim Print-Debugging - Variablenwerte, Funktionsreihenfolgen, etc. in Textform ausgegeben. Der Unterschied ist aber, dass beim Logging diese Daten in einem Textdokument gespeichert werden, das man später nochmal durchlesen und auswerten kann. Damit werden wir uns jetzt nicht genauer beschäftigen, aber du solltest wissen, dass es sowas gibt.</p>
+<h2>Debugging mit dem Debugger</h2>
+<p>Wenn alles andere fehlschlägt, kannst du den Debugger verwenden, der in Processing integriert ist. Der Debugger ist ein Tool, mit dem du beobachten kannst, wie dein Code zeilenweise ausgeführt wird. Um den Debugger zu aktivieren, klickst du auf die Schaltfläche Debuggen - den schmetterlingsartigen Kreis in der rechten oberen Ecke des Processing Editors. Daraufhin wird ein neues Variablenfenster geöffnet, das vorerst leer ist. Nachdem der Debugger aktiviert wurde, kannst du ihn folgendermaßen verwenden:</p>
+<ul>
+<li>Setzte als erstes einen <strong>Breakpoint</strong>, indem du auf eine <strong>Zeilennummer</strong> klickst. Die Zeilennummer sollte zu einer Raute werden.</li>
+<li>Nun kannst du auf <strong>Play</strong> klicken, um den Code mit dem Debugger auszuführen.
+<ul>
+<li>Der Debugger wird die Ausführung des Codes <strong>anhalten</strong>, sobald er den <strong>Breakpoint</strong> erreicht hat.</li>
+</ul>
+</li>
+<li>Dann kannst du den <strong>Schritt</strong> Button verwenden, um Zeile für Zeile deinen Code auszuführen.</li>
+<li>Im <strong>Variablenfenster</strong> kannst du den Wert von jeder Variablen sehen.</li>
+</ul>
+<p>Der gesamte Prozess sieht wiefolgt aus:</p>
+<p><img src="debugging-5.gif" alt="Breakpoint setzen" width="533" height="400" /></p>
+<p>Mit dem Debugger können wir den Code in „Zeitlupe“ ausführen und beobachten, wie sich die Werte von Variablen ändern, während der Code ausgeführt wird. Ziel ist es, genau herauszufinden, wo der Code etwas anderes tut als erwartet.</p>
+<p>In diesem Fall teilen uns die println()-Anweisungen und der Debugger mit, dass der Code jede if-Anweisung durchläuft. Die Funktion rotateDirection() erreicht also die erste if-Anweisung, weil direction mit "UP" beginnt. Hier bekommt direction den neuen Wert "RIGHT", was bis jetzt korrekt ist. Dann wird bei der nächsten if-Anweisung geprüft, ob direction "RIGHT" ist! Da dies der Fall ist, bekommt direction  den Wert "DOWN". Dieser Vorgang wird wiederholt für alle if-Anweisungen, bis die letzte if Anweisung direction  neu zuweist, mit dem Wert "UP".</p>
+<p>Um das zu beheben, verwenden wir else if:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (direction.equals("UP")) {
+   direction = "RIGHT";
+} else if (direction.equals("RIGHT")) {
+   direction = "DOWN";
+} else if (direction.equals("DOWN")) {
+   direction = "LEFT";
+} else if (direction.equals("LEFT")) {
+   direction = "UP";
+}</code></pre>
+</div>
+</div>
+<p>Wenn eine der if-Anweisungen eingegeben wird, wird keine der anderen if-Anweisungen ausgewertet. Dadurch wird die Richtung nur einmal gedreht, was unser ursprüngliches Ziel war!</p>
+<h2>Ausschlussverfahren</h2>
+<p>Eine weitere Möglichkeit zu Debuggen kann das Ausschlussverfahren sein. Das kann gerade dann hilfreich sein, wenn du keine Ahnung hast, in welchem Programmteil der Fehler auftritt. Ausschlussverfahren bedeutet, ich entferne gewisse Teile aus meinem Programm und schaue, ob es dann läuft, oder ob der Fehler immernoch vorhanden ist. Das kann man machen, in dem man gewisse Codezeilen oder Funktionsaufrufe <strong>auskommentiert</strong>. Wenn du zum Beispiel einen Funktions-Aufruf auskommentierst, so dass diese Funktion nicht mehr ausgeführt wird und der Fehler dann verschwindet, dann weißt du dass der Fehler mit dieser Funktion zusammenhängt.</p>
+<h2>Arbeite in kleinen Schritten</h2>
+<p>Du solltest <strong>nicht</strong> dein gesamtes Programm schreiben und erst ausführen, nachdem den gesamten Code geschrieben hast. Teste stattdessen jeden einzelnen Teil, während du ihn schreibst. Stelle sicher, dass jede Zeile so funktioniert, wie du es erwartst. Auf diese Weise kannst du Fehler finden, sobald sie auftreten. Es ist sehr schwer, hundert Codezeilen zu debuggen, die nicht das tun, was du erwartet hast. Es ist viel einfacher, nur ein paar Codezeilen zu debuggen.</p>
+<p>Wenn du auf einen Fehler stößt, kannst du mit den oben beschriebenen Methoden den Fehler auf wenige Zeilen eingrenzen, die nicht das tun, was du erwartest. Wenn du es immer noch nicht herausfinden kannst, erstelle eine kleineres Beispielprogramm, das nur genügend Code enthält, um dasselbe Verhalten zu erkennen.</p>
+<p>Wenn dein Code beispielsweise 100 Bilder lädt, ihnen zufällige Positionen und Geschwindigkeiten gibt und sie alle voneinander abprallen, aber du das Abprallen nicht richtig zum Laufen bringen kannst, musst du mit einer einfacheren Skizze beginnen:</p>
+<ul>
+<li>Verwende anstelle von Bildern einfache Rechtecke.</li>
+<li>Anstatt 100 von ihnen zu zeigen, zeigen nur 2 von ihnen.</li>
+<li>Anstatt ihnen zufällige Positionen und Geschwindigkeiten zuzuweisen, verwende fest codierte Werte.</li>
+</ul>
+<p>Das kleine Beispielprogramm sollte jedoch immer noch das gleiche Problem aufweisen wie dein Hauptprogramm. Das Debuggen ist jetzt viel einfacher, da du dir keinen Code ansehen musst, der nichts mit dem Problem zu tun hat. Wenn alles andere fehlschlägt, ist es manchmal das Beste, eine Pause zu machen. Gehe spazieren, trinke einen Kaffee, streichel deine Katze und versuche, den Kopf frei zu bekommen. Du wirst erstaunt sein, an wie viele Lösungen du in der Dusche denkst.</p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Fehler werden in der Programmierung als Bugs bezeichnet, das Beheben von Fehlern wird Debugging genannt.</li>
+<li><strong>Compilerfehler</strong> entstehen, wenn die Syntaxregeln missachtet werden und Processing den Code nicht versteht. Das Programm kann nicht ausgeführt werden.</li>
+<li><strong>Laufzeitfehler</strong> treten auf, während das Programm läuft. Einer der häufigsten Laufzeitfehler sind Variablen, denen kein Wert zugwiesen wurde.</li>
+<li><strong>Logikfehler</strong> treten auf, wenn der Programmierer falsche Annahmen aufstellt. Logikfehler können wiefolgt behoben werden:
+<ul>
+<li><strong>Debuggen mit dem Gehirn</strong> - lies den Code Zeile für Zeile. Allein oder mit einem Partner oder einer Partnerin.</li>
+<li><strong>Print-Debugging</strong> - lasst dir z.B. Variablenwerte mithilfe von println() ausgeben, um zu sehen, welche Werte diese annehmen.</li>
+<li><strong>Logging</strong> - wie das Print Debugging, nur dass die Daten in einem Textdokument gespeichert werden und später verwendet werden können.</li>
+<li><strong>Breakpoints</strong> - unter Verwendung des Debuggers in Processing, kannst du Breakpoints setzten - Stellen an denen dein Code angehalten wird und du ihn Zeile für Zeile ausführen lassen kannst. Dabei kannst du die Variablenwerte in einem separaten Fenster überprüfen.</li>
+<li><strong>Ausschlussverfahren</strong> - hier werden einzelne Teile des Codes Stück für Stück auskommentiert, um herauszufinden in welchem Programmteil der Fehler auftritt.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="kontrollanweisungen_in_schleifen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungsaufgaben_und_fragen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

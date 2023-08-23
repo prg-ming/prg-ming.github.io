@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Arten von Datentypen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-53"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li id="active"><a href="arten_von_datentypen.html" class="active no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mathematische_funktionen_und_konstanten.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="gleitkommazahlenformat.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Arten von Datentypen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id76">
+<div class="iDevice emphasis0" >
+<div id="ta76_120_2" class="block iDevice_content">
+<div class="exe-text"><h1>Primitive Datentypen &amp; Objekttypen</h1>
+<p>Bisher haben wir mit den uns bekannten Datentypen einfach nur gearbeitet, ohne uns groß Gedanken über die kleinen aber feinen Unterschiede zu machen.</p>
+<ul>
+<li>Warum werden manche Datentypen klein geschrieben und andere groß geschrieben? <br />→ <code> int, float, char, boolean, ...</code> <br />→ <code>String, PVector, SoundFile, ...</code></li>
+<li>Warum benötigt man für die Wertezuweisung bei manchen Datentypen das Schlüsselwort new und bei anderen nicht? <br />→<code> int foo = 5;</code> <br />→<code> int[] bar = new int[10];</code></li>
+<li>Warum haben manche Datentypen einen "richtigen" Standardwert (z.B. 0 oder false) und andere den Standardwert <code>null?</code></li>
+</ul>
+<p>Das liegt daran, dass es sich nicht um dieselbe Art von Datentyp handelt. Datentypen lassen sich einteilen in primitive Datentypen und Objekttypen. Dies sorgt dann unter anderem für die oben genannten Unterschiede. Schauen wir uns beide Arten einmal genauer an.</p>
+<h1>Primitive Datentypen</h1>
+<p>In Java gibt gibt es <strong>acht primitive Datentypen</strong>, alle anderen Datentypen werden <strong>Objekte</strong> bzw. <strong>Objekttypen</strong> genannt.  Das sind die acht primitiven Datentypen (ein paar davon kennst du bereits):</p>
+<blockquote>
+<p><code>byte, short, integer, long, float, double, char, boolean</code></p>
+</blockquote>
+<h2>Merkmale</h2>
+<p>Primitive Datentypen zeichnen sich dadurch aus, dass sie einfach nur Werte speichern. Deswegen haben sie auch einen "richtigen" Standardwert und benötigen nicht das Schlüsselwort new bei der Initialisierung. Außerdem werden primitive Datentypen klein geschrieben. Daran kann man schnell erkennen, dass es sich um einen primitiven Datentyp handelt.</p>
+<h2>Einteilung</h2>
+<p>Die primitiven Datentypen sind in Gruppen eingeteilt. Zahlen sind in Java so wichtig, dass sechs der acht primitiven Datentypen numerisch sind. Das bedeutet, dass jeder von diesen, bis auf den <code>char</code> und den <code>boolean,</code> Zahlenwerte speichert. Numerische primitive Datentypen lassen sich in ganzzahlige Typen und Gleitpunkttypen unterteilen. <code>byte, short, integer </code>und <code>long</code> bilden somit die ganzzahligen Typen und <code>float</code> und <code>double</code> die Gleitpunkttypen.</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<tbody>
+<tr>
+<th style="width: 50%; text-align: center;" colspan="2">Numerische Datentypen</th>
+<th style="width: 50%; text-align: center;">Sonstige Datentypen</th>
+</tr>
+<tr>
+<th style="width: 33.3333%; text-align: center;">Ganzzahlige Typen</th>
+<th style="width: 33.3333%; text-align: center;">Gleitkommatypen</th>
+<th style="width: 33.3333%; text-align: center;"></th>
+</tr>
+<tr>
+<td style="width: 33.3333%; text-align: center;">byte, short, integer, long</td>
+<td style="width: 33.3333%; text-align: center;">float, double</td>
+<td style="width: 33.3333%; text-align: center;">booelan, char</td>
+</tr>
+</tbody>
+</table>
+<p><br /><strong>Warum gibt es denn so viele verschiedenen numerische Datentypen?</strong> 1-3 würden doch eigentlich reichen. <strong>Der Grund hierfür ist wieviel Platz sie im Speicher einnehmen</strong>. Jeder dieser Typen besitzt eine feste Zahl an Bit, die zum Speichern des Werts im Speicher verwendet werden, der sogenannte <strong>Speicherverbrauch</strong>. Mehr Bit bedeutet mehr Platz im Speicher, was wiederum für entweder größere Werte oder eine höhere Genauigkeit sorgt.</p>
+<h2>Speicherverbrauch</h2>
+<h3>long und byte</h3>
+<p>Wenn man einem numerischen Datentyp eine kleine Zahl zuweisen möchte, dann wäre es reine <strong>Speicherverschwendung</strong> den <code>long</code> Datentyp zu verwenden, der eine Größe von 64 Bit hat. Mithilfe von <code>long</code> kann man deswegen ganze Zahlen im Bereich von -263 bis 263-1 darstellen. Für kleine Zahlen, wie z.B. 34, ist der Datentyp <code>byte</code> vollkommen ausreichend. byte hat eine Größe von 8 Bit und einen Wertebereich von -128 bis +127.</p>
+<p>Um Speicher zu sparen ist es wichtig zu wissen, welchen Datentyp man verwenden sollte. Bei kleinen Programmen macht das kaum einen Unterschied. Solltest du aber mal an einem größeren Projekt arbeiten, ist es sehr wichtig, wie du mit diesen Datentypen umgehst. Der geläufigste ganzzahlige primitive Datentyp ist dabei der int, da er einen angemessenen Wertebereich mit 32 Bit besitzt.</p>
+<h3>double und float</h3>
+<p>Wenn ich einem Datentyp eine Gleitkommazahl zuweisen möchte, dann muss ich den Datentyp <code>float</code> oder <code>double</code> verwenden. Der Unterschied der beiden Typen ist deren Größe. Somit ist <code>double</code> mit 64 Bit doppelt so groß wie <code>float</code> mit 32 Bit und besitzt daher einen größeren Wertebereich. So wird <code>float</code> oftmals als ein Gleitpunkttyp mit „einfacher Genauigkeit“ bezeichnet, während <code>double</code> Gleitpunkttyp mit „doppelter Genauigkeit“ genannt wird. Versucht man diese Gleitpunkttypen zu vermischen, kann es zu Datenverlust führen.</p>
+<p>Wenn du explizit einen <code>float</code>-Wert anfordern möchtest, musst du am Ende der Kommazahl ein großes oder kleines „f“ schreiben. Das gleiche gilt auch für einen <code>double</code>-Wert indem du ein großes oder kleines „d“ am Ende setzt.</p>
+<h2>Übersicht</h2>
+<p>In dieser Übersicht kannst du sehen, welchen Wertebereich, Speicherverbrauch und Standardwerte die einzelnen Datentypen haben (Wenn du eine Variable nur deklarierst, aber nicht initialisierst, dann bekommt sie einen Standardwert).</p>
+<table class="exe-table" style="text-align: left;"><colgroup> <col style="width: 6.30631%;" /> <col style="width: 14.4144%;" /> <col style="width: 18.4685%;" /> <col style="width: 13.8996%;" /> <col style="width: 46.9112%;" /> </colgroup>
+<tbody>
+<tr>
+<th class="confluenceTh">Typname</th>
+<th class="confluenceTh">Größe (Speicherverbrauch)</th>
+<th class="confluenceTh">Wertebereich</th>
+<th colspan="1" class="confluenceTh">Standardwert</th>
+<th class="confluenceTh">Beschreibung</th>
+</tr>
+<tr>
+<td class="confluenceTd">boolean</td>
+<td class="confluenceTd">8 bit</td>
+<td class="confluenceTd">true / false</td>
+<td colspan="1" class="confluenceTd">false</td>
+<td class="confluenceTd">Boolescher Wahrheitswert, Boolescher Typ</td>
+</tr>
+<tr>
+<td class="confluenceTd">char</td>
+<td class="confluenceTd">16 bit</td>
+<td class="confluenceTd">0 ... 65.535 (z. B. 'A') <br /><br /></td>
+<td colspan="1" class="confluenceTd"><span class="ILfuVd"><span class="hgKElc"><code>\u0000</code> (= Zeichen für <code>null</code> )<br /></span> </span></td>
+<td class="confluenceTd">Unicode-Zeichen (UTF-16)</td>
+</tr>
+<tr>
+<td class="confluenceTd">byte</td>
+<td class="confluenceTd">8 bit</td>
+<td class="confluenceTd">-128 ... 127</td>
+<td colspan="1" class="confluenceTd">0</td>
+<td class="confluenceTd">Zweierkomplement-Wert</td>
+</tr>
+<tr>
+<td class="confluenceTd">short</td>
+<td class="confluenceTd">16 bit</td>
+<td class="confluenceTd">-32.768 ... 32.767</td>
+<td colspan="1" class="confluenceTd">0</td>
+<td class="confluenceTd">Zweierkomplement-Wert</td>
+</tr>
+<tr>
+<td class="confluenceTd">int</td>
+<td class="confluenceTd">32 bit</td>
+<td class="confluenceTd">-2.147.483.648 ... 2.147.483.647</td>
+<td colspan="1" class="confluenceTd">0</td>
+<td class="confluenceTd">Zweierkomplement-Wert</td>
+</tr>
+<tr>
+<td class="confluenceTd">long</td>
+<td class="confluenceTd">64 bit</td>
+<td class="confluenceTd">-2<sup>63</sup> bis 2<sup>63</sup>-1</td>
+<td colspan="1" class="confluenceTd">0L</td>
+<td class="confluenceTd">Zweierkomplement-Wert</td>
+</tr>
+<tr>
+<td class="confluenceTd">float</td>
+<td class="confluenceTd">32 bit</td>
+<td class="confluenceTd">-3.40282347 *10<sup>38</sup> bis 3.40282347 *10<sup>38</sup></td>
+<td colspan="1" class="confluenceTd">0.0f</td>
+<td class="confluenceTd">32-bit IEEE 754 (<em>es wird nicht empfohlen, dies für Programme zu verwenden, die sehr genau rechnen müssen)</em></td>
+</tr>
+<tr>
+<td class="confluenceTd">double</td>
+<td class="confluenceTd">64 bit</td>
+<td class="confluenceTd">-1.79769313486231570 *10<sup>308</sup> bis 1.79769313486231570 *10<sup>308</sup></td>
+<td colspan="1" class="confluenceTd">0.0d</td>
+<td class="confluenceTd">64-bit IEEE 754, doppelte Genauigkeit</td>
+</tr>
+</tbody>
+</table>
+<h1><br />Objekttypen</h1>
+<p>Anders als die primitiven Datentypen, können Objekttypen ganze Objekte speichern - aber was ist so ein Objekt? Ein Objekt kannst du dir bildlich vorstellen, wie einen Gegenstand, zum Beispiel eine Mikrowelle. Eine Mirkowelle hat einen Namen, eine Höhe, Länge und Breite, ein paar Funktionen (an, aus, öffnen, schließen, ...). All das steckt in dem Gegenstand mit dem Typ Mikrowelle. Wenn ich jetzt versuchen würde diese Mikrowelle in Programmcode darzustellen, dann könnte das so aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>MicroWave meineMikrowelle = new MicroWave("Heatmaster 3000");  // Erstellen einer neuen Mikrowelle mit dem Namen "Heatmaster 3000"
+ 
+// Funktionen der Mikrowelle ausführen
+meineMikrowelle.open();  
+meinMikrowelle.insertFood(); 
+meineMikrowelle.close(); 
+meineMikrowelle.setTimer(120);
+meineMikrowelle.start();
+ 
+println(meineMikrowelle.height);  // Höhe der Mikrowelle in der Konsole ausgeben</code></pre>
+</div>
+</div>
+<p>Hier an diesem fiktiven Beispiel können wir ein paar wichtige Eigenschaften von Objekttypen sehen:</p>
+<ul>
+<li>Objekttypen werden <strong>groß geschrieben</strong>, damit man sie als solche erkennt. Hier lautet der Datentyp für mein Mikrowelle <code>MicroWave.</code></li>
+<li>Objekttypen werden in der Regel <strong>mit dem Schlüsselwort <code>new</code> initialisiert</strong>. Hier gibt es nur wenige Ausnahmen, bei denen man sowohl new verwenden kann als auch eine andere, "einfache" Schreibweise. Das ist zum Beispiel bei String oder bei Arrays der Fall.</li>
+<li>Objekttypen <strong>haben Funktionen und Felder</strong>, auf die mithilfe der Punktnotation zugegriffen werden kann. Funktionen werden (wie gewöhliche Funktionen auch) mit Klammern geschrieben, z.B. <code>.open().</code> Felder hingegen sind einfach nur <strong>Variablen</strong> und werden somit ohne Klammer geschrieben, z.B. <code>name.</code></li>
+</ul>
+<p>Objekte sind also deutlich komplexere Konstruktionen, als Werte. Aus diesem Grund haben Objekte auch den <strong>Standardwert <code>null</code></strong><code>,</code> also "nichts". <code></code></p>
+<h2>Klassen</h2>
+<p>Damit du ein Objekt erstellen kannst, braucht du ein Klasse. Eine Klasse ist sowas wie ein Bauplan für ein Objekt und legt fest, welche Felder und Funktionen dein Objekt haben soll.</p>
+<p>Das kannst du dir so vorstellen, wie die Aufbau-Anleitung für ein Billy-Regal von IKEA und ein tatsächliches Billy-Regal. Mit der Aufbau-Anleitung (Klasse) kannst du nicht viel machen. Du kannst da z.B. keine Bücher reinstellen oder Türen auf und zu machen, aber du kannst dir dein eigenes tatsächliches Billiy-Regal daraus bauen. In das fertige Billy-Regal (Objekt), kannst du dann Bücher reinstellen (also sowas wie ein Wert zuweisen) oder Türen auf und zu machen (Funktionen ausführen). Und: Du kannst ganz viele Billy-Regale erstellen, die alle nach dem gleichen Schema aufgebaut sind.</p>
+<p><img src="shelf.png" width="100" height="100" /></p>
+<p><code></code>In unserem Beispiel von oben würde die Klassen <code>Microwave</code> festlegen, dass jede Mikrowelle die Felder (Variablen) <code>name</code> und <code>height</code> hat und die Funktionen <code>open(), instertFood(), close(), setTimer() </code>und <code>start()</code>. </p>
+<p>Kurz gesagt: eine Variable deren Datentyp ein Objekttyp ist, speichert ein Objekt. Dieses Objekt wird erstellt mithilfe einer Klasse, die festlegt, wie dieses Objekt aufgebaut ist.</p>
+<p>In diesem Modul werden wir das Thema Objekte und Klassen nur streifen, da wir Objekte verwenden. Tiefer einsteigen in diesem Thema werdet ihr im Modul <strong>Objektorientierte</strong> <strong>Programmierung</strong>.</p>
+<h1>Referenztypen &amp; Wertetypen</h1>
+<p>Nun beschäftigen wir uns ein wenig damit, wie die CPU Daten speichert, abruft und verwendet. Wir haben das Thema ganz am Anfang einmal kurz gestreift und dann angefangen mit Variablen zu arbeiten, aber haben wir uns wirklich Gedanken gemacht, was da eigentlich in dieser "Blackbox" namens "Computer" vor sich geht?</p>
+<h2>Variablen</h2>
+<p>Denken wir nochmal zurück: Was genau ist eine Variable eigentlich? An Anfang haben wir das der Einfachheit halber einen "Container" für Daten genannt. Gehen wir aber mal einen Schritt weiter:</p>
+<ul>
+<li>Eine Variable besteht aus <strong>Datentyp</strong>, <strong>Bezeichner</strong> und <strong>Literal</strong>.</li>
+<li>Der <strong>Literal</strong> ist ein irgendwo im Speicher abgespeicherter Wert für eine Variable.</li>
+</ul>
+<p>Eine <strong>Variable</strong> ist sozussagen eine <strong>Referenz</strong>, ein <strong>Verweis</strong> auf diese Stelle im Speicher. Du kannst dir das vorstellen wie eine <strong>URL</strong>. Eine URL ist eine Adresse, ein Verweis auf eine Webseite, die irgendwo im Internet gespeichert ist. Um dir die Webseite ansehen zu können brauchst du nicht den Code der Webseite selbst, es reicht einfach den Link zur Webseite zu haben.</p>
+<h2>Null</h2>
+<p>Eine Referenz kann auch auf "nichts" zeigen. Bei Webseiten kennen wir alle den <strong>404-Error</strong> bzw. den <strong>Page-not-found-Error</strong>. Wenn in Java eine Referenz auf "nichts" zeigt, dann zeigt sie auf <code>null.</code> Das bedeutet in diesem Fall "nichts". Dieser Begriff ist dir aber schon begegnet. Zum Beispiel beim Debugging, wenn du eine <code>NullPointerException</code> hattest, weil du eine Variable verwendet hast, der du keinen Wert zugewiesen hast.</p>
+<h2>Kopie oder Referenz?</h2>
+<p>Wenn wir mit Variablen arbeiten stellt sich die Frage, womit der Computer eigentlich arbeitet. Arbeitet der Computer mit einer Kopie unseres Wertes oder mit der Referenz? Lass dir mal folgendes durch den Kopf gehen:</p>
+<p></p>
+<p>Wir erstellen eine Variable <code>varA</code> und weisen ihr den Wert 10 zu. Stell dir das vor wie ein Koffer mit dem Namen <code>varA</code> und dem Inhalt 10. Dann erstellen wir eine Variable <code>varB</code> und weisen ihr den Wert von <code>varA</code> zu:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int varA = 10;
+int varB = varA; </code></pre>
+</div>
+</div>
+<p>Nun könnten folgende zwei Dinge wahr sein:</p>
+<ul>
+<li><code>varB</code> ist ein zweiter Koffer mit den Namen <code>varB</code> und dem Inhalt 10 (= Kopie).</li>
+<li><code>varB</code> ist ein zweiter Name für den vorhandenen Koffer <code>varA</code> (=Referenz). <br /><br /></li>
+</ul>
+<p><img src="kopeundrerferenz.PNG" alt="" width="1421" height="395" /></p>
+<p>Was stimmt? Und wie können wir das herausfinden?</p>
+<p>→ Ganz einfach: Indem wir <code>varB</code> verändern. Wenn dann auch <code>varA</code> verändert ist, handelte es sich um einen Koffer (also eine Referenz). Wenn <code>varA</code> unverändert bleibt, handelt es sich um zwei Koffer (also eine Kopie).</p>
+<h2>Werte und Referenzen</h2>
+<p>In Java gibt es verschiedene Arten von Datentypen: <strong>Wertetypen</strong> und <strong>Referenztypen.</strong></p>
+<ul>
+<li>Bei den Wertetypen wird in dem obigen Beispiel der Wert verwendet, sprich eine Kopie erstellt.</li>
+<li>Bei den Referenztypen wird in dem obigen Beispiel eine Referenz erstellt.</li>
+</ul>
+<p>Welcher Datentyp in welche Kategorie gehört, haben wir bereits im Abschnitt Arten von Datentypen gesehen. Hier haben wir allerdings von <strong>primitiven Datentypen und Objekttypen</strong> geredet. <strong>Die Einteilung ist aber dieselbe.</strong> Dabei sind die primitiven Datentypen Wertetypen und die Objekttypen sind Referenztpyen. </p>
+<p>Somit gibt es acht Wertetypen:</p>
+<ul>
+<li>byte, short, integer, long, float, double, char, boolean</li>
+</ul>
+<p>Alle anderen Datentypen sind Referenztypen (inklusive Arrays).</p>
+<h2>Call-By-Value &amp; Call-By-Reference</h2>
+<p>Diese beiden Begriffe sollten dir schonmal begegnet sein. Wir haben sie in Parameter ganz kurz thematisiert. Sie beschreiben, ob bei einem Funktionsaufruf die Parameter als Wert (also eine Kopie) oder Referenz übergeben werden.</p>
+<ul>
+<li><strong>Call-By-Value:</strong> Wenn nur der Wert übergeben wird, dann hat das, was innerhalb der Funktion passiert keine Auswirkung auf die "Außenwelt", da ja nur die Kopie verändert wird, nicht das Original. <strong>Es gilt das Las-Vegas-Prinzip: What happens inside the function, stays inside the function.</strong></li>
+<li><strong>Call-By-Reference:</strong> Wenn die Referenz übergeben wird, die sozusagen auf das Original zeigt, dann hat alles, was innerhalb der Funktion mit der Parameter-Variablen passiert, Auswirkung auf die Außenwelt.</li>
+</ul>
+<p>Im Abschnitt zu den Parametern einer Funktion haben wir uns gefragt, was "in" einem Parameter gespeichert ist. Schau dir das Beispiel dort nochmal an. Wir haben eine Funktion geschrieben, die zwei Integer-Variablen übergeben bekommt und diese vertauschen soll. Dabei haben wir festgestellt, dass sie nicht vertauscht wurden. Die Funktion hat nur mit einer Kopie der Werte gearbeitet, aber nicht mit der tatsächlichen Variablen bzw. Referenz.</p>
+<p>In diesem Fall ist das auch klar, da es sich bei den Variablen ja um Integer-Werte handelte, sprich um einen Wertetyp.</p>
+<p>Was würde passieren, wenn wir dieselbe Funktion umschreiben, so dass sie zwei Strings miteinander vertauscht? Also so:</p>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String wert1 = "1";
+String wert2 = "2";
+ 
+void setup() {
+   println("wert1: " + wert1 + " wert2: " + wert2);
+   swap(wert1, wert2);
+ 
+   println("wert1: " + wert1 + " wert2: " + wert2);
+}
+ 
+void swap (String x, String y) {
+   String temp = x;
+   x = y;
+   y = temp;
+}</code></pre>
+</div>
+</div>
+<p>Auch dann werden die Werte nicht vertausch. Warum ist das so? Auch wenn es sich bei einem String um ein Referenztyp handelt, gilt in Java:</p>
+<p><strong>Bei Funktionsaufrufen werden die Parameter immer kopiert und an die Funktionen weitergegeben.</strong> Java macht also immer Call-By-Value. <strong>Java unterscheidet hier nicht zwischen Wertetyp und Referenztyp.</strong></p>
+<h1>Zusammenfassung</h1>
+<p>In Java gibt es primitive Datentypen und Objekttypen.</p>
+<ul>
+<li><strong>Die acht primitiven Datentypen</strong> sind byte, short, integer, long, float, double, char, boolean <br />
+<ul>
+<li>Sie speichern einfache Werte</li>
+<li>Die numerischen primitiven Datentypen werden unterteilt ist ganzzahlige Typen und Gleitkommatypen</li>
+<li>Die numerischen primitiven Datentypen haben unterschiedliche Größen und Wertebereiche</li>
+<li>Primitive Datentypen werden klein geschrieben</li>
+</ul>
+</li>
+<li><strong>Objekttypen</strong> speichern Objekte
+<ul>
+<li>Objekte bestehen aus Funktionen und Feldern, auf die mittels Punktnotation zugegriffen werden kann.</li>
+<li>Objekttypen werden groß geschrieben und in der Regel mit dem Schlüsselwort new initialisiert.</li>
+<li>Objekttypen haben den Standardwert null.</li>
+<li>Uns bekannte Objekttypen sind: Arrays, String, SoundFile und PVector.</li>
+</ul>
+</li>
+</ul>
+<p>Für Referenz- und Wertetypen gilt:</p>
+<ul>
+<li>Bei Java werden Datentypen unterschieden zwischen <strong>Wertetypen</strong> und <strong>Referenztypen</strong> <br />
+<ul>
+<li>Die primitiven Datentypen sind allesamt Wertetypen</li>
+<li>Objekttypen sind Referenztypen</li>
+</ul>
+</li>
+<li>Variablen sind Referenzen auf Stellen im Speicher, wo Werte gespeichert sind.
+<ul>
+<li>Je nach Typ ist in der Variable entweder der tatsächliche Wert oder die Referenz auf die Stelle im Speicher gespeichert.</li>
+</ul>
+</li>
+<li><strong>Call-By-Value</strong> bedeutet, dass bei einem Funktionsaufruf die Parameter als <strong>Wert</strong> übergeben werden.
+<ul>
+<li>Veränderungen der Parameter innerhalb der Funktion haben keine Auswirkung auf die übergebenen Variablen außerhalb der Funktion.</li>
+</ul>
+</li>
+<li><strong>Call-By-Reference</strong> bedeutet, dass bei einem Funktionsaufruf die Parameter als <strong>Referenz</strong> übergeben werden.
+<ul>
+<li>Veränderungen der Parameter innerhalb der Funktion verändern auch die Variablen außerhalb</li>
+</ul>
+</li>
+<li>Obwohl es in Java Werte- und Referenztypen gibt, <strong>verwendet Java <span style="text-decoration: underline;">immer</span> Call-By-Value.</strong></li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mathematische_funktionen_und_konstanten.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="gleitkommazahlenformat.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

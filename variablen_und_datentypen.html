@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Variablen und Datentypen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-30"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="bungsaufgaben_und_fragen.html" class="current-page-parent daddy">Übungsaufgaben und -fragen</a>
+      <ul>
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li id="active"><a href="variablen_und_datentypen.html" class="active no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="computersprache_zeichnen_text_u_interaktion.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arithmetische_operatoren0.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Variablen und Datentypen</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id45">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Variablen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta45_127_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Wie lange ist eine Variable gültig, die in einer Funktion definiert wurde?</li>
+<li>Was geschieht bei der Deklaration einer Variablen und was bei der Initialisierung?</li>
+<li>Kann man eine Variable mehrmals intialisieren? Begründe deine Antwort.</li>
+<li>Was bedeutet es, wenn ein Variable global ist?</li>
+<li>Wo sollten globale Variablen im Code stehen?</li>
+<li>Nenne 3 Konventionen für Variablennamen und gib jeweils ein negativ Beispiel für einen Variablennamen an, der sich nicht an diese Konvention hält.</li>
+<li>Warum müssen Konstanten im selben Schritt deklariert und initialisiert werden?</li>
+<li>Welches Schlüsselwort muss ich verwenden, um eine Konstante anzulegen?</li>
+<li>Strenggenommen braucht man Konstanten nicht, da man den Wert auch einfach in einer "normalen" Variablen speichern und verwenden kann, ohne ihn zu verwenden. Warum ist es dennoch sinnvoll Konstanten für Werte zu verwenden, die sich nicht ändern? Nenne mind 2 Gründe.</li>
+<li>Was ist ein Literal?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p><strong>Durchschnitt</strong><br />Erzeuge drei Variablen a, b und c vom Typ float. Setze a und b auf beliebige Werte, z.B. auf 1 und 2. In Variable c soll der Durchschnitt von a und b berechnet werden. Gib c mit println() auf der Konsole aus.</p>
+<p><strong>Variablen für Position</strong><br />Zeichne ein 30x30-Quadrat an der Position (50, 50). Ersetze die Position durch zwei Variablen x und y. Setze die Variablen auf verschiedene Werte und teste, ob dein Quadrat an der richtigen Stelle gezeichnet wird.</p>
+<p><strong>Variablen für Position 2</strong><br />Erstelle zwei Variablen x und y und belege sie mit jeweils 10. Zeichne ein 30x30-Quadrat an ebendiese Position. Zeichnen ein zweites Quadrat an eine Position, die 50 Pixel weiter rechts und 50 Pixel weiter unten liegt. Benutze für das zweite Quadrat auch die beiden Variablen!</p>
+<p><img src="var-ue1.png" alt="Variablen für Position 2" width="100" height="102" /></p>
+<p><strong>Smiley</strong><br />Erstelle zwei Variablen x und y und belege sie mit jeweils 50. Zeichne einen Smiley aus entsprechenden Grundformen. Verwende für die Positionen der Formen immer die Variablen x und y zusammen mit Addition/Subtraktion. Ändere aber nie die Werte von x und y.</p>
+<p><img src="var-ue3.png" alt="Smiley" width="97" height="97" /></p>
+<p>Ersetze jetzt die Variablen x und y gegen mouseX und mouseY und überführe das Programm in den aktiven Modus (mit setup und draw). Der Smiley sollte der Maus folgen.</p>
+<p><strong>Dreisatz</strong><br />In dem folgenden Programm hast du Preis (in Euro) und Größe (in Gramm) einer Müslipackung gegeben und (nur) die Größe einer zweiten Müslipackung. Unter der Voraussetzung, dass beide Müsli gleich viel kosten, ergänze den Code so, dass der Preis für die zweite Packung ausgerechnet und ausgegeben wird.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float muesliGroesse1 = 700;
+float muesliPreis1 = 3.99;
+float muesliGroesse2 = 500;
+float muesliPreis2 = 0; // Ersetze die 0 durch eine Rechnung
+
+println(muesliPreis2);</code></pre>
+</div>
+</div>
+<p>Um zu sehen, ob dein Programm korrekt ist, teste es mit Werten mit offensichtlichem Ergebnis, z.B.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float muesliGroesse1 = 1000;
+float muesliPreis1 = 2;
+float muesliGroesse2 = 500;</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Lokale Variablen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_129_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Wie lange ist eine Variable gültig, die innerhalb einer Funktion deklariert wurde?
+<ul>
+<li>bis zum Ende des Programms</li>
+<li>bis zum Ende des nächsten Durchlaufs der draw-Funktion</li>
+<li>bis zum Ende der Funktion</li>
+</ul>
+</li>
+<li>Wie wird der Bereich bezeichnet, in dem eine Variable gültig ist und verwendet werden kann?</li>
+<li>Was genau passiert, wenn sich zwei Variablen überschatten? Worauf muss man achten, wenn man Überschattung vermeiden möchte?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p>Du kannst bei den folgenden Aufgaben lokale Variablen nutzen (musst du aber nicht).</p>
+<p><strong>Zwillinge</strong><br />Programmiere ein Programm, mit 2 Kreisen, einem schwarzen und einem weißen. Der weiße Kreis soll immer an der Position es Mauszeigers sein. Der schwarze Kreis soll punktsymmetrisch in Relation zum Mittelpunkt des Fensters dem weißen Kreis gegenüber liegen.</p>
+<p><img src="zwillinge.png" alt="Zwillinge" width="101" height="100" /></p>
+<p><strong>Mitte</strong><br />Programmiere ein Programm, in dem von der oberen linken Ecke aus eine Linie zur Position des Mauszeigers gezeichnet wird. An der Stelle des Mauszeigers soll ein weißer Kreis mit dem Durchmesser 10 gezeichnet werden. Ein weiterer Kreis soll auf der Mitte zwischen der oberen linken Ecke und dem Mauszeiger gezeichnet werden.</p>
+<p><img src="mitte.png" alt="Mitte" width="100" height="100" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id48">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Systemvariablen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta48_130_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Was sind Systemvariablen?</li>
+<li>Was passiert, wenn du eine Variable anlegst, die den selben Namen wie eine Systemvariable hat? Tip: Probiere es mal aus ...</li>
+<li>Welche 2 Dinge sollte man im Bezug auf Systemvariablen niemals machen? Warum?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p><strong>Zeichen-Ticker</strong><br />Zeichne das Zeichen der zuletzt gedrückten Taste in die Mitte des Fensters.</p>
+<p><strong>Mitte</strong><br />Zeichne einen Kreis genau in die Mitte des Fensters (Größe 111 x 77). Verwende dazu width und height. Wenn du die Fenstergröße änderst, sollte der Kreis immer in der Mitte bleiben, ohne dass du den Ellipse-Befehl änderst.</p>
+<p><img src="var_sys_ue2.png" alt="Fenstermitte" width="113" height="77" /></p>
+<p><strong>Zähler</strong><br />Mithilfe von frameRate() und  frameCount  kannst dueinen Sekundenzähler realisieren. Bei Mausklick soll der Zähler auf 0 springen</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Datentypen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_128_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Was sind Bits und warum bilden sie die Grundlage von Datentypen?</li>
+<li>Warum gibt es für eine Kategorie von Daten verschiedene Datentypen? Zum Beispiel gibt es 4 verschiedene Datentypen für Ganze Zahlen - warum?</li>
+<li>Was ist der Unterschied zwischen float und double?</li>
+<li>Welchen Wertebereich hat der Datentyp boolean?</li>
+<li>Ist für Processing 'a' und "a" dasselbe? Begründe deine Antwort.</li>
+<li>Mit welchem Operator kann ich mehrere Strings (Zeichenketten) miteinander kombinieren?</li>
+<li>Wie lautet der Datentyp für einzelne Zeichen?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p><strong>Mausposition ausgeben</strong><br />Schreibe ein Programm, das in jedem draw-Zyklus die aktuelle Mausposition in folgender Weise ausgibt (eine Zeile pro Zyklus):</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>x=48 y=47
+x=48 y=52
+x=48 y=56
+x=48 y=60
+x=52 y=65
+x=52 y=65
+x=55 y=70</code></pre>
+</div>
+</div>
+<p><strong>Tipp</strong>: Verlangsame den draw-Zyklus mithilfe von frameRate().</p>
+<p><strong>Halbe Pixel?</strong><br />Kopiere folgendes Programm</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 0;
+
+void draw() {
+   background(255);
+   ellipse(x, 50, 30, 30);
+}</code></pre>
+</div>
+</div>
+<p>Ergänze den Code, so dass x bei jedem draw-Zyklus um 0.5 erhöht wird. Wie verhält sich der Kreis?</p>
+<p><strong>Zeichenverkettung</strong><br />Kopiere folgendes Programm:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "la";
+
+void setup() {
+   println(message);
+}
+
+void draw() {
+}</code></pre>
+</div>
+</div>
+<p>Ergänze den Code, so dass bei bei jedem draw-Zyklus genau eine neue Zeile auf die Konsole geschrieben wird, so dass die Konsole nach Zyklen wie folgt aussieht:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>la
+la la
+la la la
+la la la la</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="computersprache_zeichnen_text_u_interaktion.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="arithmetische_operatoren0.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

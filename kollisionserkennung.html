@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Kollisionserkennung | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li class="current-page-parent"><a href="ifanweisungen.html" class="current-page-parent daddy">If-Anweisungen</a>
+         <ul>
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li id="active"><a href="kollisionserkennung.html" class="active no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="boolesche_variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="interaktion_mit_tasten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Kollisionserkennung</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id13">
+<div class="iDevice emphasis0" >
+<div id="ta13_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Wenn wir Programme schreiben, dann sollen Nutzer in der Regel mit diesen Programmen interagieren können. Eine kleine Einführung in Interaktion hatten wir bereits in vorherigen Sprints. Nun wollen wir weiter in das Thema einsteigen:</p>
+<p>Das einfachste interaktive Element ist eine Form, die "aktiv" wird, sobald der Mauszeiger auf ihr liegt, und "inaktiv", sobald der Mauszeiger wieder fort ist. Dazu müssen wir zunächst wissen, wie wir feststellen, dass der Mauszeiger auf einem Objekt liegt. Das nennt man auch <strong>Kollisionerkennung</strong> und ist in <strong>Computerspielen</strong> von hoher Bedeutung.</p>
+<h1>Rechteck</h1>
+<p>Kollisionserkennung zwischen einem Punkt (Mauszeiger) und eine Rechteck, das parallel zu den Achsen des Koordinatensystems liegt, ist sehr einfach. Wenn der Punkt (x, y) ist und das rechteck über rx, ry, rwidth, rheight definiert ist, dann liegt eine Kollision vor, wenn die folgenden zwei Bedingungen gelten (bei rectMode(CORNER)) :</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rx &lt;= x &amp;&amp; x &lt;= rx + rwidth // Ausformuliert: x liegt zwischen rx und rwidth 
+ry &lt;= y &amp;&amp; y &lt;= ry + rheight // Ausformuliert: y liegt zwischen ry und rheight</code></pre>
+</div>
+</div>
+<p>Im Code sieht das so aus (statt x, y findest du mouseX, mouseY).  Tip: Kopiere diesen Code in Processing und du wirst sehen: Das Rechteck wird rot, sobald du mit der Maus drüber fährst.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// interface_1
+// Kollision mit Rechteck (Selektion per Rollover)
+
+int rx = 50;
+int ry = 50;
+int rwidth = 150; // Breite
+int rheight = 200; // Höhe
+
+void setup() {
+   size(300, 300);
+   noStroke(); // Das bedeutet: Das Rechteck hat keinen Rand
+}
+
+void draw() {
+
+   // setze Füllfarbe ...
+   if (rx &lt;= mouseX &amp;&amp; 
+       ry &lt;= mouseY &amp;&amp; 
+       mouseX &lt;= rx + rwidth &amp;&amp;
+       mouseY &lt;= ry + rheight) {
+      // ... wenn Mauszeiger im Rechteck =&gt; rot
+      fill(255, 0, 0);
+   } else {
+      // ... sonst: weiß
+      fill(255);
+   }
+
+   rect(rx, ry, rwidth, rheight);
+}</code></pre>
+</div>
+</div>
+<p><strong>Tip</strong>: Sieh dir an, wie die Bedingung in des if-Anweisung geschrieben wurde. Was fällt dir auf? Richtig: Hinter dem &amp;&amp; beginnt immer eine neue Zeile. Das ist eine Codestyle Konvention, die deinen Code übersichtlicher macht. Die Konvention lautet: Wenn eine Bedingung aus mehreren booleschen Ausdrücken besteht, dann wir mit jedem Logik-Operator eine neu Zeile begonnen.</p>
+<h1>Kreis</h1>
+<p>Kollisionserkennung zwischen einem Punkt und einem <strong>Kreis</strong> ist sogar noch einfacher. Dazu vergleicht man die Distanz des Punkts (x, y) mit dem Mittelpunkt (cx, cy) des Kreises. Ist die Distanz geringer als der Radius, so ist der Punkt im Kreis:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>dist(x, y, cx, cy) &lt; radius</code></pre>
+</div>
+</div>
+<p>Die Funktion dist() berechnet den Abstand zweier Punkte. Im folgenden Code nehmen wieder mouseX, mouseY den Platz von x, y ein und der Radius errechnet sich aus diameter/2.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// interface_2
+// Kollision mit Kreis (Selektion per Rollover)
+
+int cx = 170;
+int cy = 160;
+int diameter = 180; // Durchmesser
+
+void setup() {
+   size(300, 300);
+   noStroke();
+}
+
+void draw() {
+   // setze Füllfarbe ...
+   if (dist(mouseX, mouseY, cx, cy) &lt; diameter/2) {
+      // ... wenn Mauszeiger im Rechteck =&gt; rot
+      fill(255, 0, 0);
+   } else {
+   // ... sonst: weiß
+   fill(255);
+   }
+
+   ellipse(cx, cy, diameter, diameter);
+}</code></pre>
+</div>
+</div>
+<p></p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Das Erkennen von Kollisionen hat in der Programmierung eine große Bedeutung.</li>
+<li>Bei der <strong>Kollisionserkennung</strong> geht es darum, herauszufinden, wann 2 oder mehr Elemente miteinander kollidieren, sei es 2 <strong>Spielfiguren</strong> oder der <strong>Mauszeiger</strong> mit einer <strong>Schaltfläche</strong> uvm.</li>
+<li>Am einfachsten ist die Kollisionserkennung mit einem Kreis: Sobald der Abstand zum Mittelpunkt des Kreises kleiner ist als dessen Radius, findet eine Kollision statt.</li>
+<li>Den Abstand zwischen 2 Punkten kann man in Processing mit der Funktion dist() ganz einfach berechnen.</li>
+<li>Bei der Kollision mit einem Rechteck, muss man berechnen, ob der Punkt sich innerhalb des Rechteckt befindet - und das auf der x-Achse und der y-Achse. Je nachdem welchen Zeichenmodus man verwendet muss man hier die Position de Rechtecks mit dessen Breite und Höhe verrechen, z.B. x + Breite und y + Höhe im rectMode CORNER.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="boolesche_variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="interaktion_mit_tasten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

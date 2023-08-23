@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Try-Catch | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-61"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li id="active"><a href="trycatch.html" class="active no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="dateien_erzeugen_und_lesen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="switch.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Try-Catch</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id86">
+<div class="iDevice emphasis0" >
+<div id="ta86_120_2" class="block iDevice_content">
+<div class="exe-text"><p>Die Try-Catch-Anweisung ist dafür da <em>Ausnahmen</em> im Code zu behandeln, die dazu führen würden, dass das Programm abstürzt. Dies wird auch als <strong>Exception Handling</strong> bezeichnet.</p>
+<h1>Exception Handling</h1>
+<p>Exception Handling wird ins Deutsche als Behandlung von Ausnahmen übersetzt. Mit Ausnahmen sind Fehlersituationen gemeint, die in einem Programm während der Ausführung entstehen können und auf die geeignet reagiert werden muss.</p>
+<p>Es gibt tatsächlich Funktionen in Java (und Processing), die fehlschlagen können. Es kann zu Fehlersituationen kommen, die nicht vermeidbar sind. Normalerweise würde das Programm auf diese Ausnahmen reagieren, indem es <strong>abstürzt</strong>. Mit Try-Catch-Anweisungen sind wir in der Lage zu bestimmen, wie das Programm reagieren soll, wenn es zu einer Ausnahme kommt.</p>
+<h2>Aufbau</h2>
+<p>Der Aufbau einer Try-Catch-Anweisung sieht wie folgt aus.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>try {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME) {
+  ANWEISUNGSBLOCK
+}</code></pre>
+</div>
+</div>
+<p>Die Try-Catch-Anweisung besteht aus zwei Anweisungsblöcken.</p>
+<ul>
+<li>Der erste Anweisungsblock folgt dem Schlüsselwort <code>try:</code>
+<ul>
+<li>In diesem Block steht der Code, den das Programm in jeden Fall ausführen soll und bei dem eine Ausnahme auftreten kann.</li>
+</ul>
+</li>
+<li>Der zweite Anweisungsblock folgt dem Schlüsselwort <code>catch:</code> 
+<ul>
+<li>Dieser Block wird ausgeführt, <strong>wenn im ersten Block eine Ausnahme aufgetreten ist</strong>.</li>
+<li>In den runden Klammern wird angegeben für welche <strong>Art von Exception</strong> dieser Block gilt. Entweder kann man hier einfach alle Arten von Exceptions abfangen oder man kann mehrere unterschiedliche <code>catch</code>-Blöcke haben für unterschiedliche Arten von Exceptions.</li>
+</ul>
+</li>
+</ul>
+<p>Im PAP lässt sich ein try-catch einfach mit einer logischen Verzweigung darstellen:</p>
+<p><img src="try_catch.png" alt="" width="346" height="219" /></p>
+<p>So sieht eine Try-Catch-Anweisung in einem konkreten Beispiel aus:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>try {
+   // Dieser Code wirft eine Exception, wenn die Datei nicht vorhanden ist.
+   String[] text = loadStrings("textFile.txt");
+ 
+} catch (Exception e) { // fängt alle Arten von Exceptions ab
+   println("Datei nicht gefunden");
+}</code></pre>
+</div>
+</div>
+<p><strong>Was passiert hier genau in den runden Klammern?</strong></p>
+<p>Es wird eine <strong>Variable definiert,</strong> so wie wir das bereits kennen aus den Funktionen und den Parametern. Hier müssen wir festlegen, welchen <strong>Datentyp</strong> die Variable hat - in diesem Fall <code>Exception</code> - und <code>e</code> ist der Name der Variable. Somit kann ich innerhalb des <code>catch</code>-Blocks auf die <code>Exception e</code> zugreifen und mir z.B. die Fehlermeldung mit <code>println(e.getMessage);</code> Außerdem <strong>lege ich mit dem Datentyp fest für welche Art von Exception dieser <code>catch</code>-Block gilt.</strong> In diesem Fall gilt er für alle Arten von Exceptions.</p>
+<h2>Funktion</h2>
+<p>Welchen Sinn hat die Try-Catch-Anweisung und wie funktioniert sie? Salopp formuliert passiert folgendes: Wir sagen dem Programm:</p>
+<p>          "<strong>Versuch</strong> bitte mal Folgendes [...] und <strong>fange</strong> dabei folgenden Fehler-Typ ab (...) und mach dann Folgendes: [...]".</p>
+<p>In den ersten Anweisungsblock hinter try fügen wir die eigentlichen Anweisungen ein, die ausgeführt (und überprüft) werden sollen. Dabei besteht natürlich immer die Gefahr, dass diese Anweisungen fehlschlagen. Daraufhin treten <strong>Ausnahmesituationen</strong> ein.</p>
+<p>Die Standardreaktion, wenn Ausnahmesituationen eintreten, sieht so aus, dass die Anwendung gewaltsam beendet wird. Man könnte auch sagen sie stürzt ab. Dies ist selbstverständlich ein Verhalten, das für professionelle Anwendungen nicht in Frage kommt. Es darf nicht sein, dass irgendwo im Code eine Anweisung fehlschlägt und das Programm vor den Augen des Anwenders crasht.</p>
+<p>Sollten wir also Funmtionen verwenden, die möglicherweise fehlschlagen und Ausnahmesituationen auslösen können, dann können wir hinter dem try-Anweisungsblock entsprechende Ausnahmen mit catch abfangen. Hierzu geben wir in die runden Klammern hinter dem Schlüsselwort catch an, auf welche Ausnahmesituation wir genau reagieren möchten.</p>
+<p>Tritt genau die Ausnahmesituation ein, auf die das catch lauert, wird der Anweisungsblock hinter dem catch ausgeführt. Diesen könnten wir zum Beispiel nutzen, um dem Anwender eine entsprechende Fehlermeldung zu präsentieren. Wir könnten auch im catch-Anweisungsblock momentan vom Anwender im Programm verwendete Daten speichern und dann das Programm beenden. <strong>Dies ist alles besser als die Anwendung einfach abstürzen zu lassen.</strong></p>
+<p><strong>Woher kannst du wissen, welche Funktionen möglicherweise fehlschlagen und zu Ausnahmesituationen führen?</strong></p>
+<p>→ Hier hilft nur der Blick in die <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">Dokumentation</a>. Dort ist zu jeder Funktion angegeben, ob sie und wenn ja zu welchen Ausnahmesituationen sie führen kann. Die wichtigsten Exceptions habe ich hier zusammengefasst:</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<tbody>
+<tr>
+<th style="width: 19.0476%;">Exception</th>
+<th style="width: 47.619%;">Beschreibung</th>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>ArithmeticException</code></td>
+<td style="width: 47.619%;">Wenn eine arithmetische Ausnahme eintritt, wie z.B. die Division durch 0.</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>ArrayIndexOutOfBoundsException</code></td>
+<td style="width: 47.619%;">Wenn bei einem Array auf Felder zugegriffen wird, die nicht existieren</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>ClassNotFoundException</code></td>
+<td style="width: 47.619%;">Klasse konnte nicht gefunden werden (z.B. falscher Klassenname oder Verzeichnis angegeben)</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>Exception</code></td>
+<td style="width: 47.619%;">Basisklasse aller Exceptions (kann alle Arten von Fehlern auffangen)</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>NullPointerException</code></td>
+<td style="width: 47.619%;">Ein Objekt hatte den Wert <code>null,</code> obwohl ein anderer Wert gefordert war.</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>NumberFormatException</code></td>
+<td style="width: 47.619%;">Es wurde versucht, einen Datentyp in einen anderen Datentyp zu konvertieren, der aber einen Wert hatte, der nicht konvertiert werden konnte (z.B. der <code>String</code> "A4" soll in einen <code>int</code> umgewandelt werden)</td>
+</tr>
+<tr>
+<td style="width: 19.0476%;"><code>MalformedURLException</code></td>
+<td style="width: 47.619%;">URL stimmt nicht (entweder besteht keine Verbindung zum Internet oder Adresse ist falsch geschrieben)</td>
+</tr>
+</tbody>
+</table>
+<h2><br />Beispiel</h2>
+<p>Stell dir vor wir schreiben ein Programm, in dem der Nutzer sein Alter angeben muss. Bei Processing ist das leider gar nicht so leicht möglich, also eine einfache Nutzereingabe über ein Textfeld zum Beispiel, aber bei anderen Programmen - und auch bei einfachen Java-Anwendungen ist das sehr leicht möglich.</p>
+<p>Da das bei Processing nicht so leicht funktioniert, schreiben wir einfach einen Wert in eine Variable und tun so, also käme dieser vom Nutzer.</p>
+<p>Input vom Nutzer ist in der Regel immer im Format String und muss erst verarbeitet werden. Genau das tun wir jetzt auch. Das können wir mit der Java-Methode Integer.parseInt(). Diese Methode wandelt einen String in einen Integer um und wirft eine Exception, wenn dies nich möglich ist (weil der String zum Beispiel keine Zahl ist).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String userInput = "22";
+int age = Integer.parseInt(userInput);</code></pre>
+</div>
+</div>
+<p>Solange oben bei <code>userInput</code> eine 22 steht, macht dieser Code keine Probleme. Sobald dort aber keine Zahl steht (weil der Nutzer sich ggf. vertippt hat), haben wir ein Problem:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String userInput = "2a";
+int age = Integer.parseInt(userInput);</code></pre>
+</div>
+</div>
+<p>Dieser Code zeigt dir im Editor keinen Fehler an, sondern <strong>wirft erst bei der Ausführung</strong> einen Fehler. Damit unser Programm nicht abstürzt, wenn der User aus Versehen - oder mit voller Absicht - eine falsche Eingabe tätigt, sollten wir eine Try-Catch-Anweisung verwenden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String userInput = "22";
+int age;
+ 
+try {
+   age = Integer.parseInt(userInput );
+   println("Dein Alter ist " + age + " Jahre.");
+} catch (Exception e) {
+   println("Du Schlingel hast keine Zahl eingegeben.");
+}</code></pre>
+</div>
+</div>
+<p>Wenn du diesen Code in Processing kopierst und oben bei <code>userInput</code> etwas anderes als eine Zahl eingibst, wird dir folgendes auffallen: Die <code>println</code>-Anweisung im <code>try</code>-Block wird nicht ausgeführt. Das bedeutet, es wird - im Falle einer Ausnahme - nicht der komplette <code>try</code>-Block ausgeführt, sondern er wird da abgebrochen, wo die Ausnahme auftritt.</p>
+<p>In den runden Klammern des <code>catch</code>-Blocks haben wir jetzt nur <code>Exception</code> angeben, also eine allgemeine Ausnahme. Wir hätten aber auch den genauen Ausnahme-Typ angeben können. Welcher Typ kommt denn in Frage? Wenn du dir unsicher bist, kannst du entweder ...</p>
+<ol>
+<li>in die Dokumentation schauen (etwas viel Aufwand, wenn du mich fragst) oder ...</li>
+<li>noch eine Zeile Code im <code>catch</code>-Block einfügen und zwar <code>println(e.getClass()).</code></li>
+</ol>
+<p><code>e</code> ist unsere <code>Exception</code> und die Methode <code>getClass()</code> gibt uns den Namen zurück. In diesem Fall ist das <code>java.lang.NumberFormatException</code>. Uns reicht aber der letzte Teil, also <code>NumberFormatException.</code> Wir könnten unseren Code von oben somit anpassen, damit er nur auf diesen Ausnahme-Typ reagiert:</p>
+<div class="highlighted-code language-java line-numbers hightlight-7">
+<div>
+<pre><code>String userInput = "22";
+int age;
+ 
+try {
+   age = Integer.parseInt(userInput );
+   println("Dein Alter ist " + age + " Jahre.");
+} catch (NumberFormatException e) {
+   println("Du Schlingel hast keine Zahl eingegeben.");
+}</code></pre>
+</div>
+</div>
+<h2><br />Beispiel mit mehreren Catches</h2>
+<p>Es ist auch möglich mit einer Try-Catch-Anweisung mehrere Arten von Ausnahmen abzufangen und diese verschieden zu behandeln. Dies funktioniert, in dem man mehrere <code>catch</code>-Blöcke verwendet.</p>
+<p>Ein gutes Beispiel ist hier das Auslesen einer Text-Datei. Hierbei können 3 Probleme auftreten:</p>
+<ol>
+<li>Die Datei kann nicht gefunden werden</li>
+<li>Die Datei ist leer</li>
+<li>Du hast dich im Dateinamen vertippt.
+<ul>
+<li>Das ist ein spezielles Feature von Processing: falls du eine Datei namens meineDaten.txt öffnen willst, aber die Datei ausversehen meinedaten.txt genannt hast, gibt dir Processing eine gesonderte Meldung zurück und weißt dich darauf hin, dass du dich in der Groß- und Kleinschreibung vertan hast.</li>
+</ul>
+</li>
+</ol>
+<p>In diesen Fällen können wir nichts aus der Datei auslesen. Aber vielleicht wollen wir damit ja auf verschiedene Weisen umgehen. Sieh dir folgendes Beispiel an:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// drei Zeilen speichern
+String[] zeilen = new String[3];
+ 
+zeilen[0] = "Das ist";
+zeilen[1] = "ein Text";
+zeilen[2] = "auf drei Zeilen";
+ 
+saveStrings("meineDaten.txt", zeilen);
+
+
+// Leere Datei speichern
+saveStrings("meineDaten2.txt", new String [0]);
+ 
+try {
+ 
+   // Textdatei lesen
+   String[] lines = loadStrings("meineDaten.txt");
+ 
+   // Gib die erste Zeile aus
+   println(lines[0]);
+ 
+} catch (NullPointerException e) { // "lines" ist "null"
+   println("Keine Datei gefunden");
+ 
+} catch (RunTimeException e) { // Du hast dich im Dateinamen vertippt
+   println("Datei mit ähnlichem Namen gefunden.");
+   println(e.getMessage()); // Ausgabe z.B.: This file is named meineDaten.txt not meinedaten.txt. Rename the file or change your code.
+ 
+ 
+} catch (ArrayIndexOutOfBoundsException e) { // Es gibt keine Zeilen im Array
+   println("Die gefundene Datei ist leer! ");
+ 
+}catch (Exception e) {
+   println("Unbekannter Fehler");
+   println(e.getClass())
+}</code></pre>
+</div>
+</div>
+<p>Erläuterung</p>
+<ul>
+<li>Zeile 8: Die Datei "meineDaten.txt" wird angelegt und enthält 3 Zeilen Text</li>
+<li>Zeile 11: Die Datei "meineDaten2.txt" wird angelegt - sie ist leer</li>
+<li>Zeile 16: Wir lesen die Daten aus "meineDaten.txt" aus. Hier könnten wir auch andere Dateinamen angeben, z.B.
+<ul>
+<li>irgendeinen anderen Dateinamen von einer Datei, die es nicht gibt. Dies würde zur <code>NullPointerException</code> führen, da lines = null ist.</li>
+<li>"meinedaten.txt": Wir tun so als hätten wir uns vertippt. Dies würde zur <code>RunTimeException</code> führen</li>
+<li>"meineDaten2.txt": die leere Datei. Die würde zur <code>ArrayIndexOutOfBoundsException</code> führen, da <code>lines</code> keine Elemente (Zeilen) enthält.</li>
+</ul>
+</li>
+<li>Zeile 20: Die Zeilen sollen ausgegeben werden</li>
+<li>Zeile 22: erster <code>catch</code>-Block: die <code>NullPointerException</code>
+<ul>
+<li>Wenn die Datei nicht gefunden wurde, ist <code>lines = null</code></li>
+</ul>
+</li>
+<li>Zeile 25: zweiter <code>catch</code>-Block: die <code>RunTimeException</code>
+<ul>
+<li>Wenn du dich in Bezug auf die Groß- und Kleinschreibung im Namen vertippt hast, wirft Processing diese <code>Exception</code></li>
+</ul>
+</li>
+<li>Zeile 27: Ausgabe der <code>message</code> der <code>Exception:</code> So weiß ich, wo ich mich vertippt habe.</li>
+<li>Zeile 30: dritter <code>catch</code>-Block: die ArrayOutOfBoundsException
+<ul>
+<li>Wenn du auf Zeilen zugreifen möchtest, die nicht vorhanden sind, z.B. wenn die Datei leer ist oder du z. B. auf Zeile 5 zugreifen willst, die Datei aber nur 4 Zeilen hat.</li>
+</ul>
+</li>
+<li>Zeile 33: letzter <code>catch</code>-Block: fängt alles ab, falls wir was vergessen haben und gibt uns den Namen der <code>Exception</code> aus.</li>
+</ul>
+<p></p>
+<h1>Try-Catch-Finally</h1>
+<p>Eine weitere Möglichkeit bietet der <code>finally</code>-Block. Dieser kann optional noch hinzugefügt werden. Der Aufbau ist wiefolgt:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>try {
+   ANWEISUNGSBLOCK
+} catch (AUSNAHME) {
+   ANWEISUNGSBLOCK
+} finally {
+   ANWEISUNGSBLOCK
+}</code></pre>
+</div>
+</div>
+<p>Der Code innerhalb des Finally-Blocks wird <strong>immer</strong> ausgeführt:</p>
+<ul>
+<li>Auch, wenn in <code>try</code> keine <code>Exception</code> geworfen wurde.</li>
+<li>Auch, wenn eine erwartete <code>Exception</code> eintritt und mit <code>catch</code> abgefangen wird</li>
+<li>Auch, wenn innerhalb von <code>try</code> oder <code>catch</code> eine unerwartete Ausnahme auftritt, die nicht abgefangen wird
+<ul>
+<li>In diesem Fall wird - <strong>bevor das Programm abstürzt</strong> - noch der Code in <code>finally</code> ausgeführt</li>
+</ul>
+</li>
+</ul>
+<p>Als PAP kann ein try-catch-finally-Block folgendermaßen aussehen:</p>
+<p><img src="finally.png" alt="" width="566" height="339" /></p>
+<h1>Zusammenfassung</h1>
+<p>Try-Catch-Anweisungen werden im Bereich des Exception Handling angewendet. Eine Try-Catch-Anweisung sorgt dafür, dass wenn Ausnahmen im Code eintreten, dass Programm nicht einfach abstürzt, sondern das Programm damit sinnvoll umgeht.</p>
+<p>Der Grundlegende Aufbau eine Try-Catch-Anweisung sieht folgendermaßen aus:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>try {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME) {
+  ANWEISUNGSBLOCK
+}</code></pre>
+</div>
+</div>
+<p>Try-Catch-Anweisungen können auch mehrere "Catches" haben, wenn man z.B. je nachdem welche <code>Exception</code> geworfen wurde unterschiedlich darauf reagieren möchte.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>try {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME_1) {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME_2) {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME_3) {
+  ANWEISUNGSBLOCK
+}</code></pre>
+</div>
+</div>
+<p>Es gibt verschiedene Typen von <strong>Ausnahmen,</strong> sogenannten <code>Exceptions.</code> Unter dem Klassennamen <code>Exception</code> können alle Arten von Ausnahmen abgefangen werden. In der <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html">Dokumentation </a>von Java kann nachgesehen werden, welche Methoden welche Ausnahmen werfen können. Häufig vorkommende Exceptions sind:</p>
+<ul>
+<li><code>Exception</code><br /><code></code></li>
+<li><code>NullPointerException</code><br /><code></code></li>
+<li><code>ArithmeticException</code><br /><code></code></li>
+<li><code>ArrayIndexOutOfBoundsException</code><br /><code></code></li>
+<li><code>ClassNotFoundException</code><br /><code></code></li>
+<li><code>NumberFormatException</code><br /><code></code></li>
+<li><code>MalformedURLException</code></li>
+</ul>
+<p>Mithilfe des optionalen <code>finally-Blocks</code> kann an den <code>try-catch</code>-Block noch Code angefügt werden, der auf jeden Fall ausgeführt wird.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>try {
+  ANWEISUNGSBLOCK
+} catch (AUSNAHME) {
+  ANWEISUNGSBLOCK
+} finally {
+  ANWEISUNGSBLOCK
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="dateien_erzeugen_und_lesen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="switch.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

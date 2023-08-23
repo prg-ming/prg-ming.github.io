@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Arrays mit Schleifen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-25"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="einfache_arrays.html" class="current-page-parent daddy">Einfache Arrays</a>
+         <ul>
+            <li id="active"><a href="arrays_mit_schleifen.html" class="active no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="einfache_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="multidimensionale_arrays.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Arrays mit Schleifen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id27">
+<div class="iDevice emphasis0" >
+<div id="ta27_126_2" class="block iDevice_content">
+<div class="exe-text"><p>Bislang scheinen Arrays nur eine umständliche Art zu sein, schnell viele Variablen zu erzeugen. Ihre volle Kraft entfalten Arrays aber erst im Zusammenspiel mit Schleifen.</p>
+<h1>Array initialisieren</h1>
+<p>Wenn du einen großen Array erschaffst, möchtest du die Anfangswerte nicht für jedes Element einzeln setzen. Das Setzen der Anfangswerte nennt man auch Initialisieren. Also verwenden wir eine Schleife, um z.B. alle Werte auf 10 zu setzen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] foo = new int[1000]; // integer-Array mit 1000 Elementen
+
+for (int i = 0; i &lt; 1000; i++) {
+   foo[i] = 10;
+}</code></pre>
+</div>
+</div>
+<p>Vielleicht möchtest du die Elemente auch auf die Werte 100, 110, 120, ... setzen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 1000; i++) {
+   foo[i] = 100 + i * 10;
+}</code></pre>
+</div>
+</div>
+<h1>Arraywerte einsetzen</h1>
+<p>Schleifen spielen nicht nur beim initialisieren von Arrays eine wichtige Rolle. Wenn du z.B. Koordinaten von zufällig platzierten Rechtecken in zwei Arrays speicherst, dann erschaffst und initialisierst du zunächst zwei Arrays (mit Zufallswerten) und verwendest dafür eine Schleife.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xArray = new int[100];
+int[] yArray = new int[100];
+
+for (int i = 0; i &lt; 100; i++) {  
+   xArray[i] = int(random(100)); // Zufallswerte von 0-100 generieren
+   yArray[i] = int(random(100)); // Zufallswerte von 0-100 generieren
+}</code></pre>
+</div>
+</div>
+<p>Dann verwendest du zum Zeichnen der Rechtecke ebenfalls eine Schleife:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 100; i++) {
+   rect(xArray[i], yArray[i], 30, 30);
+}</code></pre>
+</div>
+</div>
+<p>Vielleicht möchtest auch alle Werte der zwei Arrays auf der Konsole ausgeben. Auch dazu kannst du eine Schleife verwenden:</p>
+<p><code></code></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 100; i++) {
+   println("x: " + xArray[i] + ", y: " + yArray[i]);
+}</code></pre>
+</div>
+</div>
+<p>In diesem speziellen Fall könnte man das Zeichnen und das Print auch in die obere Schleifen mit einbauen. Bei einer Animation findet das Initialisieren aber oft im setup statt und das Zeichnen in draw. Wir sehen dazu gleich ein Beispiel.</p>
+<h1>Beispiel: Animation vieler Bälle</h1>
+<p>Jetzt ein praktisches Beispiel: Wir lassen drei Bälle über den Bildschirm fliegen. Dazu verwenden wir einen Array für die x-Koordinate der drei Bälle. Zunächst mal ohne Schleifen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[3]; // erzeugen
+
+void setup() {
+   // initialisieren
+   xarray[0] = 0;
+   xarray[1] = 20;
+   xarray[2] = 40;
+}
+
+void draw() {
+   background(255);
+
+// Werte verwenden
+   ellipse(xarray[0], 50, 10, 10);
+   ellipse(xarray[1], 50, 10, 10);
+   ellipse(xarray[2], 50, 10, 10);
+
+   // Werte hochzählen
+   xarray[0]++;
+   xarray[1]++;
+   xarray[2]++;
+}</code></pre>
+</div>
+</div>
+<p><img src="array-3baelle.png" alt="Array 3 Bälle" width="100" height="100" /></p>
+<p>Wir haben jetzt drei Bälle und ein Array mit drei Elementen. Wir hätten genauso schreiben können:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x1;
+int x2;
+int x3;
+
+void setup() {
+   x1 = 0;
+   x2 = 20;
+   x3 = 40;
+}
+
+void draw() {
+   background(255);
+   ellipse(x1, 50, 10, 10);
+   ellipse(x2, 50, 10, 10);
+   ellipse(x3, 50, 10, 10);
+   x1++;
+   x2++;
+   x3++;
+}</code></pre>
+</div>
+</div>
+<p>Der Vorteil der Array-Lösung? Wir können die einzelnen Elemente mit Hilfe einer Schleife durchlaufen. Nehmen wir an, wir wollen ein Array mit lauter 5en füllen. Das müsste man so machen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] fuenfer = new int[10];
+
+fuenfer[0] = 5;
+fuenfer[1] = 5;
+fuenfer[2] = 5;
+fuenfer[3] = 5;
+fuenfer[4] = 5;
+fuenfer[5] = 5;
+fuenfer[6] = 5;
+fuenfer[7] = 5;
+fuenfer[8] = 5;
+fuenfer[9] = 5;</code></pre>
+</div>
+</div>
+<p>Wir sehen aber: alles bleibt gleich, bis auf den Index (die Zahl in Klammern). Also könnten wir diese Zahl durch eine Laufvariable in einer Schleife ersetzen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 10; i++) {
+   fuenfer[i] = 5;
+}</code></pre>
+</div>
+</div>
+<p>Sehen wir uns die Entwicklung der Dinge in der Schleife an. Es wird die Laufvariable i rundenweise hochgezählt. Bevor der Code ausgeführt wird, wird noch die Schleifenbedingung i &lt; 10 geprüft. Ist diese false, ist die Schleife fertig.</p>
+<table style="width: 100%; height: 180px;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">Durchlauf</td>
+<td style="width: 25%; height: 15px;">i</td>
+<td style="width: 25%; height: 15px;">i &lt; 10</td>
+<td style="width: 25%; height: 15px;">Code</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">1</td>
+<td style="width: 25%; height: 15px;">0</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[0] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">2</td>
+<td style="width: 25%; height: 15px;">1</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[1] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">3</td>
+<td style="width: 25%; height: 15px;">2</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[2] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">4</td>
+<td style="width: 25%; height: 15px;">3</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[3] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">5</td>
+<td style="width: 25%; height: 15px;">4</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[4] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">6</td>
+<td style="width: 25%; height: 15px;">5</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[5] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">7</td>
+<td style="width: 25%; height: 15px;">6</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[6] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">8</td>
+<td style="width: 25%; height: 15px;">7</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[7] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">9</td>
+<td style="width: 25%; height: 15px;">8</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[8] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">10</td>
+<td style="width: 25%; height: 15px;">9</td>
+<td style="width: 25%; height: 15px;">true</td>
+<td style="width: 25%; height: 15px;">fuenfer[9] = 5</td>
+</tr>
+<tr style="height: 15px;">
+<td style="width: 25%; height: 15px;">11</td>
+<td style="width: 25%; height: 15px;">10</td>
+<td style="width: 25%; height: 15px;">false</td>
+<td style="width: 25%; height: 15px;">---</td>
+</tr>
+</tbody>
+</table>
+<p>In unserem Ball-Beispiel von oben kann man zwei Schleifen einfügen. In der ersten Schleife wird die x-Startposition mit i * 20 berechnet. In drei Durchläufen ergibt sich jeweils: 0 * 20, 1 * 20 und 2 * 20, also 0, 20, 40.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[3];
+
+void setup() {
+   for (int i = 0; i &lt; 3; i++) {
+      xarray[i] = i * 20; // berechne x-Startposition
+   }
+}
+
+void draw() {
+   background(255);
+   for (int i = 0; i &lt; 3; i++) {
+      ellipse(xarray[i], 50, 10, 10); // zeichnen
+      xarray[i]++; // hochzählen
+   }
+}</code></pre>
+</div>
+</div>
+<p>Diese Lösung ist nicht nur kürzer, sondern auch mächtiger. Wir können nämlich mit einem Fingerschnipp die Anzahl der Bälle erhöhen, z.B. auf 5. Dazu müssen wir an drei Stellen im Code die 3 durch 5 ersetzen.</p>
+<h1>Größe des Arrays verwenden</h1>
+<p>Die Lösung oben lässt sich verbessern, indem man in die For-Schleife die Größe des Arrays mit <br />xarray.length einsetzt, zum Beispiel in der unteren Schleife:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; xarray.length; i++) {
+   ellipse(xarray[i], 50, 10, 10); // zeichnen
+   xarray[i]++; // hochzählen
+}</code></pre>
+</div>
+</div>
+<p>Wenn wir dies für beide Schleifen tun, dann müssen wir nur noch eine Stelle ändern, um die Anzahl der Bälle anzupassen: ganz oben.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// optimale Lösung
+int[] xarray = new int[3];
+
+void setup() {
+   for (int i = 0; i &lt; xarray.length; i++) {
+      xarray[i] = i * 20;
+   }
+}
+
+void draw() {
+   background(255);
+   for (int i = 0; i &lt; xarray.length; i++) {
+      ellipse(xarray[i], 50, 10, 10);
+      xarray[i]++;
+   }
+}</code></pre>
+</div>
+</div>
+<p>Probier es aus: setze bei int[3] oben eine andere Zahl ein. Versuche 2 oder 10 oder nur eine 1. Alles kein Problem.</p>
+<h1>Zusammenfassung</h1>
+<p>Arrays und For-Schleifen sind die perfekten Partner. Mit einer For-Schleife kannst du ganz leicht einen <strong>kompletten</strong> <strong>Array befüllen</strong> (z.B. alle Elemente mit der Zahl 0 oder mit einer Zufallszahl).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[] xarray = new int[3];
+
+for (int i = 0; i &lt; 3; i++) {
+   xarray[i] = 0;
+}</code></pre>
+</div>
+</div>
+<p>Außerdem kannst du mit einer Schleife alle <strong>Elemente</strong> <strong>eines</strong> <strong>Arrays abrufen</strong>, z.B. um Dinge zu zeichnen (wenn ein Array etwa die x-Koordinate enthält).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; 3; i++) {
+   ellipse(xarray[i], 50, 10, 10);
+}</code></pre>
+</div>
+</div>
+<p>Arrays sind eigentlich Objekte. Mit der Objekteigenschaft length kannst du die Länge eines Arrays herausfinden. Das nutzen wir in allen For-Schleifen, um den Code möglichst flexibel zu halten (d.h. der Code funktioniert auch dann, wenn die Länge sich ändert).</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt; xarray.length; i++) {
+   ellipse(xarray[i], 50, 10, 10);
+}</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="einfache_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="multidimensionale_arrays.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Strings verarbeiten | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-54"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li id="active"><a href="strings_verarbeiten.html" class="active no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="bibliotheken.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="strings_formatieren.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Strings verarbeiten</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id77">
+<div class="iDevice emphasis0" >
+<div id="ta77_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Bevor wir komplexere Daten laden und speichern, sollten wir unser Wissen über Strings vertiefen. "String" ist englisch für "Schnur" oder "Kette". Das deutet darauf hin, dass ein String eine Aneinanderreihung von Zeichen (engl. character) ist. Man sagt deshalb auch Zeichenkette.</p>
+<h1>String-Methoden</h1>
+<p>Wenn man mehrere Zeichen zusammensetzt, hat man eine Zeichenkette, auch genannt String. Wir wissen auch, dass es sich bei einer Variable vom Datentyp String um einen <strong>Objekttypen</strong> handelt. Aus diesem Grund kannst du auf das Objekt (also den String) <strong>Methoden</strong> anwenden. Methoden sind eigentlich nichts anderes als <strong>Funktionen</strong>, aber es sind nicht <em>irgendwelche</em>, sondern Funktionen, die zu einer bestimmten Klasse gehören (in unserem Fall String) und nur von einem Objekt dieser Klasse aufgerufen werden können. Das geschieht, indem du die Methode mit einem Punkt an die String-Variable bzw. den String ranhängst. So kannst du auf die Methoden zugreifen, die zur Klasse String gehören.</p>
+<p>Um  die Länge eines Strings zu bekommen, gibt es z.B. die Methode length(). Diese können wir einfach an unsere Variable mit einem Punkt ranhängen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hallo";
+println(message.length());</code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>5</code></pre>
+</div>
+</div>
+<p><br /><br />Etwas gewöhnungsbedürftig - aber korrekt - ist das Ausführen von Methoden auf dem String direkt, ohne dass eine Variable definiert wird:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println("hallo".length());</code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>5</code></pre>
+</div>
+</div>
+<p>Diese Form wird tatsächlich empfohlen für den Fall, dass eine String-Variable null sein könnte, wie in dem folgenden Fall:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void testFoo(String s) {
+   if ("foo".equals(s))
+      println("Foo!");
+   else
+      println("Bar!"); 
+}</code></pre>
+</div>
+</div>
+<p>Da Strings aus Zeichen (character) zusammengesetzt sind, kannst du die einzelnen Zeichen auch rausziehen, und zwar mit der String-Methode <br /><code>charAt()</code> :</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hallo";
+println(message.charAt(0));
+println(message.charAt(1));
+println(message.charAt(2));
+println(message.charAt(3));
+println(message.charAt(4));</code></pre>
+</div>
+</div>
+<p>Ausgabe:</p>
+<div class="pre-code">
+<div>
+<pre><code>h
+a
+l
+l
+o</code></pre>
+</div>
+</div>
+<p><strong>Hinweis</strong>: Schau dir die Zahlen oben genau an - was fällt dir auf? Richtig, die Zahlen beginnen bei 0! Denke immer daran, dass der vorderste Buchstabe (also der an 1. Stelle) den Index 0 hat!</p>
+<p></p>
+<h1>Übersicht über häufige String-Methoden</h1>
+<p>Mithilfe von String-Verarbeitungs-Methoden kannst du deine Zeichenfolgen be- und verarbeiten. Zum Beispiel kannst du deinen String durchsuchen nach einzelnen Buchstaben oder Wörtern, du kannst deinen String in mehrere Teile aufteilen, Worte bzw. Buchstaben austauschen etc. Es gibt <strong>sehr viele</strong> dieser Methoden.<strong> Unten siehst du eine Tabelle derjenigen Methoden, welche du für dieses Modul kennen sollst.</strong></p>
+<table class="exe-table" role="grid" resolved="" style="width: 100%;"><colgroup> <col /> <col /> <col /> </colgroup>
+<thead>
+<tr role="row" class="tablesorter-headerRow" style="height: 18px;">
+<th>
+<p>Funktion</p>
+</th>
+<th>
+<p>Beschreibung</p>
+</th>
+<th>
+<p>Beispiel</p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>
+<p><code>charAt(int index)</code></p>
+</th>
+<td>
+<p>Liefert den Buchstaben an der angegeben Stelle. Index beginnt bei 0 </p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.charAt(6)); // Ausgabe: W</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>contains(String part)</p>
+</th>
+<td>
+<p>Liefert <code>true</code> zurück, wenn der String den angegebenen String enthält</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.contains("ello")); // Ausgabe: true</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+</td>
+</tr>
+<tr>
+<th>
+<p><code>indexOf(String part)</code></p>
+</th>
+<td>
+<p>Liefert den Index des ersten Vorkommens des angegeben Strings</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.indexOf("ello")); // Ausgabe: 1</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+</td>
+</tr>
+<tr>
+<th>
+<p>length()</p>
+</th>
+<td>
+<p>Liefert die Länge des Strings</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.length()); // Ausgabe: 12</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>replace(String find, String replace)</p>
+</th>
+<td>
+<p>Tauscht jedes Vorkommen von <code>find</code> mit <code>replace</code> aus.</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "I love you as much as I love ice cream";
+println(txt.replace("love", "hate"));
+// Ausgabe: I hate you as much as I hate ice cream</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>split(String trennzeichen)</p>
+</th>
+<td>
+<p>Trennt einen String anhand eines Trennzeichens auf und liefert einen Array zurück (Typ <code>String[]</code>).</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "I love you";
+String [] parts = txt.split(" "); // Leerzeichen
+printArray(parts);
+
+// Ausgabe:
+// [0] "I"
+// [1] "love"
+// [2] "you"</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>startsWith(String start)</p>
+</th>
+<td>
+<p>Überprüft, ob der String mit dem angegeben String beginnt.</p>
+<p>Hinweis: Das Gegenteil hiervon ist <code>endsWith()</code></p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.startsWith("Hello")); // Ausgabe: true</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>substring(int start, int end)</p>
+</th>
+<td>
+<p>Liefert einen Teil-String zurück, der <strong>mit</strong> <code>start</code> beginnt und <strong>vor</strong> <code>end</code> endet.</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.substring(2, 4)); // Ausgabe: ll</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>toLowerCase()</p>
+</th>
+<td>
+<p>Konvertiert einen String in Kleinbuchstaben.</p>
+<p>Hinweis: Das Gegenteil hiervon ist <code>toUpperCase()</code></p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = "Hello World!";
+println(txt.toLowerCase()); // Ausgabe: hello world!</code></pre>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<th>
+<p>trim()</p>
+</th>
+<td>
+<p>Entfernt Leerzeichen am Anfang und am Ende des Strings.</p>
+</td>
+<td>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>String txt = " Hello World! ";
+println(txt.trim()); // Ausgabe: Hello World!</code></pre>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>In der <a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html">Dokumentation für die Klasse String </a>findest du <strong>alle</strong> <strong>Methoden</strong>, die zu Strings gehören. Du musst sie nicht alle können - schau sie dir aber mal an, damit du weißt was alles mit Strings möglich ist.</p>
+<h2>Hinweis: Unterschiede Processing und Java</h2>
+<p>Bei der Verarbeitung von Strings gibt es kleine Unterschiede zwischen Java und Processing. Darauf musst du achten, wenn du programmierst. Bei Processing ist das erstmal egal, da Processing beides versteht: den Processing- und den Java-Code. Später, wenn du allerdings nur noch in Java programmierst, funktioniert der Processing-Code nicht mehr. Daher empfehlen wir: Verwende direkt die Java-Schreibweise (so wie hier im Skript auch verwendet).</p>
+<p><strong>Die Funktionen für die String-Verarbeitung heißen in Processing und Java gleich, nur werden sie manchmal anders verwendet.</strong></p>
+<p>Hier ein Beispiel für die Funktion trim(). Trim entfernt Leerzeichen am Anfang und am Ende eines Strings:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Code für Processing
+String textInProcessing = "     Hier sind Leerzeichen am Anfang!";
+println(trim(textInProcessing));  // In Processing wird der String als Parameter übergeben
+ 
+// Code in Java
+String textInJava = "Hier sind Leerzeichen am Ende!     ";
+println(textInJava.trim());      // In Java wird die Methode direkt auf den String angewendet </code></pre>
+</div>
+</div>
+<p></p>
+<p>Die Funktionen/Methoden, die in diesem Abschnitt erläutert werden, werden in Java erklärt.</p>
+<h2>Beispiele</h2>
+<p>Oben haben wir die wichtigsten und häufigsten Methoden einmal aufgelistet. Im Folgenden findest du nochmal etwas ausführlichere Beispiele zu den einzelnen Methoden.</p>
+<p>Die Methode <code>equals()</code> vergleicht zwei Strings und gibt true oder false zurück. Man beachte, dass Groß- und Kleinschreibung bedeutungsunterscheidend ist!</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hallo";
+String name = "bob";
+ 
+if (message.equals("hallo"))
+  println("guten tag");
+else
+  println("wie bitte?");
+ 
+println(name.equals("Bob")); </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>guten tag
+false </code></pre>
+</div>
+</div>
+<p>Die Methoden <code>toLowerCase()</code> und <code>toUpperCase()</code> wandeln einen String in Kleinbuchstaben (lower) bzw. Großbuchenstaben (upper) um.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "Hallo";
+String name = "Bob";
+ 
+println(message.toLowerCase());
+println(name.toUpperCase()); </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>hallo
+BOB </code></pre>
+</div>
+</div>
+<p><strong>Tipp: Groß-/Kleinschreibung ignorieren.</strong> Wenn man feststellen möchte, ob zwei Strings "gleich" sind und dabei Groß-/Kleinschreibung ignorieren will, der verwende z.B. <code>toLowerCase()</code> wie folgt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hAllo BOB";
+ 
+if (message.toLowerCase().equals("hallo bob"))
+  println("erkannt");
+else
+  println("nicht erkannt"); </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>erkannt</code></pre>
+</div>
+</div>
+<p><strong>Wichtig</strong> zu verstehen ist hier, dass die Methode <code>toLowerCase()</code> wieder ein String-Objekt zurückgibt (nämlich den String in Kleinbuchstaben) und dass man auf diesem Objekt direkt weiterarbeiten kann: in unserem Fall mit <code>equals().</code></p>
+<p>Die Methode <code>indexOf()</code> erlaubt es, einen String a in einem anderen String b zu suchen. Die Methode gibt eine Zahl zurück. Bei -1 wurde der String a nicht gefunden. Eine nicht-negative Zahl n besagt, dass String a an Stelle n in b beginnt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String a = "all";
+String b = "hallo";
+ 
+println(b.indexOf(a)); // suche a in b </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>1</code></pre>
+</div>
+</div>
+<p>Im Beispiel suche ich String a = "all" in String b = "hallo". Dann bekomme ich n = 1 zurück, weil "all" an Stelle 1 in "hallo" beginnt. Nicht vergessen, dass die erste Stelle bei 0 beginnt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "Hallo Bob";
+ 
+println(message.indexOf("foo"));
+println(message.indexOf("Bob"));
+println(message.indexOf("Ha"));
+println(message.indexOf("ha")); </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>-1
+6
+0
+-1 </code></pre>
+</div>
+</div>
+<p><strong>Auch hier ist Groß-/Kleinschreibung bedeutungsunterscheidend.</strong> Kannst du den Trick von oben anwenden, wenn du einen String durchsuchen willst und dabei Groß-/Kleinschreibung ignorieren möchtest?</p>
+<p>Die Methode <code>substring()</code> erlaubt dir das gezielte Zerschneiden eines Strings. Willst du die Zahl aus dem String "Heidi (24)" herausschneiden, dann gibst du die Startposition an, das wäre die 7, und die exklusive Endposition, d.h. die Position, die <strong>nicht mehr rausgeschnitten</strong> werden soll, also die 9.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "Heidi (24)";
+println(message.substring(7, 9)); // zweite Position exklusive </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>24</code></pre>
+</div>
+</div>
+<p><code>substring()</code> gibt es auch mit <strong>einem</strong> Argument. Dann wird nur vorn abgeschnitten und nach hinten raus der ganze Rest genommen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "Hallo Bob";
+println(message.substring(6)); // nur ein Argument </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>Bob </code></pre>
+</div>
+</div>
+<h1>Strings umwandeln</h1>
+<p>Wie wir noch im Abschnitt <a href="dateien_erzeugen_und_lesen.html">Dateien erzeugen und lesen</a> sehen werden, bekommen wir Daten, die wir einlesen, in Form von Strings. Das heißt, auch Zahlen oder Wahrheitswerte werden zunächst als Strings eingelesen.</p>
+<p>Für Processing/Java ist der String "401" keine Zahl, sondern eine Folge von drei Zeichen. Da der String "401" keine Zahl ist, kann er auch nicht für Berechnungen verwendet werden. Daher gibt es Funktionen, um den String einer Zahl in eine "echte" Zahl (z.B. <code>int</code> oder <code>float)</code> umzuwandeln. Dasselbe gibt es auch für Wahrheitswerte, die in einen <code>boolean</code> umgwandelt werden sollen. Man nennt das auch Konvertieren bzw. "<strong>Parsen</strong>" (engl. to parse = analysieren). Beim Parsen wird der String gelesen, analysiert, interpretiert und dann in den entsprechenden Datentyp konvertiert.</p>
+<p>Diese Funktionen heißen<span style="text-decoration: underline;"> in Processing</span> <code>int(), float()</code> und <code>boolean():</code></p>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int zahl = int("401");
+println(zahl + 20);
+ 
+float dez = float("-1.5");
+println(dez * 10);
+ 
+println(boolean("true")); </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>421
+-15.0
+true</code></pre>
+</div>
+</div>
+<p>Eine weitere wichtige Funktion <span style="text-decoration: underline;">in Processing</span> ist <code>nf().</code> Diese Funktion macht im Endeffekt genau das Gegenteil: Sie wandelt Zahlen in Strings um. Dabei kann man an die Funktion verschiedene Parameter übergeben, wie der String formatiert sein soll bzw. auch ein Arrays an Zahlen, die formatiert werden sollen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int a = 500;
+println( nf(a, 5) );      // 5 steht dafür wieviele Stellen die Zahl haben soll
+println( nf(a, 5, 4) );   // 4 steht hier dafür, wieviele Stellen nach dem Komma sein sollen </code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>00500
+00500,0000</code></pre>
+</div>
+</div>
+<h2>Java</h2>
+<p>In Java gibt es die oben genannten Funktionen nicht. Hier verwendet man die Methoden<code> Integer.parseInt(), Float.parseFloat()</code> und <code>Boolean.parseBoolean()</code>. Die Macher von Processing wollen dir offenbar diese sperrige Syntax ersparen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(Integer.parseInt("401"));
+println(Float.parseFloat("-1.5"));
+println(Boolean.parseBoolean("false")); </code> </pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>401
+-1.5
+false</code></pre>
+</div>
+</div>
+<p>Fällt dir bei <code>Integer, Float</code> und <code>Boolean</code> irgendwas auf? Richtig, sie werden anders geschrieben. Bisher haben wir immer <code>int, float</code> und <code>boolean</code> verwendet. Was ist hier nun der Unterschied? Bei <code>Integer, Float</code> und <code>Boolean</code> handelt es sich (wie bei <code>String</code> auch) um Klassen. Daher werden sie auch groß geschrieben. Und aus diesem Grund können wir auch hier auf die Methoden der jeweiligen Klassen zugreifen (z.B. I<code>nteger.parseInt()</code>). Es gibt in Java also einmal <code>int, float</code> und <code>boolean</code> als primitive Datentypen bzw. Wertetypen und weiteres mal als <code>Integer, Float</code> und <code>Boolean</code> als Klassen bzw. Objekttypen.</p>
+<p></p>
+<h1>Zusammenfassung</h1>
+<h2>String-Methoden</h2>
+<p>In Java und in Processing gibt es die Möglichkeit einen String mithilfe der Methoden (Funktionen) der String-Klasse zu ver- bzw. bearbeiten. In Java werden diese Methoden mit einem Punkt an den String bzw. die String-Variable rangehängt. In Processing gibt es hierfür eigene Befehle. Sie heißen meist gleich, haben aber teilweise andere Parameter.</p>
+<p>Eine Liste der wichtigsten String-Methoden</p>
+<ul>
+<li><strong>charAt(int index):</strong> Liefert den Buchstaben an der angegeben Stelle. Index beginnt bei 0 </li>
+<li><strong>split(String trennzeichen):</strong> Trennt einen String anhand eines Trennzeichens auf und liefert einen Array zurück (Typ String[]).</li>
+<li><strong>contains(String</strong> <strong>part); </strong>Liefert true zurück, wenn der String den angegebenen String enthält</li>
+<li><strong>startsWith(String start):</strong> Überprüft, ob der String mit dem angegeben String beginnt. Das Gegenteil hiervon ist endsWith()</li>
+<li><strong>indexOf(String part):</strong> Liefert den Index des ersten Vorkommens des angegeben Strings</li>
+<li><strong>substring(int</strong> <strong>start, int end): </strong>Liefert einen Teil-String zurück, der mit start beginnt und vor end endet.</li>
+<li><strong>length():</strong> Liefert die Länge des Strings</li>
+<li><strong>toLowerCase():</strong> Konvertiert einen String in Kleinbuchstaben. Das Gegenteil hiervon ist toUpperCase()</li>
+<li><strong>replace(String find, String replace):</strong> Tauscht jedes Vorkommen von find mit replace aus.</li>
+<li><strong>trim():</strong> Entfernt Leerzeichen am Anfang und am Ende des Strings.</li>
+</ul>
+<h2>Strings umwandeln</h2>
+<p>Außerdem können Strings in andere Datentypen umgewandelt bzw. konvertiert werden. Dies wird als Konvertieren oder auch Parsen bezeichnet. In diesem Abschnitt haben wir das Parsen eines Strings in int, float und boolean angesehen. Hierfür gibt es bei Java und Processingen unterschiedliche Funktionen:</p>
+<ul>
+<li><strong>Processing:</strong> <code>int(), float(), boolean()</code></li>
+<li><strong>Java:</strong> <code>Integer.parseInt(), Float.parseFloat(), Boolean.parseBoolean()</code></li>
+</ul>
+<p>Mithilfe der Funktion <code>nf()</code> kann ich Processing eine Zahl in einen String umgewandelt und formatiert werden.</p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="bibliotheken.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="strings_formatieren.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

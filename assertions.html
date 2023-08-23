@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Assertions | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-64"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li id="active"><a href="assertions.html" class="active no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="switch.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="operatoren_teil_2.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Assertions</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id88">
+<div class="iDevice emphasis0" >
+<div id="ta88_122_2" class="block iDevice_content">
+<div class="exe-text"><p>Eine Assertion  ist eine weitere <strong>Kontrollstruktur.</strong> Das Wort Assertion bedeutet auf deutsch so viel wie Behauptung oder Annahme. Ich kann also mithilfe von Asserstions gewisse Annahmen über den aktuellen Zustandes meines meines Programmes überprüfen. <strong>Eine Assertion sorgt dafür, dass das Programm dann nur weiterläuft, wenn die Assertion wahr ist.</strong></p>
+<p>Ein anschauliches Beispiel wäre folgendes:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int age = 16;
+assert age  &gt; 18 : "Zu jung. Du musst 18 oder älter sein, um fortzufahren."; // Das Programm endet in diesem Fall in dieser Zeile
+print ("Herzlich Willkommen!");</code></pre>
+</div>
+</div>
+<p><br />Die Zeile "Herzlich Willkommen!" wird nicht ausgegeben, weil das Programm aufgrund der Assertion in der Zeile davor endet und nicht weiter läuft.  Das Programm wird - wenn die Assertion <code>false</code> ist - <strong>sofort</strong> beendet und der Code danach nicht mehr ausgeführt wird.</p>
+<h1>Aufbau</h1>
+<p>Eine Assertion beginnt mit dem Schlüsselwort assert, darauf folgt ein logischer Ausdruck gefolgt von einem Semikolon oder Doppelpunkt. Der Doppelpunkt ist der Anfang der optionalen Fehlermeldung bzw. Feedback-Nachricht.</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>assert BEDINGUNG;
+ 
+assert BEDINGUNG : FEHLERMELDUNG; // Fehlermeldung = optional</code></pre>
+</div>
+</div>
+<p>Der logische Ausdruck kann verschiedene Formen haben:</p>
+<p>assert true: "Das hier ist immer wahr"; // technisch korrekt, aber natürlich nicht sinnvoll, besser ...</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boolean foo = false;
+assert foo : "Dieser Wert kann sich ändern";
+ 
+int a = 10;
+int b = 6;
+assert a &gt; b : "Fehler: a darf nicht kleiner als b sein";
+ 
+int c = 5;
+assert a &gt; b &amp;&amp; a % c == 0 : "Fehler: a darf nicht kleiner als b und bzw. oder muss durch c teilbar sein!";</code></pre>
+</div>
+</div>
+<h1>Verwendung</h1>
+<p>Schauen wir uns an, wozu man Assertions verwenden kann. Assertions werden verwendet, wenn eine Annahme überprüft werden soll und <strong>wenn die Annahme nicht zutrifft, das Programm (mit einer Fehlermeldung) beendet werden soll.</strong></p>
+<p>Assertions werden am häufigsten zum <strong>Testen von Code</strong> eingesetzt. Also schreiben wir mal eine kleines Programm, mit dem wir unseren Code testen können ...</p>
+<p>Wir möchten eine Funktion schreiben, die überprüft, ob ein gewisser Buchstabe in einem Text enthalten ist. Sowohl der Text als auch der Buchstabe sollen als Parameter übergeben werden. Der Rückgabewert der Funktion soll ein <code>boolean</code> sein. Der Code für diese Funktion könnte z.B. folgendemaßen aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boolean checkChar( String txt, char c) {
+   
+  // Die String-Methode indexOf() liefert -1, wenn der Buchstabe nicht im String vorkommt
+  boolean kommtVor = txt.indexOf(c) &gt; 0;
+  return kommtVor;
+}</code></pre>
+</div>
+</div>
+<p>Nun können wir unsere Funktion testen, indem wir eine Assertion formulieren.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup () {
+ 
+   // Wir gehen davon aus, dass die Buchstaben 'H' und 'i' vorkommen, 'o' aber nicht.
+ 
+  assert  checkChar("Hi", 'i') == true : "Fehler (i)! Erwartet: true. Tatsächlich: " + checkChar("Hi", 'i');
+  assert  checkChar("Hi", 'H') : "Fehler (H)! Erwartet: true. Tatsächlich: " + checkChar("Hi", 'H');   // Das == können wir auch weglassen, da wir bereits einen booleschen Wert haben
+  assert !checkChar("Hi", 'o') : "Fehler(o)! Erwartet: false. Tatsächlich: " + checkChar("Hi", 'o');  // für false setzen wir einfach ein ! vor die Funktion
+ 
+  println("Alle Tests bestanden");
+}</code></pre>
+</div>
+</div>
+<p>Wenn wir diesen Code auführen wird unser Programm mit folgender Fehlermeldung beendet:</p>
+<p><span style="color: #993300;"><code>AssertionError: Fehler (H)! Erwartet: true. Tatsächlich: false</code></span></p>
+<p>Unsere Funktion verhält sich also nicht wie erwartet. Das liegt daran, dass die Funktion indexOf() bei 0 anfängt zu zählen. Daher müssen wir in unserer Funktion aus dem &gt; ein &gt;= machen:</p>
+<div class="highlighted-code language-java line-numbers hightlight-4">
+<div>
+<pre><code>boolean checkChar( String txt, char c) {
+   
+  // Die String-Methode indexOf() liefert -1, wenn der Buchstabe nicht im String vorkommt
+  boolean kommtVor = txt.indexOf(c) &gt;= 0;  // So ist es korrekt
+  return kommtVor;
+}</code></pre>
+</div>
+</div>
+<p>Wenn wir unseren Code nun ausführen bekommen wir am Ende die  Ausgabe: Alle Tests bestanden.</p>
+<p>In solchen Fällen ist der Einsatz von Assertions sehr sinnvoll, da das Programm in beiden Fällen "zu Ende" ist, wenn die Assertions überprüft wurden. Nur einmal Endet das Programm mit und einmal ohne Fehlermeldung. Du kannst Assertions also verwenden, um zu überprüfen, ob eine Funktion, die du geschrieben hast tatsächlich das macht, was sie soll.</p>
+<p><strong>Hinweis</strong>: Wenn du deine Anwendung aus dem Processing Editor heraus startest mit "Play" und dann eine Assertion ausgelöst wird, dann friert das Anwendungsfenster ein und stürzt ab. Wenn du deine Anwendung aber exportierst und daraus eine .exe machst, dann wird das Programm im Falle eine Assertion einfach beendet und friert nicht ein.</p>
+<p><strong>Assertions beenden das Programm sofort</strong>. Eine andere Möglichkeit das Programm zu beenden ist dei Verwendung der Funktion <code>exit().</code> Allerdings beendet <code>exit()</code> das Programm erst nach Beendigung des aktuellen Durchlaufs von <code>draw.</code></p>
+<h1><br />Zusammenfassung</h1>
+<p>Assertions werden verwendet, um Annahmen in der Porgrammierung zu überprüfen und das Programm zu beenden, wenn diese Annahmen nicht eintreffen. Diese Annahmen werden in Form von booleschen Ausdrücken formuliert. Einer der häufigsten Anwendungsfälle für Assertions ist das Testen von Software. Hier wird überprüft, ob eine Funktion oder ein Programm die gewünschten bzw. die erwarteten Ergebnisse liefert.</p>
+<p>Assertions sind folgendermaßen aufgebaut:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>assert LOGISCHER_AUSDRUCK;
+ 
+assert LOGISCHER_AUSDRUCK : FEHLERMELDUNG; // Fehlermeldung = optional</code></pre>
+</div>
+</div>
+<p><strong>Wichtig:</strong> Assertions beenden das Programm <strong>sofort,</strong> wenn der logische Ausdruck <code>false</code> ist. Aller Code, der danach kommt wird nicht mehr ausgeführt.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="switch.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="operatoren_teil_2.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

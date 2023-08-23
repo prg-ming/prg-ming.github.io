@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Gleitkomma-Zahlenformat | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-56"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li id="active"><a href="gleitkommazahlenformat.html" class="active no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="arten_von_datentypen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="zahlensysteme.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Gleitkomma-Zahlenformat</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id79">
+<div class="iDevice emphasis0" >
+<div id="ta79_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Kommazahlen werden im Computer meist anders dargestellt als ganze Zahlen. Der Grund liegt darin, dass für die Darstellung einer Zahl jeweils nur eine feste Anzahl von Bits, z.B. 32, zur Verfügung steht.</p>
+<p>Mit 32 Bit lassen sich die ganzen Zahlen im Bereich { -2<sup>31</sup>, ..., +2<sup>31</sup>-1 }  =  { -2.147.483.648, ..., +2.147.483.647 } darstellen. Um eine Kommazahl darzustellen, kann man nun die Ziffern vor dem Komma und die Ziffern nach dem Komma jeweils als ganze Zahlen auf­fassen und mit jeweils 32 Bit speichern. Das Ergebnis ist eine 64 Bit lange sogenannte Fest­komma­zahl (engl.: fixed point number). Nachteilig ist jedoch, dass sich in 64-Bit-Festkomma-Darstellung keine betragsmäßig sehr großen oder sehr kleinen Zahlen darstellen lassen, etwa die <a href="https://de.wikipedia.org/wiki/Sonnenmasse">Masse der Sonne</a> oder die <a href="https://de.wikipedia.org/wiki/Elektron">Masse des Elektrons</a>, da diese Zahlen so viele Stellen vor oder nach dem Komma haben, dass diese abgeschnitten würden. Es wird daher für Kommazahlen eine andere Form der Darstellung verwendet.</p>
+<h1>Idee 💡</h1>
+<p>Jede Zahl z lässt sich in der Form z = m · b<sup>e</sup> darstellen. Hierbei sind m die <strong>Mantisse,</strong> b die <strong>Basis</strong> der Zahlen­darstellung und e der <strong>Exponent.</strong> Im <strong>dezimalen</strong> Zahlensystem ist <strong>b = 10.</strong> Dies ist die "wissen­schaftliche Notation", wie sie auch auf Taschen­rechnern gebräuchlich ist.</p>
+<p><strong>Beispiele:</strong>  </p>
+<ul>
+<li>Die Zahl 487 lässt sich als 4,87 · 10<sup><span style="text-decoration: underline;">2</span></sup> schreiben mit 4,87 als Mantisse, 10 als Basis und 2 als Exponent.</li>
+<li>Die Zahl 0,000007 lässt sich als 7,0 · 10<sup>-6</sup> schreiben.</li>
+<li>Die Zahl -12,55 lässt sich als -1,255 · 10<sup>1</sup> schreiben.</li>
+<li>Die Zahl 3,5 lässt sich als 3,5 · 10<sup>0</sup> schreiben.</li>
+<li>Die Zahl 12000000 lässt sich als 1,2 · 10<sup>7</sup> schreiben.</li>
+</ul>
+<p>Offenbar lässt sich 3,5 auch als 350 · 10<sup>-2</sup> oder als 0,35 · 10<sup>1</sup> schreiben. Die Darstellung ist also nicht eindeutig, das Komma kann in der Mantisse hin und her "gleiten", wobei sich der Exponent jeweils ändert. Aus diesem Grund heißt eine in wissen­schaftlicher Notation dargestellte Zahl auch <strong>Gleitkomma­zahl</strong> (engl.: floating point number).</p>
+<p>Eine eindeutige Form lässt sich dadurch erreichen, dass man das Komma in der Mantisse soweit nach vorn oder hinten gleiten lässt und den Exponenten entsprechend anpasst, bis vor dem Komma genau eine Ziffer  ≠ 0 steht. Dabei lässt sich jede Zahl außer der Null in normalisierte Gleitkomma­darstellung bringen.</p>
+<blockquote>
+<p><strong>Definition:</strong>  Eine Gleit­komma­zahl heißt <strong>normalisiert,</strong> wenn die Mantisse vor dem Komma genau eine Ziffer  ≠ 0 enthält.</p>
+</blockquote>
+<p>Der Vorteil der Gleitkomma­darstellung besteht darin, dass alle Zahlen mit derselben relativen Genauigkeit dargestellt werden, sowohl betragsmäßig sehr <strong>kleine</strong> als auch sehr <strong>große</strong> Zahlen. Wenn bei der sehr kleinen Zahl 1,23456789 · 10<sup>-12</sup> die letzte Ziffer aufgerundet wird, entsteht ein prozentual genauso großer Fehler, wie wenn bei der sehr großen Zahl 1,23456789 · 10<sup>14</sup> die letzte Ziffer aufgerundet wird.</p>
+<h1>Gleitkommadarstellung im IEEE-Format</h1>
+<p>Das <a href="https://de.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers">Institute of Electrical and Electronics Engineers </a>(kurz IEEE, meist englisch "i triple e" ausgesprochen) hat eine <strong>Norm</strong> entwickelt, wie Gleitkommazahlen dargestellt bzw. gespeichert werden. Das ist sowas wie die Norm DIN A4 in Deutschland für Papier - nur eben jetzt für die Darstellung einer Gleitkommazahl im binären Zahlensystem.</p>
+<p>Im Computer werden Zahlen zur Basis 2 dargestellt (= im binären Zahlensystem, siehe <a href="computersprache.html">Computersprache</a>). Entsprechend ist die <strong>Basis b = 2</strong>, und die <strong>Mantisse m</strong> und der <strong>Exponent e</strong> werden als <strong>Binärzahlen</strong> dargestellt. Im IEEE-Format (IEEE-Norm 754) ist zunächst die Anzahl der Bits festgelegt, mit denen Mantisse und Exponent jeweils dargestellt werden. Es gibt zwei Varianten: das <em>einfach</em> <em>genaue</em> Format mit insgesamt 32 Bit und das <em>doppelt genaue</em> Format mit insgesamt 64 Bit. Das Bild zeigt jeweils die Auf­teilung der zur Verfügung stehenden Bits auf die Anteile Vorzeichen, Exponent und Mantisse.</p>
+<p> <img src="ieee.png" width="413" height="103" /> <br /> <br /><strong>Vorzeichen:</strong> Die Mantisse wird in Betrag-Vorzeichen-Darstellung gespeichert. D.h. wenn die Mantisse negativ ist, ist dies daran zu erkennen, dass das Vorzeichen-Bit 1 ist. Im Mantissen­feld steht der (positive) Betrag der Mantisse.</p>
+<p><strong>Mantisse;</strong> Im IEEE-Format werden die Gleit­komma­zahlen grund­sätzlich normalisiert gespeichert, wenn dies möglich ist. Nicht möglich ist dies, wenn durch das Gleiten des Kommas der Exponent so groß oder so klein wird, dass er nicht mehr mit den zur Verfügung stehenden Bits darstellbar ist. Normalisiert heißt, dass in der Mantisse vor dem Komma genau eine Ziffer  ≠  0 steht. Im Binärsystem gibt es jedoch nur eine einzige Ziffer  ≠  0, dies ist die 1. Da also jede normalisierte binäre Mantisse mit einer 1 beginnt, braucht diese 1 nicht gespeichert zu werden. Tatsächlich wird im IEEE-Format die 1 vor dem Komma nicht explizit gespeichert, sondern sozusagen implizit angenommen. Nur die Nach­komma­stellen der Mantisse werden gespeichert.</p>
+<p><strong>Exponent:</strong> Der Exponent wird in sogenannter <strong>Ver­schiebungs-Darstellung</strong> (engl.: <em>biased representation)</em> gespeichert. Aus dem dar­gestellten Binärwert des Exponenten wird der tatsächliche Wert des Exponenten durch Subtraktion einer Verschiebe­distanz ("Bias") gewonnen. Beim einfach genauen Format beträgt diese <strong>Verschiebe­distanz 127.</strong> Mit 8 Bit sind die Binärwerte {0, ..., 255} darstellbar; die Werte 00000000 = 0 und 11111111 = 255 sind reserviert; aus den ver­bleibenden Werten {1, ..., 254} ergibt sich nach Subtraktion der Verschiebe­distanz der tatsächliche Wertebereich des Exponenten {-126, ..., 127}. Somit sind auch negative Exponenten möglich. Das folgende Diagramm zeigt den Ablauf der Umrechnung:</p>
+<table style="width: 100%;" border="1" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 20%; text-align: center;">Bitfolge</td>
+<td style="width: 20%; text-align: center;">auswerten</td>
+<td style="width: 20%; text-align: center;">Binärwert</td>
+<td style="width: 20%; text-align: center;">127 subtrahieren</td>
+<td style="width: 20%; text-align: center;">tat­sächlicher Exponent</td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;">01111101</td>
+<td style="width: 20%; text-align: center;">→</td>
+<td style="width: 20%; text-align: center;">125</td>
+<td style="width: 20%; text-align: center;">→</td>
+<td style="width: 20%; text-align: center;">-2</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h2>Spezialwerte</h2>
+<h3>Denormalisierte Zahlen und Null</h3>
+<p>Ein Sonderfall tritt auf, <strong>wenn der Exponent nur aus Nullen besteht.</strong> Dann wird bei der Mantisse keine implizite 1 vor dem Komma angenommen, sondern eine implizite 0. Zum Ausgleich beträgt der tatsächliche Wert des Exponenten in diesem Fall nicht -127, sondern -126. Auf diese Weise lassen sich noch betrags­kleinere Zahlen darstellen, bis hin zur 0. <strong>Die Zahl 0 wird also dargestellt durch lauter Nullen im Exponenten und lauter Nullen in der Mantisse;</strong> das Vorzeichen kann + oder - sein. Zahlen mit lauter Nullen im Exponenten werden als denormalisierte Zahlen bezeichnet.</p>
+<p>Der Wert Null entspricht übrigens nicht der Zahl 0, sondern steht für das englische "Null" = Leer, Nichts. Wenn du zum Beispiel eine Variable vom Typ String deklarierst, aber ihr keinen Wert zuweist, dann hat sie den Wert Null. Das Wort Null ist uns auch bereits begenet und zwar bei der <code>NullPointerExeption</code> im Abschnitt <a href="debugging.html">Debugging</a>.</p>
+<h3>Unendlich (Infinity)</h3>
+<p>Ein weiterer Sonderfall tritt auf, <strong>wenn der Exponent nur aus Einsen besteht.</strong> <strong>Besteht die Mantisse nur aus Nullen</strong>, so ist der Wert der dar­gestellten Zahl +∞ oder -∞, je nach Vorzeichen­bit. Das Ergebnis +∞ ergibt sich, wenn eine positive Zahl durch 0 dividiert wird, oder bei einem Exponenten­überlauf.</p>
+<h3>NaN</h3>
+<p><strong>Besteht der Exponent nur aus Einsen und enthält die Mantisse Einsen</strong>, so ist der Wert der dar­gestellten Zahl <strong>NaN</strong> <strong>(not a number)</strong>. <br />Dieser Wert ergibt sich u.a. als Ergebnis einer undefinierten Rechen­operation, wie z.B. 0/0 oder ∞ – ∞.</p>
+<h2>Übersicht</h2>
+<p>Die folgende Tabelle gibt eine Übersicht über die Darstellung ver­schiedener 32-Bit-Gleit­komma­zahlen.</p>
+<table style="width: 100%; height: 223px;" border="1" class="exe-table">
+<tbody>
+<tr style="height: 18px;">
+<th style="width: 50%; height: 18px;">32-Bitdarstellung</th>
+<th style="width: 50%; height: 18px;">Wert</th>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">0000 0000</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;"> +0</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">1</span> <span style="background-color: #99ccff;">0000 0000</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;">-0</td>
+</tr>
+<tr style="height: 19px;">
+<td style="width: 50%; height: 19px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">0111 1111</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 19px;"> 1.0·2<sup>0</sup> = 1</td>
+</tr>
+<tr style="height: 19px;">
+<td style="width: 50%; height: 19px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">0111 1110</span> <span style="background-color: #ffff99;">100 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 19px;">1.1·2<sup>-1</sup> = 0,75</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">0111 1101</span> <span style="background-color: #ffff99;">100 1100 1100 1100 1100 1101</span></span></td>
+<td style="width: 50%; height: 18px;">1.10011·2<sup>-2</sup> = 0,4</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">1</span> <span style="background-color: #99ccff;">1000 0000</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;">-1.0·2<sup>1</sup> = -2</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">1000 0011</span> <span style="background-color: #ffff99;">010 0100 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;">1.01001·2<sup>4</sup> = 1,28125·16 = 20,5</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">0000 0000</span> <span style="background-color: #ffff99;">110 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;">0.11·2<sup>-126</sup> (denormalisierte Zahl)</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 23px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">0</span> <span style="background-color: #99ccff;">1111 1111</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 23px;"> +∞</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">1</span> <span style="background-color: #99ccff;">1111 1111</span> <span style="background-color: #ffff99;">000 0000 0000 0000 0000 0000</span></span></td>
+<td style="width: 50%; height: 18px;"> -∞</td>
+</tr>
+<tr style="height: 18px;">
+<td style="width: 50%; height: 18px;"><span style="font-family: andale mono, monospace;"><span style="background-color: #99cc00;">?</span> <span style="background-color: #99ccff;">1111 1111</span> <span style="background-color: #ffff99;">010 0110 0000 0000 0000 0100</span></span></td>
+<td style="width: 50%; height: 18px;">NaN</td>
+</tr>
+</tbody>
+</table>
+<h2>Doppelt genaues Format</h2>
+<p>Das einfach genaue Format erlaubt lediglich eine Genauigkeit der Darstellung von ca. 7 Dezimal­stellen. Dies ist relativ wenig; bei einer Zahl wie 12.345,678 ist die dritte Stelle nach dem Komma schon ungenau. Überlege doch mal: Was würde passieren, wenn ich eine sehr kleine Zahl zu einer sehr großen Zahl addiere? Richtig, die kleine Zahl würde wahrscheinlich weit mehr als 7 Dezimalstellen hinter dem Komma stehen. Sprich - ich kann mir diese Rechenoperation eigentlich sparen. Auf diese Weise geht Genauigkeit bei Rechenoperationen verloren.</p>
+<p>Daher gibt es das doppelt genaue Format. Beim doppelt genauen Format werden die Zahlen mit 64 Bit dargestellt. Die Länge des Exponenten ist 11 Bit, die Länge der Mantisse ist 52 Bit. Der Bias des Exponenten beträgt 1023. Die Genauigkeit der Darstellung entspricht ca. 16 Dezimal­stellen. Heutzutage sind Speicher­platz und Rechen­leistung so reichlich vorhanden, dass nur noch das doppelt genaue Format verwendet werden sollte (Typ <code>double</code> in Programmier­sprachen → <a href="arten_von_datentypen.html">Arten von Datentypen</a>).</p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Gleitkommazahlen werden im IEEE-Format gespeichert.</li>
+<li>Gleitkommazahlen bestehen aus aus <strong>Mantisse</strong>, <strong>Basis</strong> und <strong>Exponent</strong>:  z = m · b<sup>e</sup><br />
+<ul>
+<li>Die <strong>Basis</strong> hat den Wert des verwendeten <strong>Zahlensystems</strong>, also z.B. 10 im Dezimalsystem und 2 im Binärsystem</li>
+</ul>
+</li>
+<li>Gleitkommzahlen im IEEE-Format sind <strong>normalisiert</strong>, das bedeutet, dass in der Mantisse vor dem Komma genau eine Ziffer  ≠ 0 enthält.
+<ul>
+<li>Im IEEE-Format (Binärsystem) <strong>wird die Zahl vor dem Komma <span style="text-decoration: underline;">nicht</span> gespeichert</strong>, weil es außer der 0 nur die 1 gibt und damit die 1 <strong>implizit</strong> <strong>angenommen</strong> wird.</li>
+</ul>
+</li>
+<li>Zahlen werden im Computer im <strong>Binärsystem</strong> gespeichert.</li>
+<li><strong>Aufbau</strong> einer IEEE-Gleitkommazahl...
+<ul>
+<li>... mit 32 Bit: Vorzeichen = 1 Bit, Exponent 8 Bits, Mantisse 23 Bits.</li>
+<li>... mit 64 Bit: Vorzeichen = 1 Bit, Exponent 11 Bits, Mantisse 52 Bits.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="arten_von_datentypen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="zahlensysteme.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

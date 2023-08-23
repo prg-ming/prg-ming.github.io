@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Interaktion mit Tasten | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li class="current-page-parent"><a href="ifanweisungen.html" class="current-page-parent daddy">If-Anweisungen</a>
+         <ul>
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li id="active"><a href="interaktion_mit_tasten.html" class="active no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="kollisionserkennung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="while_schleife.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Interaktion mit Tasten</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id14">
+<div class="iDevice emphasis0" >
+<div id="ta14_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Wir haben nun schon einige Formen des Programmablaufs kennengelernt. Der static Mode zum Beispiel, bei dem einfach nur linear eine Zeile nach der anderen abgearbeitet wird und zwar genau einmal. Und den active Mode, ein quasi endloser Modus, der zwar auch Zeile für Zeile abarbeitet, aber dies ständig wiederholt. Hier war es uns bereits möglich Interaktion einzubauen, indem wir zum Beispiel an der Stelle der Mauskoordinaten etwas gezeichnet haben. Der nächste Schritt Richtung Interaktion ist die ereignisgesteuerte Programmierung.</p>
+<h1>CallBack-Funktionen</h1>
+<p>Ereignisgesteuert bedeutet in diesem Fall, dass es Programmcode gibt, der nur dann ausgeführt wird, wenn ein bestimmtes Ereignis eintrifft - zum Beispiel, wenn der Nutzer eine bestimmte Taste auf der Tastatur drückt. Da dieser Programmcode nicht immer ausgeführt werden soll, steht dieser auch nicht in setup oder draw, sondern außerhalb. Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {}
+
+void draw() {}
+
+void keyPressed() { 
+   // Dieser Code wird durchgeführt, sobald eine Taste gedrückt wird
+}</code></pre>
+</div>
+</div>
+<p><br />Die Funktion keyPressed wird hier als eine sogenannte <strong>CallBack-Funktion</strong> (auf deutsch = "Rückruf") bezeichnet. Als CallBack-Funktionen bezeichnet man Funktionen, die von anderen Funktionen aufgerufen werden. Da wir selber in unserem Code keyPressed niemals aufrufen, muss dies logischerweise an einer anderen Stelle geschehen. Dies übernimmt Processing für uns im Hintergrund und stellt uns einfach nur die Funktion zur Verfügung, die wir mit unserem Code füllen dürfen. Du kannst dir das in etwa so vorstellen:</p>
+<ul>
+<li>Nutzer drückt Taste → System erkennt: Taste gedrückt → Processing bekommt die Info: Taste gedrückt → Processing ruft keyPressed auf</li>
+</ul>
+<p>CallBack-Funktionen kommen in der ereignisgesteuerten Programmierung häufig zum Einsatz, da mit ihnen auf die "Befehle" (oder auch die Eingabe) des Nutzers reagiert werden kann. Einige dieser Funktionen bei Processing hast du teilweise auch schon verwendet. In diesem Kapitel wollen wir noch einmal etwas tiefer in die Interaktion mit Tastatur und Maus einsteigen.</p>
+<h1>Interaktion mit Tasten</h1>
+<p>Nachdem wir die If-Anweisung kennengelernt haben, können wir wesentlich differenzierter mit Benutzereingabe umgehen als zuvor. Wir können z.B. unterscheiden, welche Taste gedrückt wurde. Du weißt, dass du auf einen Tastendruck reagieren kannst, indem du die Funktion keyPressed() einfügst. Der Code in dieser Funktion wird immer dann ausgeführt, wenn du eine beliebige Taste drückst:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {}
+
+void draw() {}
+
+void keyPressed() {
+   println("Bravo! Eine Taste! Yeah!");
+}</code></pre>
+</div>
+</div>
+<h2>Systemvariable key</h2>
+<p>Die Systemvariable key enthält immer die zuletzt gedrückte Taste. Wichtig: Wenn du 'a' drückst und die Taste loslässt, enthält key immer noch 'a'. Im folgenden Code ist das dennoch kein Problem, weil keyPressed() nur ein Mal aufgerufen wird, wenn du die Taste 'a' drückst:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+}
+
+void draw() {
+}
+
+void keyPressed() {
+   if (key == 'a') { // key ist vom Datentyp char, daher die einfachen Anführungszeichen '
+      println("A ha.");
+   }
+}</code></pre>
+</div>
+</div>
+<p>Die Systemvariable key ist vom Datentyp char und kann somit immer nur genau ein Zeichen enhalten. Außerdem werden in Verbindung mit key auch die einfachen Anführungszeichen ' verwendet, anstatt die doppelten ".</p>
+<h2>Kontinuierliche Tastenabfrage (boolesche Variable keyPressed)</h2>
+<p>Das Problem mit dem obigen Code: Wenn du damit ein Spiel steuern willst, reagiert Processing nicht, wie du möchtest:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Kreis-Steuerung: suboptimale Lösung
+int x = 50;
+
+void setup() {
+}
+
+void draw() {
+   background(255);
+   ellipse(x, 50, 20, 20); // Kreis malen
+}
+
+void keyPressed() {
+   if (key == 'a') {
+      x++; // Kreis nach rechts bewegen =&gt; es hakt leider
+   }
+}</code></pre>
+</div>
+</div>
+<p>Probiere den Code in Processing aus!</p>
+<p></p>
+<p>Auch hier kommt uns Processing zu Hilfe. Die Variable keyPressed ist eine boolesche Variable, d.h. sie enthält entweder den Wert true oder den Wert false. Diese Variable ist immer dann <br />true, wenn eine Taste im gedrückten Zustand ist. Das können wir ausnutzen, um direkt im draw() unsere Tastaturabfrage zu machen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 50;
+
+void setup() {
+}
+
+void draw() {
+   background(200);
+   ellipse(x, 50, 20, 20);
+
+   // Abfrage direkt in draw() statt in Funktion
+   if (keyPressed) {
+      if (key == 'a') {
+         x++; // Kreis nach rechts bewegen
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p>Probiere den Code in Processing aus!</p>
+<p>Warum ist die keyPressed-Abfrage überhaupt notwendig? Wenn du sie weglässt, bewegt sich der Kreis nach Drücken und Loslassen der Taste 'a' ständig weiter, da key immer die zuletzt gedrückte Taste enthält.</p>
+<h2>Variable keyCode</h2>
+<p>Häufig willst du Bewegung an die Cursortasten binden. Diese Tasten lassen sich, ähnlich wie ENTER, BACKSPACE, ESCAPE etc. nicht einfach zwischen zwei Anführungszeichen schreiben. Deshalb verwendet man die Variable keyCode, die einen numerischen Code für jede Taste enthält. Wenn du den keyCode von den Cursortasten kennst, kannst du per Vergleich die Tasten abfragen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 50;
+
+void setup() {
+}
+
+void draw() {
+   background(200);
+   ellipse(x, 50, 20, 20);
+
+   if (keyPressed) {
+      if (keyCode == RIGHT) {
+         x++; // Kreis nach rechts
+      }
+      if (keyCode == LEFT) {
+         x--; // Kreis nach links
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p>Im Code siehst du einen Vergleich von keyCode (enthält eine Zahl, nämlich den Code der zuletzt gedrückten Taste) und der Variablen RIGHT, welche die Zahl enthält, die die linke Cursortaste repräsentiert.</p>
+<h1>Interaktion mit Maustasten</h1>
+<p>Bei den Maustasten verhält es sich ähnlich wie mit der Tastatur. Du hast wieder zwei Möglichkeiten.</p>
+<h2>Möglichkeit 1: Funktion mousePressed() schreiben</h2>
+<p>Du kannst die Funktion mousePressed() schreiben. Diese CallBack-Funktion wird immer dann aufgerufen, wenn eine der Maustasten gedrückt wird:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+}
+
+void mousePressed() {
+   println("hello");
+}</code></pre>
+</div>
+</div>
+<p>Beachte, dass du innerhalb des Grafikfensters klicken musst!</p>
+<p>Über die Systemvariable mouseButton kannst du unterscheiden, welche der Maustasten gedrückt wurde:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+}
+
+void mousePressed() {
+   if (mouseButton == LEFT) {
+      println("hello");
+   }
+   if (mouseButton == RIGHT) {
+      println("again");
+   }
+   if (mouseButton == CENTER) {
+      println("in the middle");
+   }
+}</code></pre>
+</div>
+</div>
+<p>Ähnlich wie keyCode enthält diese Variable eine Zahl. Diese Zahl kannst du mit einer der Systemvariablen LEFT, RIGHT, CENTER vergleichen, um zu prüfen, welche der drei Tasten gedrückt wurde.</p>
+<h2>Möglichkeit 2: boolesche Variable mousePressed in draw()</h2>
+<p>Analog zu keyPressed gibt es eine boolesche Variable mousePressed, die solange true ist, wie der Benutzer eine der Maustasten gedrückt hält. Das erlaubt eine kontinuierliche Abfrage innerhalb der draw()-Funktion wie hier:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+   if (mousePressed) {
+      if (mouseButton == LEFT) {
+         println("hello");
+      }
+      if (mouseButton == RIGHT) {
+         println("again");
+      }
+      if (mouseButton == CENTER) {
+         println("in the middle");
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p>Du siehst, dass 60 Mal pro Sekunde die Ausgabe gemacht wird, sofern du eine der Tasten gedrückt hältst.</p>
+<h1>Zusammenfassung</h1>
+<p>Du hast gesehen, dass du prinzipiell zwei Möglichkeiten hast, eine Tastaturabfrage durchzuführen:</p>
+<ol>
+<li>Indem du eine eigene Funktion keyPressed() schreibst oder</li>
+<li>Indem du in draw() eine If-Anweisung einbaust, die auf die boolesche Variable keyPressed reagiert.</li>
+</ol>
+<p>In beiden Fällen kannst du mit weiteren If-Anweisungen zwischen verschiedenen Tasten unterscheiden. Dabei verwendet man die Systemvariable key für die 'normalen' Tasten (a, b, c, ...) und die Variable keyCode für solche Tasten, die kein Zeichen auf dem Bildschirm produzieren (ESCAPE, ENTER, Cursortasten etc.).</p>
+<p>Beachte , dass die Variable key vom Typ char ist (nicht String), so dass du key == 'a' schreiben musst (einfache Anführungszeichen).</p>
+<p>Die Abfrage der Maustasten funktioniert analog zu der Tastaturabfrage. Du verwendest die Funktion mousePressed(), wenn du nur einmal auf den Druck reagieren möchtest. Du verwendest die boolesche Variable mousePressed innerhalb von draw(), wenn du eine kontinuierliche Steuerung benötigst (z.B. Dauerfeuer in einem Shooter oder eine fließende Links-Rechts-Bewegung über Maustasten).</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="kollisionserkennung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="while_schleife.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

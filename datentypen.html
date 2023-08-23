@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Datentypen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="variablen.html" class="current-page-parent daddy">Variablen</a>
+         <ul>
+            <li id="active"><a href="datentypen.html" class="active no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lokale_variablen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Datentypen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id5">
+<div class="iDevice emphasis0" >
+<div id="ta5_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Der (Daten-)Typ einer Variable bestimmt, welche Inhalte die Variable speichern kann. Die meisten der folgenden Datentypen werden <strong>primitive Datentypen</strong> genannt (Ausnahme: String). Man erkennt sie daran, dass sie <strong>klein geschrieben</strong> sind (int, float, ...), wohingegen nicht-primitive Datentypen (hier: String) groß geschrieben werden. Den genauen Unterschied lernen wir erst später kennen. Für dich liegt der Unterschied lediglich in der Groß-/Kleinschreibung.</p>
+<h1>Die Grundlage: Bits</h1>
+<p>Bits bilden die Grundlage des Maschinencodes. Das bedeutet: Alles, was du programmierst, wird am Ende auf Bits runtergerechnet. Ein <strong>Bit</strong> (engl. Abk. für: binary digit; dt.: Binärziffer) ist die kleinste Informationseinheit eines Rechners und entspricht den Zuständen "Strom an" (1) und "Strom aus" (0). Bits basieren somit auf dem binären Zahlensystem.</p>
+<p><strong>Acht Bits</strong> werden zu einem <strong>Byte</strong> zusammengefasst. Ein Byte kann damit 2<sup>8</sup> = 256 Zustände wiedergeben.</p>
+<p>0000 0001 = 1<br />0000 0010 = 2<br />0000 0011 = 3<br />usw.</p>
+<p>Andere Datentypen benötigen mehr Bits und haben somit einen größeren <strong>Wertebereich</strong>. <strong>Dieser bezeichnet die Spanne an Werten, die mit dem jeweiligen Datentyp dargestellt werden kann.</strong> Je mehr Bits ein Datentyp verwendet, desto mehr Speicher nimmt dieser ein.</p>
+<p>Ein Byte kann 256 Zustände wiedergeben. Man könnte also sagen, ein Byte hat einen Wertebereich von 0 bis 256. Das ist allerdings nicht sinnvoll, da man ja auch in der Lage sein möchte negative Werte anzugeben. Daher wird der Wertebereich so verschoben, dass die 0 die Mitte bildet und je eine Hälfte des Bereichs für die negativen und die andere Hälfte für die positiven Werte zur Verfügung steht. Somit hat ein Byte einen Wertebereich von -128 bis 127.</p>
+<h1>Zahlen</h1>
+<p>In Programmiersprachen unterscheidet man zwischen ganzen Zahlen (z.B. -2 oder -3 oder 42 oder 0) und rellen Zahlen (z.B. 3,1415 oder 1.3e-7). Reelle Zahlen werden auch Kommazahlen oder Gleitkommazahlen genannt.</p>
+<h2>Ganze Zahlen</h2>
+<p>Ganze Zahlen sind Zahlen ohne Nachkommestellen, im Englischen integer genannt. Es gibt mehrere Typen, die ganze Zahlen speichern, je nachdem wie groß/klein die Zahlen sind, die man speichern möchte.<br />→  In der Regel verwendet man int.</p>
+<table style="width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;"><strong>Typ</strong></td>
+<td style="width: 33.3333%;"><strong>Beschreibung</strong></td>
+<td style="width: 33.3333%;"><strong>Wertebereich</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">byte</td>
+<td style="width: 33.3333%;">sehr kleine Zahl (8 Bit)</td>
+<td style="width: 33.3333%;">-128 bis 127</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">short</td>
+<td style="width: 33.3333%;">kleine Zahl (16 Bit)</td>
+<td style="width: 33.3333%;">-32768 bis 32767</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>int</strong></td>
+<td style="width: 33.3333%;"><strong>große Zahl (32 Bit)</strong></td>
+<td style="width: 33.3333%;"><strong>-2 147 483 648 bis 2 147 483 647</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">long</td>
+<td style="width: 33.3333%;">noch größere Zahl (64 Bit)</td>
+<td style="width: 33.3333%;">ca. -9 * 10^18 bis 9 * 10^18</td>
+</tr>
+</tbody>
+</table>
+<p>Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int foo;
+foo = 50;
+rect(foo, foo, 20, 20);</code></pre>
+</div>
+</div>
+<p>Bei Zahlen muss Processing manchmal "raten", ob du eine ganze Zahl meinst oder eine Gleitkommazahl. Prinzipiell gilt: Wenn du eine Zahl ohne Komma (bzw. Punkt) schreibst, interpretiert Processing die Zahl als ganze Zahl vom Typ int.</p>
+<h2>Gleitkommazahlen</h2>
+<p>Gleitkommazahlen sind Zahlen mit Nachkommastellen (auch reelle Zahlen genannt). In Processing verwendest du meistens float , später in Java wirst du meistens double verwenden.</p>
+<p><strong>WICHTIG</strong>: Schreibe Gleitkommazahlen - so wie in England und USA üblich - mit einem Punkt. Also 1.5 statt 1,5.</p>
+<p>Bei Gleitkommazahlen unterscheiden sich die beiden Typen nicht darin, dass der Wertebereich größer ist, sondern in der Anzahl der Dezimalstellen, die gespeichert werden können. Stell dir die Rechnung 10/3 vor. Der Rechner kann nicht "3 Komma Periode 3" darstellen, indem er unendlich viele Nachkommastellen speichert. In der Tabelle sehst du, wie viele Stellen insgesamt gespeichert werden können.</p>
+<table style="height: 48px; width: 99.9988%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 29.4187%;"><strong>Typ</strong></td>
+<td style="width: 20.5812%;"><strong>Beschreibung</strong></td>
+<td style="width: 16.6666%;"><strong>Wertebereich</strong></td>
+<td style="width: 33.3333%;"><strong>Stellen</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 29.4187%; height: 16px;">float</td>
+<td style="width: 20.5812%; height: 16px;">Zahl mit Nachkommastellen (32 Bit)</td>
+<td style="width: 16.6666%; height: 16px;">z.B. -0.5, 0, 109.333</td>
+<td style="width: 33.3333%; height: 16px;">7 bis 8</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 29.4187%; height: 16px;">double</td>
+<td style="width: 20.5812%; height: 16px;">Zahl mit Nachkommastellen (64 Bit)</td>
+<td style="width: 16.6666%; height: 16px;">wie oben</td>
+<td style="width: 33.3333%; height: 16px;">15 bis 16</td>
+</tr>
+</tbody>
+</table>
+<p><br />Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x;
+x = 75.0 / 2;
+ellipse(x, 50, 30, 30);</code></pre>
+</div>
+</div>
+<p>Auch hier muss Processing oft "raten", ob du eine ganze oder eine Gleitkommazahl meinst. Prinzipiell gilt: Wenn du eine Zahl mit Nachkommastellen schreibst, interpretiert Processing die Zahl als Gleitkommazahl vom Typ float.</p>
+<p>Wenn du z.B. die Zahl 2 als Gleitkommazahl interpretiert haben möchten, musst du 2.0 schreiben. Eine weitere Schreibweise ist, ein "f" für float oder ein "d" für double an die Zahl anzuhängen. Zum Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(10/3f); // 3 als float
+println(10/3d); // 3 als double</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>3.3333333
+3.3333333333333335</code></pre>
+</div>
+</div>
+<h1>Wahrheitswerte, Buchstaben, Text</h1>
+<h2>Wahrheitswerte (boolean)</h2>
+<p>Wahrheitswerte lernst du in Zusammenhang mit If-Anweisungen kennen. Ein Wahrheitswert ist entweder wahr (true) oder falsch (false). Es gibt also zwei mögliche Werte für eine solche Variable. Der Typ heißt boolean. Dabei ist boolean ein Adjektiv, also wie im Deutschen "eine boole'sche Variable".</p>
+<table style="height: 32px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;"><strong>Typ</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Beschreibung</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Wertebereich</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">boolean</td>
+<td style="width: 33.3333%; height: 16px;">Wahrheitswert</td>
+<td style="width: 33.3333%; height: 16px;">true und false</td>
+</tr>
+</tbody>
+</table>
+<p><br />Beispiele:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boolean iLikeCheese;
+boolean iLikeIceCream;
+iLikeCheese = false;
+iLikeIceCream = true;
+println("Cheese: " + iLikeCheese);
+println("Ice Cream: " + iLikeIceCream);</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>Cheese: false
+Ice Cream: true</code></pre>
+</div>
+</div>
+<h2>Zeichen (char)</h2>
+<p>In Processing gibt es einen Datentyp für einzelne Zeichen. Ein Zeichen ist z.B. ein Buchstabe wie a, A, m, Z oder auch ein Sonderzeichen wie #, ! oder /. Im Englischen heißt Zeichen character, daher heißt der Datentyp <br />char.</p>
+<table style="height: 32px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;"><strong>Typ</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Beschreibung</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Wertebereich</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">char</td>
+<td style="width: 33.3333%; height: 16px;">einzelnes Zeichen (z.B. Buchstabe)</td>
+<td style="width: 33.3333%; height: 16px;">z.B. 'a' oder '%'</td>
+</tr>
+</tbody>
+</table>
+<p><br />Du kannst ein einzelnes Zeichen in einer Variable abspeichern. Das Zeichen wird immer mit <strong>einfachen</strong> <strong>Anführungszeichen</strong> umgeben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>char c1 = 'a';
+char c2 = '5';
+char c3 = '%';
+println(c1, c2, c3);</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>a 5 %</code></pre>
+</div>
+</div>
+<p>Intern wird ein Zeichen als ganze Zahl repräsentiert. Diese Zahl entspricht einer standardisierten Tabelle. Für die handelsüblichen Buchstaben ist das zum Beispiel der ASCII-Code (ohne Umlaute). ASCII steht für "American Standard Code for Information Interchange" und ist ganz einfach eine Tabelle, wo für jeden Buchstaben/Zeichen eine Zahl zugeordnet wird.</p>
+<h2>Zeichenketten (String)</h2>
+<p>String ist englisch für "Schnur" oder "Kette". Das deutet darauf hin, dass ein String eine Aneinanderreihung von Zeichen (engl. character) ist. Man sagt deshalb auch Zeichenkette. Der Typ String wird im Gegensatz zu int, float, char ... groß geschrieben.</p>
+<p>In String-Variablen können Texte ablegt werden. Der Text wird mit <strong>doppelten</strong> <strong>Anführungszeichen</strong> gekennzeichnet:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String foo = "Dies ist ein Text!";</code></pre>
+</div>
+</div>
+<p>Du hast Strings bereits im Zusammenhang mit println() gesehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println("hallo");</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>hallo</code></pre>
+</div>
+</div>
+<p>Genauso könntest du schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hallo";
+println(message);</code></pre>
+</div>
+</div>
+<p>Du kannst Strings zusammenkleben, dies nennt man <strong>String-Konkatenation</strong> und funktioniert mit dem normalen <strong>Plus-Zeichen</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "hallo";
+println(message + " bob");</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>hallo bob</code></pre>
+</div>
+</div>
+<p>Das Plus-Zeichen bekommt also im Zusammenhang mit Strings eine andere Bedeutung. <strong>Wenn du eine Zahl mit einem String "addierst", wird die Zahl in einen String verwandelt:</strong></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String message = "high" + 5;
+println(message);</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>high5</code></pre>
+</div>
+</div>
+<p>Du kannst Strings auch direkt in das print schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println("high" + 5);</code></pre>
+</div>
+</div>
+<h1>Zusammenfassung</h1>
+<p>Du hast die folgenden primitiven Datentypen kennengelernt:</p>
+<table style="width: 99.9989%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;"><strong>Typ</strong></td>
+<td style="width: 33.3333%;"><strong>Beschreibung</strong></td>
+<td style="width: 33.3333%;"><strong>Wertebereich</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">byte</td>
+<td style="width: 33.3333%;">sehr kleine Zahl (8 Bit)</td>
+<td style="width: 33.3333%;">-128 bis 127</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">short</td>
+<td style="width: 33.3333%;">kleine Zahl (16 Bit)</td>
+<td style="width: 33.3333%;">-32768 bis 32767</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;"><strong>int</strong></td>
+<td style="width: 33.3333%;"><strong>große Zahl (32 Bit)</strong></td>
+<td style="width: 33.3333%;"><strong>-2 147 483 648 bis 2 147 483 647</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">long</td>
+<td style="width: 33.3333%;">noch größere Zahl (64 Bit)</td>
+<td style="width: 33.3333%;">ca. -9 * 10^18 bis 9 * 10^18</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">float</td>
+<td style="width: 33.3333%; height: 16px;">Zahl mit Nachkommastellen (32 Bit)</td>
+<td style="width: 33.3333%; height: 16px;">z.B. -0.5, 0, 109.333</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">double</td>
+<td style="width: 33.3333%; height: 16px;">Zahl mit Nachkommastellen (64 Bit)</td>
+<td style="width: 33.3333%; height: 16px;">wie oben</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">boolean</td>
+<td style="width: 33.3333%; height: 16px;">Wahrheitswert</td>
+<td style="width: 33.3333%; height: 16px;">true und false</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">char</td>
+<td style="width: 33.3333%; height: 16px;">einzelnes Zeichen (z.B. Buchstabe)</td>
+<td style="width: 33.3333%; height: 16px;">z.B. 'a' oder '%'</td>
+</tr>
+</tbody>
+</table>
+<p><br />Des weiteren hast du den Typ <strong>String</strong> kennengelernt, der es erlaubt, Zeichenketten (= Text) abzuspeichern. Strings können mit dem Plus-Zeichen verbunden werden. Diese Operation nennt man <strong>String</strong>-<strong>Konkatenation</strong>.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="variablen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lokale_variablen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Transformationen speichern | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-51"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="transformation.html" class="current-page-parent daddy">Transformation</a>
+         <ul>
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li id="active"><a href="transformationen_speichern.html" class="active no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="translation_rotation_und_skalierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Transformationen speichern</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id73">
+<div class="iDevice emphasis0" >
+<div id="ta73_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Jetzt lernen wir, wie wir bei all den Transformationen einen "Zwischenzustand" speichern und später wiederherstellen können.</p>
+<p>Transformationen werden<strong> mithilfe von Matrizen</strong> beschrieben bzw. berechnet. Bei einer <strong>Matrix</strong> handelt es sich um eine rechteckige Anordnung von Zahlen. Wir können uns zu jedem Zeitpunkt die aktuelle Matrix unseres Zeichenfensters mit dem Befehl <code>printMatrix()</code> in der Konsole ausgeben lassen. Wenn wir noch keine Transformation durchgeführt haben, gibt Processing folgendes aus:</p>
+<div class="pre-code">
+<div>
+<pre><code>1,0000  0,0000  0,0000
+0,0000  1,0000  0,0000</code></pre>
+</div>
+</div>
+<p>Das ist der "Grundzustand" unseres Koorinatenfensters. Wenn wir jetzt Transformationen durchführen, werden sich diese Werte ändern:</p>
+<ul>
+<li>Wenn du gar <strong>keine Transformationen</strong> ausführst, ist diese Matrix die <strong>Identität(-smatrix).</strong> Wir nennen diese <strong>Matrix M0</strong> und unser Ausgangs-Koordinatensystem nennen wir <strong>System 0</strong>.
+<ul>
+<li>M ist jetzt M0.</li>
+</ul>
+</li>
+<li>Wenn du z.B. eine <strong>Translation</strong> um (50, 0) durchführst, dann nennen wir die entsprechende <strong>Matrix</strong> <strong>M1</strong>.
+<ul>
+<li>Jetzt wird M zu M0 * M1 (das ist wieder M1, da M0 die Identität ist).</li>
+</ul>
+</li>
+<li>Wenn du z.B. eine <strong>zweite Translation</strong>, z.B. um (0, 50) durchführst, dann nennen wir diese <strong>Matrix</strong> <strong>M2.</strong>
+<ul>
+<li>M wird zu M0 * M1 * M2.</li>
+</ul>
+</li>
+</ul>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Hier werden drei Koordinatensysteme gezeigt
+// System 0: Ausgangssystem (rotes Rechteck)
+// System 1: um 50px nach rechts verschoben (grünes Rechteck)
+// System 2: um 50px nach rechts, 50px nach unten verschoben (blaues R.)
+ 
+background(150);
+ 
+printMatrix(); // Matrix M = M0 (Identität)
+ 
+fill(255,0,0);
+rect(0,0,30,20); // rotes Rechteck
+ 
+translate(50,0); // Matrix M1
+ 
+printMatrix();  // Matrix M = M0 * M1 (System 1)
+ 
+fill(0,255,0);
+rect(0,0,30,20); // grünes Rechteck
+ 
+translate(0,50); // Matrix M2
+ 
+printMatrix(); // Matrix M = M0 * M1 * M2 (System 2)
+ 
+fill(0,0,255);
+rect(0,0,30,20); // blaues Rechteck</code></pre>
+</div>
+</div>
+<p><br />Auf der Konsole sieht man die Matrix M zu den drei Zeitpunkten (Ausgangssystem, nach erster Translation, nach zweiter Translation):</p>
+<div class="pre-code">
+<div>
+<pre><code>1,0000  0,0000  0,0000
+0,0000  1,0000  0,0000
+ 
+01,0000  00,0000  50,0000
+00,0000  01,0000  00,0000
+ 
+01,0000  00,0000  50,0000
+00,0000  01,0000  50,0000</code></pre>
+</div>
+</div>
+<p>Die Rechtecke sind jeweils am Ursprung von System 0 (rot), System 1 (grün) und System 2 (blau).</p>
+<p><img src="matrix1.png" alt="" width="117" height="115" /></p>
+<p>Jetzt wollen wir am Ende des Codes wieder etwas in System 1 (grün) zeichnen, z.B. ein weißes Quadrat. Wie kannst du das tun, wenn es unbedingt am Ende des Codes sein muss? Ganz einfach: Du <strong>speicherst die Matrix M,</strong> nachdem du die erste Translation ausgeführt hast. Das geht mit <code>pushMatrix().</code> Wenn du diese Matrix später wieder benötigst, rufst du <code>popMatrix()</code> auf und schon bist du in System 1.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>background(150);
+ 
+// Matrix M0 (Identität)
+ 
+fill(255,0,0);
+rect(0,0,30,20); // rotes Rechteck
+ 
+translate(50,0); // Matrix M1 (System 1)
+pushMatrix(); // System 1 speichern
+ 
+fill(0,255,0);
+rect(0,0,30,20); // grünes Rechteck
+ 
+translate(0,50); // Matrix M2 (System 2)
+ 
+fill(0,0,255);
+rect(0,0,30,20); // blaues Rechteck
+ 
+popMatrix(); // System 1 zurückholen
+printMatrix();
+ 
+fill(255);
+rect(0,0,10,10); // NEU: weißes Quadrat</code></pre>
+</div>
+</div>
+<p>Das weiße Quadrat wird in System 1 (grün) gezeichnet:</p>
+<p><img src="matrix2.png" alt="" width="117" height="114" /></p>
+<p>Auf der Konsole siehst du die Matrix nach dem popMatrix(): Es ist die Matrix von System 1 (vgl. mit Konsolenoutput oben).</p>
+<div class="pre-code">
+<div>
+<pre><code>01,0000  00,0000  50,0000
+00,0000  01,0000  00,0000</code></pre>
+</div>
+</div>
+<p><strong>Achtung</strong>: Du musst in jedem Fall erst pushMatrix() ausführen bevor du popMatrix() ausführen kannst. Du musst also erstmal was speichern, bevor du etwas löschen kannst - sonst bekommst du eine RuntimeException und dein Programm hängt sich auf!</p>
+<p></p>
+<h1>Stack</h1>
+<p>Die Befehle <code>pushMatrix</code> und <code>popMatrix</code> haben diese seltsamen Namen nicht ohne Grund. Dahinter verbirgt sich ein wichtiges Speichermodell der Informatik: der <strong>Stack</strong> (deutsch. Stapel). Ein Stack ist ein Speicher, der so funktioniert wie ein Stapel Bücher: Es kann immer nur etwas <strong>oben</strong> <strong>drauf</strong> <strong>gelegt</strong> werden und es kann immer nur <strong>von</strong> <strong>oben</strong> <strong>weggenommen</strong> werden. Das bedeutet ich kann immer nur das "Buch" herausholen, das ich zuletzt hineingelegt habe und somit ganz oben liegt. Dieses Prinzip nennt man auch "Last in - First out", abgekürzt: LiFo.</p>
+<p>Nehmen wir an, du kaufst Buch A. Dann legst du es auf einen leeren Stapel. Es liegt ganz "oben". Dein Stapel sieht wie folgt aus:</p>
+<p>A &lt;-- oben</p>
+<p>Man sagt auch, du <strong>pushst</strong> A auf den Stapel. Du kaufst jetzt Buch B und speicherst es. Dein Stapel ist gewachsen. Jetzt liegt B oben:</p>
+<p>B &lt;-- oben<br />A</p>
+<p>Beachte, dass du derzeit nicht an Buch A herankommst! Jetzt bekommst du ein drittes Buch C:</p>
+<p>C &lt;-- oben<br />B<br />A</p>
+<p>Wenn du Buch C lesen willst, dann holst du es vom Stapel. Man nennt diesen Vorgang auch <strong>pop</strong>. Dein neuer Stapel ist also:</p>
+<p>B &lt;-- oben<br />A</p>
+<p>Du möchtest Buch A lesen? Dann musst du erst Buch B holen:</p>
+<p>A &lt;-- oben</p>
+<p>Erst jetzt darfst du ein weiteres Mal pop ausführen und hast A. Dein Stapel ist dann leer.</p>
+<h2>Der Matrix-Stapel</h2>
+<p>Die Befehle <code>pushMatrix</code> und <code>popMatrix</code> machen nichts anderes, als die aktuelle Matrix M auf einen Stapel zu legen und wieder zu holen. Dadurch ist es möglich, mehrere Matrizen zu speichern.</p>
+<p>Nehmen wir an, du willst im obigen Beispiel auch ein weißes Quadrat in System 0 zeichnen, und zwar auch am Ende des Codes. Wie machst du das?</p>
+<p>Antwort: Du nutzt den Matrix-Stapel. Du speicherst die Matrix M ganz am Anfang auf dem Stapel (mit pushMatrix):</p>
+<p>M (System 0) &lt;-- oben</p>
+<p>Dann speicherst du die Matrix M nach der ersten Translation (wieder pushMatrix):</p>
+<p>M (System 1) &lt;-- oben<br />M (System 0)</p>
+<p>Wenn du wie im alten Code popMatrix aufrufst, wird System 1 wiederhergestellt und der Stapel sieht so aus:</p>
+<p>M (System 0) &lt;-- oben</p>
+<p>Das heißt, ganz zum Schluss machenst ein weiteres popMatrix(), um System 0 wiederherzustellen. Jetzt kannst du erneut ein weißes Quadrat zeichnen und der Matrix-Stapel ist leer.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>background(150);
+ 
+// Matrix M0 (Identität)
+pushMatrix(); // System 0 speichern
+ 
+fill(255,0,0);
+rect(0,0,30,20); // rotes Rechteck
+ 
+translate(50,0); // Matrix M1 (System 1)
+pushMatrix(); // System 1 speichern
+ 
+fill(0,255,0);
+rect(0,0,30,20); // grünes Rechteck
+ 
+translate(0,50); // Matrix M2 (System 2)
+ 
+fill(0,0,255);
+rect(0,0,30,20); // blaues Rechteck
+ 
+popMatrix(); // System 1 zurückholen
+ 
+fill(255);
+rect(0,0,10,10); // weißes Quadrat
+ 
+popMatrix(); // System 0 zurückholen (wieder Ausgangssystem)
+printMatrix();
+ 
+fill(255);
+rect(0,0,10,10); // weißes Quadrat</code></pre>
+</div>
+</div>
+<p>Das weiße Quadrat wird jetzt auch in System 0 (rot) gezeichnet:</p>
+<h1><img src="matrix3.png" alt="" width="115" height="116" /><br />Zusammenfassung</h1>
+<ul>
+<li>Der aktuelle Zustand des Koordinatensystems kann in Form einer Matrix ausgegeben werden. <br />
+<ul>
+<li>Diese Matrix besteht aus 2x3 Zahlen.</li>
+</ul>
+</li>
+<li>Sobald eine Tranformation (Translation, Skalierung, Rotation) ausgeführt wird, ändern sich die Werte in der Matrix.</li>
+<li>Ich kann mir die aktuelle Matrix mit printMatrix() ausgeben lassen.</li>
+<li>Mtihilfe von <code>pushMatrix()</code> und <code>popMatrix()</code> können Transformationen gespeichert oder gelöscht werden.</li>
+<li>Die Matrizen werden in diesem Fall auf einem Stack gespeichert. Das ist eine Speichermodell, welches nach dem Prinzip "Last in - first out" funktioniert. Das bedeutet, wenn du eine Matrix löschst, dann löschst du die Matrix, die zuletzt gespeichert wurde.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="translation_rotation_und_skalierung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

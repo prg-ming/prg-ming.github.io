@@ -1,0 +1,494 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Arithmetische Operatoren | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-11"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li id="active"><a href="arithmetische_operatoren.html" class="active no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="syntax_und_konventionen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ifanweisungen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Arithmetische Operatoren</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id7">
+<div class="iDevice emphasis0" >
+<div id="ta7_114_2" class="block iDevice_content">
+<div class="exe-text"><p>Operatoren sind Symbole, die ein oder zwei Operanden verbinden. Hier ist eine Übersicht über die grundlegenden arithmetischen Operatoren in den Programmierung:</p>
+<table style="width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;"><strong>Operator</strong></td>
+<td style="width: 33.3333%;"><strong>Bezeichnung</strong></td>
+<td style="width: 33.3333%;"><strong>Beispiel</strong></td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">+</td>
+<td style="width: 33.3333%;">Addition</td>
+<td style="width: 33.3333%;">result = 5 + 3; // 8</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">-</td>
+<td style="width: 33.3333%;">Subtraktion</td>
+<td style="width: 33.3333%;">result = 13 - 8; // 5</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">*</td>
+<td style="width: 33.3333%;">Multiplikation</td>
+<td style="width: 33.3333%;">result = 3 * 9; // 27</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">/</td>
+<td style="width: 33.3333%;">Division</td>
+<td style="width: 33.3333%;">result = 8 / 4; // 2</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">%</td>
+<td style="width: 33.3333%;">Modulo</td>
+<td style="width: 33.3333%;">result = 5 % 2; // 1</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<h1>Division</h1>
+<p>Du kennst das Symbol / als Operator für die "geteilt durch" Operation. Was du noch nicht weist, ist, dass es zwei unterschiedliche Divisionen gibt: die ganzzahlige Division und die Gleitkommazahlen-Division. Beide verwenden das<strong> gleiche Symbol /</strong>. Bei der ganzzahligen Division haben wir zwei Resultate:</p>
+<ul>
+<li>das Ergebnis der Division</li>
+<li>den Rest (Modulo).</li>
+</ul>
+<h2>Ganzzahlige Division &amp; Gleikommazahlen-Division</h2>
+<p>Sehen wir uns das im Beispiel an. Hier haben wir eine <strong>ganzzahlige Division</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(5 / 2); // Ausgabe: 2 </code></pre>
+</div>
+</div>
+<p></p>
+<p>Wie entscheidet Processing, ob eine ganzzahlige Division verwendet wird, oder die Gleitkomma-Division? Die Regel lautet: <strong>Wenn beide Operanden</strong> (5 und 2) <strong>vom Typ int sind, dann verwende die ganzzahlige Division</strong>. Das <strong>Ergebnis</strong> wird in diesem Fall als <strong>Ganzzahl</strong> ausgegeben.</p>
+<p>Hier haben wir ein Beispiel für eine <strong>Gleitkomma-Division</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(5.0 / 2); // Ausgabe: 2.5 </code></pre>
+</div>
+</div>
+<p>Nun haben wir eine <strong>Gleitkommazahl als Ergebnis</strong>. Achte darauf, dass bei komplexeren Rechnungen nicht immer offensichtlich ist, von welchem Typ die jeweiligen Operanden sind. Du musst dir genau überlegen, in welcher Reihenfolge gerechnet wird und welchen Typ die Operanden zu dem Zeitpunkt haben, wo der Divisions-Operator an der Reihe ist:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(2.5 + 5 / 2 + 5.0); </code></pre>
+</div>
+</div>
+<p>Bekommst du hier eine 10.0 oder eine 9.5? Versuche dir zuerst klarzumachen, was herauskommt. Probier es dann in Processing aus.</p>
+<h2>Modulo-Operator</h2>
+<p>Wir haben gelernt, dass Processing eine ganzzahlige Division durchführt, wenn zwei Integer-Werte die Operanden sind. Das Resultat einer ganzzahligen Division hat zwei Bestandteile: den Ganzzahlquotient und den Rest.</p>
+<pre>5 / 2 ergibt 2 (Quotient) mit Rest 1<br />7 / 5 ergibt 1 (Quotient) mit Rest 2</pre>
+<p>Mathematisch ist das wie folgt definiert:</p>
+<pre>x / y ergibt Quotient q mit Rest <br />x = q * y + r</pre>
+<p>Der Modulo-Operator % gibt dir für eine ganzzahlige Division den Rest zurück:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(5 % 2); // Ausgabe: 1
+println(7 % 5); // Ausgabe: 2</code></pre>
+</div>
+</div>
+<p>Der Modulo-Operator erlaubt es dir zu testen, ob <strong>eine Zahl gerade oder ungerade</strong> ist, denn wenn man eine gerade Zahl durch 2 teilt, ist der Rest gleich Null:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int zahl = 7;
+
+if (zahl % 2 == 0) {
+   println("gerade");
+} else {
+   println("ungerade");
+}</code></pre>
+</div>
+</div>
+<p>Ein Grund, warum der Modulo-Operator in der Informatik und insbesondere im Bereich Animation so interessant ist, ist seine <strong>Ring-Eigenschaft</strong>. Dazu sehen wir uns an, was passiert, wenn man sich den Rest von einer Zahlenreihe (0, 1, 2, 3, ...) mit einer festen Zahl (z.B. 3) ansieht:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>0 % 3 = 0
+1 % 3 = 1
+2 % 3 = 2
+3 % 3 = 0
+4 % 3 = 1
+5 % 3 = 2
+6 % 3 = 0
+7 % 3 = 1
+8 % 3 = 2
+...</code><br /><br /></pre>
+</div>
+</div>
+<p>Fällt dir etwas auf? Richtig. Obwohl der erste Operand immer größer wird, bewegt sich das Ergebnis der Modulo-Operation immer im Bereich 0 bis 2.</p>
+<p><strong>Allgemein bewegt sich bei einer Restoperation mit der Zahl N das Resultat immer im Bereich von 0 bis N-1.</strong></p>
+<p>Das ist sehr nützlich bei Animationen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+
+void draw() {
+   background(255);
+   int y = x % 100;
+   ellipse(y, 50, 20, 20);
+   x = x +1;
+}</code></pre>
+</div>
+</div>
+<p>Obwohl x immer größer wird, bleibt y im Bereich 0 bis 99, so dass der Ball immer von links nach rechts im sichtbaren Bereich fliegt.</p>
+<h1>Additions-Zuweisung</h1>
+<p>Was machst du, wenn du so eine Erhöhung hast?</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x = x + 2;</code></pre>
+</div>
+</div>
+<p>Ganz einfach: Du nutzt die Additions-Zuweisung:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x += 2;</code></pre>
+</div>
+</div>
+<p>Du denkst vielleicht: Naja, soviel Schreibarbeit hab ich hier nicht gespart! Schau mal:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>ziemlichLangerVariablennameMitExtras += 2;</code></pre>
+</div>
+</div>
+<p>Schon praktisch. Diese Art der Zuweisung gibt's auch in anderen Geschmacksrichtungen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x -= 3; // x = x - 3
+x *= 5; // x = x * 5
+x /= 2; // x = x / 2</code></pre>
+</div>
+</div>
+<p><strong>Tipp:</strong> Wie merkst du dir , ob es jetzt "+=" oder "=+" heißt? Überleg dir, dass "x =+ 2" von Processing gelesen würde wie "x = +2", d.h. das Plus-Zeichen wird der Zahl zugeordnet und x daher nicht um 2 erhöht, sondern auf 2 gesetzt.</p>
+<h1>Increment und Decrement</h1>
+<h2>Inkrement-Operator</h2>
+<p>Eine nützliche Kurzform für folgende Operation (x sei eine int-Variable)</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x = x + 1;</code></pre>
+</div>
+</div>
+<p>ist die folgende Zeile</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x++;</code></pre>
+</div>
+</div>
+<p>Das bedeutet, dass der Inhalt der Variable x um 1 erhöht wird. Das "++" nennt man einen Operator, und zwar den Inkrement-Operator.</p>
+<h2>Dekrement-Operator</h2>
+<p>Passend dazu gibt es einen Operator zum Runterzählen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x--;</code></pre>
+</div>
+</div>
+<p>Dieser sog. Dekrement-Operator reduziert den Wert von x um 1.</p>
+<h2>Ausführungsreihenfolge</h2>
+<p>Du kannst den Inkrement-Operator nicht nur allein auf einer Zeile ausführen, sondern auch in Befehle oder Rechnungen einbetten.</p>
+<p>Beispiel 1:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int foo = 5;
+println(foo++);</code></pre>
+</div>
+</div>
+<p>Beispiel 2:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int boo = 10;
+int goo = 100 + boo++;</code></pre>
+</div>
+</div>
+<p>Was passiert hier? Wir haben hier zwei Vorgänge, die wir unterscheiden müssen:</p>
+<ol>
+<li><strong>Verwendung/Substitution</strong> der Variable, d.h. die Variable wird durch ihren aktuellen Wert ersetzt</li>
+<li><strong>Inkrementierung</strong>, d.h. der Wert der Variable wird um eins erhöht.</li>
+</ol>
+<p>Jetzt wird offenbar, dass es eine große Rolle spielt, ob erst (1.) oder (2.) durchgeführt wird! Wenn du Beispiel 1 ausführst, siehst du:</p>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>5</code></pre>
+</div>
+</div>
+<p>Der Wert der Variable foo ist aber 6. Das liegt daran, dass beim Einsetzen (1.) der alte Wert 5 verwendet wurde. Im Anschluss wurde dann die Variable foo erst um eins auf 6 erhöht (2.).</p>
+<p>Verstehst du dann auch Beispiel 2? Probiere es aus und überlege, warum das Ergebnis so ist, wie es ist. Insbesondere verstehst du jetzt auch, warum der folgende Anfängerfehler so gravierend ist:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x = 0;
+x = x++; </code></pre>
+</div>
+</div>
+<p>Hier passiert folgendes:</p>
+<ol>
+<li>x wird eingesetzt, d.h. dort steht x = 0, aber dies wird noch nicht umgesetzt</li>
+<li>x wird um eins erhöht, d.h. x hat jetzt den Wert eins</li>
+<li>die gesamte Zeile, also x = 0, wird jetzt erst ausgeführt, d.h. x wird auf 0 gesetzt</li>
+</ol>
+<p>Im Endeffekt bleibt x also immer Null.</p>
+<h2>Unterschied ++i und i++: Prefix und Postfix</h2>
+<p>Jetzt kann man sich vorstellen, dass man diese Reihenfolge umkehren möchte:</p>
+<ul>
+<li>(b) <strong>Inkrementierung</strong>, d.h. der Wert der Variable wird um eins erhöht.</li>
+<li>(a) <strong>Verwendung/Substitution</strong> der Variable, d.h. die Variable wird durch ihren aktuellen Wert ersetzt</li>
+</ul>
+<p>Das heißt, du möchtest erst die Variable erhöhen (b) und dann den neuen Wert einsetzen (a). Dies erreichst mit der Formulierung</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>++i</code></pre>
+</div>
+</div>
+<p>Sehen wir uns die Beispiele an, um uns davon zu überzeugen, dass das funktioniert:</p>
+<p>Beispiel 1:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int foo = 5;
+println(++foo);</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>6</code></pre>
+</div>
+</div>
+<p><br />Beispiel 2:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int boo = 10;
+int goo = 100 + ++boo;</code></pre>
+</div>
+</div>
+<div class="highlighted-code code-style-2 language-markup">
+<div>
+<pre><code>111</code></pre>
+</div>
+</div>
+<p><br />Diese Unterscheidung wird auch jeweils als Prefix bzw. Profix bezeichnet. "fix" steht in diesem Fall dafür, dass der Variablenwert verändert, also "gefixed" wird.</p>
+<ul>
+<li><strong>Prefix</strong> bedeutet somit, dass der Variablenwert geändert wird, <strong>bevor</strong> die Variable verwendet wird. Beispiel: ++foo.</li>
+<li><strong>Postfix</strong> bedeutet somit, dass der Variablenwert geändert wird, <strong>nachdem</strong> die Variable verwendet wurde. Beispiel: foo++.</li>
+</ul>
+<h2>Rangfolge und Klammern</h2>
+<p>Auch in der Programmierung haben Operatoren eine gewisse Rangfolge, die festlegt, in welcher Reihenfolge sie verwendet werden. Aus dem Mathematik-Unterricht kennst du bestimmt die Regel "Punkt vor Strich", die besagt, dass Multiplikation/Division vor Addition/Subtraktion kommt. Solche bzw. dieselben und noch ein paar weitere Regeln gelten in der Programmierung auch. Die musst du (noch) nicht alle kennen. Für den Moment reicht es, dass du weißt, dass z.B. "Punkt vor Strich" auch in der Programmierung gilt.</p>
+<p>Außerdem kannst du - genau wie in der Mathematik - die Reihenfolge durch das setzen von Klammern beeinflussen. So ergeben z.B. folgdende Operationen unterschiedliche Ergebnisse:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int erg1 = 2 + 3 * 2; // ergibt 8
+int erg2 = (2 + 3) * 2; // ergibt 10</code></pre>
+</div>
+</div>
+<p>Hier siehst du die Rangfolge der Operatoren aus diesem Abschnitt:</p>
+<table style="height: 64px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;"><strong>Rang</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Operator</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Bezeichnung</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">1</td>
+<td style="width: 33.3333%; height: 16px;">++<br />--</td>
+<td style="width: 33.3333%; height: 16px;">Increment<br />Decrement</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">2</td>
+<td style="width: 33.3333%; height: 16px;">*<br />/<br />%</td>
+<td style="width: 33.3333%; height: 16px;">Multiplikation<br />Division<br />Modulo</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">3</td>
+<td style="width: 33.3333%; height: 16px;">+<br />-<br />+</td>
+<td style="width: 33.3333%; height: 16px;">Addition<br />Subtraktion<br />String-Konketation (z.B. "A" + b)</td>
+</tr>
+</tbody>
+</table>
+<h1>String-Konketation</h1>
+<p>Den Operator für die String-Verkettung (auch String-Verkettung) hast du bereits im Abschnitt Datentypen kennengelernt: Das Plus-Zeichen. Wenn du zwei Strings kombinieren möchtest, kannst du das mit diesem Operator tun. Dabei wird der zweite Operand hinten an den ersten Operan hinzugefügt.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String vorname = "Max";
+String nachname = "Mustermann";
+println(vorname + nachname); // ergibt "MaxMustermann"</code></pre>
+</div>
+</div>
+<p><strong>Wichtig:</strong> Wenn du zwei Strings mithilfe des Plus-Zeichens kombinierst, dann verwendest du den String-Verkettungs-Operator, nicht den Additions-Operator.<br />Das kann ganz schön verwirrend sein, da beide ja dasselbe Zeichen verwenden. Aber wie entscheidet denn das Programm, welchen Operator es verwendet? Hier gibt es 2 Regeln:</p>
+<ol>
+<li>Sobald einer der Operanden ein String oder char ist, verwendet das Programm den String-Verkettungs-Operator</li>
+<li>Bei mehreren unterschiedlichen Operanden muss hierbei auf die Rangfolge der Operatoren geachtet werden.</li>
+</ol>
+<p>Schauen wir uns einmal folgendes Beispiel an, welches einen häufigen Anfängerfehler zeigt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int a = 2;
+int b = 3;
+String ergebnis = "Die Summe ist " + a + b;</code></pre>
+</div>
+</div>
+<p>Du wirst erstaunt sein, aber wemm du ergebnis in der Konsole ausgibst, wirst du lesen "Die Summe ist 23". Gehen wir es mal Schritt für Schritt durch - was passiert hier?</p>
+<ol>
+<li><strong>Substitution</strong>: die Variablen werden durch die Werte 2 und 3 ersetzt</li>
+<li><strong>Verarbeitung/Auswertung</strong>: Die Verarbeitung geschieht von links nach rechts. Beim ersten Plus stellt das Programm fest, dass der erste Operand ein String ist, also handelt es sich bei dem Plus um den Operator für die String-Verkettung und er fügt dem ersten String die Zahl 2 hinzu, als wäre sie ein String (obwohl sie eigentlich ein int ist). Beim zweiten Plus liegt derselbe Fall vor: Der erste Operand ist wieder ein String, also String-Verkettung ...</li>
+<li><strong>Zuweisung</strong>: Der String "Die Summe ist 23" wird ergebnis zugewiesen.</li>
+</ol>
+<p>Vermeiden können wir das, indem wir Klammern setzen und so die Reihenfolge manipulieren:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int a = 2;
+int b = 3;
+String ergebnis = "Die Summe ist " + (a + b); // ergibt "Die Summe ist 5"</code></pre>
+</div>
+</div>
+<p>Durch das Setzen der Klammern wird (a + b) zuerst ausgewertet. Da es sich in beiden Fällen um eine Zahl handelt, wird nun die Addition angewandt. Danach erst wird das Ergebnis von a + b zum String hinzugefügt.</p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Operatoren sind Symbole, die ein oder zwei Operanden verbinden</li>
+<li>Die grundlegenden arithmetischen Operatoren sind +, -, *, /, %</li>
+<li><strong>Modulo</strong>: Der Operator Modulo (%) liefert bei der Division zweier Zahlen den Rest, z.B. 5 % 2 ergibt 1.</li>
+<li><strong>Additions-Zuweisung</strong>: Wird ein Wert mit sich selber und einem weiteren Wert addiert, kann die Schreibweise mithilfe der Additionszuweisung verkürzt werden.
+<ul>
+<li>Beispiel: x = x + 2 kann auf x += 2 verkürzt werden.</li>
+<li>Das selbe gilt auch für <strong>Subtraktion</strong>, <strong>Multiplikation</strong> und <strong>Division</strong>.</li>
+</ul>
+</li>
+<li><strong>Increment &amp; Decrement</strong>: Soll ein Wert um 1 erhöht oder verringert werden, kann dies durch die Schreibweise x++ oder x--  bzw. ++x oder --x erfolgen.</li>
+<li><strong>Prefix &amp; Postfix:</strong> Bezeichnet zwei unterschiedliche Ausführungsreihenfolgen
+<ul>
+<li><strong>Prefix</strong>: Die Variable wird zuerst geändert, dann verwendet ( z.B. ++x). Der Operator kommt vor dem Operanden.</li>
+<li><strong>Postfix</strong>: Die Variable wird geändert, nachdem sie verwendet wurde (z.B. x++). Der Operator kommt nach dem Operanden.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="syntax_und_konventionen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ifanweisungen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Kontrollanweisungen in Schleifen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="einfache_arrays.html" class="current-page-parent daddy">Einfache Arrays</a>
+         <ul>
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li id="active"><a href="kontrollanweisungen_in_schleifen.html" class="active no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="multidimensionale_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="debugging.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Kontrollanweisungen in Schleifen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id25">
+<div class="iDevice emphasis0" >
+<div id="ta25_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Nun haben wir uns einige Schleifen angesehen, mit denen Code eine gewisse Anzahl von Malen durchlaufen werden kann. Jetzt kann es aber auch sein, dass du eine Schleife auch einmal mittendrin abbrechen möchtest, wenn ein gewisser Fall eintritt.</p>
+<p>Dies kannst du mithilfe von <strong>Kontrollanweisungen</strong> (eng. control statements): <strong>break</strong> und <strong>continue</strong>.</p>
+<h1>Schleifenabbruch: Break</h1>
+<p>Mithilfe des Befehls break, kannst du eine Schleife abbrechen. Das bedeutet, dass sofort mit dem Code danach weiter gemacht wird:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt;= 4; i++) {
+   if(i == 3) break;
+   print(i);
+}
+
+println(" Fertig!");</code></pre>
+</div>
+</div>
+<p>Das ergibt in der Konsole folgendes</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>012 
+Fertig!</code></pre>
+</div>
+</div>
+<p>In einer Tabelle sieht das wie folgt aus:</p>
+<table style="height: 72px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;"><strong>Durchlauf</strong></td>
+<td style="width: 23.391%; height: 12px;"><strong>i</strong></td>
+<td style="width: 21.2189%; height: 12px;"><strong>i &lt;= 4</strong></td>
+<td style="width: 13.9481%; height: 12px;"><strong>i == 3</strong></td>
+<td style="width: 24.8089%;"><strong>Ausgeführter Code</strong></td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;">1</td>
+<td style="width: 23.391%; height: 12px;">0</td>
+<td style="width: 21.2189%; height: 12px;">true</td>
+<td style="width: 13.9481%; height: 12px;">false</td>
+<td style="width: 24.8089%;">print(i);</td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;">2</td>
+<td style="width: 23.391%; height: 12px;">1</td>
+<td style="width: 21.2189%; height: 12px;">true</td>
+<td style="width: 13.9481%; height: 12px;">false</td>
+<td style="width: 24.8089%;">print(i);</td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;">3</td>
+<td style="width: 23.391%; height: 12px;">2</td>
+<td style="width: 21.2189%; height: 12px;">true</td>
+<td style="width: 13.9481%; height: 12px;">false</td>
+<td style="width: 24.8089%;">print(i);</td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;">4</td>
+<td style="width: 23.391%; height: 12px;">3</td>
+<td style="width: 21.2189%; height: 12px;">true</td>
+<td style="width: 13.9481%; height: 12px;">true</td>
+<td style="width: 24.8089%;">break;</td>
+</tr>
+<tr style="height: 12px;">
+<td style="width: 16.6331%; height: 12px;">5</td>
+<td style="width: 23.391%; height: 12px;">4</td>
+<td style="width: 21.2189%; height: 12px;">true</td>
+<td style="width: 13.9481%; height: 12px;">false</td>
+<td style="width: 24.8089%;">----</td>
+</tr>
+</tbody>
+</table>
+<p><br />Im vierten Durchlauf ist i = 3, wodurch die break-Anweisung ausgeführt wird und die Schleife sofort abgebrochen wird. Die Anweisung print(i), welche direkt danach kommt, wird nicht mehr durchgeführt.</p>
+<p>Als PAP sieht ein break folgendemaßen aus:</p>
+<p><img src="pap_break.png" alt="PAP break" width="390" height="250" /></p>
+<h1>Iterationsabbruch: Continue</h1>
+<p>Mithilfe des Befehls continue, kannst du die aktuelle Iteration (Durchlauf) einer Schleife abbrechen. Die Schleife macht dann mit dem nächsten Durchlauf weiter:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt;= 4; i++) {
+   if(i == 3) continue;
+   print(i);
+}
+
+println(" Fertig!");</code></pre>
+</div>
+</div>
+<p>Das ergibt in der Konsole folgendes:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>0124 
+Fertig!</code></pre>
+</div>
+</div>
+<p>In einer Tabelle sieht das wiefolgt aus:</p>
+<table style="width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr>
+<td style="width: 20%;"><strong>Durchlauf</strong></td>
+<td style="width: 20%;"><strong>i</strong></td>
+<td style="width: 20%;"><strong>i &lt;= 4</strong></td>
+<td style="width: 20%;"><strong>i == 3</strong></td>
+<td style="width: 20%;"><strong>Ausgeführter Code</strong></td>
+</tr>
+<tr>
+<td style="width: 20%;">1</td>
+<td style="width: 20%;">0</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">false</td>
+<td style="width: 20%;">print(i);</td>
+</tr>
+<tr>
+<td style="width: 20%;">2</td>
+<td style="width: 20%;">1</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">false</td>
+<td style="width: 20%;">print(i);</td>
+</tr>
+<tr>
+<td style="width: 20%;">3</td>
+<td style="width: 20%;">2</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">false</td>
+<td style="width: 20%;">print(i);</td>
+</tr>
+<tr>
+<td style="width: 20%;">4</td>
+<td style="width: 20%;">3</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">continue;</td>
+</tr>
+<tr>
+<td style="width: 20%;">5</td>
+<td style="width: 20%;">4</td>
+<td style="width: 20%;">true</td>
+<td style="width: 20%;">false</td>
+<td style="width: 20%;">print(i);</td>
+</tr>
+</tbody>
+</table>
+<p>Im vierten Durchlauf ist i = 3, wodurch die continue-Anweisung ausgeführt wird und die aktuelle Iteration <strong>sofort</strong> abgebrochen wird. Die Anweisung print(i), welche direkt danach kommt, wird nicht mehr durchgeführt. Die Schleife macht mit der nächsten Iteration weiter, so dass in der Konsole die 4 angezeigt wird. Als PAP sieht ein continue folgendemaßen aus:</p>
+<p><img src="pap_continue.png" alt="PAP Continue" width="334" height="250" /></p>
+<p><strong>Aber wozu gibt es continue überhaupt?</strong> Wir könnten auch ohne continue eine Schleife schreiben, die sich auf dieselbe Weise verhält, indem wir die Bedinung im if anpassen. Wir wollen immer println(i) ausführen, außer wenn i == 3 ist. D.h. folgende Schleife würde dasselbe Ergebnis liefern:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>for (int i = 0; i &lt;= 4; i++) {
+   if(i != 3) print(i);
+}
+
+println(" Fertig!");</code></pre>
+</div>
+</div>
+<p>Anstatt die Iteration abzubrechen mit continue könnten wir auch einfach den Code komplett in eine if-Abfrage packen. continue und break haben aber noch eine weitere Funktion und zwar kannst du in<strong> verschachtelten Schleifen</strong> festlegen, welche Schleife abgebrochen wird bzw. in welcher Schleife weitergemacht werden soll.</p>
+<h1>Label</h1>
+<p>Wenn man sich nun innerhalb verschachtelter Schleifen befindet, kann es sein, dass man mithilfe von break nur eine bestimmte oder aber auch alle Schleifen abbrechen möchte. Doch wie kann ich meinem Programm mitteilen, welche Schleife(n) ich "breaken" bzw. in welcher Schleife ich "continuen" möchte?</p>
+<p>Hierfür gibt es in Java (und Processing) sogenannte Labels. Labels sind sowas wie ein Name für die Schleife, die man als "Link" verwenden kann. Um eine Schleife zu labeln kannst du einfach den Namen direkt vor die Schleife schreiben und mit einen Dopplepunkt versehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>LABEL:
+for(BEDINGUNG)
+   ANWEISUNG</code></pre>
+</div>
+</div>
+<p>Diese Schreibweise ist auch korrekt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>LABEL: for(BEDINGUNG)
+   ANWEISUNG</code></pre>
+</div>
+</div>
+<p>Standardmäßig beziehen sich break und continue auf die Schleife, innerhalb derer sie aufgerufen werden. Möchte man eine andere Schleife "breaken" oder an einer anderen Stelle "continuen", dann muss das Label der Schleife genant werden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>LABEL: <br />while(BEDINGUNG) {
+   while(BEDINGUNG) {
+      if (BEDINGUNG) continue LABEL;
+   }
+}</code></pre>
+</div>
+</div>
+<p>Im Beispiel oben wird in der nächsten Iteration der äußeren Schleife weitergemacht.</p>
+<p>Schauen wir uns das mal an einem konkreten Beispiel an. Stell dir vor, du hast einen zweidimensionalen int-Array und möchtest diesen nach einer bestimmten Zahl durchsuchen. Sobald du die Zahl gefunden hast, möchstest du die Suche abbrechen. Da wir uns in einem zweidimensionalen Array bewegen, verwenden wir auch 2 for-Schleifen, um den Array zu durchsuchen. Sobald wir die Zahl gefunden haben, müssen wir also beide for-Schleifen abbrechen. Das schaffen wir, indem wir die äußere Schleife abbrechen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int[][] zahlen = {{1, 2}, {3, 4}, {5, 6}};
+int suche = 4;
+
+ersteSchleife: // Das ist das Label für die äußere Schleife
+for (int x = 0; x &lt; zahlen.length; x++) {
+   println("1. Schleife (x): " + x);
+
+   for (int y = 0; y &lt; zahlen[x].length; y++) {
+      println("2. Schleife (y): " + y);
+
+      if (zahlen[x][y] == suche) break ersteSchleife; // Hier springen wir zur äußeren Schleife mithilfe des Labels
+   }
+   println("---");
+}</code></pre>
+</div>
+</div>
+<p>Mithilfe der print-Anweisungen kannst du gut nachvollziehen, wann die Schleifen abgebrochen werden. Der Code oben liefert folgende Ausgabe in der Konsole:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>1. Schleife (x): 0
+2. Schleife (y): 0
+2. Schleife (y): 1
+---
+1. Schleife (x): 1
+2. Schleife (y): 0
+2. Schleife (y): 1</code></pre>
+</div>
+</div>
+<p>Würden wir einfach nur break ohne Label verwenden, dann würde nur die innere Schleife (y) abgebrochen werden und es gäbe folgende Ausgabe:</p>
+<div class="highlighted-code code-style-2 language-java">
+<div>
+<pre><code>1. Schleife (x): 0
+2. Schleife (y): 0
+2. Schleife (y): 1
+---
+1. Schleife (x): 1
+2. Schleife (y): 0
+2. Schleife (y): 1
+---
+1. Schleife (x): 2
+2. Schleife (y): 0
+2. Schleife (y): 1
+---</code></pre>
+</div>
+</div>
+<h1>Coding Style: Kurzschreibweise</h1>
+<p>Wie dir vielleicht oben aufgefallen ist, habe ich die If-Anweisungen nicht wie gewöhnlich in geschweiften Klammern geschrieben. Dieser Code funktioniert aber trotzdem.</p>
+<p>Diese Form der If-Anweisungen gibt es, weil Programmierer in der Regel faul sind und so wenig wie möglich schreiben wollen.  Bei einfachen If-Anweisungen, die nur eine (kurze) Zeile sind, wird häufig diese Schreibweise verwendet, weil sie in diesem Fall sehr übersichtlich ist.</p>
+<p>Hier die Bedingungen für diese Schreibweise:</p>
+<ul>
+<li>Sie darf nur eine Zeile lang sein, sonst kann der Compiler es nicht richtig lesen.</li>
+<li>Die Zeile sollte sehr kurz sein, da dein Code sonst unübersichtlich wird.</li>
+<li>Typische Anweisungen, die so geschrieben werden sind z.B.:
+<ul>
+<li><code>if (BEDINGUNG) break;</code></li>
+<li><code>if (BEDINGUNG) x++;</code></li>
+<li><code>if (BEDINGUNG) collision = true;</code></li>
+</ul>
+</li>
+</ul>
+<h1>Zusammenfassung</h1>
+<p>Mithilfe von Kontrollanweisungen können Schleifen gesteuert, beeinflusst und abgebrochen werden. Dabei gibt es 2 Kontrollanweisungen:</p>
+<ul>
+<li>break: Mithilfe von break kann eine Schleife komplett abgebrochen werden.</li>
+<li>continue: Mithilfe von continue kann der aktuelle Durchlauf (auch Iteration genannt) abgebrochen werden.</li>
+</ul>
+<p>Kontrollanweisungen können mit zusammen mit Labels verwendet werden, wenn sie innerhalb verschachtelter Schleifen angewendet werden. Mithilfe des Labels kann festgelegt werden, auf welche Schleife sich die Kontrollanweisung bezieht.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>LABEL: <br />while(BEDINGUNG) {
+   while(BEDINGUNG) {
+      if (BEDINGUNG) continue LABEL;
+   }
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="multidimensionale_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="debugging.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

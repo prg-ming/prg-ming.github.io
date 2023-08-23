@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Lokale Variablen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-10"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li class="current-page-parent"><a href="variablen.html" class="current-page-parent daddy">Variablen</a>
+         <ul>
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li id="active"><a href="lokale_variablen.html" class="active no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="datentypen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="syntax_und_konventionen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Lokale Variablen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id6">
+<div class="iDevice emphasis0" >
+<div id="ta6_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Bislang kennst du ausschließlich globale Variablen. Diese werden zu Beginn des Programms deklariert und können dann überall verwendet werden, z.B. in den Funktionen setup()  und draw():</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x; // neue globale Variable
+
+// Anfangsposition festlegen
+void setup() {
+   x = 0;
+}
+
+// Ball animieren
+void draw() {
+   background(255);
+   ellipse(x, 50, 20, 20);
+   x = x + 1;
+}</code></pre>
+</div>
+</div>
+<p>Variable x nennt man eine globale Variable, weil sie überall im Programm verwendet werden kann. Hier wird x in zwei verschiedenen Funktionen (setup und draw) verwendet.</p>
+<h1>Scope</h1>
+<p>Manchmal möchte man gar nicht, dass eine Variable überall verwendbar ist. Wie sich bei größeren Programmen herausstellt, wird der Code durch viele globale Variablen <em>unübersichtlich</em>. Daher gibt es<strong> lokale Variablen</strong>, die nur<strong> eine eingeschränkte Lebensdauer haben</strong>, d.h. sie sind nur in einem bestimmten Bereich gültig. Den Bereich, innerhalb dessen eine Variable gültig ist, nennt man den <strong>Scope</strong> der Variable.</p>
+<p>Nehmen wir an, du möchtest einen Ball animieren. Der Durchmesser des Balls soll wachsen, also nehmen wir einfach den x-Wert auch als Durchmesser. Wir möchten aber, dass der Durchmesser nicht bei 0, sondern bei 10 beginnt. Also nehmen wir x + 10 als Durchmesser:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 0;
+
+void draw() {
+    ellipse(x, 50, x + 10, x + 10);
+    x = x + 1;
+}</code></pre>
+</div>
+</div>
+<p>Der Übersichtlichkeit willen möchten wir eine Variable für den Durchmesser einführen. Diese wird aber lediglich in draw() benötigt (nicht z.B. in setup). Daher definieren wir eine <strong>lokale Variable</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 0;
+
+void draw() {
+    float durchmesser = x + 10; // Neue lokale Variable
+    ellipse(x, 50, durchmesser, durchmesser);
+    x = x + 1;
+}</code></pre>
+</div>
+</div>
+<p>Eine lokale Variable ist <strong>nur im eigenen Code-Block gültig</strong>, angefangen von der Zeile, wo die Variable deklariert wird bis zur schließenden geschweiften Klammer des aktuellen Code-Blocks. Im oberen Beispiel hört die lokale Variable durchmesser auf zu leben, sobald draw abgearbeitet ist.</p>
+<p>Der Scope - also der Gültigkeitsbereich - einer lokalen Variable beginnt in der Zeile, in der sie deklariert wird und endet am Ende des eigenen Code-Blocks.<br />Willst du z.B. im folgenden Code auf die Variable durchmesser in der Funktion setup() zugreifen, dann bekommest du einen Fehler:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 0;
+
+void setup() {
+    durchmesser = 10; // FEHLER! VARIABLE UNBEKANNT
+}
+
+void draw() {
+    float durchmesser = x + 10; // Neue lokale Variable
+    ellipse(x, 50, durchmesser, durchmesser);
+    x = x + 1;
+}</code></pre>
+</div>
+</div>
+<h1><br />Überschatten</h1>
+<p>Wichtig ist, dass <strong>nur das Wörtchen float </strong>(oder int oder boolean ...) <strong>darüber entscheidet, ob du eine neue Variable anlegst oder eine alte Variable setzt</strong>. Wie in folgendem Beispiel, wo du den x-Startpunkt des Balls zufällig setzen möchtest:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 0; // Globales x
+
+void setup() {
+    float x = random(100); // Startpunkt für x zufällig
+}
+
+void draw() {
+    background(255);
+    ellipse(x, 50, 20, 20);
+    x = x + 1;
+}</code></pre>
+</div>
+</div>
+<p>Dein Ball startet immer bei Null! Warum? Weil in setup() eine <em>neue</em> Variable mit Namen x erzeugt wird. Diese neue Variable ist lokal in setup() und hat nichts mit dem globalen x zu tun. Das heißt, das globale x wird nicht verändert, bleibt also Null, und in draw() wird natürlich das globale x verwendet.</p>
+<p>Im obigen Beispiel sagt man auch, dass die lokale Variable x die globale Variable <strong>überschattet</strong>. Um das zu vermeiden, verwende nie den gleichen Variablennamen zweimal und achte darauf, dass du nicht aus Versehen einen Typ wie "float" vor eine Variable setzt, obwohl du nur eine Zuweisung durchführen willst.</p>
+<p></p>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Im Gegesatz zu einer globalen Variable, welche im gesamten Programm verwendet werden kann, sind <strong>lokale Variablen nur in einem bestimmen Bereich verwendbar.</strong><br />
+<ul>
+<li>Variablen, die innerhalb einer Funktion deklariert werden (wie z.B. draw  oder setup) können <strong>nur innerhalb dieser Funktion verwendet werden und sind somit lokal.</strong></li>
+</ul>
+</li>
+<li>Der Bereich, in dem eine Variable verwendet werden kann heißt <strong>Scope</strong>
+<ul>
+<li>Der Scope einer Variable beginnt mit der Zeile, in der sie deklariert wird und endet mit der geschlossenen geschweiften Klammer des jeweiligen Code-Blocks.</li>
+</ul>
+</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="datentypen.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="syntax_und_konventionen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

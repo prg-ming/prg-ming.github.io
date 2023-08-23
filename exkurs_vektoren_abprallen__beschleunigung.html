@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Exkurs: Vektoren, Abprallen &amp; Beschleunigung | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-63"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="sprint_1.html" class="daddy">Sprint 1</a>
+   <ul class="other-section">
+      <li><a href="lektionen.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="sprint_2.html" class="current-page-parent daddy">Sprint 2</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen0.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="active no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="transformationen_speichern.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="mathematische_funktionen_und_konstanten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id74">
+<div class="iDevice emphasis0" >
+<div id="ta74_122_2" class="block iDevice_content">
+<div class="exe-text"><h1>Vektoren</h1>
+<p>Mithilfe von Vektoren können Orte innerhalb eines Koordinatensystems angegeben werden. Es gibt 3 Arten von Vektoren:</p>
+<ul>
+<li><strong>Ortsvektoren</strong>: Ortsvektoren gehen vom Null-Punkt des Koordinatensystems aus und geben an, wo ich ein bestimmter Punkt befindet.</li>
+<li><strong>Richtungsvektoren</strong>: Richtungsvektoren geben an, wie man von einem beliebigen Punkt im Koordinatensystem zu einem anderen Punkt im Koordinatensystem kommt.</li>
+<li><strong>Einheitsvektoren</strong>: Einheitsvektoren sind Vektorenm welche die Länge 1 haben. Einen Orts- oder Richtungsvektor zu normalisieren bedeutet ihn auf die Länge 1 umzurechnen.</li>
+</ul>
+<h2>Ortsvektor</h2>
+<p>Angenommen wir haben einen Punkt P(4|5), dann könnte mein "Ortsvektor" in Processing so aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float ortsVektorX = 4;
+float ortsVektorY = 5;</code></pre>
+</div>
+</div>
+<p>Die x- und y-Koordinaten können einfach in 2 Variablen gespeichert werden. Das ist die einfachste Möglichkeit. Es gibt auch noch den Datentyp PVector, speziell für Vektoren, dazu aber später mehr.</p>
+<p></p>
+<h2>Richtungsvektor</h2>
+<p>Angenommen wir haben eine Spielfigur in (4|5) und ein Ziel in (7|2). Um die Spielfigur an die Zielkoordinaten zu bewegen muss ich auf der X-Asche 4 + 3 = 7 rechnen und auf der Y-Achse 5 - 3 = 2. Oder anders formuliert: Ich muss den Startpunkt vom Zielpunkt abziehen, also für x: 7 - 4 = 3 und für y: 2 - 5 = -3;</p>
+<p>Der Richtungsvektor würde also folgendermaßen aussehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Position der Spielfigur
+float spielFigurX = 4;
+float spielFigurY = 5;
+ 
+// Zielposition
+float zielX = 7;
+float zielY = 2;
+ 
+// Richtungsvektor
+float richtungsVektorX = zielX -  spielFigurX ;
+float richtungsVektorY = zielY -  spielFigurY ;
+ 
+// Richtungsvektor auf  Position der Spielfigur addieren, um zum Ziel zu kommen
+spielFigurX =  spielFigurX + richtungsVektorX; // = zielX
+spielFigurY =  spielFigurY + richtungsVektorY; // = zielY</code></pre>
+</div>
+</div>
+<h2>Einheitsvektor</h2>
+<p>Unseren Richtungsvektor können wir auch normalisieren, sprich auf die Länge 1 setzen. Damit erhalten wir einen Einheitsvektor.</p>
+<p>Um die aktuelle Länge des Vektors zu berechnen, können wir den Satz des Pythagoras verwenden:</p>
+<div class="pre-code">
+<div>
+<pre><code>a² +  b² = c²  // a = richtungsVektorX, b = richtiungsVektorY
+3² + -3² = c²
+9  +  9  = c²
+      18 = c²
+     4,2 = c</code></pre>
+</div>
+</div>
+<p>Nun weiß ich wie lang mein Vektor aktuell ist. Um den Vektor zu normalisieren, muss ich nun nur meine Ausgangswerte a &amp; b (was in Koordinaten dem x- &amp; y-Wert entspricht) durch die Länge teilen:</p>
+<div class="pre-code">
+<div>
+<pre><code>(a/4,2)² + (b/4,2)² = c²
+    0,7² +    -0,7² = c²
+   0,49  +    0,49  = c²
+               0,98 = c²
+               0,98 = c</code></pre>
+</div>
+</div>
+<p></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float einheitsVektorX = richtungsvektorX / 4,2;
+float einheitsVektorY = richtungsvektorY / 4,2;</code></pre>
+</div>
+</div>
+<p>Das Ergebnis ist nun nicht genau 1, weil ich die Werte zur einfacheren Darstellung stark gerundet habe.  Wenn du willst, kannst du es zur Kontrolle selber gegenrechnen. Aber so einfach hast du aus einem Richtungsvektor einen Einheitsvektor gemacht.</p>
+<p><strong>Processing macht dir das Ganze sogar noch einfacher</strong>, indem es die Funktion <code>dist()</code> zur Verfügung stellt. Diese Funktion berechnet dir die Entfernung zwischen 2 Punkten, also die Länge des Richtungsvektors vom einen zum anderen Punkt.</p>
+<p>Wir können also die Distanz (Länge des Richtungsvektors) zwischen Spielfigur und Ziel berechenen und dann den X- und den Y-Wert des Richtungsvektors durch die Distanz teilen. Die X- und Y-Werte berechnen wir, indem wir die aktuelle Position von der Zielposition abziehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Distanz bzw. Länge berechnen
+float distanz = dist( spielFigurX, spielFigurY, zielX, zielY);
+ 
+// Richtungsvektor durch Distanz teilen und Einheitsvektor berechnen
+float einheitsX = (zielX -  spielFigurX) / distanz;
+float einheitsY = (zielY - spielFigurY) / distanz;</code></pre>
+</div>
+</div>
+<p>Und so schnell kann man mit 3 Zeilen Code einen Einheitsvektor berechnen. Aber die Frage ist: <strong>Was bringt das?</strong></p>
+<h2>Warum Vektoren normalisieren?</h2>
+<p>Normalisierte Vektoren sind universell einsetzbarer als unnormalisierte.</p>
+<p>Stell dir vor, du möchtest deine Spielfigur steuern, indem du im Spielfeld auf einen Punkt klickst und sich die Figur langsam dorthin bewegt. Du könntest hier einfach den unnormalisierten Richtungsvektor nehmen und jeden 1% des Richtungsvektors auf die Position der Spielfigur addieren, dann wäre die Spielfigur nach 100 Frames am Ziel. Allerdings würde sie sich je nachdem, wie weiter der Zielpunkt weg ist, unterschiedlich schnell bewegen. Bei einem Langen Richtungsvektor wäre sie schneller, bei einem kurzen wäre sie langsamer. Das kann mit Einheitsvektoren nicht passieren, da sie alle dieselbe Länge haben. Besser wäre es also, wenn du in dem Moment, wo du klickst und somit das Ziel setzt, den Einheitsvektor Richtung Ziel berechnen und einfach jeden Frame den Einheitsvektor auf die Position der Spielfigur addieren, bis sie an den Zielkoordinaten angekommen ist. Das Tempo wäre immer gleich, da alle Einheitsvektoren dieselber Länge haben.</p>
+<p>Einheitsvektoren werden oft verwendet, um eine Richtung anzugeben, keine konkrete Strecke.</p>
+<p>Aber sich jeden Frame genau 1 Pixel nach vorne bewegen ist schon etwas langsam - geht das nicht schneller? Auch das ist mit Einheitsvektoren kein Problem: In dem wir entweder die Länge des Vektors oder den x- und y-Wert mit einer anderen Zahl multiplizieren, können wir die Geschwindigkeit anpassen.</p>
+<p></p>
+<p><img src="vektoren1.png" alt="" width="500" height="302" /></p>
+<h2>Vom Einheitsvektor zum Einheitskreis</h2>
+<p>Ein Einheitskreis ist ein Kreis mit dem Radius 1. Also so, als würdest du mit einem Zirkel einen Kreis mit dem Radius 1cm zeichnen. Jeder Punkt auf der Kreislinie hat dann den Abstand 1cm zur Mitte. Das heißt: Die Koordinaten von jedem Punkt beschreiben einen Einheitsvektor, mit dem ich etwas in genau die Richtung des Punktes auf der Linie bewegen kann. Nur müssen diese Koordinaten erst ausgerechnet werden.</p>
+<p></p>
+<p><img src="vektoren2.png" alt="" width="252" height="252" /></p>
+<p>Um die Koordinaten auf dem Kreis und somit den Einheitsvektor ausrechnen zu können, benötigen wir nur ein Winkel. Mithilfe von Kosinus (für x) und Sinus (für y) können wir den Einheitsvektor berechnen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float einheitsX = cos(radians(winkel));
+float einheitsY = sin(radians(winkel));</code></pre>
+</div>
+</div>
+<p>Sobald wir den Einheitsvektor haben, können wir ihn einfach auf die Koordinaten des Kreismittelpunkts addieren, um den Kreismittelpunkt in diese Richtung zu addieren.</p>
+<div class="pre-code">
+<div>
+<pre><code>xKreis = xKreis + einheitsX;
+yKreis = yKreis + einheitsY;</code></pre>
+</div>
+</div>
+<p>Auf diese Weise kannst du mithilfe von Einheitsvektoren etwas in eine Richtung bewegen. Schau dir folgendes Programm unten an. Hier wird der Kreis jeden Frame ein Stück in Richtung winkel geschoben. Probiere mit dem Programm ein wenig herum:</p>
+<ul>
+<li>Was passiert, wenn du andere Winkel einsetzt?</li>
+<li>Wie kannst du die Geschwindigkeit anpassen, mit der sich der Kreis bewegt? (Tipp: es gibt 2 unterschiedliche Möglichkeiten)</li>
+</ul>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>
+float winkel = 34;
+float xKreis = 100;
+float yKreis = 100;
+ 
+void setup() {
+  size(200, 200);
+  frameRate(20);
+}
+ 
+void draw() {
+ 
+  float einheitsX = cos(radians(winkel));
+  float einheitsY = sin(radians(winkel));
+   
+  xKreis = xKreis + einheitsX;
+  yKreis = yKreis + einheitsY;
+   
+  ellipse(xKreis, yKreis, 20, 20);
+   
+}</code></pre>
+</div>
+</div>
+<h2>Vektoren mit PVector</h2>
+<p>Du kannst, wenn du willst, so wie oben beschrieben mit den Vektoren arbeiten, also indem du den x- und den y-Wert in jeweils einer Variable speicherst. Allerdings bietet dir Processing auch den Datentyp <code>PVector,</code> der ein paar Dinge noch einfacher macht, da er dafür gedacht ist Vektoren zu speichern und zu verarbeiten.</p>
+<p><code>PVector</code> ist eine <strong>Klasse</strong> mit deren Hilfe zwei- oder auch dreidimensionale Vektoren gespeichert und verarbeitet werden können.</p>
+<p>Die Vektoren von oben können mit PVector folgendermaßen erstellt werden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>PVector spielFigurPos = new PVector(4, 5); // Ortsvektor der Spielfigur
+PVector zielPos = new PVector(7, 2); // Ortsvektor des Ziels
+ 
+println("Spielfigur X: " +  spielFigurPos.x + " Y: " +  spielFigurPos.y); // So kannst du auf die einzelnen Werte zugreifen</code></pre>
+</div>
+</div>
+<p>Die Klasse <code>PVector</code> hat auch ein paar hilfreiche Methoden (ähnlich, die bei der Klasse String in Strings verarbeiten), die du verwenden kannst, zum Beispiel:</p>
+<ul>
+<li><strong>add() &amp; sub():</strong> mit diesen Funktionen können Vektoren addiert bzw. subtrahiert werden.
+<ul>
+<li>Bsp.: <code>PVector richtungsVektor = PVector.sub(zielPos, spielFigurPos);</code></li>
+</ul>
+</li>
+<li><strong>dist():</strong> Berechnet die Distanz zwischen zwei Vektoren.
+<ul>
+<li>Bsp.:<code> float distanz = zielPos.dist(spielFigurPos);</code></li>
+</ul>
+</li>
+<li><strong>normalize()</strong>: Normalisiert eine Vektor.
+<ul>
+<li>Bsp.:<code> PVector einheitsVektor = richtungsVektor.normalize();</code></li>
+</ul>
+</li>
+<li><strong>mag():</strong> Berechnet die Länge eines Ortsvektors in Bezug zum Mittelpunkt (0|0).
+<ul>
+<li>Bsp.:<code> float laenge = spieFigurPos.mag();</code></li>
+</ul>
+</li>
+</ul>
+<p>Diese Methoden können wir verwenden, um mit der Klasse PVector unseren Richtungsvektor zu normalisieren:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>PVector spielFigurPos = new PVector(4, 5); // Ortsvektor der Spielfigur
+PVector zielPos = new PVector(7, 2); // Ortsvektor des Ziels
+ 
+PVector einheitsVektor = PVector.sub(zielPos, spielFigurPos);
+einheitsVektor.normalize();</code></pre>
+</div>
+</div>
+<p><br />Weitere Infos findest du in der Dokumentation von PVector.</p>
+<h1>Abprallen</h1>
+<p>Mithilfe der Einheitsvektoren kann man nicht nur Richtung und Geschwindigkeit realisieren, sondern auch das Abprallen von etwa. <strong>Für das Abprallen gilt: Einfallswinkel = Ausfallswinkel.</strong></p>
+<p>Angenommen meine Spielfigur will gerade zu einem Ziel, das rechts unterhalb von ihr ist. Der Richtungsvektor zum Ziel ist zum Beispiel (20,10), sprich 20 Pixel nach rechts und 10 Pixel nach unten. Nun kollidiert die Spielfigur aber auf dem Weg zum Ziel mit dem rechten Spielfeldrand und prallt von ihm ab.<strong> Das bedeutet, dass sich die Richtung auf der X-Achse umkehrt</strong>, weil sie ja nicht weiter nach rechts fährt, sondern nach links abprallt. <strong>Auf der Y-Achse ändert sich nichts.</strong></p>
+<p>Das Bild zeigt: Die Spielfigur sich mit dem Richtungsvektor (20, 10) nach unten rechts, prallt ab und bewegt sich mit (-20, 10) weiter.</p>
+<p><img src="Einfallswinkel.png" width="200" height="243" /></p>
+<p>Für das Abprallen gilt also:</p>
+<ul>
+<li>Wenn ich auf der X-Achse kollidiere, muss ich den X-Wert des Richtungsvektors umkehren, um abzuprallen.</li>
+<li>Wenn ich auf der Y-Achse kollidiere, muss ich den Y-Wert des Richtungsvektors umkehren, um abzuprallen.</li>
+</ul>
+<p><strong>Achtung</strong>: Wie bereits oben erähnt, macht ihr das aber am besten mit euren Einheitsvektoren, nicht mit den Richtungsvektoren. Ich habe nur zur einfacheren Verständlichkeit die Werte eines Richtungsvektors verwendet!</p>
+<h1>Beschleunigung</h1>
+<p>Für die Beschleunigung könnt ihr die Formel für eine gleichmäßig beschleunigte Bewegung nehmen - das Geschwindigkeit-Zeit-Gesetz:</p>
+<p><strong>v<sub>neu</sub> = a · t + v<sub>alt</sub></strong></p>
+<ul>
+<li><strong>v<sub>neu</sub></strong> ist die Geschwindigkeit</li>
+<li><strong>a</strong> ist die Beschleunigung</li>
+<li><strong>t</strong> ist die Zeit (Differenz aus dem Frame, in dem ich angefangen habe zu beschleunigen und jetzt)</li>
+<li><strong>v<sub>alt</sub></strong> ist die Anfangsgeschwindigkeit (vom letzten Frame)</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="transformationen_speichern.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="mathematische_funktionen_und_konstanten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

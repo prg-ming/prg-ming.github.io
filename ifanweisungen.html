@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>If-Anweisungen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-13"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li><a href="variablen.html" class="daddy">Variablen</a>
+         <ul class="other-section">
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li id="active"><a href="ifanweisungen.html" class="active daddy">If-Anweisungen</a>
+         <ul>
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="arithmetische_operatoren.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="programmablaufplan.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">If-Anweisungen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id10">
+<div class="iDevice emphasis0" >
+<div id="ta10_117_2" class="block iDevice_content">
+<div class="exe-text"><p>Normalerweise wird Code Zeile für Zeile, von oben nach unten, ausgeführt. Manchmal möchte man aber eine Zeile - oder einen ganzen Block von Zeilen - nur unter einer bestimmten Bedingung durchführen. Du möchtest z.B. den Roboter nur dann nach links bewegen, wenn eine bestimmte Taste gedrückt ist. Dafür gibt es die<strong> If-Anweisung.</strong> Sie erlaubt es, im Code zu "springen" und somit den sogenannten Kontrollfluss zu verändern. If bedeutet im Englischen wenn oder falls. Auf deutsch könnte man in der Programmierung auch von einer Wenn-Dann-Anweisung reden.</p>
+<h1>Einfache If-Anweisung</h1>
+<p>Nehmen wir an, dein Programm soll einem Prüfling sagen, ob er bestanden hat. Das sei dann der Fall, wenn die Punktzahl (Variable punkte) mindestens 50 beträgt. Im Code wird das so gelöst:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 75;
+
+if (punkte &gt;= 50) {
+   println("bestanden");
+}</code></pre>
+</div>
+</div>
+<p>Die Zeile mit der Print-Anweisung wird nur unter der Bedingung ausgeführt, dass der Wert von punkte größer oder gleich 50 ist. Ansonsten wird die Zeile übersprungen. Wir ändern also den normalen Kontrollfluss.</p>
+<h2>Programmablaufplan</h2>
+<p>Das können wir auch als Programmablaufplan visualisieren:</p>
+<p><img src="pap_if_1.png" alt="PAP if" width="355" height="300" /></p>
+<p>Im Programmablaufplan stellen Rechtecke normale Befehle/Anweisungen dar, die Pfeile zeigen, welche Anweisung als nächstes ausgeführt wird. Eine Raute symbolisiert eine Entscheidung: Von hier aus gehen zwei Pfeile aus, einer mit true, einer mit false beschriftet. Man wählt den Pfeil, der der Bedingung entspricht (die entweder zu true oder false evaluiert worden sein muss). Man sieht in dem Diagramm sehr schön, dass der Kasten mit "bestanden" nicht immer ausgeführt wird, da sich der Kontrollfluss an der Raute aufteilt.</p>
+<p>Wir erweitern unseren Code um eine Zeile hinter der If-Anweisung:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 75;
+
+if (punkte &gt;= 50) {
+   println("bestanden");
+}
+println("tschüss");</code></pre>
+</div>
+</div>
+<p>Wir erweitern unser Flussdiagramm entsprechend, um zu klären, wann diese neue Codezeile ausgeführt wird.</p>
+<p></p>
+<p><img src="pap_if_2.png" alt="PAP if 2" width="311" height="300" /></p>
+<p>Wir sehen, dass "tschüs" <strong>immer</strong> ausgegeben wird, unabhängig davon, ob die Bedingung erfüllt ist oder nicht. Wir sind wieder im "regulären" Kontrollfluss.</p>
+<h2>Bedingung</h2>
+<p>Die allgemeine Form der If-Anweisung ist:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>if (BEDINGUNG)
+   ANWEISUNG</code></pre>
+</div>
+</div>
+<p>Eine <strong>Anweisung</strong> ist entweder eine einzelne Code-Zeile (Befehl, Variablenzuweisung ...) oder - wie in unseren Beispielen - ein Code-Block, der mit geschweiften Klammern markiert ist. Auf Code-Blocks gehen wir im nächsten Abschnitt ein.</p>
+<p>Eine <strong>Bedingung</strong> ist ein sogenannter boolescher Ausdruck, benannt nach dem britischen Mathematiker George Boole. Ein boolescher Ausdruck ist ein Ausdruck, der nach Auswertung immer entweder wahr (true) oder falsch (false) ist. Die zwei einfachsten booeschen Ausdrücke sind true und false. Du kannst z.B. schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (true) {
+   println("immer");
+}</code></pre>
+</div>
+</div>
+<p>Die obige Anweisung wird immer ausgeführt, was natürlich wenig sinnvoll ist (man kann das if dann auch einfach weglassen), aber es zeigt, dass das Schlüsselwort true (genauso wie false) eine vollwertige Bedigung sein kann.</p>
+<h3>Numerische Vergleiche</h3>
+<p>Eine weiterer boolescher Ausdruck ist ein numerischer Vergleich. Beispiele:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>10 &gt; 100 // größer
+x &gt;= 5 + y // größer gleich 
+41 == foo // gleich
+x != y // nicht gleich
+33 &lt; boo // kleiner</code></pre>
+</div>
+</div>
+<p>Auf beiden Seiten des Vergleichs</p>
+<ul>
+<li>können beliebig komplexe arithmetische Ausdrücke stehen.</li>
+<li>können <strong>Variablen</strong> vorkommen, diese werden bei der Abarbeitung durch ihre aktuellen Werte ersetzt.</li>
+</ul>
+<p>Im Vergleich zu den <strong>Vergleichsoperatoren</strong>, die man aus der Schule kennt, ist zu beachten:</p>
+<ul>
+<li>Für "kleiner gleich" schreibt man &lt;= und zwar in genau dieser Reihenfolge. Ähnlich für "größer gleich".</li>
+<li>Für "gleich" schreibt man ein doppeltes Gleichheitszeichen.</li>
+<li>Für "ungleich" wird != geschrieben. Das Ausrufezeichen ist nämlich für Negation zuständig.</li>
+</ul>
+<p><strong>Beachte insbesondere das "gleich".</strong> Es muss mit <strong>doppeltem</strong> <strong>Gleichheitszeichen</strong> geschrieben werden! Es ist <strong>ein häufiger Anfängerfehler</strong> hier nur ein einfaches Gleichheitszeichen zu setzen, da in diesem Fall<strong> keine Fehlermeldung ausgegeben</strong> wird! Es wird dann nämlich eine Zuweisung vorgenommen, d.h. die Variable, die du nur "testen" willst, wird verändert!</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>x == 5
+z == k
+42 == foo</code></pre>
+</div>
+</div>
+<p><strong>WICHTIG</strong>: Der Test auf Gleichheit in Bedingungen erfordert ein doppeltes Gleichheitszeichen ==.</p>
+<p></p>
+<h2>Code-Block</h2>
+<p>Die geschweiften Klammern in den obigen Beispielen markieren jeweils einen sogenannten Code-Block. Code-Blocks erlauben uns, viele Zeilen "zusammenzupacken" und bei der If-Anweisung als Aktion zu definieren, die ausgeführt wird, wenn die Bedingung wahr ist.</p>
+<p>Code-Blocks werden uns noch in vielen anderen Zusammenhängen begegnen, z.B. bei Funktionen und Schleifen. Beachte, dass die Zeilen innerhalb des Code-Blocks eingerückt sind und zwar alle gleich, so dass man direkt sieht, dass diese Zeilen zusammengehören. In der Processing-Umgebung kannst du das automatisch durchführen lassen im Menupunkt Edit &gt; Auto Format oder mit der Tastenkombination CMD+T (Mac) bzw. STRG+T (Windows).</p>
+<p>Die Einrückung ist wichtig, weil ein Code-Block weitere Code-Blöcke enthalten kann. Das heißt die Blöcke können verschachtelt sein. Hier ein Beispiel:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkteTest = 75;
+int zusatzTest = 85;
+
+if (punkteTest &gt;= 50) {
+   println("Test ist bestanden!");
+
+   if (zusatzTest &gt;= 50) {
+      println("Zusatztest ist AUCH bestanden!");
+   }
+}</code></pre>
+</div>
+</div>
+<h2>Der Else-Teil</h2>
+<p>Wollen wir auch eine Aktion immer dann ausführen, wenn die Bedingung nicht erfüllt ist, können wir noch einen Else-Teil (else heißt "sonst") anfügen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 75;
+
+if (punkte &gt;= 50) {
+   println("bestanden");
+} else {
+   println("durchgefallen");
+}
+println("tschüs");</code></pre>
+</div>
+</div>
+<p>Auch hier können wir den Kontrollfluss mit einem Flussdiagramm verdeutlichen:</p>
+<p><img src="pap_if_3.png" alt="PAP Else" width="386" height="300" /></p>
+<p>Eine wichtige Erkenntnis ist, dass, egal ob die Bedingung true oder false ist, immer Code ausgeführt wird (im Diagramm entweder der rechte Ast oder der linke Ast).</p>
+<p>Die If-Else-Anweisung ist als ein einziges, zusammengehöriges Konstrukt zu betrachten, der zwei Code-Blöcke enthält. Nach dem If-Else geht es regulär Zeile für Zeile weiter, hier folgt also auch immer das "tschüs".</p>
+<h1>Else-If</h1>
+<p>Wenn du größere Fallunterscheidungen hast, bietet sich das Else-If an. Möchtest du zum zum Beispiel verschiedene Aktionen abfeuern, je nachdem ob ein Prüfling mehr als 75, mehr als 50 oder weniger als 50 hat, müsstest du zwei If-Anweisungen verschachteln:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 55;
+
+// äußere If-Anweisung
+
+if (punkte &gt; 50) {
+
+   // innere If-Anweisung
+
+   if (punkte &gt; 75) {
+      println("Bestnote!");
+   } else {
+      println("Bestanden.");
+   }
+
+} else {
+   println("Leider durchgefallen"); // Else-Teil
+}</code></pre>
+</div>
+</div>
+<p>Die <strong>äußere If-Anweisung</strong> unterscheidet zwischen &gt;50 und &lt;=50. Die<strong> innere If-Anweisung</strong> teilt den Bereich &gt;50 dann nochmal in &gt;75 und &lt;=75.</p>
+<p>Auch wenn Verschachtelung erlaubt und in manchen Fällen auch sinnvoll ist, so ist dieser Code doch schwer zu lesen und je mehr Fälle du hast, umso unübersichtlicher wird der Code.</p>
+<p>Das <strong>Else-If</strong> erlaubt dir, eine zweite Bedingung hinzuzufügen. Diese Bedingung wird nur dann geprüft, wenn die erste falsch ist. Das schlussendliche Else greift dann, wenn beide Bedingungen falsch waren.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 55;
+
+if (punkte &gt; 75) {
+   println("Bestnote!");
+} else if (punkte &gt; 50) {
+   println("Bestanden.");
+} else {
+   println("Leider durchgefallen"); // Else-Teil
+}</code></pre>
+</div>
+</div>
+<p>Es können beliebig viele Else-If-Teile eingefügt werden:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int punkte = 55;
+
+if (punkte &gt; 90) {
+   println("Bestnote!");
+} else if (punkte &gt; 75) {
+   println("Sehr gut.");
+} else if (punkte &gt; 50) {
+   println("Bestanden.");
+} else {
+   println("Leider durchgefallen"); // Else-Teil
+}
+println("tschüs");</code></pre>
+</div>
+</div>
+<p>Processing testet zuerst die erste Bedingung. Falls diese falsch ist, wird das erste Else-If getestet. Falls dies falsch ist, wird das nächste Else-If getestet und so fort. Sind alle diese Bedingungen falsch, so wird der Else-Teil ausgeführt. Danach wird zum normalen Kontrollfluss zurückgekehrt.</p>
+<p>Allgemein kann man das so schreiben:</p>
+<div class="highlighted-code language-java">
+<div>
+<pre><code>if (BEDINGUNG-1)
+   ANWEISUNG-1
+else if (BEDINGUNG-2)
+   ANWEISUNG-2
+else if (BEDINGUNG-3)
+   ANWEISUNG-3
+...
+else
+   ANWEISUNG-N</code></pre>
+</div>
+</div>
+<h2>Flussdiagramm</h2>
+<p>Als Flussdiagramm sieht das so aus:</p>
+<p><img src="pap_if_4.png" alt="PAP Else if" width="336" height="400" /></p>
+<p>Man sieht hier deutlich, dass nur genau eine Option (d.h. ein Code-Block) ausgeführt wird. Danach wird zum normalen Kontrollfluss zurückgekehrt.</p>
+<h2>Coding Style</h2>
+<p>Bitte achte darauf, wo Leerzeichen und Zeilenumbrüche gemacht werden, und wo nicht.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (foo &gt; 200) {
+   println("foo");
+} else if (foo &gt; 100) {
+   println("bar");
+} else {
+   println("sonst");
+}</code></pre>
+</div>
+</div>
+<p>Alternativ:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>if (foo &gt; 200)
+{
+   println("foo");
+}  else if (foo &gt; 100)
+{
+   println("bar");
+}  else
+{
+   println("sonst");
+}</code></pre>
+</div>
+</div>
+<p><br />Denke auch daran, deinen Code mit <strong>Bearbeiten &gt; Autoformatierung</strong> von Processing korrekt einrücken zu lassen (Tastenkürzel STRG+T bzw. CMD+T).</p>
+<p></p>
+<h1><br />Zusammenfassung</h1>
+<p>Eine If-Anweisung erlaubt es, eine oder mehrere Code-Zeilen (einen Code-Block) nur unter einer ganz bestimmten Bedingung auszuführen.</p>
+<ul>
+<li>Eine Bedingung wird durch einen booleschen Ausdruck definiert. Dies ist ein Ausdruck, der zu true oder false ausgewertet werden kann. Die Schlüsselworte true und false sind jeweils (triviale) boolesche Ausdrücke. Wichtiger sind arithmetische Vergleiche wie x &gt; 5 oder 10 == y. WICHTIG: Immer doppeltes Gleichheitszeichen beim Vergleich nehmen!</li>
+<li>Ein Code-Block ist eine Anzahl von Anweisungen (können also mehrere Zeilen sein), von von geschweiften Klammern umgrenzt sind. Die Code-Zeilen innerhalb der Klammern sind in Processing alle gleich weit eingerückt, so dass man leicht erkennt, in welchem Block sich eine Zeile befindet.</li>
+<li>Möchte man Code-Zeilen genau dann ausführen, wenn die Bedingung nicht erfüllt ist, so hängt man mit Hilfe von else einen zweiten Code-Block an, der genau dann ausgeführt wird.</li>
+<li>Bei komplexerem Fallunterscheidungen kann an das else ein weiteres if gekoppelt werden.</li>
+</ul>
+<p><strong>Aufbau</strong></p>
+<table style="height: 32px; width: 100%;" class="exe-table" border="1">
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;"><strong>Einfaches If</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>If-Else</strong></td>
+<td style="width: 33.3333%; height: 16px;"><strong>Else-If</strong></td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 33.3333%; height: 16px;">
+<pre>if (BEDINGUNG) <br />   ANWEISUNG<br /><br /><br /></pre>
+</td>
+<td style="width: 33.3333%; height: 16px;">
+<pre>if (BEDINGUNG) <br />   ANWEISUNG<br />else<br />   ANWEISUNG<br /><br /></pre>
+</td>
+<td style="width: 33.3333%; height: 16px;">
+<pre>if (BEDINGUNG) <br />   ANWEISUNG<br />else if (BEDINGUNG) <br />   ANWEISUNG<br />else<br />   ANWEISUNG</pre>
+</td>
+</tr>
+</tbody>
+</table>
+<p><br /><br /><br /><br /></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="arithmetische_operatoren.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="programmablaufplan.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

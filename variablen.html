@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Variablen | PRG Skript Sprint 1 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Skript Sprint 1</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li class="current-page-parent"><a href="sprint_1.html" class="current-page-parent daddy">Sprint 1</a>
+   <ul>
+      <li class="current-page-parent"><a href="lektionen.html" class="current-page-parent daddy">Lektionen</a>
+      <ul>
+         <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+         <li><a href="zeichnen.html" class="daddy">Zeichnen</a>
+         <ul class="other-section">
+            <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+            <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="variablen.html" class="active daddy">Variablen</a>
+         <ul>
+            <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+            <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+         </ul>
+         </li>
+         <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+         <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen.html" class="daddy">If-Anweisungen</a>
+         <ul class="other-section">
+            <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+            <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+            <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+            <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+            <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         </ul>
+         </li>
+         <li><a href="while_schleife.html" class="daddy">While Schleife</a>
+         <ul class="other-section">
+            <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+            <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+            <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="einfache_arrays.html" class="daddy">Einfache Arrays</a>
+         <ul class="other-section">
+            <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+            <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+            <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+         </ul>
+         </li>
+         <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen.html" class="daddy">Übungsaufgaben und -fragen</a>
+      <ul class="other-section">
+         <li><a href="computersprache_zeichnen_text_u_interaktion.html" class="no-ch">Computersprache, Zeichnen, Text u. Interaktion</a></li>
+         <li><a href="variablen_und_datentypen.html" class="no-ch">Variablen und Datentypen</a></li>
+         <li><a href="arithmetische_operatoren0.html" class="no-ch">Arithmetische Operatoren</a></li>
+         <li><a href="ifanweisungen__co.html" class="no-ch">If-Anweisungen &amp; Co.</a></li>
+         <li><a href="syntax__konventionen.html" class="no-ch">Syntax &amp; Konventionen</a></li>
+         <li><a href="schleifen.html" class="no-ch">Schleifen</a></li>
+         <li><a href="arrays.html" class="no-ch">Arrays</a></li>
+         <li><a href="debugging0.html" class="no-ch">Debugging</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="sprint_2.html" class="daddy">Sprint 2</a>
+   <ul class="other-section">
+      <li><a href="lektionen0.html" class="daddy">Lektionen</a>
+      <ul class="other-section">
+         <li><a href="funktionen.html" class="daddy">Funktionen</a>
+         <ul class="other-section">
+            <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+            <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+         </ul>
+         </li>
+         <li><a href="transformation.html" class="daddy">Transformation</a>
+         <ul class="other-section">
+            <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+            <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+         </ul>
+         </li>
+         <li><a href="exkurs_vektoren_abprallen__beschleunigung.html" class="no-ch">Exkurs: Vektoren, Abprallen &amp; Beschleunigung</a></li>
+         <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+         <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+         <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+         <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+         <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+         <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+         <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+         <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+         <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+         <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+         <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+         <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      </ul>
+      </li>
+      <li><a href="bungsaufgaben_und_fragen0.html" class="no-ch">Übungsaufgaben und Fragen</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="interaktion.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="datentypen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Variablen</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id4">
+<div class="iDevice emphasis0" >
+<div id="ta4_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Variablen sind Container für Informationen, zum Beispiel für eine Zahl oder für einen Text. Der Inhalt einer Variable kann sich jederzeit ändern, ist also variabel.</p>
+<p>Variablen können Daten speichern. Um dies sinnvoll zu tun, benötigen wir für jede Variable:</p>
+<ul>
+<li>einen Typ, der bestimmt, was man in der Variable speichern kann, z.B. eine ganze Zahl, eine Kommazahl oder einen Buchstaben.</li>
+<li>einen Namen (Bezeichner), damit man später darauf zurückgreifen kann und verschiedene Variablen auseinander halten kann.</li>
+</ul>
+<h1>Deklaration</h1>
+<p>Um eine Variable zu verwenden, muss man zunächst die Variable erstellen. Das nennt man deklarieren. Hier deklarieren wir eine Variable mit Namen foo vom Typ int (steht für integer, engl. für "ganze Zahl"):</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int foo; // Deklaration</code></pre>
+</div>
+</div>
+<p>Allgemein sieht eine Deklaration wie folgt aus:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>TYP NAME;</code></pre>
+</div>
+</div>
+<p>Die Deklaration reserviert Platz im Speicher, um den Wert einer Variablen zu abzulegen. Das ist auch einer der Gründe, warum ein Typ angegeben wird: unterschiedliche Typen verbrauchen unterschiedlichen Speicherplatz.</p>
+<p><strong>WICHTIG</strong>: Variablenamen am Anfang immer klein schreiben!</p>
+<h1>Zuweisung</h1>
+<p>Im nächsten Schritt legt man den Inhalt der Variable fest, das nennt man Zuweisung. Man kann einer Variablen immmer wieder verschiedene Werte zuweisen. Die Zuweisung des ersten Werts (in der Regel direkt nach der Deklaration) nennt man auch <strong>Initialisierung</strong>.</p>
+<p>Um einer Variablen einen Wer zuzuweisen, verwendet man das <strong>Gleichheitszeichen</strong>, welches in diesem Fall als Zuweisungsoperator bezeichnet wird.</p>
+<p><strong>WICHTIG</strong>: Es handelt sich nicht um die Gleichheit aus der Mathematik!</p>
+<p>Bei der Zuweisung steht links vom Zuweisungsoperator immer ein Variablenname und rechts steht z.B. eine Zahl oder ein mathematischer Ausdruck wie 3 + 2. Die rechte Seite wird ausgewertet und das Ergebnis in die Variable hineingeschrieben.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>foo = 5; // einfache Zuweisung</code></pre>
+</div>
+</div>
+<p>Auf der rechten Seite kann ein beliebig komplexer arithmetischer Ausdruck stehen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>foo = 5 + 2 * (10 - 5);</code></pre>
+</div>
+</div>
+<p>Dieser wird zunächst gemäß der bekannten Regeln (Punkt vor Strich, Klammerung) ausgewertet.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>foo = 15;</code></pre>
+</div>
+</div>
+<p>Erst wenn die rechte Seite fertig ausgewertet ist, wird der Variablen foo der Wert, hier also 15, zugewiesen.</p>
+<h1>Verwendung</h1>
+<p>Schließlich kann man die Variabe verwenden. Hier wird der Variablenname durch den Inhalt der Variable ersetzt, das nennt man auch Substitution.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>println(foo); // Verwendung im Befehl println
+rect(foo, 40, 30, 30); // Verwendung im Befehl rect</code></pre>
+</div>
+</div>
+<p>Stell dir vor, dass Processing vor der Verarbeitung einer Zeile zunächst alle Variablen durch den jeweils aktuellen Wert der Variable ersetzt.</p>
+<p>In unserem Bespiel hat die Variable foo den Wert 5. Aus der Zeile</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(foo, 40, 30, 30);</code></pre>
+</div>
+</div>
+<p>macht Processing also zunächst</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(5, 40, 30, 30);</code></pre>
+</div>
+</div>
+<p>Jetzt wird die Zeile "normal" ausgewertet.</p>
+<p><strong>Wichtig</strong>: Die Verwendung von Variablen teilt sich in 3 Schritte auf:</p>
+<ol>
+<li><strong>Subsitution</strong> der Variable(n) mit dem tatsächlichen Wert</li>
+<li><strong>Verarbeitung</strong>/Auswertung der Variable(n), z.B. in Befehlen oder auch die Addition zweier Variablen.</li>
+<li><strong>Zuweisung</strong> des Ergebnis zu einer (anderen Variable).</li>
+</ol>
+<p>Es kommen nicht immer <em>zwingend</em> alle Schritte vor. Manchmal gibt es auch keine Verarbeitung, z.B. wenn ich eine Variable einfach nur einer anderen Variable zuweise (z.B.  xNeu = xAlt ). Wenn die Schritt allerdings vorkommen, dann in dieser Reihenfolge.</p>
+<h2>Zuweisung mit Variablen</h2>
+<p>Variablen können auch auf der rechten Seite von Zuweisungen stehen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boo = foo + 10;</code></pre>
+</div>
+</div>
+<p>Bevor die Addition (oder andere Operationen) ausgewertet wird, werden alle Variablen auf der rechten Seite ersetzt (<strong>substituiert</strong>) durch ihre jeweils aktuellen Werte.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boo = 5 + 10;</code></pre>
+</div>
+</div>
+<p>Im nächsten Schritt wird der arithmetische Ausdruck auf der rechten Seite <strong>ausgewertet</strong>:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>boo = 15;</code></pre>
+</div>
+</div>
+<p>Jetzt kann die <strong>Zuweisung</strong> erfolgen: boo erhält den Wert 15.</p>
+<h2>Variablenwert erhöhen</h2>
+<p>Wie du später noch sehen wirst, kommt es sehr häufig vor, dass du den Wert einer Variablen um einen Betrag erhöhen möchtest. Zum Beispiel: Variable x speichert eine x-Koordinate und hat den Wert 10, diesen möchstes du um 1 erhöhen. Zunächst deklarieren wir die Variable:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x;
+x = 10;</code></pre>
+</div>
+</div>
+<p>Häufiger Fehler:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x + 1; // falsch</code></pre>
+</div>
+</div>
+<p>In diesem Code wird aber der Wert der Variable x nicht verändert. Stattdessen musst du schreiben:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x = x + 1; // richtig</code></pre>
+</div>
+</div>
+<p>Hier passiert folgendes. Im ersten Schritt wird der Wert von x eingesetzt:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x = 10 + 1;</code></pre>
+</div>
+</div>
+<p>Im nächsten Schritt wird die Addition aufgelöst:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>x = 11;</code></pre>
+</div>
+</div>
+<p>Erst jetzt wird das Gleichheitszeichen, also die Zuweisung, ausgeführt, und x erhält den neuen Wert 11.</p>
+<h1>Deklaration und Zuweisung auf einer Zeile</h1>
+<p>Du kannst Deklaration und Zuweisung auch verkürzt auf eine Zeile schreiben. Beachten Sie dennoch, dass hier zwei Dinge passieren:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int bla = 50; // zwei auf einen Streich</code></pre>
+</div>
+</div>
+<p>Die allererste Zuweisung bei einer Variable nennt man auch die <strong>Initialisierung</strong> der Variable.</p>
+<h1>Globale Variablen</h1>
+<p>Wo steht die Deklaration im Code? Wir beschäftigen uns hier mit sogenannten globalen Variablen. Dabei handelt es sich um Variablen, die du - nach der Deklaration - überall in deinem Programm verwenden kannst. Globale Variablen sollten im aktiven Modus immer ganz oben im Code stehen, außerhalb von setup, draw und anderen Funktionen.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Alle Variablen ganz oben,
+// also vor setup und draw
+int x = 0;
+int y = 0;
+
+void setup() {}
+
+void draw() {
+   ellipse(x, y, 20, 20);
+   x = x + 1;
+   y = y + 1;
+}</code></pre>
+</div>
+</div>
+<h1>Welche Namen sind erlaubt?</h1>
+<p>Wenn du eigene Variablen definierst, musst du ein paar Regeln beachten, harte und weiche. Wichtig ist zunächst, dass Groß- und Kleinschreibung unterschieden wird, d.h. dass meineVariable und  meinevariable<br />zwei unterschiedliche Variablen sind, die auch gern im selben Code ko-existieren dürfen.</p>
+<h2>Harte Regeln (Syntax)</h2>
+<p>Die Verletzung einer harten Regel führt zu einer Fehlermeldung, d.h. diese Regeln sind Teil der Syntax von Processing bzw. Java:</p>
+<ul>
+<li>Groß- &amp; Kleinschreibung beachten</li>
+<li>keine Schlüsselworte verwenden</li>
+<li>bestehen aus Ziffern (0-9), Buchstaben (a-z, A-Z), '_' und '$'</li>
+<li>nicht mit einer Ziffer beginnen</li>
+<li>keine Leerzeichen und auch keinen Bindestrich</li>
+</ul>
+<h2>Weiche Regeln (Konventionen)</h2>
+<p>Neben den harten Regeln gibt es einige Konventionen, die du einhalten solltest, um nicht direkt als Programmieranfänger ertappt zu werden.</p>
+<p>Variablennamen...</p>
+<ul>
+<li>beginnen immer mit Kleinbuchstaben</li>
+<li>folgen der CamelCase-Regelung, wenn Einzelwörter verbunden sind (z.B. meineNeueVariable)</li>
+<li>sind möglichst aussagekräftig (z.B. hintergrundFarbe statt hg)</li>
+</ul>
+<p>Beispiele:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// verletzt Konventionen (obwohl syntaktisch korrekt): 
+int MeineVariable;    // groß geschrieben am Anfang 
+int MEINEVARIABLE;    // GROSS GESCHRIEBEN! 
+int meine_variable;   // kein CamelCase
+int mv;               // nicht aussagekräftig
+
+// entspricht Konventionen: 
+int meineVariable;</code></pre>
+</div>
+</div>
+<h1>Konstanten</h1>
+<p>Die Daten oder Werte, die in Variablen gespeichert sind, können jederzeit verändert werden - sie sind variabel. Soll der Wert einer Variable allerdings nicht veränderbar sein, dann kann sie als Konstante angelegt werden. <strong>Wichtig bei der Deklaration</strong> einer Konstanten ist zum einen, dass das <strong>Schlüsselwort final</strong> verwendet werden muss. Zum anderen<strong> müssen Konstanten bei der Deklaration auch direkt initialisiert werden</strong>, sprich es muss ihnen direkt ein Startwert zugewiesen werden, da der Wert einer Konstante später nicht verändert werden kann.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>final int MEINE_HAUSNUMMER;  
+MEINE_HAUSNUMMER = 34; // FALSCH
+
+final int MEINE_SCHUHGROESSE = 41; // RICHTIG</code></pre>
+</div>
+</div>
+<p>Konstanten sind dann sehr hilreich , wenn Programme größer und komplexer werden. Da kann es schonmal passieren, dass man vergisst, dass der Wert Variable XY nicht verändert werden darf. Indem man die Variable als Konstante anlegt kann man diesen ungewollten Fehler vermeiden.</p>
+<p>Außerdem ist dir wahrscheinlich aufgefallen, dass Konstantennamen anders geschrieben. Für sie gelten andere Konventionen:</p>
+<ul>
+<li>nur Großbuchstaben</li>
+<li>zwischen 2 Worten kommt ein Unterstrich ( _ )</li>
+</ul>
+<p>Der Vorteil daran ist, dass man direkt an der Schreibweise des Namens erkennt, dass es sich hierbei um eine Konstante handelt.</p>
+<h1>Literale</h1>
+<p>Nun haben wir uns bereits die verschiedenen Elemente einer Variablen angeschaut. Da wäre der Typ (int, ...), der Bezeichner (der Name der Variablen), der Zuweisungsoperator (=) und das Schlüsselwort final. Das letzte Element sind Literale.<strong> Bei Literalen handelt es sich um feste Werte, die einer Variable zugewiesen werden. </strong></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>Beispiel:
+
+int anzahlHaende = 2; // Literal = 2
+int fingerProHand = 5; // Literal = 5
+int anzahlFinger = anzahlHaende * fingerProHand; // KEIN Literal</code></pre>
+</div>
+</div>
+<p></p>
+<p>In diesem Fall sind 2 und 5 jeweils Literale. Literale sind feste Werte - warum? Weil diese fest in deinen Quellcode eingetragen sind und somit unveränderlich sind. In den Zeilen oben wird immer 2 und 5 stehen und das wird sich auch nicht verändern. Auch, wenn die Variable später einen anderen Wert hat. In der dritten Zeile steht allerings kein fester Wert, sondern die Multiplikation zweier Variabeln. Somit handelt es sich hier nicht um ein Literal.</p>
+<p>Wichtig ist, dass es verschiedene Arten von Literalen gibt. Welche Arten von Literalen eine Variable verwenden kann, hängt vom Datentyp der Variablen ab. Mehr zum Thema Datentypen findest du im Abschnitt Datentypen. </p>
+<h1>Systemvariablen</h1>
+<p>Processing ist so freundlich, dir eine Handvoll Variablen zu "schenken". Das bedeutet: diese Variablen sind immer vorhanden, du brauchst sie nicht deklarieren oder setzen, sondern du verwendest sie nur. Zum Beispiel, um die aktuelle Position der Maus rauszukriegen oder um die Bildschirmbreite zu erfahren.</p>
+<p>Achte darauf, dass du <strong>deine Variablen nicht so benennst wie Systemvariablen</strong> und dass du Systemvariablen <strong>nie selbst einen Wert zuweist.</strong></p>
+<h2>Größe des Grafikfensters</h2>
+<p>Hier ein Beispiel, wo du ein Rechteck malst, das das linke obere Viertel des Bildschirms besetzt. Benutze die Systemvariablen width und height, welche die Breite und Höhe deines Grafikfensters beinhalten:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>rect(0, 0, width/2, height/2);</code></pre>
+</div>
+</div>
+<p><strong>Achte darauf, dass die Systemvariablen width und height erst ab setup() zur Verfügung stehen</strong> und auch dort sinnvollerweise erst nach dem Kommando size() abgegriffen werden sollten. Das heißt, dass dieser Code nicht funktionieren wird:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int w = width; // Problem! width noch nicht gesetzt!
+int h = height; // Problem! height noch nicht gesetzt!
+
+void setup() {
+}
+
+void draw() {
+   ellipse(w/2, h/2, 40, 40);
+}</code></pre>
+</div>
+</div>
+<h2>Position der Maus</h2>
+<p>Anderes typisches Beispiel: Ein Kreis soll an deiner Maus kleben. Dazu verwendest du mouseX und mouseY:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+}
+
+void draw() {
+   background(255); // wir wollen ja keine Schlieren
+   ellipse(mouseX, mouseY, 20, 20);
+}</code></pre>
+</div>
+</div>
+<h2>Refresh-Geschwindigkeit</h2>
+<p>Einen Aufruf von draw() nennt man auch einen Frame. Das kommt aus der Filmbranche, ein Frame ist ein Einzelbild eines Films. Normalerweise wird draw() 60 Mal pro Sekunde aufgerufen. Diese 60 nennt man auch die frame rate. Dies ist allerdings nur das Idealverhalten. Wenn du viele Programme laufen hast, die viel Rechenzeit benötigen, wird dieser Wert unterschritten. In der Variable frameRate steht der derzeit erreichte Wert. Den kann man sich ruhig mal anzeigen lassen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+}
+
+void draw() {
+   println(frameRate);
+}</code></pre>
+</div>
+</div>
+<p>Überfordere auch mal den Rechner und sieh, wo die Grenzen liegen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+   frameRate(100000); // setze meine gewünschte frame rate
+}
+
+void draw() {
+   println(frameRate); // zeige echte frame rate
+}</code></pre>
+</div>
+</div>
+<h2>Übersicht: Nützliche Systemvariablen</h2>
+<p>Hier eine Liste nützlicher Systemvariablen. Jede dieser Variablen hat auch einen Datentyp.</p>
+<table style="height: 192px; width: 100%;" class="exe-table" border="1">
+<thead>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;"><strong>Systemvariable/n</strong></td>
+<td style="width: 11.0913%; height: 16px;"><strong>Typ</strong></td>
+<td style="width: 72.8944%; height: 16px;"><strong>Beschreibung</strong></td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">mouseX, mouseY</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">aktuelle Position des Mauszeigers</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">pmouseX, pmouseY</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">Position des Mauszeigers im vorherigen Frame</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">width, height</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">Pixelgröße des Grafikfensters (Breite und Höhe)</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">frameRate</td>
+<td style="width: 11.0913%; height: 16px;">float</td>
+<td style="width: 72.8944%; height: 16px;">Anzahl der Frames pro Sekunde, d.h. wie oft draw() aufgerufen wird</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">frameCount</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">Anzahl der bisherigen Aufrufe von draw() seit Programmstart</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">keyPressed</td>
+<td style="width: 11.0913%; height: 16px;">boolean</td>
+<td style="width: 72.8944%; height: 16px;">ob eine Taste derzeit gedrückt ist</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">key</td>
+<td style="width: 11.0913%; height: 16px;">char</td>
+<td style="width: 72.8944%; height: 16px;">zuletzt gedrückte Taste</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">keyCode</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">zuletzt gedrückte Taste als Zahlencode (z.B. für Cursortasten)</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">mousePressed</td>
+<td style="width: 11.0913%; height: 16px;">boolean</td>
+<td style="width: 72.8944%; height: 16px;">ob ein Mausbutton derzeit gedrückt ist</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">mouseButton</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">welche der Maustasten aktuell gedrückt ist</td>
+</tr>
+<tr style="height: 16px;">
+<td style="width: 16.0142%; height: 16px;">displayHeight, displayWidth</td>
+<td style="width: 11.0913%; height: 16px;">int</td>
+<td style="width: 72.8944%; height: 16px;">Maße des gesamten Bildschirms in Pixeln</td>
+</tr>
+</tbody>
+</table>
+<h1><br />Zusammenfassung</h1>
+<ul>
+<li><strong>Variable als Container (Speicher):</strong> Eine Variable speichert etwas, z.B. einen Wert zur späteren Verwendung. Was genau sie speichern kann, sagt ihr <strong>Datentyp</strong> (kurz: Typ).</li>
+<li><strong>Erzeugen</strong>: Eine neue Variable erzeugt man mit TYP NAME;</li>
+<li><strong>Zuweisung</strong>: Hat man eine Variable foo, so kann man mit foo = 5 den Wert 5 dort hinein tun.</li>
+<li><strong>Verwendung</strong>: Steht eine Variable wie foo im Code - z.B. in dem Befehl rect(foo, foo, 10, 10) - so wird "foo" durch den aktuellen Wert von foo ersetzt (Substitution).</li>
+<li><strong>Konstanten</strong>: Konstanten sind Variablen, deren Wert nicht mehr verändert werden kann. Sie müssen bei der Deklaration auch direkt initialisiert werden.</li>
+<li><strong>Literale</strong>: Literale sind die fest in den Quellecode eingetragenen Werte, die einer Variablen zugewiesen werden.</li>
+<li><strong>Syntax</strong>: Beschreibt sie harten Regeln, an die man sich bei dem Wählen eines Variablennamens halten muss:
+<ul>
+<li>Groß- &amp; Kleinschreibung beachten</li>
+<li>keine Schlüsselworte verwenden</li>
+<li>bestehen aus Ziffern (0-9), Buchstaben (a-z, A-Z), '_' und '$'</li>
+<li>nicht mit einer Ziffer beginnen</li>
+<li>keine Leerzeichen und auch keinen Bindestrich</li>
+</ul>
+</li>
+<li><strong>Konventionen</strong>: Beschreiben weiche Regeln, also Regeln an die es sinnvoll ist sich zu halten.
+<ul>
+<li>kleiner Anfangsbuchstabe</li>
+<li>verwenden CamelCase</li>
+<li>sind möglichst aussagekräftig gewählt</li>
+</ul>
+</li>
+<li><strong>Systemvariablen</strong> sind Variablen, die vom System (in unserem Fall Processing) zur Verfügung gestellt und berechnet werden.</li>
+<li>Systemvariablen sollten nur verwendet und <strong>niemals selber gesetzt</strong> werden.</li>
+<li>Eigene Variablen sollten<strong> niemals den selben Namen wie eine Systemvariable</strong> haben.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="interaktion.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="datentypen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
