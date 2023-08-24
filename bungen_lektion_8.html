@@ -5,7 +5,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Lektion 9 | PRG Ming Skript  </title>
+<title>Übungen Lektion 8 | PRG Ming Skript  </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Jacqueline Rähse" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -16,7 +16,7 @@
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
-<body class="exe-web-site exe-search-bar" id="exe-node-79"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site exe-search-bar" id="exe-node-84"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
 <header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
@@ -90,17 +90,17 @@
       <li><a href="bungen_lektion_7.html" class="no-ch">Übungen Lektion 7</a></li>
    </ul>
    </li>
-   <li><a href="lektion_8.html" class="daddy">Lektion 8</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="lektion_8.html" class="current-page-parent daddy">Lektion 8</a>
+   <ul>
       <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
       <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
       <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
       <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
-      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
+      <li id="active"><a href="bungen_lektion_8.html" class="active no-ch">Übungen Lektion 8</a></li>
    </ul>
    </li>
-   <li id="active"><a href="lektion_9.html" class="active daddy">Lektion 9</a>
-   <ul>
+   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
+   <ul class="other-section">
       <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
       <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
@@ -122,12 +122,124 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="bungen_lektion_8.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="strings_verarbeiten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="zahlensysteme.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Lektion 9</h1></header>
+<header id="nodeDecoration"><h1 id="nodeTitle">Übungen Lektion 8</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id111">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Arten von Datentypen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta111_127_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|ArtenvonDatentypen&amp;Typumwandlung-Fragen">Fragen</h1>
+<ol>
+<li>Was sind die Unterschiede zwischen primitven Datentypen und Objekttypen?</li>
+<li>Warum haben Objekttypen den Standardwert <code>null</code>?</li>
+<li>Wie kann ich auf die Funktionen und Felder eines Objekts zugreifen?</li>
+<li>Erkläre die Prinzipien <strong>Call-By-Value</strong> und <strong>Call-By-Reference</strong> in eigenen Worten. Was kann passieren, wenn ich nicht darauf achte, dass es diese beiden unterschiedlichen Prinzipien gibt?</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id112">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Typumwandlung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta112_128_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|ArtenvonDatentypen&amp;Typumwandlung-Fragen.1">Fragen</h1>
+<ol>
+<li>Was passiert bei einem impliziten Cast? Nenne ein Codebeispiel</li>
+<li>Was passiert bei einem expliziten Cast? Nenne ein Codebeispiel</li>
+<li>Innerhalb der Gruppe der primitven Datentypen kann ich jeden Datentyp in jeden anderen Datentyp umwandeln. Wahr oder falsch?</li>
+<li>Welches Ergebnis liefert folgende Rechenaufgabe? Rechne es nicht aus, sondern überlege dir im Kopf erst deine Antwort und überprüfe dann das Ergebnis
+<ul>
+<li><code>int foo = 5;</code><br /><code>int bar = 3;</code><br /><br /><code>int ergebnis = foo / bar;</code></li>
+<li>Begründe, warum es zu dem Ergebnis kommt.</li>
+</ul>
+</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id113">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Gleitkommazahlenformat</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta113_129_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Fragen">Fragen</h1>
+<ol>
+<li>Schreibe die Zahl 4300 in der Form m · b<sup>e</sup> auf. Schreibe eine andere Variante von der Zahl mit einem anderen Exponenten auf. </li>
+<li>Was ist der Unteschied zwischen einer Festkommazahl und einer Gleitkommazahl?</li>
+<li>Was ist der Vorteil der Gleitkommazahldarstellung?</li>
+<li>Wann ist eine Gleitkommazahl normalisiert?</li>
+<li>Gleitkommazahlen werden im Computer in Form von Binärzahlen gespeichert. Dabei besteht die Binärezahl gemäß der Norm IEEE-754 aus mehreren Abschnitten. Wie lauten diese Abschnitte und in welcher Reihenfolge stehen diese?</li>
+<li>Normalerweise werden in der Mantisse einer Gleitkommazahl die Stellen vor und nach dem Komma gespeichert. Im IEEE-Format ist das nicht so - warum?</li>
+<li>Wahr oder falsch: In der Informatik gibt es die "Zahlen"  + Unendlich und - Unendlich.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id114">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Zahlensysteme</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta114_130_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Fragen.1">Fragen</h1>
+<ol>
+<li>Welche 3 Zahlensysteme spielen in der Computertechnik die wichtigste Rolle?</li>
+<li>Was sind die Nennwerte in einem Zahlensystem?</li>
+<li>Wo wird z.B. in Processing oder in Paint oder in Photoshop das hexadezimale Zahlensystem verwendet?</li>
+</ol>
+<h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Übungsaufgaben">Aufgaben</h1>
+<p><strong>Binär → Dezimal </strong></p>
+<p>Rechne folgende Zahlen aus dem binären Zahlensystem in das dezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>110011</li>
+<li>100000</li>
+<li>101010</li>
+<li>100111</li>
+</ul>
+<p><strong>Dezimal → Binär</strong></p>
+<p>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das binären Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>6540</li>
+<li>1000000</li>
+<li>91</li>
+<li>210012</li>
+</ul>
+<p><strong>Hexadezimal → Dezimal</strong></p>
+<p>Rechne folgende Zahlen aus dem hexadezimalen Zahlensystem in das dezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>aeaeae</li>
+<li>22dd77</li>
+<li>de17fa</li>
+<li>10fd3a</li>
+</ul>
+<p><strong>Dezimal → Hexadezimal</strong></p>
+<p>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das hexadezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>128</li>
+<li>678354</li>
+<li>250000</li>
+<li>364</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
@@ -135,7 +247,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="bungen_lektion_8.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="strings_verarbeiten.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="zahlensysteme.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
