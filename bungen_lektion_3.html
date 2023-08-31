@@ -6,7 +6,7 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Übungen Lektion 3 | PRG Ming Skript  </title>
+<title>Übungen Lektion 3 | Programmieren mit Processing Skript </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Jacqueline Rähse" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
@@ -21,10 +21,10 @@
 <body class="exe-web-site exe-search-bar" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
-<header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
+<header id="header" ><div id="headerContent">Programmieren mit Processing Skript</div></header>
 <nav id="siteNav">
 <ul>
-   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="index.html" class="daddy main-node">Einleitung</a></li>
    <li><a href="lektion_1.html" class="daddy">Lektion 1</a>
    <ul class="other-section">
       <li><a href="zeichnen.html" class="no-ch">Zeichnen</a></li>
@@ -218,7 +218,6 @@ void draw() {
 }</code></pre>
 </div>
 </div>
-<p><strong>Hoch-runter<br /></strong>Ändere das obige Programm derart, dass der Ball von oben nach unten fliegt.</p>
 <p><strong>Wachsen</strong><br />Der Ball fliegt wiederholt von links nach rechts. Bei jedem Durchlauf soll der Ball etwas größer sein.</p>
 <p><strong>Wachsen 2</strong><br />Ein mittig platzierter Kreis wird stetig größer, bis er den Rand des Fensters erreicht, dann beginnt er wieder als ein kleiner Kreis zu wachsen.</p>
 <p><strong>Mutierender Mousezeiger</strong><br />Folgendes Programm erzeugt einen Mauszeiger in Form eines Kreises. Verändere das Programm derart, dass in der rechten Bildschirmhäfte der Mauszeiger zur gefüllten, schwarzen Box wird (mittig zum Mauszeiger) und in der linken wieder zum leeren Kreis.</p>
@@ -335,7 +334,6 @@ void draw() {
 <li>Erstelle drei float-Variablen a, b und x. Gehe davon aus, dass a immer kleiner als b ist. Schreibe "x innerhalb" auf die Konsole, wenn x zwischen a und b liegt, sonst "x außerhalb". Teste dein Programm mit entsprechenden Werten.</li>
 <li>Erweitere dein obiges Programm so, dass es auch funktioniert, wenn b kleiner als a ist.</li>
 </ol>
-<p><strong>Extrem</strong><br />Erstelle drei float-Variablen a, b und x. Gehe davon aus, dass a immer kleiner als b ist. Schreibe "x extrem" auf die Konsole, wenn x außerhalb des Intervals a und b liegt. Versuche die Bedingung so zu formulieren, dass der Fall "x extrem" direkt nach dem "if" folgt und nicht nach dem "else".</p>
 <p><strong>Human Resources</strong><br />Du arbeitest in der Personalabteilung und möchtest jemanden einstellen, der/die nicht zu jung ist (min. 20 Jahre) und nicht zu alt (max. 60 Jahre). Außerdem soll die Abschlussnote stimmen (besser als 3.0). Ergänze den Code so, dass dein Programm "Einstellen!" ausgibt, wenn die obigen Bedingungen stimmen oder "Lieber nicht.", wenn nicht.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -359,7 +357,7 @@ float note = 2.3;
 int programmiererfahrung = 5;</code></pre>
 </div>
 </div>
-<p><strong>Pulsieren</strong><br />Ein Kreis mit Durchmesser 50 wird stetig größer, bis er den Rand des Fensters erreicht, dann verkleinert er sich bis Durchmesser 50 usw. Schau dir oben im Skript das Anwendungsbeispiel mit dem "an der Wand abprallen" an. Beim Abprallen hast du die x-Koordinate, die entweder größer oder kleiner wird. Bei der Aufgabe hier hast du genau das gleiche mit dem Durchmesser.</p>
+<p><strong>Pulsieren</strong><br />Ein Kreis mit Durchmesser 50 wird stetig größer, bis er den Rand des Fensters erreicht, dann verkleinert er sich bis Durchmesser 50 usw. </p>
 <p><strong>Wichtig</strong>: Achte darauf, dass der Durchmesser nicht negativ wird. Gib deine Variable für den Durchmesser zur Kontrolle auf der Konsole aus. Sie sollte nie negativ werden. Wenn du diesen Hinweis ignorierst, kann es sein, dass dein Programm nur aufgrund eines Artefakts "funktioniert", aber eigentlich falsch ist (und z.B. bei zukünftigen Versionen von Processing nicht mehr funktioniert).</p>
 <p><strong>Pulsierende Farbe</strong><br />Ein schwarzer Kreis wird stetig weißer bis er ganz weiß ist, dann wieder schwärzer, bis er ganz schwarz ist usw. Auch hier ist das Schema wie in der vorigen Aufgabe: ein veränderlicher Wert (Grauwert) und eine Geschwindigkeit, die sich "umdreht".</p>
 <p><strong>Rote Zone</strong><br />Verwende folgenden Basiscode und verändere ihn so, dass der Ball in der markierten Zone in der Mitte rot wird.</p>
@@ -432,8 +430,7 @@ println(foo);</code></pre>
 true</code></pre>
 </div>
 </div>
-<p><strong>Hinweis</strong>: Es gibt zwei Möglichkeiten. Entweder du verwendest ein if-else oder du überlegst dir, wie du eine boolesche Variable "umkehrst" - das funktioniert so ähnlich wie das Umkehren des Vorzeichens bei einer Zahl.</p>
-<p><strong>Now you see me...</strong><br />Schreibe ein Programm, dass einen schwarz gefüllten Kreis malt. Wenn man auf die Maustaste drückt, verschwindet er. Beim nächsten Klick erscheint er usw.</p>
+<p><strong>Hinweis</strong>: Es gibt zwei Möglichkeiten. Entweder du verwendest ein if-else oder du überlegst dir, wie du eine boolesche Variable "umkehrst" - das funktioniert so ähnlich wie das Umkehren des Vorzeichens bei einer Zahl.<strong></strong></p>
 <p><strong>Kreis oder Box</strong><br />Wo immer der Mauszeiger ist, wird ein weiß gefüllter Kreis gezeichnet (Durchmesser 30). Wenn du auf die Maustaste drückst, wird stattdessen ein schwarz gefülltes Quadrat gezeichnet (Kantenlänge 20). Wenn du wieder die Taste drückst, kommen wieder Kreise usw.</p>
 <p><strong>Horizontal oder vertikal</strong><br />Ein Kreis fliegt von links nach rechts und erscheint wieder am linken Rand, wenn er rechts rausfliegt. Wenn man die Maustaste drückt, fliegt der Kreis nach unten und erscheint wieder oben, wenn er den unteren Rand erreicht. Beim nächsten Klick fliegt er wieder horizontal usw.</p></div>
 </div>
@@ -490,6 +487,141 @@ true</code></pre>
 </div>
 </div>
 </article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Kollisionserkennung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_119_2" class="block iDevice_content">
+<div class="exe-text"><h1>Aufgaben</h1>
+<p><strong>Farb-Buttons</strong><br />Erstelle drei weiße Buttons mit den Beschriftungen "Rot", "Grün" und "Blau".</p>
+<ul>
+<li>Solange der Mauszeiger über einem der Buttons schwebt, soll der entsprechende Button hellgrau sein.</li>
+<li>Wenn der User auf einen der Buttons klickt, soll der Hintergrund die entsprechende Farbe annehmen.</li>
+<li>Wenn der User außerhalb der Buttons auf den Hintergrund klickt, wird dieser wieder grau.</li>
+</ul>
+<p><strong>rectMode(CENTER)</strong><br />Passe den Code für die Farb-Buttons so an, dass du rectMode(CENTER) verwendest. Was musst du an der Kollisionsabfrage verändern, damit dein Code wieder richtig funktioniert?</p>
+<p><strong>Überlappende Buttons</strong><br />Du hast zwei Quadrate mit Seitenlänge 50px. Färbe den "Mauszeiger" (Kreis) farbig ein, sobald er innerhalb der Bereiche ist. Konkret: rot im ersten Quadrat, grün im zweiten Quadrat und blau in der Schnittmenge.</p>
+<p>Verwende den Basiscode und versuche, den Code so zu schreiben, dass das Programm auch funktioniert, wenn man die Werte von x1, y1, x2, y2 ändert.</p>
+<p>Basiscode:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int x1 = 30;
+int y1 = 10;
+int x2 = 10;
+int y2 = 40;
+
+void draw() {
+   background(255);
+   noFill();
+   rect(x1, y1, 50, 50);
+   rect(x2, y2, 50, 50);
+
+   ellipse(mouseX, mouseY, 20, 20);
+}</code></pre>
+</div>
+</div>
+<p><strong>Kollision Punkt-Linie</strong><br />Gegeben sind ein Punkt a und eine Linie b. Die Linie kannst du mit den Pfeiltasten bewegen. Ergänze den Basiscode unten so, dass immer sich die Linie unterhalt des Punkts (also nicht links oder rechts davon) befindet, die Linie rot gefärbt erscheint.</p>
+<p>Hier ist der Basiscode. Fokussiere dich ganz bewusst auf die x-Werte.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float ax = 50; // x-Position von Punkt a
+
+float bx = 5; // x-Position des Startpunkts der Linie b
+float bwidth = 30; // Breite der Linie b
+
+void draw() {
+   background(0);
+   strokeWeight(5);
+
+   stroke(0,255,0);
+   point(ax, 50);
+
+   stroke(255);
+
+   // HIER DEINCODE
+
+   line(bx, 60, bx+bwidth, 60);
+
+   if (keyPressed) {
+      if (keyCode == LEFT) {
+         bx -= 2;
+      } else if (keyCode == RIGHT) {
+         bx += 2;
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p><strong>Kollision Linie-Linie</strong><br />Wir erweitern das Szenario aus der letzten Aufgabe so, dass a jetzt auch eine Linie ist. Wie musst du den Code erweitern, damit die untere Linie b immer dann rot wird, während sich die beiden Linien überschneiden?</p>
+<p>Und wieder Basiscode:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float ax = 60; // x-Position des Startpunkts der Linie a
+float awidth = 30; // Breite der Linie a
+
+float bx = 5; // x-Position des Startpunkts der Linie b
+float bwidth = 40; // Breite der Linie b
+
+void setup() {
+   size(150, 100);
+}
+
+void draw() {
+   background(0);
+   strokeWeight(4);
+
+   stroke(0,255,0);
+   line(ax, 50, ax+awidth, 50);
+
+   stroke(255);
+
+   // HIER DEIN CODE
+
+   line(bx, 60, bx+bwidth, 60);
+
+   if (keyPressed) {
+      if (keyCode == LEFT) {
+         bx -= 2;
+      } else if (keyCode == RIGHT) {
+         bx += 2;
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id125">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Mini-Game Challenges</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta125_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Hier siehst du zwei Programmieraufgaben für Mini-Games. Beides Aufgaben sind etwas aufwändiger als die normalen Übungsaufgaben, aber eben auch sehr lehrreich, da du hier viele Programmierfertigkeiten üben und einbinden kannst. Und am Ende kommt ein richtiges kleines Mini-Game raus. Nutze diese Challenge zum üben - was du hier lernst, kannst du ebenso in eurem Projekt anwenden.</p>
+<h2>Pong 🏓</h2>
+<p>Programmiere den Spiele-Klassiker Pong als Ein-Spieler-Version.</p>
+<ul>
+<li>Zunächst soll auf dem Bildschirm "PRESS SPACE" stehen. Sobald der Spieler die Leertaste drückt, geht das Spiel los und der Text verschwindet.</li>
+<li>Der "Schläger" des Spielers soll am unteren Bildschirmrand sein. Der Ball prallt links, rechts und oben ab. Wenn der Ball den unteren Rand berührt und dem Spieler sozusagen "entwischt",  ist das Spiel zu Ende und es wird wieder "PRESS SPACE" angezeigt.</li>
+</ul>
+<p><strong>Tipps</strong>: Um die Kollision zwischen "Ball" und dem Balken zu berechnen, helfen dir vielleicht die zwei vorigen Aufgaben. Um den Zustand "Game Over" vom eigentlichen Spiel zu trennen, verwendest du eine boolesche Variable gameOver, die anfangs false ist. In draw() packst dann gleich zu Beginn ein if (gameOver) ..., wo entweder der Schriftzug "Press SPACE" gezeigt wird oder (im Else-Teil) das Spiel verarbeitet wird.</p>
+<h2>Raincatcher 🌧️☔</h2>
+<p>Wir schreiben das Spiel "Raincatcher". Es geht darum, einen Eimer zu steuern, der Regentropfen einfängt.</p>
+<p>Achte darauf, deine Variablen "gut" zu benennen, damit du im weiteren Verlauf nicht den Überblick verlierst. Also besser eimerX statt ex oder x.</p>
+<p><strong>Eimer</strong><br />Programmiere einen "Eimer", den du mit den Cursortasten (links/rechts) steuern kannst. Achte darauf, dass der Eimer flüssig nach links und rechts fährt, und dass er nie die Grenzen des Bildschirms verlässt.</p>
+<p><strong>Tropfen</strong><br />Programmiere die Tropfen: Drei Tropfen (oder andere Gegenstände) fliegen von oben nach unten. Der x- und y-Startpunkt sind beide zufällig zu Beginn (verwende die Funktion random() von Processing). Sobald ein Tropfen den Boden erreicht, verschwindet er und ein "neuer" Tropfen erscheint an zufälliger Position am oberen Rand, mit einer zufälligen neuen Farbe. Vermeide es, dass Tropfen am Rand "angeschnitten" erscheinen.</p>
+<p><strong>Tipp</strong>: Beginne mit einem einzigen Tropfen.</p>
+<p><strong>Tropfen fangen<br /></strong>Jetzt kannst du deine Regentropfen einsammeln! Zähle einen Punkt hoch, wenn du einen Tropfen fängst. Zähle ein "Leben" runter, wenn dir ein Tropfen entwischt. Beginne evtl. nur mit einem Tropfen. Das Programm wird bereits recht umfangreich. Achte also auf gute Kommentierung und gute Benennung deiner Variablen.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
@@ -501,4 +633,4 @@ true</code></pre>
 </nav>
 </div>
 </div>
-<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (Neues Fenster)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

@@ -124,12 +124,16 @@ background:#ededed;
 /* eXeLearning Style Designer */
 .iDevice_header{
 /*emTitleBGColor*/
-background-color:#ffffff;border-color:#dddddd;
+background-color:#dddddd;border-color:#dddddd;
 }
 .iDevice_inner{
 /*emBGColor*/
 background-color:#ffffff;border-color:/*emBorderColor*/
 #dddddd;
+}
+.iDevice_inner a{
+/*emAColor*/
+color:#00305d;
 }
 .iDeviceTitle{
 background-image:url(icon_star.png);
@@ -161,7 +165,13 @@ background-image:url(icon_info.png);
 .ReflectionIdevice .iDeviceTitle{
 background-image:url(icon_account.png);
 }
+.emphasis0 a{
+/*noEmAColor*/
+color:#00305d;
+}
 body{
+/*fontFamily*/
+font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
 /*bodyColor*/
 color:#333333;
 /*contentBGColor*/
@@ -169,7 +179,7 @@ background-color:#f9f9f9;
 }
 a{
 /*aColor*/
-color:#2495ff;
+color:#00305d;
 }
 #header,#emptyHeader,#nodeDecoration{
 height:auto!important;
@@ -182,10 +192,12 @@ background-color:#ffffff;border:1px solid /*headerBorderColor*/
 #headerContent{
 /*headerTitleTopMargin*/
 padding-top:70px;
+/*headerTitleFontSize*/
+font-size:100%;
 }
 #siteFooter{
 border:1px solid /*footerBorderColor*/
 #dddddd;
 /*footerBGColor*/
-background-color:#ffffff;
+background-color:#eeeeee;
 }
