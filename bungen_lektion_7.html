@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
@@ -12,6 +13,7 @@
 <meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -87,6 +89,8 @@
    </li>
    <li class="current-page-parent"><a href="lektion_7.html" class="current-page-parent daddy">Lektion 7</a>
    <ul>
+      <li><a href="switch.html" class="no-ch">Switch</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
       <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
       <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
       <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
@@ -98,19 +102,12 @@
    <ul class="other-section">
       <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
-      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
-      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
-   </ul>
-   </li>
-   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
-   <ul class="other-section">
       <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
       <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
-      <li><a href="switch.html" class="no-ch">Switch</a></li>
       <li><a href="assertions.html" class="no-ch">Assertions</a></li>
       <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
       <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
-      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
+      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
    </ul>
    </li>
 </ul>
@@ -123,6 +120,109 @@
 <div id="main-wrapper">
 <section id="main">
 <header id="nodeDecoration"><h1 id="nodeTitle">Übungen Lektion 7</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id120">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Switch</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta120_136_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Fragen.1">Fragen</h1>
+<ol>
+<li>In welchen Fällen ist es sinnvoller einen Switch zu verwenden anstelle einer if-Anweisung?</li>
+<li>
+<p style="text-align: left;">Welche Ausgabe liefert folgender Code?</p>
+<p><code></code></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int zahl = 3;
+switch(zahl)
+{
+   case 1:
+      print("Die Zahl ist eins");
+   case 2:
+      print("Die Zahl ist zwei");
+   case 3:
+      print("Die Zahl ist drei");
+   default:
+      print("---");
+} </code><code></code></pre>
+</div>
+</div>
+<ul>
+<li><code>Die Zahl ist drei---</code></li>
+<li><code>---</code></li>
+<li><code>Die Zahl ist drei</code></li>
+</ul>
+</li>
+<li>Man kann mehrere Cases in einem Switch zusammenfassen. Wahr oder falsch?</li>
+<li>Der Fall <code>default </code>wird ...
+<ul>
+<li>immer ausgeführt</li>
+<li>ausgeührt, wenn keiner der anderen Fälle zutrifft.</li>
+</ul>
+</li>
+</ol>
+<h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Übungsaufgaben.1">Aufgaben</h1>
+<p id="id-Ü|TryCatch,Switch&amp;Assertions-Steuerung"><strong>1. Steuerung</strong></p>
+<p>Schreibe ein Programm, dass die Tastatureingabe überprüft. Immer wenn eine Taste gedrückt wird, soll eine Funktion aufgerufen, die überprüft welche Taste gedrückt wurde.</p>
+<p>Wenn eine der Pfeiltasten gedrückt wurde, soll je nach Preiltaste hoch, runter, links, rechts auf der Konsole geschrieben werden. Wenn eine andere Taste gedrückt wurde, soll "keine Pfeiltaste" angezeigt werden.</p>
+<p id="id-Ü|TryCatch,Switch&amp;Assertions-Spiel-Status"><strong>2. Spiel-Status<br /></strong>Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String status = "menu"; // kann start, running oder paused sein
+ 
+void draw() {
+  // Hier status überprüfen
+ 
+}
+ 
+void keyPressed() {
+  // Hier status ändern
+ 
+}</code></pre>
+</div>
+</div>
+<p>Schreibe ein Programm mit dem du unterschiedliche Statuse bzw. Zustände in einem Spiel simulieren kannst. Es soll die Zustände "menu", "running" und "paused" abfangen. Du musst nun kein vollständiges Spiel programmieren, simuliere die verschiedenen Zustände einfach, indem du jeweils folgende Botschaften auf dem Bildschirm anzeigst:</p>
+<ul>
+<li>menu: "Wir befinden uns im Menü"</li>
+<li>running: "Das Spiel läuft gerade"</li>
+<li>paused: "Das Spiel ist pausiert"</li>
+</ul>
+<p>Der Status soll mithilfe von <code>keyPressed</code> geändert werden. Die Taste 'm', soll in <code>menu</code> wechseln, die Taste 'r' soll zu <code>running</code> wechseln und 'p' zu <code>paused.</code> Nutze in beiden Fällen, also sowohl zu überprüfung, als auch zum ändern des Status jeweils einen <code>switch.</code></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id115">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Bibliotheken</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta115_131_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Bibliotheken-Fragen">Fragen</h1>
+<ol>
+<li>Welche 2 Dinge muss ich tun, damit ich eine Bibliothek in meinem Code in Processing verwenden kann?</li>
+<li>Was bedeutet der Stern * im import Befehl?</li>
+</ol>
+<h1 id="id-Ü|Bibliotheken-Übungsaufgaben">Aufgaben</h1>
+<p>Wie wir mit der Sound Bibliothek von Processing arbeiten können, haben wir im Skript gelesen. Allerdings gibt es noch viele weitere Bibliotheken. Ein paar davon stammen direkt von den Entwicklern von Processing, andere stammen von anderen Leuten. In den Übungsaufgaben schauen wir uns 2 weitere Bibliotheken von den Entwicklern von Processing an:</p>
+<p><strong>1. Visitenkarte als PDF<br /></strong>Für Processing gibt es eine Bobliothek, mit der man ein PDF erstellen und speichern kann. Die Bibliothek ist ziemlich simpel und schnell zu verstehen. Schau dir die Seite über die <a href="https://processing.org/reference/libraries/pdf/index.html" class="external-link" rel="nofollow">PDF-Export Bibliothek</a> an und versuche dann folgene Aufgabe umzusetzen:</p>
+<ol>
+<li>Gestalte eine einfache Visitenkarte für dich. Auf der Vorderseite sollte dein Name, deine Email und deine Adresse zu sehen sein und ein kleines Icon, welches dein Logo sein soll.</li>
+<li>Erweitere dein Programm so, dass es auch eine Rückseite für deine Visitenkarte erstellt. Hier könnte z.B. deine Webseite oder ein Werbeslogan stehen.</li>
+</ol>
+<p><strong>2. Videohintergrund<br /></strong>Processing hat auch eine Bibliothek für die Wiedergabe und die Verarbeitung von Videos. Schau dir die Seite über die<a href="https://processing.org/reference/libraries/video/Movie.html" class="external-link" rel="nofollow"> Video Bibliothek </a> an und versuche dann folgende Aufgabe umzusetzen:</p>
+<p>Schreibe ein Programm, welches als Hintergrund ein Video hat, welches sich die ganze Zeit wiederholt. Im Vordergrund soll ein Kreis zu sehen sein, welcher der Maus folgt.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
 <article class="iDevice_wrapper textIdevice em_iDevice" id="id111">
 <div class="iDevice emphasis1" >
 <header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Arten von Datentypen</h1></header>
@@ -198,32 +298,28 @@
 <li>Wo wird z.B. in Processing oder in Paint oder in Photoshop das hexadezimale Zahlensystem verwendet?</li>
 </ol>
 <h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Übungsaufgaben">Aufgaben</h1>
-<p><strong>Binär → Dezimal </strong></p>
-<p>Rechne folgende Zahlen aus dem binären Zahlensystem in das dezimale Zahlensystem:</p>
+<p><strong>1. Binär → Dezimal <br /></strong>Rechne folgende Zahlen aus dem binären Zahlensystem in das dezimale Zahlensystem:</p>
 <ul style="list-style-type: square;">
 <li>110011</li>
 <li>100000</li>
 <li>101010</li>
 <li>100111</li>
 </ul>
-<p><strong>Dezimal → Binär</strong></p>
-<p>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das binären Zahlensystem:</p>
+<p><strong>2. Dezimal → Binär<br /></strong>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das binären Zahlensystem:</p>
 <ul style="list-style-type: square;">
 <li>6540</li>
 <li>1000000</li>
 <li>91</li>
 <li>210012</li>
 </ul>
-<p><strong>Hexadezimal → Dezimal</strong></p>
-<p>Rechne folgende Zahlen aus dem hexadezimalen Zahlensystem in das dezimale Zahlensystem:</p>
+<p><strong>3. Hexadezimal → Dezimal<br /></strong>Rechne folgende Zahlen aus dem hexadezimalen Zahlensystem in das dezimale Zahlensystem:</p>
 <ul style="list-style-type: square;">
 <li>aeaeae</li>
 <li>22dd77</li>
 <li>de17fa</li>
 <li>10fd3a</li>
 </ul>
-<p><strong>Dezimal → Hexadezimal</strong></p>
-<p>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das hexadezimale Zahlensystem:</p>
+<p><strong>4. Dezimal → Hexadezimal<br /></strong>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das hexadezimale Zahlensystem:</p>
 <ul style="list-style-type: square;">
 <li>128</li>
 <li>678354</li>

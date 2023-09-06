@@ -89,6 +89,8 @@
    </li>
    <li><a href="lektion_7.html" class="daddy">Lektion 7</a>
    <ul class="other-section">
+      <li><a href="switch.html" class="no-ch">Switch</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
       <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
       <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
       <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
@@ -100,19 +102,12 @@
    <ul class="other-section">
       <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
-      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
-      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
-   </ul>
-   </li>
-   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
-   <ul class="other-section">
       <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
       <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
-      <li><a href="switch.html" class="no-ch">Switch</a></li>
       <li><a href="assertions.html" class="no-ch">Assertions</a></li>
       <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
       <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
-      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
+      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
    </ul>
    </li>
 </ul>
@@ -145,25 +140,23 @@
 <li>Gegeben ist folgener Array:<br /><code>int [] intArray = new int[] {45, 62, 78, 13, 95, 41, 10};</code><br />Welcher Index muss angegeben werden, um das Element mit der Nummer 13 zu erhalten?</li>
 </ol>
 <h1>Aufgaben</h1>
-<p><strong>Arrays erstellen</strong><br />Erstelle je einen Array für</p>
+<p><strong>1. Arrays erstellen</strong><br />Erstelle je einen Array für</p>
 <ul>
 <li>5 ganze Zahlen</li>
 <li>3 Strings</li>
 <li>4 Kommazahlen</li>
 <li>3 boolesche Werte</li>
 </ul>
-<p>Befülle anschließend die Arrays mit beliebigen Werten und gib einige Werte einzeln aus, d.h. für ein einzelnes Element eine Print-Anweisung.</p>
-<p>Probiere anschließend auch folgende Befehle (foo sei ein Array, aber kein String-Array):</p>
+<p>Befülle anschließend die Arrays mit beliebigen Werten und gib einige Werte einzeln aus, d.h. für ein einzelnes Element eine Print-Anweisung. Probiere anschließend auch folgende Befehle (<code>foo</code> sei ein Array, aber kein String-Array):</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>println(foo);
 print(foo);</code></pre>
 </div>
 </div>
-<p><strong>Arrays verwenden 1</strong><br />Erstelle einen int-Array namens foo mit den Zahlen 5, 45, -10, 20 (in dieser Reihenfolge). Addiere die ersten zwei Zahlen und lege das Ergebnis in einer neuen int-Variablen a ab. Addiere die letzten zwei Zahlen und lege das Ergebnis einer neuen int-Variablen b ab.</p>
+<p><strong>2. Array-Elemente addieren</strong><br />Erstelle einen int-Array namens <code>foo</code> mit den Zahlen 5, 45, -10, 20 (in dieser Reihenfolge). Addiere die ersten zwei Zahlen und lege das Ergebnis in einer neuen int-Variablen a ab. Addiere die letzten zwei Zahlen und lege das Ergebnis einer neuen int-Variablen b ab.</p>
 <p>Printe a und b auf die Konsole und überprüfe die Werte.</p>
-<p><strong>Arrays verwenden 2</strong><br />Erstelle einen int-Array namens bar mit den Zahlen 2, 4, 6 (in dieser Reihenfolge).</p>
-<p>Multipliziere die ersten zwei Zahlen und lege das Ergebnis in der dritten Zelle des Arrays ab. Du solltest also {2, 4, 8} in bar haben. Schreibe bar mit println() auf die Konsole, um dies zu prüfen.</p></div>
+<p><strong>3. Array-Elemente mulitplizieren</strong><br />Erstelle einen int-Array namens <code>bar</code> mit den Zahlen 2, 4, 6 (in dieser Reihenfolge). Multipliziere die ersten zwei Zahlen und lege das Ergebnis in der dritten Zelle des Arrays ab. Du solltest also {2, 4, 8} in <code>bar</code> haben. Schreibe bar mit <code>println()</code> auf die Konsole, um dies zu prüfen.</p></div>
 </div>
 </div>
 </div>
@@ -177,16 +170,15 @@ print(foo);</code></pre>
 <div id="ta63_121_2" class="block iDevice_content">
 <div class="exe-text"><h1>Aufgaben</h1>
 <p>In den folgenden Aufgaben sollte immer eine For-Schleife zum Einsatz kommen.</p>
-<p><strong>Befüllen</strong><br />Erstelle einen Array für 10 ganze Zahlen und befüllen Sie die Elemente mit 1, 2, ..., 10.</p>
-<p>Das Programm soll so allgemein geschrieben sein, dass du auch Arrays mit 20 oder 100 Elementen befüllen kannst.</p>
-<p><strong>Varianten</strong>: Befülle den Array mit</p>
+<p><strong>1. Befüllen</strong><br />Erstelle einen Array für 10 ganze Zahlen und befüllen Sie die Elemente mit 1, 2, ..., 10. Das Programm soll so allgemein geschrieben sein, dass du auch Arrays mit 20 oder 100 Elementen befüllen kannst.</p>
+<p>Varianten: Befülle den Array mit</p>
 <ul>
 <li>-10, -9, ..., -2, -1</li>
 <li>2, 4, 6, ..., 20</li>
 <li>100, 110, 120, ..., 190</li>
 </ul>
-<p><strong>Befüllen von zwei Arrays</strong><br />Befülle zwei Arrays gleichzeitig in einer Schleife. Beide Arrays haben Länge 10. Das eine Array wird mit 1, 2, 3, ... befüllt, das zweite Array mit -10, -9, -8, ...</p>
-<p><strong>Summe</strong><br />Berechne die Summe von allen Elementen des Array und gib diese auf der Konsole aus. Der Code sollte ohne weitere Änderungen funktionieren, wenn du Zahlen zu foo hinzufügst oder entfernst.</p>
+<p><strong>2. Befüllen von zwei Arrays</strong><br />Befülle zwei Arrays gleichzeitig in einer Schleife. Beide Arrays haben Länge 10. Das eine Array wird mit 1, 2, 3, ... befüllt, das zweite Array mit -10, -9, -8, ...</p>
+<p><strong>3. Summe</strong><br />Berechne die Summe von allen Elementen des Array und gib diese auf der Konsole aus. Der Code sollte ohne weitere Änderungen funktionieren, wenn du Zahlen zu foo hinzufügst oder entfernst.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] foo = { 22, -10, 8, 10 };
@@ -195,18 +187,18 @@ print(foo);</code></pre>
 </div>
 </div>
 <p>Du sollltest das hier auf der Konsole sehen:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>30</code></pre>
 </div>
 </div>
-<p><strong>Array filtern</strong><br />Gegeben sei Array a. Drucke alle negativen Elemente untereinander auf der Konsole aus.</p>
+<p><strong>4. Array filtern</strong><br />Gegeben sei Array a. Drucke alle negativen Elemente untereinander auf der Konsole aus.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] a = { 1, -2, -25, 6, -3, 5 };</code></pre>
 </div>
 </div>
-<p><strong>Mehrere Arrays addieren</strong><br />Gegeben sind drei Arrays a, b und c. Verändere Array c dahingehend, dass im Element c[0] die Summe a[0] und b[0] steht und entsprechend für die Elemente 1, 2, 3, ...</p>
+<p><strong>5. Mehrere Arrays addieren</strong><br />Gegeben sind drei Arrays a, b und c. Verändere Array c dahingehend, dass im Element c[0] die Summe a[0] und b[0] steht und entsprechend für die Elemente 1, 2, 3, ...</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] a = { 1, 2, 25, 6 };
@@ -219,7 +211,7 @@ println(c);</code></pre>
 </div>
 </div>
 <p>Du solltest das hier auf der Konsole sehen:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>[0] 10
 [1] 20
@@ -227,7 +219,7 @@ println(c);</code></pre>
 [3] 40</code></pre>
 </div>
 </div>
-<p><strong>Arrays zusammenfügen</strong><br />Gegeben sind zwei Arrays a und b. Erzeuge einen neuen Array c, der so lang ist wie a und b zusammengenommen und auch die Werte von a und b (in dieser Reihenfolge) enthält.</p>
+<p><strong>6. Arrays zusammenfügen</strong><br />Gegeben sind zwei Arrays a und b. Erzeuge einen neuen Array c, der so lang ist wie a und b zusammengenommen und auch die Werte von a und b (in dieser Reihenfolge) enthält.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] a = { 1, 2, 25 };
@@ -239,7 +231,7 @@ println(c);</code></pre>
 </div>
 </div>
 <p>Du solltest das hier auf der Konsole sehen:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>[0] 1
 [1] 2
@@ -249,14 +241,14 @@ println(c);</code></pre>
 </div>
 </div>
 <p>Dein Code sollte auch funktionieren, wenn du bei a und/oder b Elemente hinzufügst oder entfernst.</p>
-<p><strong>Array rückwärts</strong><br />Gegeben sei ein Array:</p>
+<p><strong>7. Array rückwärts</strong><br />Gegeben sei ein Array:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] foo = { 1, 2, 3, 4 };</code></pre>
 </div>
 </div>
 <p>Erstelle einen neuen Array bar, wo die Elemente in umgekehrter Reihenfolge abgelegt sind. Wenn du bar ausgibst, siehst du also:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>[0] 4
 [1] 3
@@ -265,14 +257,14 @@ println(c);</code></pre>
 </div>
 </div>
 <p>Verwende nicht die Processing-Funktion reverse(). Wie immer soll dein Code auch für andere Arrays funktionieren.</p>
-<p><strong>Elemente verschieben<br /></strong>Gegeben sei ein Array:</p>
+<p><strong>8. Elemente verschieben<br /></strong>Gegeben sei ein Array:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] foo = { 10, 20, 30, 40, 50 };</code></pre>
 </div>
 </div>
 <p>Verschiebe alle Elemente ab Index 1 um eine Stelle nach rechts. Als Ergebnis sollte hinterher das folgende in foo stehen:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>[0] 50
 [1] 10
@@ -281,14 +273,14 @@ println(c);</code></pre>
 [4] 40</code></pre>
 </div>
 </div>
-<p><strong>Nachbarn addieren</strong><br />Gegeben sei ein Array mit einer geraden Anzahl von Elementen:</p>
+<p><strong>9. Nachbarn addieren</strong><br />Gegeben sei ein Array mit einer geraden Anzahl von Elementen:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>int[] foo = { 1, 2, 3, 4, 5, 6 };</code></pre>
 </div>
 </div>
 <p>Erstelle einen neuen Array bar, das halb so lang ist wie foo und wo jeweils zwei benachbarte Elemente von foo addiert wurden, also hier 1+2 und 3+4 und 5+6. Wenn du bar ausgibst, siehst du also:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>[0] 3
 [1] 7
@@ -313,14 +305,14 @@ println(c);</code></pre>
 <li>Bei einem Array int[][][] myArray kann man mithilfe einer Schleife durch alle Elemente iterieren, indem man die Schleife so anlegt: <br /><code>for (int i = 0; i &lt; myArray.length; i++) {}  </code><br />Wahr oder falsch?</li>
 </ol>
 <h1>Aufgaben</h1>
-<p><strong>Tic Tac Toe</strong><br />Gegeben ist folgender Code:</p>
+<p><strong>1. Tic Tac Toe</strong><br />Gegeben ist folgender Code:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String tictactoe [] [] = new String [3][3];</code></pre>
 </div>
 </div>
 <p>Befülle die Arrays mit Daten. Erweitere den Code so, damit das Programm in der Konsole folgendes ausgibt:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>xox
 oxo
@@ -328,7 +320,7 @@ xox</code></pre>
 </div>
 </div>
 <p>Schreibe eine Funktion, die das Spielfeld anaylisert und herausfindet, ob X oder O gewonnen hat. Sobald ein Sieger gefunden wurde (auch wenn noch nicht alle Felder überprüft wurden), soll die Suche abgebrochen und das Ergebnis in der Konsole ausgegeben werden.</p>
-<p><strong>Tabelle mit Studierenden</strong><br />Gegeben ist folgender Code:</p>
+<p><strong>2. Tabelle mit Studierenden</strong><br />Gegeben ist folgender Code:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String studierende[] [] = new String [3][3];
@@ -338,7 +330,7 @@ int anzahlIni = 0;</code></pre>
 </div>
 <p>Befülle die Arrays mit Daten. Im ersten Feld der zweiten Dimension des Arrays sollen Vornamen stehen, im zweiten Nachnamen und im dritten der Studiengang (Ming, INI, MMP, etc.). <br />Somit soll jede Zeile die Daten eines Studierenden enthalten. Lass dir die Daten zeilenweise ausgeben und füge ein Trennzeichen zwischen den Spalten ein (z.N. | oder ~).</p>
 <p>Erweitere den Code so, damit das Programm in der Konsole (zum Beispiel) folgendes ausgibt:</p>
-<div class="highlighted-code code-style-2 language-java">
+<div class="pre-code">
 <div>
 <pre><code>Mara | Meier | Ming
 Tom | Sawyer | INI
@@ -349,9 +341,84 @@ Anzahl der Ming-Studierenden: 2
 Anzahl der INI-Studierenden: 1</code></pre>
 </div>
 </div>
-<p></p>
-<p></p>
-<p><strong>Hinweis</strong>: Auf diese Weise kannst du Daten aus deinem Programm formatieren und ausgeben und in einer Text-Datei speichern, die später als CSV-Datei ausgelesen werden kann.</p></div>
+<p style="padding-left: 30px;"><strong>Hinweis</strong>: Auf diese Weise kannst du Daten aus deinem Programm formatieren und ausgeben und in einer Text-Datei speichern, die später als CSV-Datei ausgelesen werden kann.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id61">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Kontrollanweisungen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta61_119_2" class="block iDevice_content">
+<div class="exe-text"><h1>Aufgaben</h1>
+<p><strong>1. Zahl finden</strong><br />Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int start = 200;
+int ende = 300;
+int teiler = 36;
+int gefundeneZahl;
+
+// Dein Code
+
+println("Die gefundene Zahl ist " + gefundeneZahl);</code></pre>
+</div>
+</div>
+<p>Schreibe ein Programm, das eine Spanne von Zahlen auswertet und die erste Zahl ausgibt, die durch einen bestimmten Teiler teilbar ist (ohne Rest). Verwende eine For-Schleife und eine Kontrollanweisung. Schreibe dein Programm so, dass auch wenn keine Zahl gefunden wird, eine sinnvolle Feedback-Message gegeben wird.</p>
+<p><strong>2. Zahlen überspringen</strong><br />Gegeben ist folgender Code</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int start = 10;
+int ende = 20;
+int teiler = 5;
+int spruenge;
+
+// Dein Code
+
+println("Es wurden " + spruenge + " Zahlen übersprungen.");</code></pre>
+</div>
+</div>
+<p>Schreibe ein Programm, das eine Spanne von Zahlen nacheinander Zeile für Zeile in der Konsole ausgibt und dabei alle Zahlen, die durch teiler teilbar sind, überspringt. Am Ende soll ausgegeben werden wie viele Zahlen übersprungen wurden.</p>
+<p>Bei den oben angegeben Werten würde die Ausgabe so aussehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>11
+12
+13
+14
+16
+17
+18
+19
+Es wurden 3 Zahlen übersprungen.</code></pre>
+</div>
+</div>
+<p><strong>3. Namen suchen<br /></strong>Gegeben ist folgender Code</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>String[][] namen = {{"Max", "Lisa", "Oleg", "Celine", "Tabita"},{"Meier", "Nguyen", "Petersen", "Bergner"}};
+String vorname = "Oleg";
+String nachname = "Petersen";
+
+// Dein Code</code></pre>
+</div>
+</div>
+<p>Schreibe ein Programm, das den Array namen nach bestimmen Vor- und Nachnamen durchsucht. In der ersten Dimension des Arrays sind die Vornamen, in der zweiten die Nachnamen gespeichert. Schreibe dein Programm so, dass die erste Dimension nach dem Namen gespeichert in vorname durchsucht wird. Sobald der Vorname gefunden wurde, soll sofort mit der Suche nach dem Nachnamen gepseichert in nachname in der zweiten Dimension weitergemacht werden.</p>
+<p>Außerdem soll dein Programm ausgeben, welche Namen überprüft werden. Bei den oben genannten Werten würde die Ausgabe so (ode so ähnlich) aussehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>Vergleiche Max mit Oleg
+Vergleiche Lisa mit Oleg
+Vergleiche Oleg mit Oleg
+Vergleiche Meier mit Petersen
+Vergleiche Nguyen mit Petersen
+Vergleiche Petersen mit Petersen</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
 </div>
 </div>
 </div>
@@ -393,83 +460,6 @@ Anzahl der INI-Studierenden: 1</code></pre>
 </ol>
 <h1>Aufgaben</h1>
 <p>Dein eigener Code ist Übung genug bei diesem Thema ;)</p></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id61">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Kontrollanweisungen</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta61_119_2" class="block iDevice_content">
-<div class="exe-text"><h1>Aufgaben</h1>
-<p><strong>Zahl finden</strong><br />Gegeben ist folgender Code:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int start = 200;
-int ende = 300;
-int teiler = 36;
-int gefundeneZahl;
-
-// Dein Code
-
-println("Die gefundene Zahl ist " + gefundeneZahl);</code></pre>
-</div>
-</div>
-<p>Schreibe ein Programm, das eine Spanne von Zahlen auswertet und die erste Zahl ausgibt, die durch einen bestimmten Teiler teilbar ist (ohne Rest). Verwende eine For-Schleife und eine Kontrollanweisung. Schreibe dein Programm so, dass auch wenn keine Zahl gefunden wird, eine sinnvolle Feedback-Message gegeben wird.</p>
-<p><strong>Zahlen überspringen</strong><br />Gegeben ist folgender Code</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int start = 10;
-int ende = 20;
-int teiler = 5;
-int spruenge;
-
-// Dein Code
-
-println("Es wurden " + spruenge + " Zahlen übersprungen.");</code></pre>
-</div>
-</div>
-<p>Schreibe ein Programm, das eine Spanne von Zahlen nacheinander Zeile für Zeile in der Konsole ausgibt und dabei alle Zahlen, die durch teiler teilbar sind, überspringt. Am Ende soll ausgegeben werden wie viele Zahlen übersprungen wurden.</p>
-<p>Bei den oben angegeben Werten würde die Ausgabe so aussehen:</p>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>11
-12
-13
-14
-16
-17
-18
-19
-Es wurden 3 Zahlen übersprungen.</code></pre>
-</div>
-</div>
-<p><strong>Namen suchen<br /></strong>Gegeben ist folgender Code</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>String[][] namen = {{"Max", "Lisa", "Oleg", "Celine", "Tabita"},{"Meier", "Nguyen", "Petersen", "Bergner"}};
-String vorname = "Oleg";
-String nachname = "Petersen";
-
-// Dein Code</code></pre>
-</div>
-</div>
-<p>Schreibe ein Programm, das den Array namen nach bestimmen Vor- und Nachnamen durchsucht. In der ersten Dimension des Arrays sind die Vornamen, in der zweiten die Nachnamen gespeichert. Schreibe dein Programm so, dass die erste Dimension nach dem Namen gespeichert in vorname durchsucht wird. Sobald der Vorname gefunden wurde, soll sofort mit der Suche nach dem Nachnamen gepseichert in nachname in der zweiten Dimension weitergemacht werden.</p>
-<p>Außerdem soll dein Programm ausgeben, welche Namen überprüft werden. Bei den oben genannten Werten würde die Ausgabe so (ode so ähnlich) aussehen:</p>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>Vergleiche Max mit Oleg
-Vergleiche Lisa mit Oleg
-Vergleiche Oleg mit Oleg
-Vergleiche Meier mit Petersen
-Vergleiche Nguyen mit Petersen
-Vergleiche Petersen mit Petersen</code></pre>
-</div>
-</div>
-<p><br /><br /></p></div>
 </div>
 </div>
 </div>

@@ -89,6 +89,8 @@
    </li>
    <li><a href="lektion_7.html" class="daddy">Lektion 7</a>
    <ul class="other-section">
+      <li><a href="switch.html" class="no-ch">Switch</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
       <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
       <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
       <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
@@ -100,26 +102,19 @@
    <ul>
       <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
-      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
-      <li id="active"><a href="bungen_lektion_8.html" class="active no-ch">Übungen Lektion 8</a></li>
-   </ul>
-   </li>
-   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
-   <ul class="other-section">
       <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
       <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
-      <li><a href="switch.html" class="no-ch">Switch</a></li>
       <li><a href="assertions.html" class="no-ch">Assertions</a></li>
       <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
       <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
-      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
+      <li id="active"><a href="bungen_lektion_8.html" class="active no-ch">Übungen Lektion 8</a></li>
    </ul>
    </li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="bibliotheken.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="anwendungsentwicklung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -139,8 +134,7 @@
 <li>Was bedeutet der Begriff "Parsen"? Was passiert, wenn wir Strings parsen?</li>
 </ol>
 <h1 id="id-Ü|Stringsverarbeiten&amp;formatieren-Übungsaufgaben">Aufgaben</h1>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Teilstringsuchenundfinden">Teilstring suchen und finden</h2>
-<p>Gegeben sei der String:</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Teilstringsuchenundfinden"><strong>1. Teilstring suchen und finden<br /></strong>Gegeben sei der String:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String str = "Hier ist die Info: James Bond";</code></pre>
@@ -158,26 +152,23 @@
 <pre><code>String str = "      Codename:    James Bond  ";</code></pre>
 </div>
 </div>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Suchenundersetzen">Suchen und ersetzen</h2>
-<p>Gegeben sei der String-Array:</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Suchenundersetzen"><strong>2. Suchen und ersetzen<br /></strong>Gegeben sei der String-Array:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String[] lines = {"Hello FOO", "Guten Tag, FOO", "Bonjour FOO"};</code></pre>
 </div>
 </div>
 <p>Schreibe Code, der alle Array-Elemente ausgibt, wobei das Wort "FOO" durch "James Bond" ersetzt werden soll.</p>
-<p><strong>Hinweis:</strong> Du kannst die Aufgabe entweder mit <code>replace</code> oder mit den Funktionen <code>indexOf/substring</code> lösen. Ich empfehle, auf jeden Fall die Lösung mit <code>indexOf/substring</code> zu probieren.</p>
+<p style="padding-left: 30px;"><strong>Hinweis:</strong> Du kannst die Aufgabe entweder mit <code>replace</code> oder mit den Funktionen <code>indexOf/substring</code> lösen. Ich empfehle, auf jeden Fall die Lösung mit <code>indexOf/substring</code> zu probieren.</p>
 <p>Eine Alternativaufgabe ist, statt nur zu printen ein zweites Array zu erstellen, wo - wie oben - alle FOO durch "James Bond" ersetzt sind. Eine leichte Erweiterung der Aufgabe ist es, Sätze wie "Hey FOO, you will die!" aufzunehmen und dort FOO wie oben zu ersetzen (ohne das Satzende zu verlieren).</p>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Suchenundfinden">Suchen und finden</h2>
-<p>Gegeben sei der String-Array:</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Suchenundfinden"><strong>3. Suchen und finden<br /></strong>Gegeben sei der String-Array:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String[] lines = {"This is it", "DO NOT DO THIS", "Why not", "This is right", "That not", "What is this"};</code></pre>
 </div>
 </div>
 <p>Schreibe Code, der alle Array-Elemente ausgibt, die mit "this" beginnen oder enden. Dabei soll Groß-/Kleinschreibung <strong>keine Rolle spielen</strong>.</p>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Booleanparsen">Boolean parsen</h2>
-<p>Schreibe eine Funktion <code>parseBool()</code>, die boolesche Werte, die als String vorliegen (also "true" oder "false"), in einen echten booleschen Wert umwandelt (also <code>true</code> oder <code>false</code>). Deine Funktion hat also einen Parameter vom Typ String und gibt einen booleschen Wert zurück.</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Booleanparsen"><strong>4. Boolean parsen<br /></strong>Schreibe eine Funktion <code>parseBool()</code>, die boolesche Werte, die als String vorliegen (also "true" oder "false"), in einen echten booleschen Wert umwandelt (also <code>true</code> oder <code>false</code>). Deine Funktion hat also einen Parameter vom Typ String und gibt einen booleschen Wert zurück.</p>
 <p>Teste deinen Code mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -187,8 +178,7 @@
 }</code></pre>
 </div>
 </div>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Wörterzählen">Wörter zählen</h2>
-<p class="auto-cursor-target">Gegeben sei folgender Text:</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Wörterzählen"><strong>5. Wörter zählen<br /></strong>Gegeben sei folgender Text:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>String str = "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.";</code></pre>
@@ -203,8 +193,7 @@
 }</code></pre>
 </div>
 </div>
-<h2 class="auto-cursor-target" id="id-Ü|Stringsverarbeiten&amp;formatieren-Textumkehren">Text umkehren</h2>
-<p class="auto-cursor-target">Schreibe eine Funktion <code>swap(),</code> welche einen <code>String,</code> welcher dieser Funktion als Parameter übergeben wird, umkehrt und zurückgibt. Der erste Buchstabe soll quasi nach der Umkehrung der letzte sein und der letzte der erste.</p>
+<p class="auto-cursor-target" id="id-Ü|Stringsverarbeiten&amp;formatieren-Textumkehren"><strong>6. Text umkehren<br /></strong>Schreibe eine Funktion <code>swap(),</code> welche einen <code>String,</code> welcher dieser Funktion als Parameter übergeben wird, umkehrt und zurückgibt. Der erste Buchstabe soll quasi nach der Umkehrung der letzte sein und der letzte der erste.</p>
 <p class="auto-cursor-target">Teste deinen Code mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -220,8 +209,7 @@
 eluhcshcohhcaF</code></pre>
 </div>
 </div>
-<h2 class="auto-cursor-target">Spracherkennung</h2>
-<p class="auto-cursor-target">Schreibe ein Programm, welches die Spracheingabe mittels Google oder Siri simuliert. Stell dir vor dein Programm hat eine "Hey Googe, ..." Aussage aufgenommen und diese liegt dir im Programm nun als Text vor. Dein Programm soll den Text auswerten und die Antwort in der Konsole ausgeben.</p>
+<p class="auto-cursor-target"><strong>7. Spracherkennung<br /></strong>Schreibe ein Programm, welches die Spracheingabe mittels Google oder Siri simuliert. Stell dir vor dein Programm hat eine "Hey Googe, ..." Aussage aufgenommen und diese liegt dir im Programm nun als Text vor. Dein Programm soll den Text auswerten und die Antwort in der Konsole ausgeben.</p>
 <p class="auto-cursor-target">Der Satz, den dein Programm aufgeschnapp hat lautet: "Hey Google, was ist 5 plus 7?"</p>
 <p class="auto-cursor-target">Dein Programm soll nun die für die Rechenaufgabe wichtigen Elemente aus dem Text herausfiltern und die Rechenaufgabe lösen. Dein Programm sollte auch mit anderen Zahlen und mit Subtraktion, Multiplikation und Division funktionieren.</p>
 <p class="auto-cursor-target"></p>
@@ -256,8 +244,7 @@ eluhcshcohhcaF</code></pre>
 </li>
 </ol>
 <h1 id="id-Ü|Stringsverarbeiten&amp;formatieren-Übungsaufgaben.1">Aufgaben</h1>
-<h2 id="id-Ü|Stringsverarbeiten&amp;formatieren-Durchzählen">Durchzählen</h2>
-<p>Schreibe Code, der mithilfe einer For-Schleife von 0 bis 100 in 10er-Schritten durchzählt und die jeweilige Zahl ausgibt. Die Zahlen sollen alle eine Breite von 3 Zeichen haben und die Leerzeichen sollen mit Nullen gefüllt werden. Außerdem sollen alle Zahlen 2 Nachkommastellen haben.</p>
+<p id="id-Ü|Stringsverarbeiten&amp;formatieren-Durchzählen"><strong>1. Durchzählen<br /></strong>Schreibe Code, der mithilfe einer For-Schleife von 0 bis 100 in 10er-Schritten durchzählt und die jeweilige Zahl ausgibt. Die Zahlen sollen alle eine Breite von 3 Zeichen haben und die Leerzeichen sollen mit Nullen gefüllt werden. Außerdem sollen alle Zahlen 2 Nachkommastellen haben.</p>
 <p>Verwende hierfür die format-Funktion. Die Ausgabe sollte wie folgt aussehen:</p>
 <div class="pre-code">
 <div>
@@ -274,8 +261,7 @@ eluhcshcohhcaF</code></pre>
 100,0</code></pre>
 </div>
 </div>
-<h2>Taschenrechner</h2>
-<p>Schreibe eine Funktion <code>add()</code>, die zwei Kommazahlen als String übergeben bekommt, diese in einen float parst/konvertiert (siehe <a href="strings_verarbeiten.html">Strings verarbeiten</a>) und diese Zahlen dann addiert. Die Funktion soll als Rückgabewert die Rechenoperation (also a + b = c) ausgeben. Dabei sollen die Zahlen ...</p>
+<p><strong>2. Taschenrechner<br /></strong>Schreibe eine Funktion <code>add()</code>, die zwei Kommazahlen als String übergeben bekommt, diese in einen float parst/konvertiert (siehe <a href="strings_verarbeiten.html">Strings verarbeiten</a>) und diese Zahlen dann addiert. Die Funktion soll als Rückgabewert die Rechenoperation (also a + b = c) ausgeben. Dabei sollen die Zahlen ...</p>
 <ul>
 <li>eine Breite von 10 haben (der Rest soll mit Leerzeichen gefüllt werden)</li>
 <li>eine Genaugikeit von 3</li>
@@ -305,28 +291,277 @@ eluhcshcohhcaF</code></pre>
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id115">
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id118">
 <div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Bibliotheken</h1></header>
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Dateien erzeugen und lesen</h1></header>
 <div class="iDevice_inner">
 <div class="iDevice_content_wrapper">
-<div id="ta115_131_2" class="block iDevice_content">
-<div class="exe-text"><h1 id="id-Ü|Bibliotheken-Fragen">Fragen</h1>
+<div id="ta118_134_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Dateienerzeugenundlesen-Fragen">Fragen</h1>
 <ol>
-<li>Welche 2 Dinge muss ich tun, damit ich eine Bibliothek in meinem Code in Processing verwenden kann?</li>
-<li>Was bedeutet der Stern * im import Befehl?</li>
+<li>Text-Dateien, die in Processing eingelesen werden, werden als multidimensionaler String-Array gespeichert. Wahr oder falsch?</li>
+<li>Wo muss sich eine Text-Datei befinden, die eingelesen wird?
+<ul>
+<li>Im selben Ordner, wo auch meine Sketch-Dateien liegen</li>
+<li>Im data-Ordner meines Processing Projekts</li>
+<li>Egal wo auf meinem PCs, solange ich den Pfad dorthin vollständig angebe.</li>
+</ul>
+</li>
 </ol>
-<h1 id="id-Ü|Bibliotheken-Übungsaufgaben">Aufgaben</h1>
-<p>Wie wir mit der Sound Bibliothek von Processing arbeiten können, haben wir im Skript gelesen. Allerdings gibt es noch viele weitere Bibliotheken. Ein paar davon stammen direkt von den Entwicklern von Processing, andere stammen von anderen Leuten. In den Übungsaufgaben schauen wir uns 2 weitere Bibliotheken von den Entwicklern von Processing an:</p>
-<h2>Visitenkarte als PDF</h2>
-<p>Für Processing gibt es eine Bobliothek, mit der man ein PDF erstellen und speichern kann. Die Bibliothek ist ziemlich simpel und schnell zu verstehen. Schau dir die Seite über die <a href="https://processing.org/reference/libraries/pdf/index.html" class="external-link" rel="nofollow">PDF-Export Bibliothek</a> an und versuche dann folgene Aufgabe umzusetzen:</p>
+<h1 id="id-Ü|Dateienerzeugenundlesen-Übungsaufgaben">Aufgaben</h1>
+<p id="id-Ü|Dateienerzeugenundlesen-Textdateiladen"><strong>1. Textdatei laden<br /></strong>Du sollst eine gegebene Datei laden und auf der Konsole ausgeben. Zunächst musst du ein leeres Programm erstellen und speichern, damit Processing ein Verzeichnis für Ihr Programm erzeugt.</p>
+<p>Starte einen Text-Editor deiner deiner Wahl (NotePad, WordPad, Atom, Emacs ...) und speichere folgenden Text als Datei "data.txt" in das Programmverzeichnis:</p>
+<p><code>Auf der Mauer,</code><br /><code>auf der Lauer</code><br /><code>sitzt ne kleine Wanze</code></p>
+<div class="code panel pdl conf-macro output-block" style="border-width: 1px;" data-hasbody="true" data-macro-name="code">
+<div class="codeContent panelContent pdl">
+<div>
+<div id="highlighter_631093" class="syntaxhighlighter sh-confluence nogutter  java"></div>
+</div>
+</div>
+</div>
+<p class="auto-cursor-target">Schreibe anschließend Code (statischer Modus), der den Text einliest und auf der Konsole ausgibt.</p>
+<div class="pre-code">
+<div>
+<pre><code>Auf der Mauer,
+auf der Lauer
+sitzt ne kleine Wanze</code></pre>
+</div>
+</div>
+<div class="code panel pdl conf-macro output-block" style="border-width: 1px;" data-hasbody="true" data-macro-name="code">
+<div class="codeContent panelContent pdl">
+<div>
+<div id="highlighter_162480" class="syntaxhighlighter sh-confluence nogutter  java"></div>
+</div>
+</div>
+</div>
+<p id="id-Ü|Dateienerzeugenundlesen-ZahleninArrayladen"><strong>2. Zahlen in Array laden</strong></p>
+<p>Du sollst wieder eine gegebene Datei laden. Diesmal handelt es sich um Zahlen, jeweils getrennt durch ein Semikolon.</p>
+<pre class="textfile" data-bidi-marker="true">25;1;-42;13;88
+</pre>
+<p>Schreiben die Funtion <code>loadToIntArray</code>, die einen Dateinamen (<code>String</code>) bekommt und die in der entsprechenden Datei gespeicherten Zahlen als <strong>int-Array</strong> zurückgibt. Lies nochmal in Abschnitt <a href="strings_verarbeiten.html">Strings verarbeiten</a> nach, wie man Strings in Zahlen umwandelt.</p>
+<p>Teste deine Funktion, indem du eine Datei "data.txt" mit den obigen Zahlen befüllst und dann folgenden Code ausführst:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  println(loadToIntArray("data.txt"));
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>[0] 25
+[1] 1
+[2] -42
+[3] 13
+[4] 88</code></pre>
+</div>
+</div>
+<p id="id-Ü|Dateienerzeugenundlesen-Wörterzeilenweisespeichern"><strong>3. Wörter zeilenweise speichern<br /></strong>Der Satz "Once upon a time in a galaxy far, far away." sei in einer Variablen <code>mydata</code> gespeichert. Deine Aufgabe ist es, den Inhalt dieser Variable so in einer Datei zu speichern, dass in der Datei jedes Wort auf einer eigenen Zeile erscheint (Komma gehört zum vorigen Wort).</p>
+<p>Verwende dazu die String-Methode <code>split</code> (s. <a href="strings_verarbeiten.html">Strings verarbeiten</a>).</p>
+<p id="id-Ü|Dateienerzeugenundlesen-EinfacherTexteditor"><strong>4. Einfacher Texteditor</strong></p>
+<p>Schreibe einen einfachen Texteditor mit einem Fenster der Größe 300x150 und 7 Zeilen.</p>
+<p>Als Cursor verwendest das Hashsymbol (#). Erlaube nur einen eingeschränken Zeichensatz (z.B. nur 'a' bis 'z'). Die Cursortasten hoch/runter können zum Zeilenwechsel genutzt werden, der Cursor steht aber immer am Ende der Zeile. Mit der Backspace-Taste löschst du das letzte Zeichen der Zeile, wo der Cursor steht. Mit Enter kommst du in die nächste Zeile.</p>
+<p>Wenn  du die Eingabe programmiert hast, implementiere das <strong>Speichern</strong> und <strong>Laden</strong> des Textes.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id119">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Try-Catch</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta119_135_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Fragen">Fragen</h1>
 <ol>
-<li>Gestalte eine einfache Visitenkarte für dich. Auf der Vorderseite sollte dein Name, deine Email und deine Adresse zu sehen sein und ein kleines Icon, welches dein Logo sein soll.</li>
-<li>Erweitere dein Programm so, dass es auch eine Rückseite für deine Visitenkarte erstellt. Hier könnte z.B. deine Webseite oder ein Werbeslogan stehen.</li>
+<li>Was ist der Unterschied zwischen einer Exception (Ausnahme) und einem Bug (Fehler)?</li>
+<li>Was passiert mit dem Programm, wenn eine Exception auftritt und sie nicht abgefangen wird?</li>
+<li>Woher kann ich wissen, welche Funktionen möglicherweise fehlschlagen und zu Ausnahmesituationen führen?</li>
+<li>In welchen Fällen wird der <code>finally</code>-Block ausgeführt und in welchen nicht?</li>
+<li>Man kann mehrere Try-Catch-Anweisungen ineinander verschachteln. Wahr oder falsch?</li>
 </ol>
-<h2>Videohintergrund</h2>
-<p>Processing hat auch eine Bibliothek für die Wiedergabe und die Verarbeitung von Videos. Schau dir die Seite über die<a href="https://processing.org/reference/libraries/video/Movie.html" class="external-link" rel="nofollow"> Video Bibliothek </a> an und versuche dann folgende Aufgabe umzusetzen:</p>
-<p>Schreibe ein Programm, welches als Hintergrund ein Video hat, welches sich die ganze Zeit wiederholt. Im Vordergrund soll ein Kreis zu sehen sein, welcher der Maus folgt.</p></div>
+<h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Übungsaufgaben">Aufgaben</h1>
+<p id="id-Ü|TryCatch,Switch&amp;Assertions-Divisiondurch0"><strong>1. Division durch 0<br /></strong>Schreibe eine Funktion mit <code>divide(),</code> die zwei <code>int</code> Variablen als Parameter übergeben bekommt, diese miteinander dividiert und das Ergebnis als <code>float</code> zurückgibt. Hierbei kann es vorkommen, dass jemand "aus Versehen" eine 0 als Parameter übergibt. Dies würde in deinem Programm aber eine <code>Exception</code> werfen, da man nicht druch 0 dividieren darf.</p>
+<p>→ Schreibe die Funktion so, dass dein Programm nicht abstürzt, sondern diese <code>Exception</code> abfängt und eine sinvolle Fehlermeldung ausgibt, z.B. "Division durch Null nicht möglich!". Da deine Funktion dennoch einen Wert zurückgeben muss, sollst du den  Rückgabewert für diesen Fall auf 0 setzen.</p>
+<p>Welche Art von <code>Exception</code> musst du abfangen?</p>
+<p>Teste deinen Code mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  println(divide(6, 3));
+  println(divide(6, 0));
+}</code></pre>
+</div>
+</div>
+<div class="pre-code">
+<div>
+<pre><code>2.0
+Division durch Null nicht möglich!
+0.0</code></pre>
+</div>
+</div>
+<p class="auto-cursor-target" id="id-Ü|TryCatch,Switch&amp;Assertions-Datei(-inhalt)überprüfen"><strong>2. Datei(-inhalt) überprüfen<br /></strong>Schreibe eine Funnktion <code>readFile(),</code> welche eine Datei mit dem Namen "foo.txt" einliest und als Rückgabewert vom Typ String sagt, ob die Datei gefunden wurde und wie viele Zeilen sie hat. Schreibe dein Programm so, dass es nicht abstürzt, wenn die Datei</p>
+<ul>
+<li class="auto-cursor-target">nicht voranden ist ODER</li>
+<li class="auto-cursor-target">keinen Inhalt hat</li>
+</ul>
+<p>Verwende hierzu die Funktion <code>loadStrings()</code> (siehe <a href="dateien_erzeugen_und_lesen.html">Dateien erzeugen und lesen</a>) und versuche auf das erste Array-Element zuzugreifen, welches die Daten aus der Datei enthalten soll. Sollte das Array-Element nicht vorhanden sein, bedeutet dies, dass die Datei leer oder nicht vorhanden ist.</p>
+<p>Folgende "Rückmeldung" in Form eines Strings soll deine Funktion geben:</p>
+<ul>
+<li>Wenn die Datei vorhanden ist und Zeilen enthält: "Datei vorhanden mit x Zeilen"</li>
+<li>Wenn die Datei nicht vorhanden oder leer ist: "Datei nicht vorhanden oder leer"</li>
+</ul>
+<p>Teste deinen Code mit unterschiedlichen Dateien und:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup () {
+ println(readFile("foo.txt"));
+}</code></pre>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id121">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Assertions</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta121_137_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Fragen.2">Fragen</h1>
+<ol>
+<li>Welcher Part einer Assertion ist optional?</li>
+<li>Wozu werden Assertions eingesetzt?</li>
+</ol>
+<h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Übungsaufgaben.2">Aufgaben</h1>
+<p id="id-Ü|TryCatch,Switch&amp;Assertions-Pinüberprüfen"><strong>1. Pin überprüfen<br /></strong>Schreibe ein Programm, dass dem Nutzer Zugriff auf seine Nutzerdaten gewährt, wenn er den richtigen Pin angibt. Simuliere das eingeben des Pin in Form einer von dir festgelegten Variable.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int korrekterPIN = 1234; 
+int nutzerEingabe = 4567;   </code></pre>
+</div>
+</div>
+<p class="auto-cursor-target">Wenn der eingegebene Pin korrekt ist, so dem Nutzer in der Konsole angezeigt werden "Hallo Nutzer, hier sind ihre Nutzerdaten ...". Bei falscher Eingabe soll das Programm beendet werden und in der Konsole eine Fehlermeldung und der falsche Pin angezeigt werden.</p>
+<p class="auto-cursor-target" id="id-Ü|TryCatch,Switch&amp;Assertions-Arrayaddieren"><strong>2. Array addieren<br /></strong>Schreibe eine Funktion, die einen <code>int</code>-Array als Parameter übergeben bekommt und alle Zahlen im Array miteinander addiert. Das Ergebnis soll als <code>int</code>-Wert zurückgegeben werden.</p>
+<p class="auto-cursor-target">Schreibe außerdem 3 Assertions, die deine Funktion überprüfen. Verwende für die Assertions folgende Beispiel-Arrays:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int [] foo = {  1,  2,  3};  // Erwartetes Ergebnis: 6
+int [] bar = {-50, 25, 78};  // Erwartetes Ergebnis: 103
+int [] foobar = {};          // Erwartetes Ergebnis: 0</code></pre>
+</div>
+</div>
+<p class="auto-cursor-target"><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id122">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Operatoren Teil 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta122_138_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|OperatorenII-Fragen">Fragen</h1>
+<ol>
+<li><span class="optiontext">Die Assoziativität entscheidet in jedem Fall über Auswertereihenfolge der Operatoren.</span> Wahr oder falsch?</li>
+<li>Logisches Oder und bitweises Oder haben denselben Rang. Wahr oder falsch?</li>
+<li>
+<p>Welche Ausgabe liefert folgender Code?</p>
+<p><code></code></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int age = 18;
+println(age &gt;= 18 ? "foo" : "bar");</code><code></code></pre>
+</div>
+</div>
+<ul>
+<li><code>foo</code></li>
+<li><code>bar</code></li>
+<li><code>foo : bar</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="id-Ü|OperatorenII-Übungsaufgaben">Aufgaben</h1>
+<p id="id-Ü|OperatorenII-Linksverschiebung"><strong>1. Linksverschiebung<br /></strong>Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int value = 1;
+int shift= 1;
+ 
+int newValue = value &lt;&lt; shift;
+println(newValue );</code></pre>
+</div>
+</div>
+<p>Erweitere den Code so, dass dir in der Konsole mehrere verschiedene Werte angezeigt werden:</p>
+<div class="pre-code">
+<div>
+<pre><code>2
+16
+65536
+-2147483648
+1</code><br /><br /></pre>
+</div>
+</div>
+<p>Welche 2 Werte kannst du angeben, um den Wert 1 zu bekommen?</p>
+<p id="id-Ü|OperatorenII-Konvertierung"><strong>2. Konvertierung<br /></strong>Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int startWert = 5;
+int zweiterWert = 0;
+int erg = 0;
+ 
+// aus 5 soll 7 werden
+zweiterWert = ??;
+erg = startWert | zweiterWert;
+println(erg);
+ 
+// aus 5 soll 4 werden
+zweiterWert = ??;
+erg = startWert &amp; zweiterWert;
+println(erg);
+ 
+// Welcher Wert kommt raus?
+erg = ~startWert ;
+println(erg);</code></pre>
+</div>
+</div>
+<p>Welche Werte müssen in Zeile 6 und 11 bei <code>zweiterWert</code> angegeben werden, damit die Werte in der Kommentarzeile rauskommen? Welcher Wert kommt in der letzten Print-Anweisung raus?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id123">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Anwendungsentwicklung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta123_139_2" class="block iDevice_content">
+<div class="exe-text"><div id="main-content" class="wiki-content">
+<h1>Fragen</h1>
+<ol>
+<li>Um eine Java-Anwendung auf einem Computer ausführen zu können, muss auf dem Computer eine ??? installiert sein. (Fülle die Lücke)</li>
+<li>Wofür steht die Abkürzung IDE?
+<ul>
+<li>integrated deployment environment</li>
+<li>integrated deployment engine</li>
+<li>integrated development environment</li>
+</ul>
+</li>
+<li>Warum kannst du eine Processing Anwendung nicht in einem normalen Texteditor oder eine anderen Sorftware entwickeln?</li>
+<li>Zu welchem Zeitpunkt wird der Code so übersetzt, dass deine Plattform (Windows, Mac, Linux) ihn lesen kann?</li>
+</ol>
+</div></div>
 </div>
 </div>
 </div>
@@ -339,7 +574,7 @@ eluhcshcohhcaF</code></pre>
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="bibliotheken.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="anwendungsentwicklung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
 </nav>
 </div>
 </div>

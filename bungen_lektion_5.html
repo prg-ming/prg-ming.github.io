@@ -89,6 +89,8 @@
    </li>
    <li><a href="lektion_7.html" class="daddy">Lektion 7</a>
    <ul class="other-section">
+      <li><a href="switch.html" class="no-ch">Switch</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
       <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
       <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
       <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
@@ -100,19 +102,12 @@
    <ul class="other-section">
       <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
-      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
-      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
-   </ul>
-   </li>
-   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
-   <ul class="other-section">
       <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
       <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
-      <li><a href="switch.html" class="no-ch">Switch</a></li>
       <li><a href="assertions.html" class="no-ch">Assertions</a></li>
       <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
       <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
-      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
+      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
    </ul>
    </li>
 </ul>
@@ -139,9 +134,8 @@
 <li>Welche Syntaxregeln gelten für Funktionen?</li>
 </ol>
 <h1>Aufgaben</h1>
-<h2>Hello, world!</h2>
-<p>Schreibe die Funktion <code>hello(),</code> die einfach "hello, world" auf die Konsole schreibt.</p>
-<p><strong>Hinweis:</strong> Denk dran, dass du ein <code>setup()</code> oder <code>draw()</code> benötigst, um Funktionen definieren zu dürfen.</p>
+<p><strong>1. Hello, world!</strong><br />Schreibe die Funktion <code>hello(),</code> die einfach "hello, world" auf die Konsole schreibt.</p>
+<p style="padding-left: 30px;"><strong>Hinweis:</strong> Denk dran, dass du ein <code>setup()</code> oder <code>draw()</code> benötigst, um Funktionen definieren zu dürfen.</p>
 <p>Teste deinen Code mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -160,8 +154,7 @@ hello, world
 hello, world</code></pre>
 </div>
 </div>
-<h2>Mauszeiger</h2>
-<p>Schreibe eine Funktion <code>mauszeiger(),</code> welche an Position der Maus einen Kreis mit Durchmesser 20 zeichnet.</p>
+<p><strong>2. Mauszeiger</strong><br />Schreibe eine Funktion <code>mauszeiger(),</code> welche an Position der Maus einen Kreis mit Durchmesser 20 zeichnet.</p>
 <p>Teste deinen Code mit</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -171,8 +164,7 @@ hello, world</code></pre>
 }</code></pre>
 </div>
 </div>
-<h2>Code durch Funktion ersetzen</h2>
-<p>Du sollst folgenden Code "aufräumen". Im Code werden ein Haus und eine Sonne gezeichnet. Definiere eine neue Funktion <code>zeichneHaus(),</code> in dem das Haus gezeichnet wird und rufe diese Funktion in <code>draw()</code> auf. Mach das gleiche für die Sonne mit einer Funktion <code>zeichneSonne().</code></p>
+<p><strong>3. Code durch Funktion ersetzen</strong><br />Du sollst folgenden Code "aufräumen". Im Code werden ein Haus und eine Sonne gezeichnet. Definiere eine neue Funktion <code>zeichneHaus(),</code> in dem das Haus gezeichnet wird und rufe diese Funktion in <code>draw()</code> auf. Mach das gleiche für die Sonne mit einer Funktion <code>zeichneSonne().</code></p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -190,9 +182,7 @@ void draw() {
 }</code></pre>
 </div>
 </div>
-<h2>Dreierlei</h2>
-<p>Schreibe drei Funktionen <code>one(), two(), three().</code> Die Funktionen geben jeweils die Zahl 1, 2 und 3 auf der Konsole aus.</p>
-<p>Rufe in <code>setup()</code> die Funktion <code>one()</code> auf. In der Funktion <code>one()</code> rufst du <code>two()</code> auf. In der Funktion <code>two()</code> rufst du <code>three()</code> auf.</p>
+<p><strong>4. Dreierlei</strong><br />Schreibe drei Funktionen <code>one(), two(), three().</code> Die Funktionen geben jeweils die Zahl 1, 2 und 3 auf der Konsole aus. Rufe in <code>setup()</code> die Funktion <code>one()</code> auf. In der Funktion <code>one()</code> rufst du <code>two()</code> auf. In der Funktion <code>two()</code> rufst du <code>three()</code> auf.</p>
 <p>Teste deine Code unbedingt genau mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -241,22 +231,19 @@ void draw() {
 <li>Was passiert, wenn eine Funktion überladen ist? Handelt es sich bei Überladung um einen Fehler oder ist Überladung etwas gewolltes?</li>
 </ol>
 <h1>Aufgaben</h1>
-<h2>Plus eins</h2>
-<p>Schreibe die Funktion <code>plusEins,</code> die als Parameter eine Zahl <code>x</code> als <code>int</code> bekommt und <code>x+1</code> auf die Konsole schreibt. Der Aufruf <code>plusEins(5);</code> würde also folgendes produzieren:</p>
+<p><strong>1. Plus eins</strong><br />Schreibe die Funktion <code>plusEins,</code> die als Parameter eine Zahl <code>x</code> als <code>int</code> bekommt und <code>x+1</code> auf die Konsole schreibt. Der Aufruf <code>plusEins(5);</code> würde also folgendes produzieren:</p>
 <div class="pre-code">
 <div>
 <pre><code>6</code></pre>
 </div>
 </div>
-<h2>Summe ausgeben</h2>
-<p>Schreibe eine Funktion <code>printSum,</code> die drei Parameter vom Typ <code>float</code> bekommt und die Summe dieser drei übergebenen Zahlen auf die Konsole schreibt. Der Aufruf <code>printSum(3, 2, 5);</code> würde also folgendes produzieren:</p>
+<p><strong>2. Summe ausgeben<br /></strong>Schreibe eine Funktion <code>printSum,</code> die drei Parameter vom Typ <code>float</code> bekommt und die Summe dieser drei übergebenen Zahlen auf die Konsole schreibt. Der Aufruf <code>printSum(3, 2, 5);</code> würde also folgendes produzieren:</p>
 <div class="pre-code">
 <div>
 <pre><code>10.0</code></pre>
 </div>
 </div>
-<h2>Mauszeiger</h2>
-<p>Schreibe eine Funktion <code>mauszeiger,</code> mit fünf Parametern: <code>x, y, r, g, b</code>. Die Funktion zeichnet einen Kreis an der Position (x, y) mit der Farbe (r, g, b) gefüllt.</p>
+<p><strong>3. Mauszeiger<br /></strong>Schreibe eine Funktion <code>mauszeiger,</code> mit fünf Parametern: <code>x, y, r, g, b</code>. Die Funktion zeichnet einen Kreis an der Position (x, y) mit der Farbe (r, g, b) gefüllt.</p>
 <p>Teste deinen Code mit</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -267,14 +254,13 @@ void draw() {
 </div>
 </div>
 <p>Du solltest einen rot gefüllten Kreis sehen, der der Maus folgt.</p>
-<h2>Begrüßung</h2>
-<p>Schreibe die Funktion <code>greeting(),</code> die einen Parameter name vom Typ <code>String</code> bekommt und dann "Servus, &lt;name&gt;" ausgibt. Der Aufruf von <code>greeting("Helmut");</code> ergibt zum Beispiel:</p>
+<p><strong>4. Begrüßung</strong><br />Schreibe die Funktion <code>greeting(),</code> die einen Parameter name vom Typ <code>String</code> bekommt und dann "Servus, &lt;name&gt;" ausgibt. Der Aufruf von <code>greeting("Helmut");</code> ergibt zum Beispiel:</p>
 <div class="pre-code">
 <div>
 <pre><code>Servus, Helmut</code></pre>
 </div>
 </div>
-<p>Begrüßung II<br />Schreibe eine neue Funktion <code>greet(),</code> diesmal mit zwei Parametern, einen <code>String</code> und einen <code>boolean.</code> Der zweite Parameter gibt an, ob die Person weiblich ist.</p>
+<p><strong>5. Begrüßung II</strong><br />Schreibe eine neue Funktion <code>greet(),</code> diesmal mit zwei Parametern, einen <code>String</code> und einen <code>boolean.</code> Der zweite Parameter gibt an, ob die Person weiblich ist.</p>
 <p>Beim Aufruf <code>greet("Schmidt", true);</code> soll kommen:</p>
 <div class="pre-code">
 <div>
@@ -287,9 +273,8 @@ void draw() {
 <pre><code>Hallo Herr Huber</code></pre>
 </div>
 </div>
-<h2>Variablen vertauschen</h2>
-<p>Schreibe ein Programm, welches den Wert von 2 <code>int</code>-Variablen <code>wert1</code> und <code>wert2</code> vertauscht. Lass dir zunächst die beiden Variablen ausgeben und danach ein weiteres mal, nachdem du sie vertauscht hast.</p>
-<p><strong>Tip:</strong> Das Beispiel oben in der Lektion zeigt dir, wie es <span style="text-decoration: underline;">nicht</span> geht.</p></div>
+<p><strong>6. Variablen vertauschen</strong><br />Schreibe ein Programm, welches den Wert von 2 <code>int</code>-Variablen <code>wert1</code> und <code>wert2</code> vertauscht. Lass dir zunächst die beiden Variablen ausgeben und danach ein weiteres mal, nachdem du sie vertauscht hast.</p>
+<p style="padding-left: 30px;"><strong>Tip:</strong> Das Beispiel oben in der Lektion zeigt dir, wie es <span style="text-decoration: underline;">nicht</span> geht.</p></div>
 </div>
 </div>
 </div>
@@ -308,8 +293,7 @@ void draw() {
 <li>Muss der Rückgabewert einer Funktion immer denselben Datentyp haben oder kann dieser unterschiedlich sein, z.B. entweder <code>int </code>oder <code>String</code>.</li>
 </ol>
 <h1 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Übungsaufgaben.2">Aufgaben</h1>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-EinfacheFunktion">Einfache Funktion</h2>
-<p>Schreibe eine Funktion <code>foo,</code> die immer den Wert 42 zurückgibt. Die Funktion hat keine Parameter und den Rückgabtyp <code>int.</code> Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-EinfacheFunktion"><strong>1. Einfache Funktion</strong><br />Schreibe eine Funktion <code>foo,</code> die immer den Wert 42 zurückgibt. Die Funktion hat keine Parameter und den Rückgabtyp <code>int.</code> Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -324,8 +308,7 @@ void draw() {
 <pre><code>42</code></pre>
 </div>
 </div>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Addition">Addition</h2>
-<p>Schreibe eine Funktion <code>plus,</code> die zwei Zahlen vom Typ <code>float</code> als Parameter hat und die Summe der Zahlen zurückgibt (ebenfalls Typ <code>float</code>). Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Addition"><strong>2. Addition<br /></strong>Schreibe eine Funktion <code>plus,</code> die zwei Zahlen vom Typ <code>float</code> als Parameter hat und die Summe der Zahlen zurückgibt (ebenfalls Typ <code>float</code>). Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -339,9 +322,7 @@ void draw() {
 <pre><code>30.0</code></pre>
 </div>
 </div>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Intervall-Check">Intervall-Check</h2>
-<p>Schreibe eine Funktion <code>bereich</code>, die drei Zahlen <code>a, b, c</code> vom Typ <code>float</code> als Parameter hat. Die Rückgabe ist eine boolescher Wert: <code>true,</code> wenn <code>a</code> zwischen <code>b</code> und <code>c</code> liegt, sonst <code>false</code>.</p>
-<p>Gehen davon aus, dass b immer kleiner als c ist. Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Intervall-Check"><strong>3. Intervall-Check<br /></strong>Schreibe eine Funktion <code>bereich</code>, die drei Zahlen <code>a, b, c</code> vom Typ <code>float</code> als Parameter hat. Die Rückgabe ist eine boolescher Wert: <code>true,</code> wenn <code>a</code> zwischen <code>b</code> und <code>c</code> liegt, sonst <code>false</code>. Geh davon aus, dass b immer kleiner als c ist. Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -357,8 +338,7 @@ void draw() {
 false</code></pre>
 </div>
 </div>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Quadrat">Quadrat</h2>
-<p>Schreibe die Funktion <code>quadrat</code> mit einem Parameter des Typs <code>float</code>. Die Funktion gibt die Quadratzahl des Parameters zurück. Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Quadrat"><strong>4. Quadrat<br /></strong>Schreibe die Funktion <code>quadrat</code> mit einem Parameter des Typs <code>float</code>. Die Funktion gibt die Quadratzahl des Parameters zurück. Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -375,11 +355,9 @@ false</code></pre>
 </div>
 </div>
 <p>Verwende <strong>nicht</strong> die Processing-Funktion <code>pow()</code>.</p>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Maximum">Maximum</h2>
-<p>Schreibe die Funktion <code>max2</code>, die zwei <code>float</code>-Werte bekommt und den größeren der beiden zurückgibt.<br />Schreibe die Funktion <code>max3</code>, die <strong>drei</strong> <code>float</code>-Werte bekommt und den größten zurückgibt. Teste unbedingt auch Fälle mit zwei gleichen Werten wie (5, 5, 1) oder (5, 1, 5).</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Maximum"><strong>5. Maximum<br /></strong>Schreibe die Funktion <code>max2</code>, die zwei <code>float</code>-Werte bekommt und den größeren der beiden zurückgibt.<br />Schreibe die Funktion <code>max3</code>, die <strong>drei</strong> <code>float</code>-Werte bekommt und den größten zurückgibt. Teste unbedingt auch Fälle mit zwei gleichen Werten wie (5, 5, 1) oder (5, 1, 5).</p>
 <p>Verwende <strong>nicht</strong> die Processing-Funktion <code>max()</code>.</p>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Abstand">Abstand</h2>
-<p>Schreibe die Funktion <code>difference</code>, die zwei <code>float</code>-Werte bekommt und den Abstand zwischen den beiden Werten <strong>als postive Zahl</strong> zurückgibt. Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Abstand"><strong>6. Abstand</strong><br />Schreibe die Funktion <code>difference</code>, die zwei <code>float</code>-Werte bekommt und den Abstand zwischen den beiden Werten <strong>als postive Zahl</strong> zurückgibt. Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
@@ -396,11 +374,9 @@ false</code></pre>
 </div>
 </div>
 <p>Verwende <strong>nicht</strong> die Processing-Funktion <code>abs()</code>.</p>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Gerade/Ungerade">Gerade/Ungerade</h2>
-<p>Schreibe die Funktion <code>istGerade</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl gerade ist, <code>false</code> wenn ungerade.</p>
-<h2 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Primzahl">Primzahl</h2>
-<p>Schreibe die Funktion <code>istPrim</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl eine Primzahl ist, sonst <code>false</code>.</p>
-<p>Eine Primzahl ist eine Zahl, die nur durch 1 und durch sich selbst teilbar ist. Teste deine Funktion mit:</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Gerade/Ungerade"><strong>7. Gerade/Ungerade<br /></strong>Schreibe die Funktion <code>istGerade</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl gerade ist, <code>false</code> wenn ungerade.</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Primzahl"><strong>8. Primzahl<br /></strong>Schreibe die Funktion <code>istPrim</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl eine Primzahl ist, sonst <code>false</code>.</p>
+<p style="padding-left: 30px;"><strong>Hinweis</strong>: Eine Primzahl ist eine Zahl, die nur durch 1 und durch sich selbst teilbar ist. Teste deine Funktion mit:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
 <pre><code>void setup() {
