@@ -104,17 +104,22 @@
       <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
       <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
       <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+      <li id="active"><a href="bungen_lektion_8.html" class="active no-ch">Übungen Lektion 8</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
+   <ul class="other-section">
       <li><a href="assertions.html" class="no-ch">Assertions</a></li>
       <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
       <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
-      <li id="active"><a href="bungen_lektion_8.html" class="active no-ch">Übungen Lektion 8</a></li>
+      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
    </ul>
    </li>
 </ul>
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="anwendungsentwicklung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+<a href="trycatch.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
@@ -426,147 +431,6 @@ Division durch Null nicht möglich!
 </div>
 </div>
 </article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id121">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Assertions</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta121_137_2" class="block iDevice_content">
-<div class="exe-text"><h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Fragen.2">Fragen</h1>
-<ol>
-<li>Welcher Part einer Assertion ist optional?</li>
-<li>Wozu werden Assertions eingesetzt?</li>
-</ol>
-<h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Übungsaufgaben.2">Aufgaben</h1>
-<p id="id-Ü|TryCatch,Switch&amp;Assertions-Pinüberprüfen"><strong>1. Pin überprüfen<br /></strong>Schreibe ein Programm, dass dem Nutzer Zugriff auf seine Nutzerdaten gewährt, wenn er den richtigen Pin angibt. Simuliere das eingeben des Pin in Form einer von dir festgelegten Variable.</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int korrekterPIN = 1234; 
-int nutzerEingabe = 4567;   </code></pre>
-</div>
-</div>
-<p class="auto-cursor-target">Wenn der eingegebene Pin korrekt ist, so dem Nutzer in der Konsole angezeigt werden "Hallo Nutzer, hier sind ihre Nutzerdaten ...". Bei falscher Eingabe soll das Programm beendet werden und in der Konsole eine Fehlermeldung und der falsche Pin angezeigt werden.</p>
-<p class="auto-cursor-target" id="id-Ü|TryCatch,Switch&amp;Assertions-Arrayaddieren"><strong>2. Array addieren<br /></strong>Schreibe eine Funktion, die einen <code>int</code>-Array als Parameter übergeben bekommt und alle Zahlen im Array miteinander addiert. Das Ergebnis soll als <code>int</code>-Wert zurückgegeben werden.</p>
-<p class="auto-cursor-target">Schreibe außerdem 3 Assertions, die deine Funktion überprüfen. Verwende für die Assertions folgende Beispiel-Arrays:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int [] foo = {  1,  2,  3};  // Erwartetes Ergebnis: 6
-int [] bar = {-50, 25, 78};  // Erwartetes Ergebnis: 103
-int [] foobar = {};          // Erwartetes Ergebnis: 0</code></pre>
-</div>
-</div>
-<p class="auto-cursor-target"><br /><br /></p></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id122">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Operatoren Teil 2</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta122_138_2" class="block iDevice_content">
-<div class="exe-text"><h1 id="id-Ü|OperatorenII-Fragen">Fragen</h1>
-<ol>
-<li><span class="optiontext">Die Assoziativität entscheidet in jedem Fall über Auswertereihenfolge der Operatoren.</span> Wahr oder falsch?</li>
-<li>Logisches Oder und bitweises Oder haben denselben Rang. Wahr oder falsch?</li>
-<li>
-<p>Welche Ausgabe liefert folgender Code?</p>
-<p><code></code></p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int age = 18;
-println(age &gt;= 18 ? "foo" : "bar");</code><code></code></pre>
-</div>
-</div>
-<ul>
-<li><code>foo</code></li>
-<li><code>bar</code></li>
-<li><code>foo : bar</code></li>
-</ul>
-</li>
-</ol>
-<h1 id="id-Ü|OperatorenII-Übungsaufgaben">Aufgaben</h1>
-<p id="id-Ü|OperatorenII-Linksverschiebung"><strong>1. Linksverschiebung<br /></strong>Gegeben ist folgender Code:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int value = 1;
-int shift= 1;
- 
-int newValue = value &lt;&lt; shift;
-println(newValue );</code></pre>
-</div>
-</div>
-<p>Erweitere den Code so, dass dir in der Konsole mehrere verschiedene Werte angezeigt werden:</p>
-<div class="pre-code">
-<div>
-<pre><code>2
-16
-65536
--2147483648
-1</code><br /><br /></pre>
-</div>
-</div>
-<p>Welche 2 Werte kannst du angeben, um den Wert 1 zu bekommen?</p>
-<p id="id-Ü|OperatorenII-Konvertierung"><strong>2. Konvertierung<br /></strong>Gegeben ist folgender Code:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>int startWert = 5;
-int zweiterWert = 0;
-int erg = 0;
- 
-// aus 5 soll 7 werden
-zweiterWert = ??;
-erg = startWert | zweiterWert;
-println(erg);
- 
-// aus 5 soll 4 werden
-zweiterWert = ??;
-erg = startWert &amp; zweiterWert;
-println(erg);
- 
-// Welcher Wert kommt raus?
-erg = ~startWert ;
-println(erg);</code></pre>
-</div>
-</div>
-<p>Welche Werte müssen in Zeile 6 und 11 bei <code>zweiterWert</code> angegeben werden, damit die Werte in der Kommentarzeile rauskommen? Welcher Wert kommt in der letzten Print-Anweisung raus?</p>
-<p></p>
-<p></p>
-<p></p>
-<p></p></div>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="iDevice_wrapper textIdevice em_iDevice" id="id123">
-<div class="iDevice emphasis1" >
-<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Anwendungsentwicklung</h1></header>
-<div class="iDevice_inner">
-<div class="iDevice_content_wrapper">
-<div id="ta123_139_2" class="block iDevice_content">
-<div class="exe-text"><div id="main-content" class="wiki-content">
-<h1>Fragen</h1>
-<ol>
-<li>Um eine Java-Anwendung auf einem Computer ausführen zu können, muss auf dem Computer eine ??? installiert sein. (Fülle die Lücke)</li>
-<li>Wofür steht die Abkürzung IDE?
-<ul>
-<li>integrated deployment environment</li>
-<li>integrated deployment engine</li>
-<li>integrated development environment</li>
-</ul>
-</li>
-<li>Warum kannst du eine Processing Anwendung nicht in einem normalen Texteditor oder eine anderen Sorftware entwickeln?</li>
-<li>Zu welchem Zeitpunkt wird der Code so übersetzt, dass deine Plattform (Windows, Mac, Linux) ihn lesen kann?</li>
-</ol>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</article>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
@@ -574,7 +438,7 @@ println(erg);</code></pre>
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="anwendungsentwicklung.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+<a href="trycatch.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="lektion_9.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
