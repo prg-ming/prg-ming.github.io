@@ -189,13 +189,7 @@ Auf Wiedersehen.</code></pre>
 </div>
 <p><strong>Hinweis</strong>: Verwende if-else und vermeide, dass Code-Zeilen mit der gleichen Anweisung zwei Mal auftreten.</p>
 <p>Im nächsten Schritt erweitere dein Programm, so dass bei verschiedenen Punktständen jeweils folgendes ausgegeben wird:</p>
-<div class="pre-code">
-<div>
-<pre><code>0 - 4: Durchgefallen
-5 - 9: Bestanden
-10 - 15: Bestanden mit Auszeichnung</code></pre>
-</div>
-</div>
+<p style="padding-left: 30px;"><span style="font-family: verdana, geneva, sans-serif;">0 - 4: Durchgefallen <br /></span><span style="font-family: verdana, geneva, sans-serif;">5 - 9: Bestanden <br />10 - 15: Bestanden mit Auszeichnung</span></p>
 <p>Teste dein Programm mit den Werten 0, 15 und 25.</p>
 <p><strong>5. Stehenbleiben</strong><br />Ändere das folgende Programm derart, dass der Ball stehenbleibt, sobald er die Mitte erreicht.</p>
 <div class="highlighted-code language-java line-numbers">
@@ -236,7 +230,7 @@ void draw() {
 <pre><code>int count = 0;</code></pre>
 </div>
 </div>
-<p style="padding-left: 30px;"><strong>Hinweis</strong> 1: Je nach Rechner und aktueller Rechnerbelastung wir draw() auch seltener als 60 Mal aufgerufen. Die Systemvariable frameRate (float) gibt an, wie oft draw() aktuell pro Sekunde aufgerufen wird. Mithilfe der Funktion frameRate() kannst du eine bestimmte Framerate einstellen. Nutze dies, um 1x pro Sekunde einen Punkt zu malen.</p>
+<p style="padding-left: 30px;"><strong>Hinweis</strong>: Je nach Rechner und aktueller Rechnerbelastung wir draw() auch seltener als 60 Mal aufgerufen. Die Systemvariable frameRate (float) gibt an, wie oft draw() aktuell pro Sekunde aufgerufen wird. Mithilfe der Funktion frameRate() kannst du eine bestimmte Framerate einstellen. Nutze dies, um 1x pro Sekunde einen Punkt zu malen.</p>
 <p><strong>10. Klausurnoten (if-else-if)</strong><br />Löse eine ähnliche Aufgabe wie die oben mit if-else-if. Du hast eine Punktzahl gegeben:</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -297,7 +291,7 @@ void draw() {
 <li>Ist das Passwort falsch, wird nach dem ersten Fehlversuch ein Hinweis angezeigt.</li>
 <li>Gibt er das Passwort erneut falsch ein, sperrt dein Programm den Zugriff und ist zu Ende.</li>
 </ul>
-<p><strong>2. Mausposition</strong><br />Erstelle einen <em>möglichst</em> <em>genauen</em> Programmablaufplan für ein Programm im statischen Modus, das je nach Mausposition etwas anderes anzeigt:</p>
+<p><strong>2. Mausposition</strong><br />Erstelle einen <em>möglichst</em> <em>genauen</em> Programmablaufplan für ein Programm im aktiven Modus, das je nach Mausposition etwas anderes anzeigt:</p>
 <ul>
 <li>Wenn sich die Maus in der linken Bildschirmhälfte befindet, soll der Hintergrund schwarz sein und in der Mitte ein weißer Kreis sein</li>
 <li>Wenn sich die Maus in der rechten Bildschirmhälfte befindet, soll der Hintergrund weiß sein und in der Mitte ein schwarzes Quadrat sein.</li>
@@ -454,7 +448,7 @@ true</code></pre>
 <li>Die Variable key enthält bei Processing stets den keyCode derjenigen Keyboard-Taste, welche in diesem Moment gedrückt wird. Wird keine Taste gedrück ist die Variable leer. Wahr oder falsch?</li>
 </ol>
 <h1>Aufgaben</h1>
-<p><strong>1. Schwarzweiß</strong><br />Der Hintergrund soll schwarz eingefärbt werden, wenn man eine Tastatur-Taste drückt, und weiß, wenn man eine Maustaste drückt. Verwenden KEINE Zeichenbefehle (background, rect) in <code>keyPressed()</code> oder <code>mousePressed()</code>.</p>
+<p><strong>1. Schwarzweiß</strong><br />Der Hintergrund soll schwarz eingefärbt werden, wenn man eine Tastatur-Taste drückt, und weiß, wenn man eine Maustaste drückt. Verwende KEINE Zeichenbefehle (<code>background()</code>, <code>ellipse()</code>) in <code>keyPressed()</code> oder <code>mousePressed()</code>.</p>
 <p>Verwende folgenden Basiscode und achten darauf, dass das Rechteck nicht übermalt wird, wenn du den Hintergrund änderst.</p>
 <div class="highlighted-code language-java line-numbers">
 <div>
@@ -465,8 +459,7 @@ true</code></pre>
 </div>
 </div>
 <p style="padding-left: 30px;"><strong>Wichtig</strong>: Verwende eine Variable, die du in <code>keyPressed</code> bzw. <code>keyPressed</code> veränderst (sonst funktioniert die Folge-Aufgabe nicht).</p>
-<p><strong>2. Schwarzweiß 2</strong><br />Ersetze im obigen Programm das Quadrat durch einen Kreis, der komplementär zum Hintergrund schwarz oder weiß ist.</p>
-<p>Verwenden Sie KEINE Zeichenbefehle (background, ellipse) in keyPressed() oder mousePressed().</p>
+<p><strong>2. Schwarzweiß 2</strong><br />Ersetze im obigen Programm das Quadrat durch einen Kreis, der komplementär zum Hintergrund schwarz oder weiß ist.<br />Verwende KEINE Zeichenbefehle (<code>background()</code>, <code>ellipse()</code>) in <code>keyPressed()</code> oder <code>mousePressed()</code>.</p>
 <p><strong>3. Pfeiltasten-Steuerung</strong><br />Schreibe ein Programm, in dem du mit den Pfeiltasten einen Kreis steuern kannst.</p>
 <ul>
 <li>Der Kreis soll in der Mitte des Bildschirm starten</li>
