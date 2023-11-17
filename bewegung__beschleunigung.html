@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Bewegung &amp; Beschleunigung | PRG Ming Skript  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site exe-search-bar" id="exe-node-63"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="einfhrung_computersprache.html" class="no-ch">Einführung: Computersprache</a></li>
+   <li><a href="lektion_1.html" class="daddy">Lektion 1</a>
+   <ul class="other-section">
+      <li><a href="zeichnen.html" class="no-ch">Zeichnen</a></li>
+      <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+      <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+      <li><a href="variablen.html" class="no-ch">Variablen</a></li>
+      <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+      <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+      <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+      <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+      <li><a href="bungen_lektion_1.html" class="no-ch">Übungen Lektion 1</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_2.html" class="daddy">Lektion 2</a>
+   <ul class="other-section">
+      <li><a href="ifanweisungen.html" class="no-ch">If-Anweisungen</a></li>
+      <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+      <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+      <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+      <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+      <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+      <li><a href="bungen_lektion_2.html" class="no-ch">Übungen Lektion 2</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_3.html" class="daddy">Lektion 3</a>
+   <ul class="other-section">
+      <li><a href="while_schleife.html" class="no-ch">While Schleife</a></li>
+      <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+      <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+      <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+      <li><a href="bungen_lektion_3.html" class="no-ch">Übungen Lektion 3</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_4.html" class="daddy">Lektion 4</a>
+   <ul class="other-section">
+      <li><a href="einfache_arrays.html" class="no-ch">Einfache Arrays</a></li>
+      <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+      <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+      <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+      <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+      <li><a href="bungen_lektion_4.html" class="no-ch">Übungen Lektion 4</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_5.html" class="daddy">Lektion 5</a>
+   <ul class="other-section">
+      <li><a href="funktionen.html" class="no-ch">Funktionen</a></li>
+      <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+      <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+      <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+      <li><a href="bungen_lektion_5.html" class="no-ch">Übungen Lektion 5</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="lektion_6.html" class="current-page-parent daddy">Lektion 6</a>
+   <ul>
+      <li><a href="transformation.html" class="no-ch">Transformation</a></li>
+      <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+      <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+      <li id="active"><a href="bewegung__beschleunigung.html" class="active no-ch">Bewegung &amp; Beschleunigung</a></li>
+      <li><a href="bungen_lektion_6.html" class="no-ch">Übungen Lektion 6</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_7.html" class="daddy">Lektion 7</a>
+   <ul class="other-section">
+      <li><a href="switch.html" class="no-ch">Switch</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+      <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+      <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+      <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+      <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+      <li><a href="bungen_lektion_7.html" class="no-ch">Übungen Lektion 7</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_8.html" class="daddy">Lektion 8</a>
+   <ul class="other-section">
+      <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+      <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+      <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+      <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+      <li><a href="bungen_lektion_8.html" class="no-ch">Übungen Lektion 8</a></li>
+   </ul>
+   </li>
+   <li><a href="lektion_9.html" class="daddy">Lektion 9</a>
+   <ul class="other-section">
+      <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+      <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+      <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      <li><a href="bungen_lektion_9.html" class="no-ch">Übungen Lektion 9</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="transformationen_speichern.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_lektion_6.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Bewegung &amp; Beschleunigung</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id143">
+<div class="iDevice emphasis0" >
+<div id="ta143_127_2" class="block iDevice_content">
+<div class="exe-text"><h1>Vektoren</h1>
+<p>Was ist ein Vektor? Das ist eine spannende Frage. Und eine sehr einfache und doch hilfreiche Antwort darauf ist: Ein Pfeil.</p>
+<p>Ein Pfeil, kann mir entweder anzeigen, an welchem <strong>Ort</strong> sich etwas befindet oder in welche <strong>Richtung</strong> sich etwas bewegt. Außerdem hat so ein Pfeil eine <strong>Richtung</strong> und eine <strong>Länge</strong>. Damit haben wir schon dich wichtigsten Eigenschaften eines Vektors.</p>
+<p>Wenn ich nun beschreiben möchte, wie ein Vektor aussieht, dann habe ich zwei Möglichkeiten:</p>
+<ul>
+<li>Ich gebe <strong>zwei Werte</strong> an, z.B. (3|4). Das bedeutet in diesem Fall, dass das Ende des Pfeils 3 Schritte auf der x-Achse und 4 Schritte auf der y-Achse vom Start entfernt ist.
+<ul>
+<li>Du kannst dir das vorstellen, wie die Navigation mit einem Auto-Navi: <em>"In 300m rechts abbiegen, danach in 400m geradeaus. Dann haben Sie ihr Ziel erreicht."</em></li>
+</ul>
+</li>
+<li>Ich gebe <strong>einen Winkel</strong> (eine Richtung) und <strong>eine Länge</strong> an, z.B. 45° und 10. Das bedeutet, dass ich mich in Richtung 45° drehen muss und dann 10 Schritte nach vorne gehen muss, um an die Spitze des Pfeils zu kommen.
+<ul>
+<li>Du kannst dir das vorstellen, wie die Navigation mit einer Schatzkarte mit einem Kompass:<em> "Der Schatz befindet sich 100m in Richtung Osten."</em></li>
+</ul>
+</li>
+</ul>
+<p>Doch warum sind Vektoren eigentlich wichtig und warum müssen wir uns damit beschäfitgen? Es mag dir vielleicht schon aufgefallen sein: Wir haben bisher die ganze Zeit schon Vektoren verwendet! Jedes Mal, wenn wir mithilfe von x- und y-Werten angegeben haben, wo bzw. an welchem <strong>Ort</strong> sich etwas befindet, haben wir aus mathematischer Sicht einen Vektor verwendet - und zwar einen <strong>Ortsvektor</strong>.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>float x = 20;
+float y = 10;
+
+rect(x, y, 50, 50);         // Der Ortsverktor ist (20|10)
+point(75, 30);              // Der Ortsverktor ist (75|30)</code></pre>
+</div>
+</div>
+<h2>Datentyp PVector</h2>
+<p>Du siehtst also, dass Vektoren ein wichtiger Bestandteil der graphischen Programmierung sind. Aus diesem Grund ist Processing so freundlich, uns einen eigene Datentyp dafür zur Verfügung zu stellen: <code>PVector</code>. Das hat zum einen den Vorteil, dass ich die beiden x- und y-Werte nicht in zwei, sondern in einer Variablen speichern kann. Und zum anderen hat der Datentyp <code>PVector</code> ein paar Funktionen, die mir das arbeiten mit Vektoren deutlich vereinfachen. Schauen wir uns also einmal an, wie ich einen Vektor mit <code>PVector</code> anlege:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Bisher
+float xPosition = 10;
+float yPosition = 20;
+
+// mit PVector
+PVector position = new PVector(10, 20);</code></pre>
+</div>
+</div>
+<p>Du siehst hier ein paar Unterschiede zu dem, wie wir bisher Variablen deklariert und initialisiert haben:</p>
+<ul>
+<li><strong><code>PVector</code> wird groß geschrieben:</strong> Das ist bei den anderen Datentypen, wie <code>int</code> und <code>float</code>, nicht der Fall. Außer <code>String</code>, was ebenfalls groß geschrieben wird. Warum das so ist, klären wir später. Wichtig ist nur: Merke dir: <code>PVector</code> wird groß geschrieben!</li>
+<li><strong>Das Schlüsselwort <code>new:</code></strong> Das kennst du bereits von Arrays. Das darfst du hier auf keinen Fall vergessen!</li>
+<li><strong>Das Zuweisen der Werte in den runden Klammern:</strong> Bei der Initialisierung bzw. wenn du beide Werte festlegen willst, machst du das wie im Beispiel oben. Das geht am schnellsten und am einfachsten.</li>
+</ul>
+<p>Du kannst auch auf die einzelnen Werte zugreifen. Das geht folgendermaßen:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>PVector pos = new PVector(); // das geht auch - keine Werte angeben
+// Ist aber unnötig umständlich das so zu machen
+
+pos.x = 10;  // so kannst du Werte für x und y zuweisen
+pos.y = 20;
+
+println(pos.x); // So kannst du Werte verwenden und z.B. ausgeben</code></pre>
+</div>
+</div>
+<p>Außerdem hat der Datentyp PVector ein paar hilfreiche Funktionen:</p>
+<ul>
+<li><strong>add() &amp; sub():</strong> mit diesen Funktionen können Vektoren addiert bzw. subtrahiert werden.
+<ul>
+<li>Bsp.: <code>PVector richtungsVektor = PVector.sub(zielPos, spielFigurPos);</code><span style="font-size: 10pt;"><br />Nutze diese Schreibweise, wenn du einen Vektor von einem anderen abziehen möchtest und das Ergebnis in einem anderen Vektor speichern möchtest, wie bei a = b - c<code></code></span></li>
+<li>Bsp.: <code>PVector vektorA.sub(vektor);<br /></code><span style="font-size: 10pt;">Nutze diese Schreibweise, wenn du von einem Vektor einen anderen abziehen möchtest, wie bei a = a - b<code></code></span></li>
+</ul>
+</li>
+<li><strong>dist():</strong> Berechnet die Distanz zwischen zwei Vektoren.
+<ul>
+<li>Bsp.:<code> float distanz = zielPos.dist(spielFigurPos);</code></li>
+<li>Bsp.:<code> float distanz = PVector.dist(zielPos, spielFigurPos);</code><code></code></li>
+</ul>
+</li>
+<li><strong>normalize()</strong>: Normalisiert eine Vektor (setzt ihn auf die Länge 1)<br />
+<ul>
+<li>Bsp.:<code> richtungsVektor.normalize();</code></li>
+</ul>
+</li>
+<li><strong>mag():</strong> Berechnet die Länge eines Vektors in Bezug zum Mittelpunkt (0|0).
+<ul>
+<li>Bsp.:<code> float laenge = spieFigurPos.mag();</code></li>
+</ul>
+</li>
+<li><strong>heading():</strong> Berechnet den Winkel (im Bogenmaß) eines Vektors.
+<ul>
+<li>Bsp.:<code> float richtung = spieFigurPos.heading();</code><code></code></li>
+</ul>
+</li>
+</ul>
+<p>Beachte: Alle diese Funktionen funktionieren nur, wenn sie mithilfe der <strong>Punktnotation</strong> entweder an den Vektor angehängt werden oder an den Datentyp (PVector). Je nachdem, woran man die Funktion anhängt, muss man unterschiedliche Parameter angeben. Schau am besten in der <a href="https://processing.org/reference/PVector.html" target="_blank" title="PVector / Reference / Processing.org" rel="noopener">Referenz über PVector</a> nach, wie man die Funktionen genau verwendet und welche weiteren Funktionen es noch gibt.</p>
+<p>Jetzt wissen wir, was Vektoren sind und wie wir damit arbeiten können. Und wir wissen, wie wir mithilfe von Vektoren angeben können, wo sich etwas befindet. Gehen wir einen Schritt weiter: Wir geben eine Richtung an, in die wir uns bewegen.</p>
+<h1>Geschwindigkeit</h1>
+<p>Die einfachste Form von Bewegung, die wir kennen und bereits mehrmals umgesetzt haben, ist die Bewegung in <strong>eine</strong> Richtung. Ein einfaches Beispiel ist ein Kreis, der sich von links nach rechts über den Bildschirm bewegt:</p>
+<div class="highlighted-code language-java line-numbers hightlight-6">
+<div>
+<pre><code>float x = 0;
+
+void draw() {
+
+  // BERECHNEN
+  x = x + 1;
+
+  // ZEICHNEN
+  ellipse(x, 50, 10, 10);
+
+}</code></pre>
+</div>
+</div>
+<p>Schauen wir uns die Zeile 6 einmal genauer an - was passiert hier? Wie berechnen die nächste Position und sagen, die nächste Position ist gleich die aktuelle Position plus 1 (die Geschwindigkeit). Das ist eine wichtige Formel, die wir uns merken müssen, wenn wir mit Bewegung arbeiten. Denn was ist Geschwindigkeit eigentlich? <strong>Geschwindigkeit ist die Rate, mit der sich die Position ändert.</strong> In unserem Fall wäre die Rate 1. Die Position ändert sich um 1 Pixel pro Frame. Wie sieht das als Formel aus? Da Programmierung meist auf englisch erfolgt, verwende ich ab jetzt die englischen Begriffe location für position und velocity für Geschwindigkeit:</p>
+<blockquote>
+<p><strong>location<sub>new</sub> = location<sub>old</sub> + velocity</strong></p>
+</blockquote>
+<p>Passen wir das Beispiel oben also mal in zwei Aspekten an: Als erstes machen wir aus der 1 eine Variable namens velocity. Und als zweites wandeln wir dir Variablen so um, dass wir PVetor verwenden. Die Geschwindigkeit gibt dabei die <strong>Richtung</strong> an, in die wir uns bewegen und ist somit ein <strong>Richtungsvektor</strong>. Wir wollen uns nur nach rechts bewegen, also in Richtung, der positiven x-Achse. Das bedeutet der Richtungsvektor für die Geschwindigkeit hat die Werte (1|0). 1 Schritt auf der x-Achse und 0 Schritte auf der y-Achse.</p>
+<div class="highlighted-code language-java line-numbers hightlight-6and9and10">
+<div>
+<pre><code>PVector location = new PVector(0, 50);
+PVector velocity = new PVector(1, 0); // 1 nach rechts, 0 nach oben/unten
+
+void draw() {
+  // BERECHNEN
+  location.add(velocity); // die add()-Funktion addiert einen Vektor zu einem anderen
+ 
+  // ZEICHNEN
+  background(200);
+  ellipse(location.x, location.y, 10, 10);
+}
+</code></pre>
+</div>
+</div>
+<p>Du siehst hier, dass wir in Zeile 6 mithilfe von <code>location.x</code> und <code>location.y</code> die Werte in unserem <code>rect()</code>-Befehl ganz einfach verwenden können. Interessanter ist die Zeile 7: Hier addieren wir zu unserem Vektor <code>location</code> den Vektor <code>velocity</code>. Man könnte das auch "händisch" machen, indem man jeweils einzeln die x- und die y-Werte addiert. So geht das aber ein wenig schneller. Wichtig: <code>location = location + velocity</code> geht nicht!</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>// Der umständliche Weg
+location.x = location.x + velocity.x;
+location.y = location.y + velocity.y;
+
+// Besser
+location.add(velocity);
+// Oder
+location = PVector.add(location, velocity);
+
+// Das geht NICHT !!!
+location = location + velocity;
+location += velocity;</code></pre>
+</div>
+</div>
+<h1>Beschleunigung</h1>
+<p>Nun wissen wir, wie wir etwas in Bewegung versetzen können. Allerdings sieht es etwas unnatürlich aus, wenn Bewegungen abrupt beginnen und enden. Typischerweise wollen wir, dass Dinge beschleunigen und bremsen. <strong>Beschleunigung ist die Rate, mit der sich die Geschwindigkeit ändert.</strong> Moment mal. Das kennen wir doch, oder? Das ist dasselbe Prinzip, wie bei der Geschwindigkeit. Die Beschleunigung ändert die Geschwindigkeit und die Geschwindigkeit ändert die Position. Als Formel sieht das so aus:</p>
+<p style="padding-left: 30px;"><strong><br />velocity<sub>new</sub> = velocity<sub>old</sub> + acceleration<br />location<sub>new</sub> = location<sub>old</sub> + velocity<sub>new</sub> <br /></strong></p>
+<p>Dabei gibt es unterschiedliche Möglichkeiten, die Beschleunigung zu berechnen oder festzulegen. In den meisten Fällen ist aber einen konstante Beschleunigung das, was wir wollen.</p>
+<h2>Konstante Beschleunigung</h2>
+<p>Das ist die einfachste Form der Beschleunigung: Es gibt einen festen, unveränderlichen Wert für die Beschleunigung. Wir ergänzen unser Codebeispiel nun um einen neuen Vektor <code>acceleration</code> und addieren diesen jeden Frame auf <code>velocity</code>. Dadruch wird unser Ball mit jedem Frame schneller. Da wir mit ca. 60 Frames pro Sekunde arbeiten, müssen wir hier einen sehr kleinen Wert nehmen, da die Geschwindigkeit sonst zu schnell zu groß wird.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>PVector location = new PVector(0, 50);
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector (0.05, 0);
+
+void draw() {
+  // BERECHNEN
+  velocity.add(acceleration); // Beschleunigung auf Geschwindigkeit addieren
+  location.add(velocity); 
+
+  // ZEICHNEN
+  background(200);
+  ellipse(location.x, location.y, 10, 10);
+}</code></pre>
+</div>
+</div>
+<p>Apropos zu groß: In diesem Beispiel wird die Geschwindigkeit immer schneller solange wir das Programm laufen lassen. Das ist natürlich nicht in unserem Sinne. In der Realität ist Geschwindigkeit immer begrenzt, sei es aufgrund von Reibung, Widerstand oder der Leistungsfähigkeit des Motors. Das sind alles Faktoren, die wir hier so komplex gar nicht berechnen können und wollen. Das Einfachste ist, dass wir dem Vektor <code>velocity</code> ein Limit geben (auch wenn das physikalisch nicht ganz korrekt ist). Hierfür gibt es im Datentyp <code>PVector</code> die Funktion <code>limit()</code>. Diese Funktion begrenzt den Vektor auf eine maximale Länge.</p>
+<div class="highlighted-code language-java line-numbers hightlight-9">
+<div>
+<pre><code>PVector location = new PVector(0, 50);
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector (0.05, 0);
+
+void draw() {
+
+  // BERECHNEN
+  velocity.add(acceleration); 
+  velocity.limit(2);  // velocity hat eine max. Länge von 2
+  location.add(velocity); 
+
+  // ZEICHNEN
+  background(200);
+  ellipse(location.x, location.y, 10, 10);
+  
+}</code></pre>
+</div>
+</div>
+<p>Auf diese Weise beschleunigt unser Ball zunächst und hat dann, sobald er seine Höchstgeschwindigkeit erreicht hat, eine konstante Geschwindigkeit von 2. Allerdings bewegt sich unser Kreis immer noch nur in eine Richtung. Langweilig. Die Richtung können wir mithilfe der Beschleunigung ändern. Das einfachste ist zunächst eine zufällige Richtung, sprich eine zufällige Beschleunigung zu wählen. Dafür gehen wird folgendermaßen vor:</p>
+<ol>
+<li>Mithilfe von PVector.random2D() erstellen wir einen zufälligen Vektor mit x- und y-Werten zwischen 0 und 1</li>
+<li>Wir normalisieren den Vektor (setzen seine Länge auf 1)</li>
+<li>Wir multiplizieren den Vektor mit der Länge, die wir haben wollen</li>
+</ol>
+<p>So erhalten wir jeden Frame einen neuen Vektor, der in eine zufällige Richtung zeigt und dabei jedes Mal gleich lang ist. Das ist wichtig, damit wir auch jeden Frame im selben Maße beschleunigen. Im Code sieht das folgendermaßen aus:</p>
+<div class="highlighted-code language-java line-numbers hightlight-1and3and9and11and13">
+<div>
+<pre><code>PVector location = new PVector(50, 50); // Kreis mittig platzieren
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector (); 
+
+void draw() {
+   
+  // BERECHNEN
+  // Zufällige x- und y-Werte zw. 0 und 1
+  acceleration = PVector.random2D(); 
+  // Auf Länge 1 setzen
+  acceleration.normalize();
+  // Mit gewünschter Rate multiplizieren
+  acceleration.mult(0.05);
+  velocity.add(acceleration); 
+  velocity.limit(2);  // velocity hat eine max. Länge von 2
+  location.add(velocity); 
+
+  // ZEICHNEN
+  background(200);
+  ellipse(location.x, location.y, 10, 10);
+  
+}</code></pre>
+</div>
+</div>
+<p>Jetzt haben wir es schonmal geschafft, dass sich unser Kreis in verschiedene Richtungen bewegen kann. Diese wollen wir jetzt aber gezielt steuern. Das geht, indem wir uns in Richtung eines Ziels bewegen oder lenken. Beide Varianten werden wir uns ansehen.</p>
+<h2>Beschleunigung in Richtung eines Ziels</h2>
+<p>Wenn ich zwei Vektoren für Position und Ziel habe, kann ich den Richtungsvektor  (der Vektor mit dem ich von meiner Position zum Ziel zu komme) berechnen, indem ich die Position vom Ziel abziehe. Wenn ich nun diesen Richtungsvektor wieder auf die Position addieren würde, wäre ich <em>sofort</em> bei meinem Ziel. Das wollen wir aber natürlich nicht. Wir wollen uns ja nur schrittweise in Richtung Ziel bewegen - und das mit einer Rate bzw. Schrittweite, die wir festlegen. Um das zu erreichen, müssen wir den Richtungsvektor <em>normalisieren.</em> Das bedeutet, dass die x- und y-Werte so skaliert werden, dass der Vektor genau eine Länge von 1 hat. <em>Dann </em>können wir den Richtungsvektor einfach mit einer Zahl, die unsere Beschleunigungsrate ist, multiplizieren und erhalten dann die Beschleunigung in Richtung Ziel.</p>
+<p>Das folgende Beispiel, habe ich so angepasst, dass unser Ball jetzt der Maus folgt. Dafür habe ich einen neuen Vektor <code>goal</code> angelegt, in dem ich in Zeile 10 und 11 die Mauskoordinaten speichere. In Zeile 16-18 berechne ich die Richtung, wie oben beschrieben.</p>
+<div class="highlighted-code language-java line-numbers hightlight-4and10-11and14-16and19">
+<div>
+<pre><code>PVector location = new PVector(random(10, 90), random(10, 90));
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector ();
+PVector goal = new PVector();
+
+void draw() {
+  
+  // BERECHNEN
+  // Ziel setzen
+  goal.x = mouseX;
+  goal.y = mouseY;
+
+  // Richtung berechnen
+  PVector direction = PVector.sub(goal, location); // Ziel von der Position abziehen
+  direction.normalize(); // Richtung normalisieren
+  direction.mult(0.05);  // Richtung multiplizieren
+
+  // Beschleunigung setzen
+  acceleration = direction;
+
+  // Geschwindigkeit berechnen
+  velocity.add(acceleration);
+  velocity.limit(2);
+
+  // Geschwindigkeit addieren
+  location.add(velocity);
+
+  // ZEICHNEN
+  background(200);
+  ellipse(location.x, location.y, 10, 10);
+}</code></pre>
+</div>
+</div>
+<p style="padding-left: 30px;"><strong>Warum hält der Kreis nicht an, wenn er das Ziel erreicht?</strong></p>
+<p style="padding-left: 30px;">Das sich bewegende Objekt weiß nicht, dass es an einem Ziel anhalten muss, es weiß nur, wo das Ziel ist und versucht, so schnell wie möglich dorthin zu gelangen. Wenn es so schnell wie möglich vorankommt, wird es unweigerlich über das Ziel hinausschießen und umkehren müssen, um dann wieder so schnell wie möglich in Richtung des Ziels zu fahren und erneut über das Ziel hinauszuschießen, und so weiter, und so fort.</p>
+<h3>Richtung und Ausrichtung</h3>
+<p>Bei unserem Kreis sehen wir gar nicht, wo vorne und hinten ist. Er bewegt sich nur in Richtung des Ziel, aber dreht sich nicht in diese Richtung. Die meisten Objekte, haben aber eine Ausrichtung. Wie schaffen wir es nun, dass sich unser Kreis in Richtung Ziel dreht? Als erstes benötigen wir eine geometrische Form, die eine eindeutige Ausrichtung hat. Hier nehmen wir ein kleines Dreieck. Nun verschieben wir das Koordinatensystem mithilfe von translate an die Position des Dreiecks. Dann drehen wir das Koordinatensystem mithilfe von rotate in Richtung Ziel - doch woher kenne ich den Winkel (im Bogenmaß) dafür? Hierfür verwenden wir den Befehl <code>acceleration.heading()</code>. Diese Funktion liefert uns den Winkel eines Vektors im Bogenmaß. Das ist möglich, weil (wir erinnern uns an den Anfang des Kapitels) jeder Vektor entweder mithilfe von x- und y-Werten oder mithilfe des Winkels und der Länge angegeben werden kann.</p>
+<div class="highlighted-code language-java line-numbers hightlight-31-34">
+<div>
+<pre><code>PVector location = new PVector(random(10, 90), random(10, 90));
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector ();
+PVector goal = new PVector();
+
+void draw() {
+
+  // BERECHNUNGEN
+  
+  // Ziel setzen
+  goal.x = mouseX;
+  goal.y = mouseY;
+
+  // Richtung berechnen
+  PVector direction = PVector.sub(goal, location); // Ziel von der Position abziehen
+  direction.normalize(); // Richtung normalisieren
+  direction.mult(0.05);  // Richtung multiplizieren
+
+  // Beschleunigung setzen
+  acceleration = direction;
+
+  // Geschwindigkeit berechnen
+  velocity.add(acceleration);
+  velocity.limit(2);
+
+  // Geschwindigkeit addieren
+  location.add(velocity);
+
+  // ZEICHNEN
+  background(200);
+  translate(location.x, location.y);
+  rotate(direction.heading());
+  triangle(- 5, - 5, - 5, 5, 10, 0);
+}
+</code></pre>
+</div>
+</div>
+<h2>Lenken</h2>
+<p>Schauen wir uns nun an, wie wir lenken können. Für diesen Fall möchten wir, dass unser Pfeil (ehemals Kreis) beschleunigt und dann konstant bewegt und wenn wir die linke oder rechte Pfeiltaste drücken, soll sich der Pfeil drehen und in die entsprechende Richtung bewegen. Hierfür ist es zunächst sinnvoll eine Variable <code>angle</code> zu haben, in der gespeichert ist, in welche Richtung sich unser Pfeil gerade bewegt. Ein Winkel ist dabei ja nur eine andere Art einen Vektor anzugeben (wir erinnern uns an den Anfang des Kapitels). Wenn wir dann unsere Pfeiltasten bewegen, verändern wir den Wert in <code>angle</code>. </p>
+<p>Als nächstes brauchen wir, wie in dem Beispiel davor auch, einen Vektor <code>direction</code> mit x- und y-Werten. Das bedeutet, ich muss irgendwie aus <code>angle</code> einen Vektor mit x- und y-Werten machen. Das geht mithilfe von Sinus und Kosinus und dem Satz des Pythagoras. Wenn ich einen Vektor habe, der mit einem Winkel <code>winkel</code> und einer Länge <code>länge</code> angegeben ist, kann ich folgendermaßen die x- und y-Werte berechnen:</p>
+<div class="pre-code">
+<div>
+<pre><code>x = cos(winkel) * länge
+y = sin(winkel) * länge</code></pre>
+</div>
+</div>
+<p>Wenn man - wie in unserem Fall - einfach nur einen Winkel hat, dann hat der Vektor die Länge 1 und man kann die Multiplikation am Ende weglassen. Wir können also direction.x mihilfe von cos(angle) berechnen und direction.y mithilfe von sin(angle). Da direction bereits die Länge 1 hat, müssen wir ihn nicht normaliseren und können ihn gleich mit der Rate multiplizieren, mit der wir uns drehen bzw. beschleunigen wollen.</p>
+<p>Das vollständige Codebeispiel sieht folgendermaßen aus:</p>
+<div class="highlighted-code language-java line-numbers hightlight-13and14and16and17">
+<div>
+<pre><code>PVector location = new PVector(150, 150);
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector ();
+float angle = 0;
+
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+
+  // BERECHNUNGEN
+  boolean turnLeft = keyPressed &amp;&amp; key == CODED &amp;&amp; keyCode == LEFT;
+  boolean turnRight = keyPressed &amp;&amp; key == CODED &amp;&amp; keyCode == RIGHT;
+
+  if (turnLeft) angle -= 0.03;
+  else if (turnRight) angle += 0.03;
+
+  // Richtung berechnen
+  PVector direction = new PVector();
+  direction.x = cos(angle);
+  direction.y = sin(angle);
+  direction.mult(0.07);  // Richtung multiplizieren
+
+  // Beschleunigung setzen
+  acceleration = direction;
+
+  // Geschwindigkeit berechnen
+  velocity.add(acceleration);
+  velocity.limit(1);
+
+  // Geschwindigkeit addieren
+  location.add(velocity);
+
+  // ZEICHNEN
+  background(200);
+  translate(location.x, location.y);
+  rotate(angle);
+  triangle(- 5, - 5, - 5, 5, 10, 0);
+}
+</code></pre>
+</div>
+</div>
+<h2>Bremsen</h2>
+<p>Und wie entschleunige bzw. bremse ich? Hier gibt es rein physikalisch mehrere Faktoren, mit denen man berechnen kann, wie schnell ein Objekt bremst. Der Einfachheit halber sagen wir jetzt einfach, dass unser Objekt jeden Frame 5% langsamer wird, wenn wir die Pfeiltaste nach unten drücken. Hierfür habe ich einen boolean breaking angelegt. Wenn wir nicht bremsen, beschleunigen und lenken wir, wie bisher. Wenn wir aber bremsen, verringert sich unsere Geschwindigkeit (Zeile 37).</p>
+<p>Als Code sieht das folgendermaßen aus:</p>
+<div class="highlighted-code language-java line-numbers hightlight-13and37">
+<div>
+<pre><code>PVector location = new PVector(150, 150);
+PVector velocity = new PVector(0, 0);
+PVector acceleration = new PVector ();
+float angle = 0;
+
+void setup() {
+  size(300, 300);
+}
+
+void draw() {
+
+  // BERECHNUNGEN
+  boolean breaking = keyPressed &amp;&amp; key == CODED &amp;&amp; keyCode == DOWN;
+  if(!breaking) {
+
+  boolean turnLeft = keyPressed &amp;&amp; key == CODED &amp;&amp; keyCode == LEFT;
+  boolean turnRight = keyPressed &amp;&amp; key == CODED &amp;&amp; keyCode == RIGHT;
+
+  if (turnLeft) angle -= 0.03;
+  else if (turnRight) angle += 0.03;
+
+  // Richtung berechnen
+  PVector direction = new PVector();
+  direction.x = cos(angle);
+  direction.y = sin(angle);
+  direction.mult(0.07);  // Richtung multiplizieren
+
+  // Beschleunigung setzen
+  acceleration = direction;
+
+  // Geschwindigkeit berechnen
+  velocity.add(acceleration);
+  velocity.limit(1);
+
+  } else {
+    // Bremsen
+    velocity.mult(0.95);
+  }
+  
+  // Geschwindigkeit addieren
+  location.add(velocity);
+
+  // ZEICHNEN
+  background(200);
+  translate(location.x, location.y);
+  rotate(angle);
+  triangle(- 5, - 5, - 5, 5, 10, 0);
+}</code></pre>
+</div>
+</div>
+<h1>Zusammenfassung</h1>
+<ul>
+<li>Vektoren geben an, wo sich etwas befindet oder in welche Richtung sich etwas bewegt.</li>
+<li>Vektoren können mithilfe von x- und y-Werten angegeben werden oder mithilfe eines Winkels und einer Länge.</li>
+<li>In Processing können Vektoren mit dem Datentyp PVector gespeichert und verarbeitet werden. Wichtige Funktionen von PVector sind unter anderem:
+<ul>
+<li><strong>add() &amp; sub():</strong> mit diesen Funktionen können Vektoren addiert bzw. subtrahiert werden.</li>
+<li><strong>dist():</strong> Berechnet die Distanz zwischen zwei Vektoren.</li>
+<li><strong>normalize()</strong>: Normalisiert eine Vektor (setzt ihn auf die Länge 1)<code></code></li>
+<li><strong>mag():</strong> Berechnet die Länge eines Vektors in Bezug zum Mittelpunkt (0|0).<code></code></li>
+<li><strong>heading():</strong> Berechnet den Winkel (im Bogenmaß) eines Vektors.</li>
+</ul>
+</li>
+<li>Die Geschwindigkeit ist die Rate mit der sich die Position eines Objekts ändert. Die neue Position kann berechnet werden mit <strong>location<sub>new</sub> = location<sub>old</sub> + velocity</strong></li>
+<li>Die Beschleunigung ist die Rate mit der sich die Geschwindigkeit eines Objekts ändert (bzw. erhöht). Die neue Geschwindigkeit kann berechnet werden mit <strong>velocity<sub>new</sub> = velocity<sub>old</sub> + acceleration</strong></li>
+<li>Ein Vektor, der in Form eines Winkels (und einer Länge) vorliegt, kann mithilfe von Sinus und Kosinus in x- und y-Werte umgerechnet werden:<br />
+<ul>
+<li>x = cos(winkel) * länge</li>
+<li>y = sin(winkel) * länge</li>
+</ul>
+</li>
+</ul>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="transformationen_speichern.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_lektion_6.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
