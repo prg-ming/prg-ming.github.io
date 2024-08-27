@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Übungen zu Transformation | PRG Ming Skript  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site exe-search-bar" id="exe-node-83"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="grundlagen.html" class="daddy">Grundlagen</a>
+   <ul class="other-section">
+      <li><a href="zeichnen.html" class="no-ch">Zeichnen</a></li>
+      <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+      <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+      <li><a href="variablen.html" class="no-ch">Variablen</a></li>
+      <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+      <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+      <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+      <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+      <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+      <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+   </ul>
+   </li>
+   <li><a href="kontrollstrukturen.html" class="daddy">Kontrollstrukturen</a>
+   <ul class="other-section">
+      <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+      <li><a href="verzweigungen.html" class="daddy">Verzweigungen</a>
+      <ul class="other-section">
+         <li><a href="ifanweisungen.html" class="no-ch">If-Anweisungen</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+         <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+         <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+      </ul>
+      </li>
+      <li><a href="schleifen.html" class="daddy">Schleifen</a>
+      <ul class="other-section">
+         <li><a href="while_schleife.html" class="no-ch">While Schleife</a></li>
+         <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+         <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+         <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+      </ul>
+      </li>
+      <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+   </ul>
+   </li>
+   <li><a href="arrays.html" class="daddy">Arrays</a>
+   <ul class="other-section">
+      <li><a href="einfache_arrays.html" class="no-ch">Einfache Arrays</a></li>
+      <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+      <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+      <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+   </ul>
+   </li>
+   <li><a href="funktionen.html" class="daddy">Funktionen</a>
+   <ul class="other-section">
+      <li><a href="funktionen0.html" class="no-ch">Funktionen</a></li>
+      <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+      <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+   </ul>
+   </li>
+   <li><a href="formatierte_ein__ausgabe.html" class="daddy">Formatierte Ein- &amp; Ausgabe</a>
+   <ul class="other-section">
+      <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+      <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+      <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+      <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+   </ul>
+   </li>
+   <li><a href="transformation.html" class="daddy">Transformation</a>
+   <ul class="other-section">
+      <li><a href="transformation0.html" class="no-ch">Transformation</a></li>
+      <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+      <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+   </ul>
+   </li>
+   <li><a href="vertiefung.html" class="daddy">Vertiefung</a>
+   <ul class="other-section">
+      <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+      <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+      <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+      <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+      <li><a href="bewegung__beschleunigung.html" class="no-ch">Bewegung &amp; Beschleunigung</a></li>
+      <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+      <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="bungen_und_fragen.html" class="current-page-parent daddy">Übungen und Fragen</a>
+   <ul>
+      <li><a href="bungen_zu_grundlagen.html" class="no-ch">Übungen zu Grundlagen</a></li>
+      <li><a href="bungen_zu_kontrollstrukturen.html" class="no-ch">Übungen zu Kontrollstrukturen</a></li>
+      <li><a href="bungen_zu_arrays.html" class="no-ch">Übungen zu Arrays</a></li>
+      <li><a href="bungen_zu_funktionen.html" class="no-ch">Übungen zu Funktionen</a></li>
+      <li><a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="no-ch">Übungen zu Formatierte Ein- und Ausgabe</a></li>
+      <li id="active"><a href="bungen_zu_transformation.html" class="active no-ch">Übungen zu Transformation</a></li>
+      <li><a href="bungen_zu_vertiefung.html" class="no-ch">Übungen zu Vertiefung</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_zu_vertiefung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Übungen zu Transformation</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id108">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Translation, Rotation, Skalierung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta108_124_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Transformation-Fragen">Fragen</h1>
+<ol>
+<li>Wenn es etwas mithilfe des Befehls<code> translate()</code> verschiebe - was verschiebe ich dann?
+<ul>
+<li>Die nächste gezeichnete Form</li>
+<li>Alle gezeichneten Formen, die nach dem Befehl kommen</li>
+<li>Alle Formen innerhalb dieses draw-Durchlaufs</li>
+<li>Das Koordinatensystem innerhalb des gesamten draw-Durchlaufs</li>
+<li>Das Koordinatensystem ab der Stelle im Code, wo der Befehl aufgerufen wurde</li>
+</ul>
+</li>
+<li>Wenn ich mithilfe des Befehls <code>rotate()</code> etwas drehe - was wird dann gedreht?
+<ul>
+<li>Die nächsten Formen und zwar um ihren eigenen Mittelpunkt</li>
+<li>Das Koordinatensystem und zwar um seinen Mittelpunkt</li>
+</ul>
+</li>
+<li>Wie wird der Winkel im Befehl <code>rotate() </code>angegeben?</li>
+<li>Wie lange sind die Befehle</li>
+<li>Wie lange sind die Befehle <code>translate()</code>, <code>rotate() </code>und <code>scale()</code> gültig?</li>
+<li>Wenn ich den Befehl <code>scale(10)</code> ausführe, um welchen Faktor wird dann skaliert?
+<ul>
+<li>Formen sind danach 10mal so groß</li>
+<li>Formen sind danach 10% ihrer Originalgröße groß</li>
+<li>Formen sind danach 10 Pixel größer</li>
+</ul>
+</li>
+</ol>
+<h1 id="id-Ü|Transformation-Übungsaufgaben">Aufgaben</h1>
+<p id="id-Ü|Transformation-Transformationenkombinieren"><strong>1. Transformationen kombinieren<br /></strong>Versuche, die folgenden Formen herzustellen, indem du die drei Transformationen <code>translate, rotate</code> und <code>scale</code> verwendest.</p>
+<p>Zeichne die Formen am besten <strong>immer um den Nullpunkt herum</strong> und schalte entsprechende Transformation davor. Denke daran, dass du bei jeder Transformation das gesamte Koordinatensystem bewegst.</p>
+<p>Versuche, jede Form zunächst "theoretisch" zu lösen (im Kopf oder auf Papier). Wenn du lediglich Code-Zeilen hin- und herschiebst oder kopierst, baust du evtl. kein wirkliches Verständnis auf...</p>
+<table style="width: 100%;" border="0" class="exe-table">
+<tbody>
+<tr>
+<td style="width: 14.2857%;">Muster #1</td>
+<td style="width: 14.2857%;">Muster #2</td>
+<td style="width: 14.2857%;">Muster #3</td>
+<td style="width: 14.2857%;">Muster #4</td>
+<td style="width: 14.2857%;">Muster #5</td>
+<td style="width: 14.2857%;">Muster #6</td>
+<td style="width: 14.2857%;">Muster #6</td>
+</tr>
+<tr>
+<td style="width: 14.2857%;"><img src="trans-ue1.png" alt="" width="99" height="98" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue2.png" alt="" width="97" height="98" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue3.png" alt="" width="99" height="99" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue4.png" alt="" width="100" height="98" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue5.png" alt="" width="100" height="98" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue6.png" alt="" width="99" height="98" /></td>
+<td style="width: 14.2857%;"><img src="trans-ue7.png" alt="" width="101" height="99" /></td>
+</tr>
+</tbody>
+</table>
+<p id="id-Ü|Transformation-RotierendesQuadrat"><strong>2. Rotierendes Quadrat<br /></strong>Programmiere ein Quadrat, das sich im Uhrzeigersinn um seine Mitte dreht. Verwende <code>rotate</code> und <code>translate</code> (in welcher Reihenfolge?).</p>
+<p id="id-Ü|Transformation-RotationmitzweiFormen"><strong>3. Rotation mit zwei Formen</strong></p>
+<p>Lass einen Kreis um ein Rechteck in der Mitte rotieren. Programmiere zwei Varianten. In der ersten bewegt sich das Rechteck nicht. In der zweiten dreht es sich mit dem Kreis mit.</p>
+<p id="id-Ü|Transformation-PulsierenderKreis"><strong>4. Pulsierender Kreis<br /></strong>Programmiere einen Kreis mit Durchmesser 50, der pulsiert. Er vergrößert sich auf das Doppelte und verkleinert sich dann auf die Hälfte usw. Verwende <code>scale</code> und <code>translate</code> (in welcher Reihenfolge?).</p>
+<p>Lass den Skalierungsfaktor nie negativ werden.</p>
+<p id="id-Ü|Transformation-SchiebenundDrehen"><strong>5. Schieben und Drehen<br /></strong>Lasse ein Quadrat von links nach rechts fliegen, das sich währenddessen um seinen Mittelpunkt dreht.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id109">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Transformationen speichern</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta109_125_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Transformation-Fragen.1">Fragen</h1>
+<ol>
+<li>Wie werden Transformationen gespeichert? (mehrere Antworten möglich)
+<ol>
+<li>in einer Datei</li>
+<li>in Processing</li>
+<li>in einer Matrix/mehreren Matrizen</li>
+<li>als Zahl</li>
+</ol>
+</li>
+<li>Wieviele Transformationen kann ich maximal speichern?</li>
+<li>Wie kann ich mir den Zustand der akutellen Transformation - also den aktuellen Zustand des Koordinatensystems - anzeigen lassen?</li>
+<li>Wie kann ich die Daten einer Transformation speichern bzw. laden?</li>
+<li>Ein Stack ist ein Speichermodell, welches nach dem Prinzip "Last in - first out" funktioniert. Erkläre in deinen eigenen Worten, was das bedeutet. Finde du 1-2 Beispiele/Metaphern aus dem Alltag.</li>
+</ol>
+<h2 id="id-Ü|Transformation-Übungsaufgaben.1">Aufgaben</h2>
+<p id="id-Ü|Transformation-ZweirotierendeQuadrate"><strong>1. Zwei rotierende Quadrate<br /></strong>Bring zwei Quadrate an den Positionen (25,50) und (75,50) zum rotieren. Verwende dazu <code>translate</code> und <code>rotate</code> sowie push/popMatrix.</p>
+<p id="id-Ü|Transformation-RotierenderKnochen"><strong>2. Rotierender Knochen<br /></strong>Lass einen Balken (Breite 60, Höhe 5) rotieren. An den beiden Enden des Balkens rotiert jeweils ein Quadrat (Höhe/Breite 20). Arbeite mit <code>pushMatrix</code> und <code>popMatrix:</code></p>
+<p id="id-Ü|Transformation-RotationenundgeradeBewegung"><strong>3. Rotationen und gerade Bewegung<br /></strong>Hier kombinieren wir eine Drehung mit einer "geraden" Bewegung mit Abprallen und dann nochmal einer Drehung.</p>
+<ol>
+<li>Zeichne ein großes Quadrat (Höhe/Breite 40) in der Mitte des Bildschirms, das rotiert.</li>
+<li>Zeichne ein weiteres Quadrat (Höhe/Breite 10), dass sich entlang einer der Kanten des weißen Quadrats hin und her bewegt und ebenfalls rotiert.</li>
+<li>Zeichne ein weiteres Quadrat (Höhe/Breite 10), dass entlang einer anderen Kante das gleiche Verhalten aufzeigt, wie das andere kleine Quadrat, nur mit halber Geschwindigkeit.</li>
+</ol>
+<p>Gehe am besten in Teilschritten vor. Beim Programmieren ist es oft sinnvoll, Teile der Bewegung kurzzeitig auszuschalten (durch Auskommentieren), z.B. um die Elemente korrekt zu positionieren. Verwende <code>pushMatrix</code> und <code>popMatrix</code> nur so oft wie nötig.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_zu_vertiefung.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

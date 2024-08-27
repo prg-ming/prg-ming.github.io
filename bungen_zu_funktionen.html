@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Übungen zu Funktionen | PRG Ming Skript  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site exe-search-bar" id="exe-node-82"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="grundlagen.html" class="daddy">Grundlagen</a>
+   <ul class="other-section">
+      <li><a href="zeichnen.html" class="no-ch">Zeichnen</a></li>
+      <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+      <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+      <li><a href="variablen.html" class="no-ch">Variablen</a></li>
+      <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+      <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+      <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+      <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+      <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+      <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+   </ul>
+   </li>
+   <li><a href="kontrollstrukturen.html" class="daddy">Kontrollstrukturen</a>
+   <ul class="other-section">
+      <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+      <li><a href="verzweigungen.html" class="daddy">Verzweigungen</a>
+      <ul class="other-section">
+         <li><a href="ifanweisungen.html" class="no-ch">If-Anweisungen</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+         <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+         <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+      </ul>
+      </li>
+      <li><a href="schleifen.html" class="daddy">Schleifen</a>
+      <ul class="other-section">
+         <li><a href="while_schleife.html" class="no-ch">While Schleife</a></li>
+         <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+         <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+         <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+      </ul>
+      </li>
+      <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+   </ul>
+   </li>
+   <li><a href="arrays.html" class="daddy">Arrays</a>
+   <ul class="other-section">
+      <li><a href="einfache_arrays.html" class="no-ch">Einfache Arrays</a></li>
+      <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+      <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+      <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+   </ul>
+   </li>
+   <li><a href="funktionen.html" class="daddy">Funktionen</a>
+   <ul class="other-section">
+      <li><a href="funktionen0.html" class="no-ch">Funktionen</a></li>
+      <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+      <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+   </ul>
+   </li>
+   <li><a href="formatierte_ein__ausgabe.html" class="daddy">Formatierte Ein- &amp; Ausgabe</a>
+   <ul class="other-section">
+      <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+      <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+      <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+      <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+   </ul>
+   </li>
+   <li><a href="transformation.html" class="daddy">Transformation</a>
+   <ul class="other-section">
+      <li><a href="transformation0.html" class="no-ch">Transformation</a></li>
+      <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+      <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+   </ul>
+   </li>
+   <li><a href="vertiefung.html" class="daddy">Vertiefung</a>
+   <ul class="other-section">
+      <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+      <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+      <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+      <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+      <li><a href="bewegung__beschleunigung.html" class="no-ch">Bewegung &amp; Beschleunigung</a></li>
+      <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+      <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="bungen_und_fragen.html" class="current-page-parent daddy">Übungen und Fragen</a>
+   <ul>
+      <li><a href="bungen_zu_grundlagen.html" class="no-ch">Übungen zu Grundlagen</a></li>
+      <li><a href="bungen_zu_kontrollstrukturen.html" class="no-ch">Übungen zu Kontrollstrukturen</a></li>
+      <li><a href="bungen_zu_arrays.html" class="no-ch">Übungen zu Arrays</a></li>
+      <li id="active"><a href="bungen_zu_funktionen.html" class="active no-ch">Übungen zu Funktionen</a></li>
+      <li><a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="no-ch">Übungen zu Formatierte Ein- und Ausgabe</a></li>
+      <li><a href="bungen_zu_transformation.html" class="no-ch">Übungen zu Transformation</a></li>
+      <li><a href="bungen_zu_vertiefung.html" class="no-ch">Übungen zu Vertiefung</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Übungen zu Funktionen</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id104">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Funktionen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta104_120_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Was sind die Vorteile von Funktionen? Erkläre die 3 Vorteile in deinen eigenen Worten.</li>
+<li>Was bedeuten die Begriffe Befehl und Funktion und wie hängen sie zusammen?</li>
+<li>Welche Konventioen gelten für Funktionen?</li>
+<li>Welche Syntaxregeln gelten für Funktionen?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p><strong>1. Hello, world!</strong><br />Schreibe die Funktion <code>hello(),</code> die einfach "hello, world" auf die Konsole schreibt.</p>
+<p style="padding-left: 30px;"><strong>Hinweis:</strong> Denk dran, dass du ein <code>setup()</code> oder <code>draw()</code> benötigst, um Funktionen definieren zu dürfen.</p>
+<p>Teste deinen Code mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  hello();
+  hello();
+  hello();
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>hello, world
+hello, world
+hello, world</code></pre>
+</div>
+</div>
+<p><strong>2. Mauszeiger</strong><br />Schreibe eine Funktion <code>mauszeiger(),</code> welche an Position der Maus einen Kreis mit Durchmesser 20 zeichnet.</p>
+<p>Teste deinen Code mit</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+  background(255);
+  mauszeiger();
+}</code></pre>
+</div>
+</div>
+<p><strong>3. Code durch Funktion ersetzen</strong><br />Du sollst folgenden Code "aufräumen". Im Code werden ein Haus und eine Sonne gezeichnet. Definiere eine neue Funktion <code>zeichneHaus(),</code> in dem das Haus gezeichnet wird und rufe diese Funktion in <code>draw()</code> auf. Mach das gleiche für die Sonne mit einer Funktion <code>zeichneSonne().</code></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  size(300, 300);
+}
+ 
+void draw() {
+  background(#31F0FF);
+  noStroke();
+  fill(#FF3134);
+  rect(80, 200, 80, 80);
+  triangle(80, 200, 160, 200, 120, 150);
+  fill(#FFF931);
+  ellipse(200, 100, 80, 80);
+}</code></pre>
+</div>
+</div>
+<p><strong>4. Dreierlei</strong><br />Schreibe drei Funktionen <code>one(), two(), three().</code> Die Funktionen geben jeweils die Zahl 1, 2 und 3 auf der Konsole aus. Rufe in <code>setup()</code> die Funktion <code>one()</code> auf. In der Funktion <code>one()</code> rufst du <code>two()</code> auf. In der Funktion <code>two()</code> rufst du <code>three()</code> auf.</p>
+<p>Teste deine Code unbedingt genau mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  one();
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>1
+2
+3</code></pre>
+</div>
+</div>
+<p>Wenn du deinen Code wie folgt testest, hast du was falsch gemacht. (Lies nochmal die Aufgabenbeschreibung...)</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  one();
+  two();
+  three();
+}</code></pre>
+</div>
+</div>
+<p><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id105">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Parameter</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta105_121_2" class="block iDevice_content">
+<div class="exe-text"><h1>Fragen</h1>
+<ol>
+<li>Was sind die Parameter einer Funktion?</li>
+<li>Wie kann ich eine Funktion mit Parametern definieren? Wo und wie werden die Parameter definiert?</li>
+<li>Wie groß ist der Scope eines Parameters einer Funktion? (Tip: Wenn du nicht mehr weißt, was ein Scope ist, dann schau nochmal bei den lokalen Variablen nach.)</li>
+<li>Kann ich, wenn ich einer Funktion als Parameter Varaiblen übergebe, diese beiden Variablen mithilfe der Funktion verändern? Oder bleibt jedwede Veränderung in der Funktion? Warum?</li>
+<li>Darf bzw. sollte ich einen Parameter innerhalb der Funktion verändern? Warum (nicht)?</li>
+<li>Was passiert, wenn eine Funktion überladen ist? Handelt es sich bei Überladung um einen Fehler oder ist Überladung etwas gewolltes?</li>
+</ol>
+<h1>Aufgaben</h1>
+<p><strong>1. Plus eins</strong><br />Schreibe die Funktion <code>plusEins,</code> die als Parameter eine Zahl <code>x</code> als <code>int</code> bekommt und <code>x+1</code> auf die Konsole schreibt. Der Aufruf <code>plusEins(5);</code> würde also folgendes produzieren:</p>
+<div class="pre-code">
+<div>
+<pre><code>6</code></pre>
+</div>
+</div>
+<p><strong>2. Summe ausgeben<br /></strong>Schreibe eine Funktion <code>printSum,</code> die drei Parameter vom Typ <code>float</code> bekommt und die Summe dieser drei übergebenen Zahlen auf die Konsole schreibt. Der Aufruf <code>printSum(3, 2, 5);</code> würde also folgendes produzieren:</p>
+<div class="pre-code">
+<div>
+<pre><code>10.0</code></pre>
+</div>
+</div>
+<p><strong>3. Mauszeiger<br /></strong>Schreibe eine Funktion <code>mauszeiger,</code> mit fünf Parametern: <code>x, y, r, g, b</code>. Die Funktion zeichnet einen Kreis an der Position (x, y) mit der Farbe (r, g, b) gefüllt.</p>
+<p>Teste deinen Code mit</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void draw() {
+  background(255);
+  mauszeiger(mouseX, mouseY, 255, 0, 0);
+}</code></pre>
+</div>
+</div>
+<p>Du solltest einen rot gefüllten Kreis sehen, der der Maus folgt.</p>
+<p><strong>4. Begrüßung</strong><br />Schreibe die Funktion <code>greeting(),</code> die einen Parameter name vom Typ <code>String</code> bekommt und dann "Servus, &lt;name&gt;" ausgibt. Der Aufruf von <code>greeting("Helmut");</code> ergibt zum Beispiel:</p>
+<div class="pre-code">
+<div>
+<pre><code>Servus, Helmut</code></pre>
+</div>
+</div>
+<p><strong>5. Begrüßung II</strong><br />Schreibe eine neue Funktion <code>greet(),</code> diesmal mit zwei Parametern, einen <code>String</code> und einen <code>boolean.</code> Der zweite Parameter gibt an, ob die Person weiblich ist.</p>
+<p>Beim Aufruf <code>greet("Schmidt", true);</code> soll kommen:</p>
+<div class="pre-code">
+<div>
+<pre><code>Hallo Frau Schmidt</code></pre>
+</div>
+</div>
+<p>Bei <code>greet("Huber", false);</code> soll kommen:</p>
+<div class="pre-code">
+<div>
+<pre><code>Hallo Herr Huber</code></pre>
+</div>
+</div>
+<p><strong>6. Variablen vertauschen</strong><br />Schreibe ein Programm, welches den Wert von 2 <code>int</code>-Variablen <code>wert1</code> und <code>wert2</code> vertauscht. Lass dir zunächst die beiden Variablen ausgeben und danach ein weiteres mal, nachdem du sie vertauscht hast.</p>
+<p style="padding-left: 30px;"><strong>Tip:</strong> Das Beispiel oben in der Lektion zeigt dir, wie es <span style="text-decoration: underline;">nicht</span> geht.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id106">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Rückgabewerte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta106_122_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Fragen.2">Fragen</h1>
+<ol>
+<li>Wieviele Rückgabewerte kann eine Funktion haben?</li>
+<li>Welche zwei Dinge muss ich tun, damit meine Funktion einen Rückgabewert hat?</li>
+<li>Muss der Rückgabewert einer Funktion immer denselben Datentyp haben oder kann dieser unterschiedlich sein, z.B. entweder <code>int </code>oder <code>String</code>.</li>
+</ol>
+<h1 id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Übungsaufgaben.2">Aufgaben</h1>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-EinfacheFunktion"><strong>1. Einfache Funktion</strong><br />Schreibe eine Funktion <code>foo,</code> die immer den Wert 42 zurückgibt. Die Funktion hat keine Parameter und den Rückgabtyp <code>int.</code> Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+    int num = foo();
+    println(num);
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>42</code></pre>
+</div>
+</div>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Addition"><strong>2. Addition<br /></strong>Schreibe eine Funktion <code>plus,</code> die zwei Zahlen vom Typ <code>float</code> als Parameter hat und die Summe der Zahlen zurückgibt (ebenfalls Typ <code>float</code>). Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+    println(plus(10, 20));
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>30.0</code></pre>
+</div>
+</div>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Intervall-Check"><strong>3. Intervall-Check<br /></strong>Schreibe eine Funktion <code>bereich</code>, die drei Zahlen <code>a, b, c</code> vom Typ <code>float</code> als Parameter hat. Die Rückgabe ist eine boolescher Wert: <code>true,</code> wenn <code>a</code> zwischen <code>b</code> und <code>c</code> liegt, sonst <code>false</code>. Geh davon aus, dass b immer kleiner als c ist. Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+    println(bereich(10, 0, 100));
+    println(bereich(-10, 0, 100));
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>true
+false</code></pre>
+</div>
+</div>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Quadrat"><strong>4. Quadrat<br /></strong>Schreibe die Funktion <code>quadrat</code> mit einem Parameter des Typs <code>float</code>. Die Funktion gibt die Quadratzahl des Parameters zurück. Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+    println(quadrat(3));
+    println(quadrat(5));
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>9.0
+25.0</code></pre>
+</div>
+</div>
+<p>Verwende <strong>nicht</strong> die Processing-Funktion <code>pow()</code>.</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Maximum"><strong>5. Maximum<br /></strong>Schreibe die Funktion <code>max2</code>, die zwei <code>float</code>-Werte bekommt und den größeren der beiden zurückgibt.<br />Schreibe die Funktion <code>max3</code>, die <strong>drei</strong> <code>float</code>-Werte bekommt und den größten zurückgibt. Teste unbedingt auch Fälle mit zwei gleichen Werten wie (5, 5, 1) oder (5, 1, 5).</p>
+<p>Verwende <strong>nicht</strong> die Processing-Funktion <code>max()</code>.</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Abstand"><strong>6. Abstand</strong><br />Schreibe die Funktion <code>difference</code>, die zwei <code>float</code>-Werte bekommt und den Abstand zwischen den beiden Werten <strong>als postive Zahl</strong> zurückgibt. Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  println(difference(5.5, 10.5));
+  println(difference(1.5, 0));
+}</code></pre>
+</div>
+</div>
+<p>Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>5.0
+1.5</code></pre>
+</div>
+</div>
+<p>Verwende <strong>nicht</strong> die Processing-Funktion <code>abs()</code>.</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Gerade/Ungerade"><strong>7. Gerade/Ungerade<br /></strong>Schreibe die Funktion <code>istGerade</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl gerade ist, <code>false</code> wenn ungerade.</p>
+<p id="id-Ü|Funktionen,Parameter&amp;Rückgabewerte-Primzahl"><strong>8. Primzahl<br /></strong>Schreibe die Funktion <code>istPrim</code>, die eine ganze Zahl bekommt und einen Wahrheitswert zurückgibt, nämlich <code>true</code>, wenn die Zahl eine Primzahl ist, sonst <code>false</code>.</p>
+<p style="padding-left: 30px;"><strong>Hinweis</strong>: Eine Primzahl ist eine Zahl, die nur durch 1 und durch sich selbst teilbar ist. Teste deine Funktion mit:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>void setup() {
+  println(istPrim(7));
+  println(istPrim(15));
+  println(istPrim(97));
+}</code></pre>
+</div>
+</div>
+<p> Du solltest sehen:</p>
+<div class="pre-code">
+<div>
+<pre><code>true
+false
+true</code></pre>
+</div>
+</div>
+<p><br /><br /></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_arrays.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

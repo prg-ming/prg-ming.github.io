@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="de">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Übungen zu Vertiefung | PRG Ming Skript  </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Jacqueline Rähse" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_highlighter.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site exe-search-bar" id="exe-node-84"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
+<header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Programmieren Skript</a></li>
+   <li><a href="grundlagen.html" class="daddy">Grundlagen</a>
+   <ul class="other-section">
+      <li><a href="zeichnen.html" class="no-ch">Zeichnen</a></li>
+      <li><a href="textausgabe.html" class="no-ch">Textausgabe</a></li>
+      <li><a href="interaktion.html" class="no-ch">Interaktion</a></li>
+      <li><a href="variablen.html" class="no-ch">Variablen</a></li>
+      <li><a href="datentypen.html" class="no-ch">Datentypen</a></li>
+      <li><a href="typumwandlung.html" class="no-ch">Typumwandlung</a></li>
+      <li><a href="lokale_variablen.html" class="no-ch">Lokale Variablen</a></li>
+      <li><a href="syntax_und_konventionen.html" class="no-ch">Syntax und Konventionen</a></li>
+      <li><a href="arithmetische_operatoren.html" class="no-ch">Arithmetische Operatoren</a></li>
+      <li><a href="mathematische_funktionen_und_konstanten.html" class="no-ch">Mathematische Funktionen und Konstanten</a></li>
+   </ul>
+   </li>
+   <li><a href="kontrollstrukturen.html" class="daddy">Kontrollstrukturen</a>
+   <ul class="other-section">
+      <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
+      <li><a href="verzweigungen.html" class="daddy">Verzweigungen</a>
+      <ul class="other-section">
+         <li><a href="ifanweisungen.html" class="no-ch">If-Anweisungen</a></li>
+         <li><a href="switch.html" class="no-ch">Switch</a></li>
+         <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
+         <li><a href="boolesche_variablen.html" class="no-ch">Boolesche Variablen</a></li>
+         <li><a href="interaktion_mit_tasten.html" class="no-ch">Interaktion mit Tasten</a></li>
+         <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
+      </ul>
+      </li>
+      <li><a href="schleifen.html" class="daddy">Schleifen</a>
+      <ul class="other-section">
+         <li><a href="while_schleife.html" class="no-ch">While Schleife</a></li>
+         <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
+         <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
+         <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
+      </ul>
+      </li>
+      <li><a href="debugging.html" class="no-ch">Debugging</a></li>
+   </ul>
+   </li>
+   <li><a href="arrays.html" class="daddy">Arrays</a>
+   <ul class="other-section">
+      <li><a href="einfache_arrays.html" class="no-ch">Einfache Arrays</a></li>
+      <li><a href="arrays_mit_schleifen.html" class="no-ch">Arrays mit Schleifen</a></li>
+      <li><a href="multidimensionale_arrays.html" class="no-ch">Multidimensionale Arrays</a></li>
+      <li><a href="kontrollanweisungen_in_schleifen.html" class="no-ch">Kontrollanweisungen in Schleifen</a></li>
+   </ul>
+   </li>
+   <li><a href="funktionen.html" class="daddy">Funktionen</a>
+   <ul class="other-section">
+      <li><a href="funktionen0.html" class="no-ch">Funktionen</a></li>
+      <li><a href="parameter.html" class="no-ch">Parameter</a></li>
+      <li><a href="rckgabewerte.html" class="no-ch">Rückgabewerte</a></li>
+   </ul>
+   </li>
+   <li><a href="formatierte_ein__ausgabe.html" class="daddy">Formatierte Ein- &amp; Ausgabe</a>
+   <ul class="other-section">
+      <li><a href="strings_verarbeiten.html" class="no-ch">Strings verarbeiten</a></li>
+      <li><a href="strings_formatieren.html" class="no-ch">Strings formatieren</a></li>
+      <li><a href="dateien_erzeugen_und_lesen.html" class="no-ch">Dateien erzeugen und lesen</a></li>
+      <li><a href="trycatch.html" class="no-ch">Try-Catch</a></li>
+   </ul>
+   </li>
+   <li><a href="transformation.html" class="daddy">Transformation</a>
+   <ul class="other-section">
+      <li><a href="transformation0.html" class="no-ch">Transformation</a></li>
+      <li><a href="translation_rotation_und_skalierung.html" class="no-ch">Translation, Rotation und Skalierung</a></li>
+      <li><a href="transformationen_speichern.html" class="no-ch">Transformationen speichern</a></li>
+   </ul>
+   </li>
+   <li><a href="vertiefung.html" class="daddy">Vertiefung</a>
+   <ul class="other-section">
+      <li><a href="computersprache.html" class="no-ch">Computersprache</a></li>
+      <li><a href="anwendungsentwicklung.html" class="no-ch">Anwendungsentwicklung</a></li>
+      <li><a href="arten_von_datentypen.html" class="no-ch">Arten von Datentypen</a></li>
+      <li><a href="assertions.html" class="no-ch">Assertions</a></li>
+      <li><a href="operatoren_teil_2.html" class="no-ch">Operatoren Teil 2</a></li>
+      <li><a href="bibliotheken.html" class="no-ch">Bibliotheken</a></li>
+      <li><a href="bewegung__beschleunigung.html" class="no-ch">Bewegung &amp; Beschleunigung</a></li>
+      <li><a href="zahlensysteme.html" class="no-ch">Zahlensysteme</a></li>
+      <li><a href="gleitkommazahlenformat.html" class="no-ch">Gleitkomma-Zahlenformat</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="bungen_und_fragen.html" class="current-page-parent daddy">Übungen und Fragen</a>
+   <ul>
+      <li><a href="bungen_zu_grundlagen.html" class="no-ch">Übungen zu Grundlagen</a></li>
+      <li><a href="bungen_zu_kontrollstrukturen.html" class="no-ch">Übungen zu Kontrollstrukturen</a></li>
+      <li><a href="bungen_zu_arrays.html" class="no-ch">Übungen zu Arrays</a></li>
+      <li><a href="bungen_zu_funktionen.html" class="no-ch">Übungen zu Funktionen</a></li>
+      <li><a href="bungen_zu_formatierte_ein_und_ausgabe.html" class="no-ch">Übungen zu Formatierte Ein- und Ausgabe</a></li>
+      <li><a href="bungen_zu_transformation.html" class="no-ch">Übungen zu Transformation</a></li>
+      <li id="active"><a href="bungen_zu_vertiefung.html" class="active no-ch">Übungen zu Vertiefung</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_transformation.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Übungen zu Vertiefung</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id123">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Anwendungsentwicklung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta123_139_2" class="block iDevice_content">
+<div class="exe-text"><div id="main-content" class="wiki-content">
+<h1>Fragen</h1>
+<ol>
+<li>Um eine Java-Anwendung auf einem Computer ausführen zu können, muss auf dem Computer eine ??? installiert sein. (Fülle die Lücke)</li>
+<li>Wofür steht die Abkürzung IDE?
+<ul>
+<li>integrated deployment environment</li>
+<li>integrated deployment engine</li>
+<li>integrated development environment</li>
+</ul>
+</li>
+<li>Warum kannst du eine Processing Anwendung nicht in einem normalen Texteditor oder eine anderen Sorftware entwickeln?</li>
+<li>Zu welchem Zeitpunkt wird der Code so übersetzt, dass deine Plattform (Windows, Mac, Linux) ihn lesen kann?</li>
+</ol>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id111">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Arten von Datentypen</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta111_127_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|ArtenvonDatentypen&amp;Typumwandlung-Fragen">Fragen</h1>
+<ol>
+<li>Was sind die Unterschiede zwischen primitven Datentypen und Objekttypen?</li>
+<li>Warum haben Objekttypen den Standardwert <code>null</code>?</li>
+<li>Wie kann ich auf die Funktionen und Felder eines Objekts zugreifen?</li>
+<li>Erkläre die Prinzipien <strong>Call-By-Value</strong> und <strong>Call-By-Reference</strong> in eigenen Worten. Was kann passieren, wenn ich nicht darauf achte, dass es diese beiden unterschiedlichen Prinzipien gibt?</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id121">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Assertions</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta121_137_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Fragen.2">Fragen</h1>
+<ol>
+<li>Welcher Part einer Assertion ist optional?</li>
+<li>Wozu werden Assertions eingesetzt?</li>
+</ol>
+<h1 id="id-Ü|TryCatch,Switch&amp;Assertions-Übungsaufgaben.2">Aufgaben</h1>
+<p id="id-Ü|TryCatch,Switch&amp;Assertions-Pinüberprüfen"><strong>1. Pin überprüfen<br /></strong>Schreibe ein Programm, dass dem Nutzer Zugriff auf seine Nutzerdaten gewährt, wenn er den richtigen Pin angibt. Simuliere das eingeben des Pin in Form einer von dir festgelegten Variable.</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int korrekterPIN = 1234; 
+int nutzerEingabe = 4567;   </code></pre>
+</div>
+</div>
+<p class="auto-cursor-target">Wenn der eingegebene Pin korrekt ist, so dem Nutzer in der Konsole angezeigt werden "Hallo Nutzer, hier sind ihre Nutzerdaten ...". Bei falscher Eingabe soll das Programm beendet werden und in der Konsole eine Fehlermeldung und der falsche Pin angezeigt werden.</p>
+<p class="auto-cursor-target" id="id-Ü|TryCatch,Switch&amp;Assertions-Arrayaddieren"><strong>2. Array addieren<br /></strong>Schreibe eine Funktion, die einen <code>int</code>-Array als Parameter übergeben bekommt und alle Zahlen im Array miteinander addiert. Das Ergebnis soll als <code>int</code>-Wert zurückgegeben werden.</p>
+<p class="auto-cursor-target">Schreibe außerdem 3 Assertions, die deine Funktion überprüfen. Verwende für die Assertions folgende Beispiel-Arrays:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int [] foo = {  1,  2,  3};  // Erwartetes Ergebnis: 6
+int [] bar = {-50, 25, 78};  // Erwartetes Ergebnis: 103
+int [] foobar = {};          // Erwartetes Ergebnis: 0</code></pre>
+</div>
+</div>
+<p class="auto-cursor-target"><br /><br /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id122">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Operatoren Teil 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta122_138_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|OperatorenII-Fragen">Fragen</h1>
+<ol>
+<li><span class="optiontext">Die Assoziativität entscheidet in jedem Fall über Auswertereihenfolge der Operatoren.</span> Wahr oder falsch?</li>
+<li>Logisches Oder und bitweises Oder haben denselben Rang. Wahr oder falsch?</li>
+<li>
+<p>Welche Ausgabe liefert folgender Code?</p>
+<p><code></code></p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int age = 18;
+println(age &gt;= 18 ? "foo" : "bar");</code><code></code></pre>
+</div>
+</div>
+<ul>
+<li><code>foo</code></li>
+<li><code>bar</code></li>
+<li><code>foo : bar</code></li>
+</ul>
+</li>
+</ol>
+<h1 id="id-Ü|OperatorenII-Übungsaufgaben">Aufgaben</h1>
+<p id="id-Ü|OperatorenII-Linksverschiebung"><strong>1. Linksverschiebung<br /></strong>Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int value = 1;
+int shift= 1;
+ 
+int newValue = value &lt;&lt; shift;
+println(newValue );</code></pre>
+</div>
+</div>
+<p>Erweitere den Code so, dass dir in der Konsole mehrere verschiedene Werte angezeigt werden:</p>
+<div class="pre-code">
+<div>
+<pre><code>2
+16
+65536
+-2147483648
+1</code><br /><br /></pre>
+</div>
+</div>
+<p>Welche 2 Werte kannst du angeben, um den Wert 1 zu bekommen?</p>
+<p id="id-Ü|OperatorenII-Konvertierung"><strong>2. Konvertierung<br /></strong>Gegeben ist folgender Code:</p>
+<div class="highlighted-code language-java line-numbers">
+<div>
+<pre><code>int startWert = 5;
+int zweiterWert = 0;
+int erg = 0;
+ 
+// aus 5 soll 7 werden
+zweiterWert = ??;
+erg = startWert | zweiterWert;
+println(erg);
+ 
+// aus 5 soll 4 werden
+zweiterWert = ??;
+erg = startWert &amp; zweiterWert;
+println(erg);
+ 
+// Welcher Wert kommt raus?
+erg = ~startWert ;
+println(erg);</code></pre>
+</div>
+</div>
+<p>Welche Werte müssen in Zeile 6 und 11 bei <code>zweiterWert</code> angegeben werden, damit die Werte in der Kommentarzeile rauskommen? Welcher Wert kommt in der letzten Print-Anweisung raus?</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id115">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Bibliotheken</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta115_131_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Bibliotheken-Fragen">Fragen</h1>
+<ol>
+<li>Welche 2 Dinge muss ich tun, damit ich eine Bibliothek in meinem Code in Processing verwenden kann?</li>
+<li>Was bedeutet der Stern * im import Befehl?</li>
+</ol>
+<h1 id="id-Ü|Bibliotheken-Übungsaufgaben">Aufgaben</h1>
+<p>Wie wir mit der Sound Bibliothek von Processing arbeiten können, haben wir im Skript gelesen. Allerdings gibt es noch viele weitere Bibliotheken. Ein paar davon stammen direkt von den Entwicklern von Processing, andere stammen von anderen Leuten. In den Übungsaufgaben schauen wir uns 2 weitere Bibliotheken von den Entwicklern von Processing an:</p>
+<p><strong>1. Visitenkarte als PDF<br /></strong>Für Processing gibt es eine Bobliothek, mit der man ein PDF erstellen und speichern kann. Die Bibliothek ist ziemlich simpel und schnell zu verstehen. Schau dir die Seite über die <a href="https://processing.org/reference/libraries/pdf/index.html" class="external-link" rel="nofollow">PDF-Export Bibliothek</a> an und versuche dann folgene Aufgabe umzusetzen:</p>
+<ol>
+<li>Gestalte eine einfache Visitenkarte für dich. Auf der Vorderseite sollte dein Name, deine Email und deine Adresse zu sehen sein und ein kleines Icon, welches dein Logo sein soll.</li>
+<li>Erweitere dein Programm so, dass es auch eine Rückseite für deine Visitenkarte erstellt. Hier könnte z.B. deine Webseite oder ein Werbeslogan stehen.</li>
+</ol>
+<p><strong>2. Videohintergrund<br /></strong>Processing hat auch eine Bibliothek für die Wiedergabe und die Verarbeitung von Videos. Schau dir die Seite über die<a href="https://processing.org/reference/libraries/video/Movie.html" class="external-link" rel="nofollow"> Video Bibliothek </a> an und versuche dann folgende Aufgabe umzusetzen:</p>
+<p>Schreibe ein Programm, welches als Hintergrund ein Video hat, welches sich die ganze Zeit wiederholt. Im Vordergrund soll ein Kreis zu sehen sein, welcher der Maus folgt.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id110">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Bewegung &amp; Beschleunigung</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta110_126_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Vektoren,Abprallen&amp;Beschleunigung-Übungsaufgaben">Aufgaben</h1>
+<p><strong>1. Zufällige Flugrichtung<br /></strong>Schreibe ein Programm, wo zu Beginn in der Mitte des Bildschirms ein Ball startet und dann in eine zufällig generierte Richtung weg und aus dem Bildschirm fliegt.</p>
+<p>Versuche 3 verschiedene Lösungsvarianten:</p>
+<ul>
+<li>Arbeite als Vektor mit 2 Variablen, die den Vektor beschreiben</li>
+<li>Arbeite als Vektor mit <code>PVector</code></li>
+<li>Arbeite mit normalisierten Vektoren.</li>
+</ul>
+<p><strong>2. Abprallen<br /></strong>Entwickle die vorherige Aufgabe so weiter, dass der Ball von der Wand abprallt.</p>
+<p><strong>3. Fahrendes Auto<br /></strong>Schreibe ein Programm, das ein beschleunigendes und bremsendes Auto simuliert. Als "Auto" kannst du ein einfaches Recheck verwenden. Zu Beginn sollte das Rechteck am linken Bildschirm sein. Solange du die Leertaste gedrückt hältst, soll das Auto "Gas geben", also beschleunigen bis zu einer gewissen maximalen Geschwindigkeit. In dem Moment, wo du die Leertaste nicht mehr drückst, soll kein Gas mehr gegeben werden und das Auto soll bremsen bzw. entschleunigen.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id113">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Gleitkommazahlenformat</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta113_129_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Fragen">Fragen</h1>
+<ol>
+<li>Schreibe die Zahl 4300 in der Form m · b<sup>e</sup> auf. Schreibe eine andere Variante von der Zahl mit einem anderen Exponenten auf. </li>
+<li>Was ist der Unteschied zwischen einer Festkommazahl und einer Gleitkommazahl?</li>
+<li>Was ist der Vorteil der Gleitkommazahldarstellung?</li>
+<li>Wann ist eine Gleitkommazahl normalisiert?</li>
+<li>Gleitkommazahlen werden im Computer in Form von Binärzahlen gespeichert. Dabei besteht die Binärezahl gemäß der Norm IEEE-754 aus mehreren Abschnitten. Wie lauten diese Abschnitte und in welcher Reihenfolge stehen diese?</li>
+<li>Normalerweise werden in der Mantisse einer Gleitkommazahl die Stellen vor und nach dem Komma gespeichert. Im IEEE-Format ist das nicht so - warum?</li>
+<li>Wahr oder falsch: In der Informatik gibt es die "Zahlen"  + Unendlich und - Unendlich.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id114">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Zahlensysteme</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta114_130_2" class="block iDevice_content">
+<div class="exe-text"><h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Fragen.1">Fragen</h1>
+<ol>
+<li>Welche 3 Zahlensysteme spielen in der Computertechnik die wichtigste Rolle?</li>
+<li>Was sind die Nennwerte in einem Zahlensystem?</li>
+<li>Wo wird z.B. in Processing oder in Paint oder in Photoshop das hexadezimale Zahlensystem verwendet?</li>
+</ol>
+<h1 id="id-Ü|Zahlensysteme&amp;Gleitkommazahlenformat-Übungsaufgaben">Aufgaben</h1>
+<p><strong>1. Binär → Dezimal <br /></strong>Rechne folgende Zahlen aus dem binären Zahlensystem in das dezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>110011</li>
+<li>100000</li>
+<li>101010</li>
+<li>100111</li>
+</ul>
+<p><strong>2. Dezimal → Binär<br /></strong>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das binären Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>6540</li>
+<li>1000000</li>
+<li>91</li>
+<li>210012</li>
+</ul>
+<p><strong>3. Hexadezimal → Dezimal<br /></strong>Rechne folgende Zahlen aus dem hexadezimalen Zahlensystem in das dezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>aeaeae</li>
+<li>22dd77</li>
+<li>de17fa</li>
+<li>10fd3a</li>
+</ul>
+<p><strong>4. Dezimal → Hexadezimal<br /></strong>Rechne folgende Zahlen aus dem dezimalen Zahlensystem in das hexadezimale Zahlensystem:</p>
+<ul style="list-style-type: square;">
+<li>128</li>
+<li>678354</li>
+<li>250000</li>
+<li>364</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="bungen_zu_transformation.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Made with eXeLearning<span> (New Window)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
