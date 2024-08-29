@@ -2,23 +2,21 @@
 <html lang="de">
 <head>
 <link rel="stylesheet" type="text/css" href="base.css" />
-<link rel="stylesheet" type="text/css" href="exe_highlighter.css" />
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Verschachtelte Schleifen | PRG Ming Skript  </title>
+<title>Fallunterscheidungen | PRG Ming Skript  </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Jacqueline Rähse" />
 <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
 <meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
-<script type="text/javascript" src="exe_highlighter.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
     </head>
-<body class="exe-web-site exe-search-bar" id="exe-node-22"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site exe-search-bar" id="exe-node-91"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Navigation überspringen</a></p>
 <header id="header" ><div id="headerContent">PRG Ming Skript </div></header>
@@ -42,8 +40,8 @@
    <li class="current-page-parent"><a href="kontrollstrukturen.html" class="current-page-parent daddy">Kontrollstrukturen</a>
    <ul>
       <li><a href="programmablaufplan.html" class="no-ch">Programmablaufplan</a></li>
-      <li><a href="fallunterscheidungen.html" class="daddy">Fallunterscheidungen</a>
-      <ul class="other-section">
+      <li id="active"><a href="fallunterscheidungen.html" class="active daddy">Fallunterscheidungen</a>
+      <ul>
          <li><a href="ifanweisungen.html" class="no-ch">If-Anweisungen</a></li>
          <li><a href="switch.html" class="no-ch">Switch</a></li>
          <li><a href="logische_operatoren.html" class="no-ch">Logische Operatoren</a></li>
@@ -52,12 +50,12 @@
          <li><a href="kollisionserkennung.html" class="no-ch">Kollisionserkennung</a></li>
       </ul>
       </li>
-      <li class="current-page-parent"><a href="schleifen.html" class="current-page-parent daddy">Schleifen</a>
-      <ul>
+      <li><a href="schleifen.html" class="daddy">Schleifen</a>
+      <ul class="other-section">
          <li><a href="while_schleife.html" class="no-ch">While Schleife</a></li>
          <li><a href="forschleife.html" class="no-ch">For-Schleife</a></li>
          <li><a href="schleifen_im_aktiven_modus.html" class="no-ch">Schleifen im aktiven Modus</a></li>
-         <li id="active"><a href="verschachtelte_schleifen.html" class="active no-ch">Verschachtelte Schleifen</a></li>
+         <li><a href="verschachtelte_schleifen.html" class="no-ch">Verschachtelte Schleifen</a></li>
       </ul>
       </li>
       <li><a href="debugging.html" class="no-ch">Debugging</a></li>
@@ -121,148 +119,12 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="schleifen_im_aktiven_modus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="debugging.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="programmablaufplan.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ifanweisungen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Verschachtelte Schleifen</h1></header>
-<article class="iDevice_wrapper textIdevice" id="id22">
-<div class="iDevice emphasis0" >
-<div id="ta22_121_2" class="block iDevice_content">
-<div class="exe-text"><p>Eine Tabelle in einer Tabellenkalkulation besteht aus Zeilen und Spalten, die durchnumeriert sind. So kann man jede Zelle über Zeilen- und Spaltennummer ansprechen:</p>
-<p><img src="for_grid.png" alt="For Tabelle" width="105" height="100" /></p>
-<p>Das gleiche Prinzip findest du bei mathematischen Matrizen oder einem Schachbrett wieder. Jetzt kann es sein, dass du alle Zellen einer Tabelle oder alle Einträge einer Matrix auf Null (oder einen andere Standardwert) setzen musst. Dazu musst du also alle Kombinationen von Zeilen- und Spaltennummer durchlaufen.</p>
-<p>Du kannst dir denken, dass du mit einer For-Schleife leicht alle Zeilen durchlaufen kannst:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int z = 0; z &lt; 3; z++) {
-   println("Zeile " + z);
-}</code></pre>
-</div>
-</div>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>Zeile 0
-Zeile 1
-Zeile 2</code></pre>
-</div>
-</div>
-<p>Genauso leicht kannst du alle Spalten durchlaufen:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int s = 0; s &lt; 3; s++) {
-   println("Spalte " + s);
-}</code></pre>
-</div>
-</div>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>Spalte 0
-Spalte 1
-Spalte 2</code></pre>
-</div>
-</div>
-<p><br />Jetzt möchtest du für Zeile 0 alle Spalten 0, 1, 2 durchlaufen, dann für Zeile 1 nochmal und zum Schluss für Zeile 2.</p>
-<p>Das erreichen wir, indem wir <em>innerhalb</em> der ersten For-Schleife (Zeilen) die zweite For-Schleife (Spalten) laufen lassen:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int z = 0; z &lt; 3; z++) {
-
-   for (int s = 0; s &lt; 3; s++) {
-      println("Zeile " + z + ", Spalte " + s);
-   }
-}</code></pre>
-</div>
-</div>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>Zeile 0, Spalte 0
-Zeile 0, Spalte 1
-Zeile 0, Spalte 2
-Zeile 1, Spalte 0
-Zeile 1, Spalte 1
-Zeile 1, Spalte 2
-Zeile 2, Spalte 0
-Zeile 2, Spalte 1
-Zeile 2, Spalte 2</code></pre>
-</div>
-</div>
-<p>Man spricht hier von zwei verschachtelten For-Schleifen. Dabei ist die Zeilenschleife die äußere Schleife und die Spaltenschleife die innere Schleife.</p>
-<p>Man kann die Ausgabe so ändern, dass nur die Spaltennummer der jeweiligen "Zelle" ausgegeben wird (Laufvariable s):</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int z = 0; z&lt;3; z++) {
-
-   // eine Zeile drucken
-   for (int s = 0; s&lt;4; s++) {
-      print(s);
-   }
-   println(); // Umbruch nach fertiger Zeile
-}</code></pre>
-</div>
-</div>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>0123
-0123
-0123</code></pre>
-</div>
-</div>
-<p>Alternativ könntest du dir die Zeilennummern (Laufvariable z) ansehen:</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int z = 0; z&lt;3; z++) {
-   for (int s = 0; s&lt;4; s++) {
-      print(z);
-   }
-   println();
-}</code></pre>
-</div>
-</div>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>0000
-1111
-2222</code></pre>
-</div>
-</div>
-<p>Verschachtelte Schleifen kommen immer dann zum Einsatz, wenn eine zweidimensionale Struktur abgeschritten werden soll, dazu gehören auch Spreadsheet-Tabellen, mathematische Matrizen und Bitmap-Bilder.</p>
-<p>Auch im grafischen Bereich kann man 2-dimensionale Strukturen gebrauchen, z.B das folgende Gittermuster:</p>
-<p><img src="for_grid1.png" alt="For Gitter " width="99" height="100" /></p>
-<p>Wir sehen, dass wir hier systematisch die x-Koordinaten durchlaufen können: 0, 25, 50, 75, 100. Das gleiche gilt für die y-Koordinaten: 0, 25, 50, 75, 100. Jetzt wollen wir auf jeder Kombination dieser Koordinaten einen Kreis zeichen. Also: zwei verschachtelte For-Schleifen!</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int x = 0; x &lt;= 100; x = x + 25) {
-   for (int y = 0; y &lt;= 100; y = y + 25) {
-      ellipse(x, y, 10, 10);
-   }
-}</code></pre>
-</div>
-</div>
-<p>Beachte, dass wir hier spaltenweise zeichnen. Erst die die x-Koordinate auf 0 fixiert und wir durchlaufen y=0, y=25 usw. Als setzen wir x auf 25 und durchlaufen y=0, y=25 usw. Natürlich könnten wir in diesem Beispiel auch zeilenweise zeichnen, dazu müsste man y in die äußere Schleife verlagern.</p>
-<h1>Zusammenfassung</h1>
-<p>Wenn du systematisch 2-dimensionale Daten durchlaufen möchtest, benötigest du zwei ineinander verschachtelte Schleifen. Beispiele sind: die Felder eines Schachbretts, die Zellen einer Tabelle, die Einträge einer mathematischen Matrix oder die Pixel eines Bitmap-Bildes.</p>
-<p>Wenn wir das Beispiel einer Tabelle oder Matrix nehmen, können wir von Zeilen und Spalten sprechen. Eine äußere Schleife könnte dann die Zeilen durchlaufen und eine innere Schleife die Spalten.</p>
-<div class="highlighted-code language-java line-numbers">
-<div>
-<pre><code>for (int z = 0; z&lt;2; z++) {
-   for (int s = 0; s&lt;2; s++) {
-      print(" Zeile " + z + ", Spalte " + s);
-   }
-}</code></pre>
-</div>
-</div>
-<p>Auf der Konsole sehen wir:</p>
-<div class="highlighted-code code-style-2 language-java">
-<div>
-<pre><code>Zeile 0, Spalte 0 <br />Zeile 0, Spalte 1 <br />Zeile 1, Spalte 0 <br />Zeile 1, Spalte 1</code></pre>
-</div>
-</div>
-<p></p></div>
-</div>
-</div>
-</article>
+<header id="nodeDecoration"><h1 id="nodeTitle">Fallunterscheidungen</h1></header>
 <div id="packageLicense" class="cc cc-by-sa">
 <p><span>Lizenziert unter  </span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution Share Alike License 4.0</a></p>
 </div>
@@ -270,7 +132,7 @@ Zeile 2, Spalte 2</code></pre>
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="schleifen_im_aktiven_modus.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="debugging.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
+<a href="programmablaufplan.html" class="prev"><span><span>&laquo; </span>Vorheriges</span></a> <span class="sep">| </span><a href="ifanweisungen.html" class="next"><span>Nächste<span> &raquo;</span></span></a>
 </nav>
 </div>
 </div>
