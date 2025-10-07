@@ -60,133 +60,22 @@ body{padding:0;text-align:center}
 	body #content{background:#FFF}
 	#headerContent{white-space:normal;text-overflow:normal;font-weight:bold}
 }
-/* eXeLearning Style Designer */
-#content{
-/*contentBGColor*/
-background-color:#f9f9f9;
+/* eXeLearning Style Designer */#content{/*contentBGColor*/background-color:#f9f9f9;}
+#exe-client-search-text{border-color:#00305d;}
+#exe-client-search-submit{/*searchBarButtonBGColor*/background:#00305d;border-color:#00305d;/*searchBarButtonTextColor*/color:#ffffff;}
+.pagination a,#nav-toggler a,#skipNav a{/*nav2BGColor*/background-color:#00305d;/*nav2AColor*/color:#ffffff;}
+.pagination a:hover,.pagination a:focus,#nav-toggler a:hover{/*nav2HoverBGColor*/background-color:#00305d;}
+body{/*bodyBGColor*/background-color:#ffffff;}
+#siteNav,#siteNav a{/*navBGColor*/background-color:#f9f9f9;/*navAColor*/color:#222222;/*navBorderColor*/border-color:#dddddd;}
+@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav,#siteNav ul{background-color:#f9f9f9;border-color:#dddddd;}
+#siteNav li{background-color:#f9f9f9;}
 }
-#exe-client-search-text{
-border-color:#00305d;
+#siteNav a:hover,#siteNav a:focus,#siteNav a.active{/*navHoverBGColor*/background-color:#ffffff;/*navAHoverColor*/color:#00305d;}
+@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav li:hover,#siteNav li.sfhover{background-color:#ffffff;}
 }
-#exe-client-search-submit{
-/*searchBarButtonBGColor*/
-background:#00305d;border-color:#00305d;
-/*searchBarButtonTextColor*/
-color:#ffffff;
-}
-.pagination a,#nav-toggler a,#skipNav a{
-/*nav2BGColor*/
-background-color:#00305d;
-/*nav2AColor*/
-color:#ffffff;
-}
-.pagination a:hover,.pagination a:focus,#nav-toggler a:hover{
-/*nav2HoverBGColor*/
-background-color:#00305d;
-}
-body{
-/*bodyBGColor*/
-background-color:#ffffff;
-}
-#siteNav,#siteNav a{
-/*navBGColor*/
-background-color:#f9f9f9;
-/*navAColor*/
-color:#222222;
-/*navBorderColor*/
-border-color:#dddddd;
-}
-@media screen and (min-width: 701px) and (max-width: 1015px){
-#siteNav,#siteNav ul{
-background-color:#f9f9f9;border-color:#dddddd;
-}
-#siteNav li{
-background-color:#f9f9f9;
-}
-}
-#siteNav a:hover,#siteNav a:focus,#siteNav a.active{
-/*navHoverBGColor*/
-background-color:#ffffff;
-/*navAHoverColor*/
-color:#00305d;
-}
-@media screen and (min-width: 701px) and (max-width: 1015px){
-#siteNav li:hover,#siteNav li.sfhover{
-background-color:#ffffff;
-}
-}
-.pagination{
-border-color:#dddddd;
-}
-#bottomPagination .page-counter{
-color:#000000;
-}
-#bottomPagination{
-background-color:#eeeeee;
-}
-/*horizontalNavigation*/
-@media screen and (min-width:701px){
-#main,.no-nav #main{
-padding:10px 20px 0 20px;overflow:auto
-}
-#siteNav{
-display:table;margin-bottom:40px
-}
-#siteNav li:hover,#siteNav li.sfhover{
-background:#ffffff
-}
-#siteNav .other-section{
-display:block
-}
-#siteNav,#siteNav ul{
-float:left;width:100%;border-style:solid;border-width:1px 0;border-color:#dddddd;margin:0;line-height:1.2em;background:#f9f9f9
-}
-#siteNav ul ul{
-line-height:1.1em
-}
-#siteNav{
-margin-bottom:20px;position:relative;z-index:999;border-top:none;padding-right:0
-}
-#siteNav a{
-padding:.6em 15px;border:none
-}
-#siteNav li{
-float:left
-}
-#siteNav li ul{
-position:absolute;left:-999em;height:auto;width:14.4em;width:13.9em;border-width:0.25em
-}
-* html #siteNav li ul{
-width:13em
-}
-#siteNav li li{
-width:13.9em
-}
-#siteNav li ul a,#siteNav li ul ul a{
-padding:.45em 15px
-}
-#siteNav li ul ul{
-margin:-2.15em 0 0 14em
-}
-* html #siteNav li ul ul{
-margin-left:13em
-}
-#siteNav li:hover ul ul,#siteNav li:hover ul ul ul,#siteNav li.sfhover ul ul,#siteNav li.sfhover ul ul ul{
-left:-999em
-}
-#siteNav li:hover ul,#siteNav li li:hover ul,#siteNav li li li:hover ul,#siteNav li.sfhover ul,#siteNav li li.sfhover ul,#siteNav li li li.sfhover ul{
-left:auto
-}
-#siteNav .daddy{
-position:relative
-}
-#siteNav .daddy span{
-display:inline;position:absolute;right:1em;font-size:.8em
-}
-#toggle-nav{
-display:none!important
-}
-}
+.pagination{border-color:#dddddd;}
+#bottomPagination .page-counter{color:#000000;}
+#bottomPagination{background-color:#eeeeee;}
 /* eXeLearning Style Designer (custom CSS) */
 .pagination .print-page{
 display:none;

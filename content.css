@@ -84,90 +84,26 @@ li{list-style-position:outside}
 	#packageLicense.cc{padding-left:0;text-align:center}
 	.toggle-idevice{display:none}
 }
-/* eXeLearning Style Designer */
-.iDevice_header{
-/*emTitleBGColor*/
-background-color:#ffffff;border-color:#dddddd;
-}
-.iDevice_inner{
-/*emBGColor*/
-background-color:#ffffff;border-color:/*emBorderColor*/
-#dddddd;
-}
-.iDevice_inner a{
-/*emAColor*/
-color:#00305d;
-}
-.iDeviceTitle{
-background-image:url(icon_star.png);
-}
-.activityIdevice .iDeviceTitle{
-background-image:url(icon_assignment.png);
-}
-.readingIdevice .iDeviceTitle{
-background-image:url(icon_unread.png);
-}
-.FileAttachIdeviceInc .iDeviceTitle{
-background-image:url(icon_download.png);
-}
-.WikipediaIdevice .iDeviceTitle{
-background-image:url(icon_description.png);
-}
-.ListaIdevice .iDeviceTitle,.QuizTestIdevice .iDeviceTitle,.MultichoiceIdevice .iDeviceTitle,.TrueFalseIdevice .iDeviceTitle,.MultiSelectIdevice .iDeviceTitle,.ClozeIdevice .iDeviceTitle{
-background-image:url(icon_question.png);
-}
-.preknowledgeIdevice .iDeviceTitle{
-background-image:url(icon_announcement.png);
-}
-.GalleryIdevice .iDeviceTitle{
-background-image:url(icon_media.png);
-}
-.objectivesIdevice .iDeviceTitle{
-background-image:url(icon_info.png);
-}
-.ReflectionIdevice .iDeviceTitle{
-background-image:url(icon_account.png);
-}
-.emphasis0 a{
-/*noEmAColor*/
-color:#00305d;
-}
-body{
-/*fontFamily*/
-font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
-/*bodyColor*/
-color:#333333;
-/*contentBGColor*/
-background-color:#f9f9f9;
-}
-a{
-/*aColor*/
-color:#00305d;
-}
-#header,#emptyHeader,#nodeDecoration{
-height:auto!important;
-/*headerHeight*/
-height:120px;min-height:120px;
-/*headerBGColor*/
-background-color:#ffffff;border:1px solid /*headerBorderColor*/
-#dddddd;
-}
-#headerContent{
-/*headerTitleTopMargin*/
-padding-top:70px;
-}
-#siteFooter{
-border:1px solid /*footerBorderColor*/
-#dddddd;
-/*footerColor*/
-color:#000000;
-/*footerBGColor*/
-background-color:#eeeeee;
-}
-#siteFooter a{
-/*footerAColor*/
-color:#00305d;
-}
+/* eXeLearning Style Designer */.iDevice_header{/*emTitleBGColor*/background-color:#ffffff;border-color:#dddddd;}
+.iDevice_inner{/*emBGColor*/background-color:#ffffff;border-color:/*emBorderColor*/#dddddd;}
+.iDevice_inner a{/*emAColor*/color:#00305d;}
+.iDeviceTitle{background-image:url(icon_star.png);}
+.activityIdevice .iDeviceTitle{background-image:url(icon_assignment.png);}
+.readingIdevice .iDeviceTitle{background-image:url(icon_unread.png);}
+.FileAttachIdeviceInc .iDeviceTitle{background-image:url(icon_download.png);}
+.WikipediaIdevice .iDeviceTitle{background-image:url(icon_description.png);}
+.ListaIdevice .iDeviceTitle,.QuizTestIdevice .iDeviceTitle,.MultichoiceIdevice .iDeviceTitle,.TrueFalseIdevice .iDeviceTitle,.MultiSelectIdevice .iDeviceTitle,.ClozeIdevice .iDeviceTitle{background-image:url(icon_question.png);}
+.preknowledgeIdevice .iDeviceTitle{background-image:url(icon_announcement.png);}
+.GalleryIdevice .iDeviceTitle{background-image:url(icon_media.png);}
+.objectivesIdevice .iDeviceTitle{background-image:url(icon_info.png);}
+.ReflectionIdevice .iDeviceTitle{background-image:url(icon_account.png);}
+.emphasis0 a{/*noEmAColor*/color:#00305d;}
+body{/*fontFamily*/font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;/*bodyColor*/color:#333333;/*contentBGColor*/background-color:#f9f9f9;}
+a{/*aColor*/color:#00305d;}
+#header,#emptyHeader,#nodeDecoration{height:auto!important;/*headerHeight*/height:120px;min-height:120px;/*headerBGColor*/background-color:#ffffff;border:1px solid /*headerBorderColor*/#dddddd;}
+#headerContent{/*headerTitleTopMargin*/padding-top:70px;}
+#siteFooter{border:1px solid /*footerBorderColor*/#dddddd;/*footerColor*/color:#000000;/*footerBGColor*/background-color:#eeeeee;}
+#siteFooter a{/*footerAColor*/color:#00305d;}
 /* eXeLearning Style Designer (custom CSS) */
 h1, h2, h3, h4, h5 {
 font-weight: 400;
